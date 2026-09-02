@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=9">
+<link rel="stylesheet" href="../style.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,6 +63,22 @@
     <p>そこで今回は、企業の「成長段階」を読むための7つの観点を、一社を例に順番にたどってみます。私が個人的な調べものに使っている観点で、要するに「なぜ伸びているのか」を、需要増の一言で終わらせずに分解してみる、という枠組みです。</p>
     <p>例に選んだのは、ニッポン高度紙工業(3891)という高機能紙のメーカーです。選んだ理由は、この会社が良いか悪いかではなく、「派手さがないのに構造がはっきりしている」ので、視点の練習台として分かりやすいと感じたからです。</p>
 
+    <div class="viewpoint-flow">
+      <div class="vf-item"><span class="vf-num">1</span><div class="vf-label">成長の経路</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">2</span><div class="vf-label">差別化・参入障壁</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">3</span><div class="vf-label">顧客基盤の変化</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">4</span><div class="vf-label">経営陣の戦略</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">5</span><div class="vf-label">特需か構造的か</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">6</span><div class="vf-label">リスク要因</div></div>
+      <div class="vf-arrow">→</div>
+      <div class="vf-item"><span class="vf-num">7</span><div class="vf-label">定量データ</div></div>
+    </div>
+
     <h2>2. 観点① なぜ「成長段階」にあるのか</h2>
     <p>最初に確かめたいのは、成長の「経路」です。</p>
     <p>同社は、アルミ電解コンデンサに使われるセパレータ(電極を隔てる絶縁紙)で、世界シェアおよそ6割を持つとされています。コンデンサは電気を一時的に蓄えて放出する部品で、電源装置には欠かせません。</p>
@@ -101,11 +117,31 @@
 
     <h2>8. 観点⑦ 定量データ(参考)</h2>
     <p>数字は最後に、時点を明記して補助的に置きます。</p>
-    <ul>
-      <li><span class="stat-chip">売上高186.2億円</span>(2026年3月期実績、前期比+16.2%)、経常利益37.07億円(同+51.6%) ※決算短信で確認</li>
-      <li><span class="stat-chip">営業利益+107.6%</span>(2027年3月期第1四半期、前年同期比)</li>
-      <li><span class="stat-chip stat-chip-gold">時価総額 約666.5億円</span>(2026年9月2日時点、株価6,230円・前日比-7.01%)。8月中旬時点では約769億円とされていたが、直近で株価の変動が大きい</li>
-    </ul>
+
+    <div class="metric-chart">
+      <div class="metric-row">
+        <div class="metric-label"><span>売上高(2026年3月期実績、前期比)</span><strong>+16.2%</strong></div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" style="width:16%"></div></div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-label"><span>経常利益(2026年3月期実績、前期比)</span><strong>+51.6%</strong></div>
+        <div class="metric-bar-track"><div class="metric-bar-fill" style="width:52%"></div></div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-label"><span>営業利益(2027年3月期1Q、前年同期比)</span><strong>+107.6%</strong></div>
+        <div class="metric-bar-track"><div class="metric-bar-fill gold" style="width:100%"></div></div>
+      </div>
+      <p class="metric-note">バーの長さは伸び率の相対比較のみを表し、業績の絶対的な良し悪しを示すものではありません。売上高186.2億円・経常利益37.07億円は決算短信ベース。営業利益+107.6%は前年同期が小さい四半期であるほど伸び率が大きく出やすい点に留意。</p>
+    </div>
+
+    <div class="metric-chart">
+      <div class="metric-row">
+        <div class="metric-label"><span>時価総額の推移</span><strong>約666.5億円(9/2時点)</strong></div>
+        <div class="metric-bar-track"><div class="metric-bar-fill gold" style="width:68%"></div></div>
+      </div>
+      <p class="metric-note">2026年6月5日時点 約981億円 → 8月中旬時点 約769億円 → 9月2日時点 約666.5億円(株価6,230円、前日比-7.01%)。直近3か月で下落傾向、変動幅が大きい銘柄です。バーは6月時点を100%とした場合の相対値。</p>
+    </div>
+
     <p>これらは「過去にこうだった」という記録です。ここから将来を読むのは、この記事の役割ではありません。数字は結論ではなく、ここまでの定性的な読みが「実際の業績と矛盾していないか」を確かめるための照合材料、というくらいの位置づけです。</p>
 
     <h2>9. 結びに——他の会社を見るときにも</h2>
@@ -113,6 +149,17 @@
     <p>「AI関連」という言葉は、それだけでは何も説明していない。需要がどの経路で届くのか、なぜ競合に置き換えられにくいのか、顧客の顔ぶれはどう変わったか、経営陣はどこに資源を置いているか、追い風は構造的か一時的か、そしてリスクは何か。これを順番に埋めていくと、一社の「成長段階」が輪郭を持って見えてきます。</p>
     <p>この枠組みは、素材メーカーに限らず、サービス業でも商社でも使えるはずです。むしろ会社によって「どの観点が空欄になるか」に個性が出るので、そこを眺めるのも面白いところです。</p>
     <p>繰り返しになりますが、今回の記事は「読み方の練習」であって、この会社についての結論ではありません。私自身、この会社をどう考えるかは、ここでは判断していません。ただ、こういう視点で企業を見ると、ニュースの言葉が少し自分のものになる。その感覚を、共有できていたら嬉しいです。</p>
+
+    <div class="source-list">
+      <h3>参照元(2026年9月2日確認)</h3>
+      <ol>
+        <li>決算短信(2026年3月期): <a href="https://www.nikkei.com/nkd/disclosure/tdnr/20260423508761/" target="_blank" rel="noopener">日経会社情報DIGITAL「ニッポン高度紙工業 決算短信」</a></li>
+        <li>株価・時価総額: <a href="https://finance.yahoo.co.jp/quote/3891.T" target="_blank" rel="noopener">Yahoo!ファイナンス「ニッポン高度紙工業(3891)」</a></li>
+        <li>製品・事業内容: <a href="https://www.kodoshi.co.jp/product/condenser_separator.html" target="_blank" rel="noopener">ニッポン高度紙工業 公式サイト「アルミ電解コンデンサ用セパレータ」</a></li>
+        <li>世界シェア・事業解説: <a href="https://nikkeimatome.com/?p=27002" target="_blank" rel="noopener">日経まとめ「ニッポン高度紙工業、特殊紙『セパレータ』で世界シェア6割」</a></li>
+        <li>成長段階の定性分析(一次調査): 筆者による個人調査(2026年8月15日実施、Perplexity等を用いた公開情報の収集・整理)</li>
+      </ol>
+    </div>
 
     <div class="disclaimer-box">
       <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の金融商品・銘柄の売買を推奨するものではありません。本記事は特定の企業を例にした分析視点の解説であり、当該企業への投資を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。投資には元本割れのリスクがあります。個別銘柄の売買を判断される際は、有価証券報告書・決算短信等の一次情報でご自身で最新の情報を確認し、自己責任で行ってください。
