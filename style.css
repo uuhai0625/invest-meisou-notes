@@ -398,9 +398,11 @@ h1, h2, h3, .heading-font {
 /* ---- データテーブル(企業分析記事の定量データ用) ---- */
 .data-table-wrap {
   margin: 24px 0 12px;
+  overflow-x: auto;
 }
 .data-table-wrap table {
   width: 100%;
+  min-width: 420px;
   border-collapse: collapse;
   font-size: 0.88rem;
 }
