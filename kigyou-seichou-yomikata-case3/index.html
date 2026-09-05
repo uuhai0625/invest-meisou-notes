@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=12">
+<link rel="stylesheet" href="../style.css?v=13">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,6 +61,57 @@
 
     <p><a href="../kigyou-seichou-yomikata-case2/">前回</a>は、グロービングというコンサルティング会社を例に、「事業モデルそのものが変わりつつある会社」を7つの観点で読みました。あの会社は、増収増益のまま、黒字を保ったまま、初配当まで出しながらモデルを変えていくタイプでした。転換しているのに、財務のほうは軽やかでした。</p>
     <p>今回は、同じ「事業モデルの転換期」というカテゴリに入るのに、財務への負荷がまるで違う会社を見てみます。転換のために、いま現在、営業赤字を出しながら大規模な先行投資をしている会社です。同じ転換でも、「身軽な転換」と「重い転換」がある。その違いが、7つの観点のどこに現れるのかが今回の関心です。</p>
+
+    <div class="company-card">
+      <div class="company-card-item">
+        <span class="company-card-label">銘柄コード</span>
+        <span class="company-card-value">3778</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">時価総額(9/4時点)</span>
+        <span class="company-card-value">約1,529億円</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">売上高(2026年3月期)</span>
+        <span class="company-card-value">353.0億円 <span style="color:var(--gold-text);font-weight:700;">+12.4%</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">成長タイプ</span>
+        <span class="company-card-value accent">事業モデル転換(重い・投資回収前)</span>
+      </div>
+    </div>
+
+    <div class="biz-model-diagram">
+      <svg viewBox="0 0 620 200" role="img" aria-label="事業モデル: AI開発企業や官公庁に、GPUクラウド計算基盤を提供し、従量課金と政府助成金で収益を得る">
+        <defs>
+          <marker id="bmd3-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+        </defs>
+        <rect x="10" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
+        <text x="100" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">顧客</text>
+        <text x="100" y="90" text-anchor="middle" style="fill:var(--ink);font-size:13px">AI開発企業</text>
+        <text x="100" y="110" text-anchor="middle" style="fill:var(--ink);font-size:13px">官公庁・</text>
+        <text x="100" y="130" text-anchor="middle" style="fill:var(--ink);font-size:13px">自治体</text>
+
+        <line x1="195" y1="100" x2="215" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd3-arrow)"/>
+
+        <rect x="220" y="30" width="180" height="140" rx="14" style="fill:var(--gold-soft);stroke:var(--gold-text);stroke-width:1.5"/>
+        <text x="310" y="54" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">提供価値</text>
+        <text x="310" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">GPUクラウド</text>
+        <text x="310" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">計算基盤</text>
+        <text x="310" y="135" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px">「高火力」</text>
+
+        <line x1="405" y1="100" x2="425" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd3-arrow)"/>
+
+        <rect x="430" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
+        <text x="520" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">収益源</text>
+        <text x="520" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">GPU利用の</text>
+        <text x="520" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">従量課金</text>
+        <text x="520" y="140" text-anchor="middle" style="fill:var(--ink-sub);font-size:11px">(投資は政府助成が後押し)</text>
+      </svg>
+      <p class="bmd-caption">「誰に・何を・どう稼ぐか」を単純化した図です。政府助成金は設備投資への支援であり、直接の収益源ではありません。詳細は観点②③④で補います</p>
+    </div>
 
     <div class="viewpoint-circle">
       <svg viewBox="0 0 380 380" role="img" aria-label="成長段階を読む7つの観点: 経路・障壁・顧客・戦略・特需/構造・リスク・数字">
@@ -106,6 +157,21 @@
         <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">数字</text>
       </svg>
       <p class="vc-caption">前回・前々回と同じ7つの観点で、「投資回収前段階」にある会社をたどります</p>
+    </div>
+
+    <div class="viewpoint-summary">
+      <table>
+        <caption class="sr-only">7つの観点の要約</caption>
+        <tbody>
+          <tr><th scope="row">① 経路</th><td>レンタルサーバーからAI計算基盤提供へ、増収でも先行投資で営業赤字</td></tr>
+          <tr><th scope="row">② 障壁</th><td>国内データセンター+データ主権・政府調達という「立地・制度型」の強み</td></tr>
+          <tr><th scope="row">③ 顧客</th><td>個人・中小企業中心からAI開発企業・官公庁へ拡大、政府助成も追い風</td></tr>
+          <tr><th scope="row">④ 戦略</th><td>短期利益より供給能力の確保を優先、GPU・データセンターへ大規模先行投資</td></tr>
+          <tr><th scope="row">⑤ 特需/構造</th><td>計算需要は構造的、GPUクラウドの価格競争が持続性を左右</td></tr>
+          <tr><th scope="row">⑥ リスク</th><td>GPU陳腐化、稼働率低下、電力コスト、大手との競争、助成金への依存</td></tr>
+          <tr><th scope="row">⑦ 数字</th><td>売上353.0億円(+12.4%)、営業損益▲4.03億円、時価総額約1,529億円</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <h2>1. なぜ、三社目に「重い転換をしている会社」を選んだのか</h2>
@@ -204,6 +270,8 @@
         <li>成長段階の定性分析(一次調査): 筆者による個人調査(2026年8月15日実施、Perplexity等を用いた公開情報の収集・整理)</li>
       </ol>
     </div>
+
+    <p><a href="../kigyou-seichou-yomikata-hikaku/">このシリーズで扱った会社を7つの観点で並べて比較する →</a></p>
 
     <div class="disclaimer-box">
       <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の金融商品・銘柄の売買を推奨するものではありません。本記事は特定の企業を例にした分析視点の解説であり、当該企業への投資を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。投資には元本割れのリスクがあります。個別銘柄の売買を判断される際は、有価証券報告書・決算短信等の一次情報でご自身で最新の情報を確認し、自己責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。

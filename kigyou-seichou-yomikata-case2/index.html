@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=12">
+<link rel="stylesheet" href="../style.css?v=13">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,6 +65,57 @@
     <h2>1. なぜ、二社目に「モデルが変わる会社」を選んだのか</h2>
     <p>例に選んだのは、グロービング(277A)というコンサルティング会社です。私が個人的に調べた「AI・半導体関連」の中小型株のなかで、この会社は「事業モデルそのものが成長過程にある」と最も強く感じた一社でした。</p>
     <p>素材メーカーには、モノとシェアと工場があります。コンサルティング会社にあるのは、人と顧客との関係だけです。そういう会社を同じ物差しで読むとき、どの観点が厚くなり、どの観点が薄くなるのか。それが今回の関心です。前回と同じく、この会社が良いか悪いかを述べる記事ではなく、「読み方の練習台」として選んでいます。</p>
+
+    <div class="company-card">
+      <div class="company-card-item">
+        <span class="company-card-label">銘柄コード</span>
+        <span class="company-card-value">277A</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">時価総額(9/2時点)</span>
+        <span class="company-card-value">約528億円</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">売上高(2026年5月期)</span>
+        <span class="company-card-value">115.1億円 <span style="color:var(--gold-text);font-weight:700;">+39.4%</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-label">成長タイプ</span>
+        <span class="company-card-value accent">事業モデル転換(身軽)</span>
+      </div>
+    </div>
+
+    <div class="biz-model-diagram">
+      <svg viewBox="0 0 620 200" role="img" aria-label="事業モデル: 大手企業のDX・AI導入部門に、JI型コンサルとAIエージェント共同開発を提供し、コンサルフィーとAIプロダクトで収益を得る">
+        <defs>
+          <marker id="bmd2-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+        </defs>
+        <rect x="10" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
+        <text x="100" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">顧客</text>
+        <text x="100" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">大手企業の</text>
+        <text x="100" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">DX・AI</text>
+        <text x="100" y="135" text-anchor="middle" style="fill:var(--ink);font-size:13px">導入部門</text>
+
+        <line x1="195" y1="100" x2="215" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd2-arrow)"/>
+
+        <rect x="220" y="30" width="180" height="140" rx="14" style="fill:var(--gold-soft);stroke:var(--gold-text);stroke-width:1.5"/>
+        <text x="310" y="54" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">提供価値</text>
+        <text x="310" y="90" text-anchor="middle" style="fill:var(--ink);font-size:13px">JI型コンサル</text>
+        <text x="310" y="110" text-anchor="middle" style="fill:var(--ink);font-size:13px">+AIエージェント</text>
+        <text x="310" y="130" text-anchor="middle" style="fill:var(--ink);font-size:13px">共同開発</text>
+
+        <line x1="405" y1="100" x2="425" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd2-arrow)"/>
+
+        <rect x="430" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
+        <text x="520" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">収益源</text>
+        <text x="520" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">コンサル</text>
+        <text x="520" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">フィー+</text>
+        <text x="520" y="135" text-anchor="middle" style="fill:var(--ink);font-size:13px">AIプロダクト</text>
+      </svg>
+      <p class="bmd-caption">「誰に・何を・どう稼ぐか」を単純化した図です。詳細は観点②③で補います</p>
+    </div>
 
     <div class="viewpoint-circle">
       <svg viewBox="0 0 380 380" role="img" aria-label="成長段階を読む7つの観点: 経路・障壁・顧客・戦略・特需/構造・リスク・数字">
@@ -110,6 +161,21 @@
         <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">数字</text>
       </svg>
       <p class="vc-caption">前回と同じ7つの観点で、正反対のタイプの会社をたどります</p>
+    </div>
+
+    <div class="viewpoint-summary">
+      <table>
+        <caption class="sr-only">7つの観点の要約</caption>
+        <tbody>
+          <tr><th scope="row">① 経路</th><td>単発助言からJI型(共同事業化)へ、顧客への関わり方そのものを転換</td></tr>
+          <tr><th scope="row">② 障壁</th><td>特許ではなく「顧客業務への深い関与」という関係性の蓄積</td></tr>
+          <tr><th scope="row">③ 顧客</th><td>「助言を買う」関係から「共同で事業をつくる」関係へ変化</td></tr>
+          <tr><th scope="row">④ 戦略</th><td>コンサル知見をAIエージェント化し、人員比例の売上構造を非線形化</td></tr>
+          <tr><th scope="row">⑤ 特需/構造</th><td>DX・AI人材不足は構造的、IPO後の注目度は一時的な要素も混在</td></tr>
+          <tr><th scope="row">⑥ リスク</th><td>人材採用難、大手との競合、大口顧客集中、JI型案件の属人化</td></tr>
+          <tr><th scope="row">⑦ 数字</th><td>売上115.1億円(+39.4%)、時価総額約528億円</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <h2>2. 観点① なぜ「成長段階」にあるのか</h2>
@@ -201,6 +267,7 @@
     </div>
 
     <p><a href="../kigyou-seichou-yomikata-case3/">続き: 赤字を出しながら投資する会社を例に、同じ7つの観点で読む(シリーズ3本目)→</a></p>
+    <p><a href="../kigyou-seichou-yomikata-hikaku/">このシリーズで扱った会社を7つの観点で並べて比較する →</a></p>
 
     <div class="disclaimer-box">
       <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の金融商品・銘柄の売買を推奨するものではありません。本記事は特定の企業を例にした分析視点の解説であり、当該企業への投資を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。投資には元本割れのリスクがあります。個別銘柄の売買を判断される際は、有価証券報告書・決算短信等の一次情報でご自身で最新の情報を確認し、自己責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
