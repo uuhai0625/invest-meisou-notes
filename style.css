@@ -408,20 +408,51 @@ h1, h2, h3, .heading-font {
 
 /* ---- 会社概要カード(企業分析記事、冒頭の一目要約) ---- */
 .company-card {
+  position: relative;
   margin: 28px 0 36px;
   padding: 4px 0;
   border: 1px solid var(--line);
   border-radius: 16px;
   background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.company-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--gold));
+}
 .company-card-item {
-  padding: 18px 20px;
+  padding: 20px 20px 18px;
   border-bottom: 1px solid var(--line);
 }
 .company-card-item:nth-child(odd) { border-right: 1px solid var(--line); }
 .company-card-item:nth-last-child(-n+2) { border-bottom: none; }
+.company-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.company-card-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.company-card-icon.navy { background: var(--navy); box-shadow: 0 4px 10px rgba(47, 95, 217, 0.28); }
+.company-card-icon.gold { background: var(--gold-text); box-shadow: 0 4px 10px rgba(162, 80, 26, 0.28); }
 .company-card-label {
   display: block;
   font-size: 0.72rem;

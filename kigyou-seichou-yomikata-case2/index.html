@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=13">
+<link rel="stylesheet" href="../style.css?v=14">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -68,58 +68,95 @@
 
     <div class="company-card">
       <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>
         <span class="company-card-label">銘柄コード</span>
         <span class="company-card-value">277A</span>
       </div>
       <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
         <span class="company-card-label">時価総額(9/2時点)</span>
         <span class="company-card-value">約528億円</span>
       </div>
       <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
         <span class="company-card-label">売上高(2026年5月期)</span>
         <span class="company-card-value">115.1億円 <span style="color:var(--gold-text);font-weight:700;">+39.4%</span></span>
       </div>
       <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
         <span class="company-card-label">成長タイプ</span>
         <span class="company-card-value accent">事業モデル転換(身軽)</span>
       </div>
     </div>
 
     <div class="biz-model-diagram">
-      <svg viewBox="0 0 620 200" role="img" aria-label="事業モデル: 大手企業のDX・AI導入部門に、JI型コンサルとAIエージェント共同開発を提供し、コンサルフィーとAIプロダクトで収益を得る">
+      <svg viewBox="0 0 620 215" role="img" aria-label="事業モデル: 大手企業のDX・AI導入部門に、JI型コンサルとAIエージェント共同開発を提供し、コンサルフィーとAIプロダクトで収益を得る">
         <defs>
-          <marker id="bmd2-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <marker id="bmd2-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
             <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
           </marker>
+          <linearGradient id="bmd2-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(47,95,217,0.05)"/>
+            <stop offset="100%" stop-color="rgba(47,95,217,0.16)"/>
+          </linearGradient>
+          <linearGradient id="bmd2-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(239,125,63,0.06)"/>
+            <stop offset="100%" stop-color="rgba(239,125,63,0.18)"/>
+          </linearGradient>
         </defs>
-        <rect x="10" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
-        <text x="100" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">顧客</text>
-        <text x="100" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">大手企業の</text>
-        <text x="100" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">DX・AI</text>
-        <text x="100" y="135" text-anchor="middle" style="fill:var(--ink);font-size:13px">導入部門</text>
 
-        <line x1="195" y1="100" x2="215" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd2-arrow)"/>
+        <rect x="10" y="26" width="180" height="156" rx="16" style="fill:url(#bmd2-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="100" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(90,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </g>
+        <text x="100" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">顧客</text>
+        <text x="100" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">大手企業の</text>
+        <text x="100" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">DX・AI</text>
+        <text x="100" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">導入部門</text>
 
-        <rect x="220" y="30" width="180" height="140" rx="14" style="fill:var(--gold-soft);stroke:var(--gold-text);stroke-width:1.5"/>
-        <text x="310" y="54" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">提供価値</text>
-        <text x="310" y="90" text-anchor="middle" style="fill:var(--ink);font-size:13px">JI型コンサル</text>
-        <text x="310" y="110" text-anchor="middle" style="fill:var(--ink);font-size:13px">+AIエージェント</text>
-        <text x="310" y="130" text-anchor="middle" style="fill:var(--ink);font-size:13px">共同開発</text>
+        <line x1="195" y1="104" x2="215" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#bmd2-arrow)"/>
+        <circle cx="205" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
 
-        <line x1="405" y1="100" x2="425" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#bmd2-arrow)"/>
+        <rect x="220" y="26" width="180" height="156" rx="16" style="fill:url(#bmd2-gold);stroke:var(--gold-text);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(162,80,26,.12))"/>
+        <circle cx="310" cy="55" r="17" style="fill:var(--gold-text);filter:drop-shadow(0 4px 8px rgba(162,80,26,.18))"/>
+        <g transform="translate(300,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M16.5 9.4 7.5 4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05"/><path d="M12 22.08V12"/>
+        </g>
+        <text x="310" y="88" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">提供価値</text>
+        <text x="310" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">JI型コンサル</text>
+        <text x="310" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">+AIエージェント</text>
+        <text x="310" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">共同開発</text>
 
-        <rect x="430" y="30" width="180" height="140" rx="14" style="fill:var(--navy-soft);stroke:var(--navy);stroke-width:1.5"/>
-        <text x="520" y="54" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">収益源</text>
-        <text x="520" y="95" text-anchor="middle" style="fill:var(--ink);font-size:13px">コンサル</text>
-        <text x="520" y="115" text-anchor="middle" style="fill:var(--ink);font-size:13px">フィー+</text>
-        <text x="520" y="135" text-anchor="middle" style="fill:var(--ink);font-size:13px">AIプロダクト</text>
+        <line x1="405" y1="104" x2="425" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#bmd2-arrow)"/>
+        <circle cx="415" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="430" y="26" width="180" height="156" rx="16" style="fill:url(#bmd2-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="520" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(510,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+        </g>
+        <text x="520" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">収益源</text>
+        <text x="520" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">コンサル</text>
+        <text x="520" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">フィー+</text>
+        <text x="520" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">AIプロダクト</text>
       </svg>
       <p class="bmd-caption">「誰に・何を・どう稼ぐか」を単純化した図です。詳細は観点②③で補います</p>
     </div>
 
     <div class="viewpoint-circle">
       <svg viewBox="0 0 380 380" role="img" aria-label="成長段階を読む7つの観点: 経路・障壁・顧客・戦略・特需/構造・リスク・数字">
-        <g style="stroke:var(--line);stroke-width:1.5">
+        <defs>
+          <radialGradient id="vc-navy" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#3a68dd"/>
+            <stop offset="100%" stop-color="#2f5fd9"/>
+          </radialGradient>
+          <radialGradient id="vc-gold" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#ad5b22"/>
+            <stop offset="100%" stop-color="#a2501a"/>
+          </radialGradient>
+        </defs>
+        <g style="stroke:var(--line);stroke-width:1.5;stroke-linecap:round">
           <line x1="190" y1="190" x2="190" y2="80"/>
           <line x1="190" y1="190" x2="276" y2="121"/>
           <line x1="190" y1="190" x2="297" y2="214"/>
@@ -128,35 +165,35 @@
           <line x1="190" y1="190" x2="83" y2="214"/>
           <line x1="190" y1="190" x2="104" y2="121"/>
         </g>
-        <circle cx="190" cy="190" r="46" style="fill:var(--navy)"/>
+        <circle cx="190" cy="190" r="46" style="fill:url(#vc-navy);filter:drop-shadow(0 6px 16px rgba(47,95,217,.18))"/>
         <text x="190" y="185" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">7つの</text>
         <text x="190" y="202" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">観点</text>
 
-        <circle cx="190" cy="80" r="22" style="fill:var(--gold-text)"/>
+        <circle cx="190" cy="80" r="22" style="fill:url(#vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
         <text x="190" y="85" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">1</text>
         <text x="190" y="45" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">経路</text>
 
-        <circle cx="276" cy="121" r="22" style="fill:var(--navy)"/>
+        <circle cx="276" cy="121" r="22" style="fill:url(#vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
         <text x="276" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">2</text>
         <text x="303" y="99" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">障壁</text>
 
-        <circle cx="297" cy="214" r="22" style="fill:var(--navy)"/>
+        <circle cx="297" cy="214" r="22" style="fill:url(#vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
         <text x="297" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">3</text>
         <text x="331" y="222" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">顧客</text>
 
-        <circle cx="238" cy="289" r="22" style="fill:var(--navy)"/>
+        <circle cx="238" cy="289" r="22" style="fill:url(#vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
         <text x="238" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">4</text>
         <text x="253" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">戦略</text>
 
-        <circle cx="142" cy="289" r="22" style="fill:var(--navy)"/>
+        <circle cx="142" cy="289" r="22" style="fill:url(#vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
         <text x="142" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">5</text>
         <text x="127" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">特需/構造</text>
 
-        <circle cx="83" cy="214" r="22" style="fill:var(--gold-text)"/>
+        <circle cx="83" cy="214" r="22" style="fill:url(#vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
         <text x="83" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">6</text>
         <text x="49" y="222" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">リスク</text>
 
-        <circle cx="104" cy="121" r="22" style="fill:var(--navy)"/>
+        <circle cx="104" cy="121" r="22" style="fill:url(#vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
         <text x="104" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">7</text>
         <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">数字</text>
       </svg>
