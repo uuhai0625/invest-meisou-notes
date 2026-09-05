@@ -423,6 +423,44 @@ h1, h2, h3, .heading-font {
   font-size: 0.92rem;
 }
 
+/* ---- 「こんな方に向いています」自己診断ボックス ---- */
+.reader-fit {
+  margin: 28px 0 36px;
+  padding: 18px 22px;
+  background: var(--navy-soft);
+  border-radius: 12px;
+}
+.reader-fit p {
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 0.88rem;
+}
+.reader-fit ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.reader-fit li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 6px;
+  color: var(--ink-sub);
+  font-size: 0.9rem;
+}
+.reader-fit li:last-child { margin-bottom: 0; }
+.reader-fit li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  transform: rotate(-45deg);
+}
+
 .disclaimer-box {
   margin: 44px 0;
   padding: 20px 24px;
