@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="style.css?v=23">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,8 +97,25 @@
     <button class="scene-tab" data-filter="kigyou" type="button" aria-pressed="false">企業分析</button>
   </div>
 
+  <div class="scene-tabs sub-tabs" id="kigyou-subfilter" hidden>
+    <button class="scene-tab active" data-country="all" type="button" aria-pressed="true">国: すべて</button>
+    <button class="scene-tab" data-country="jp" type="button" aria-pressed="false">日本株</button>
+    <button class="scene-tab" data-country="us" type="button" aria-pressed="false">米国株</button>
+    <select class="industry-select" id="kigyou-industry-select" aria-label="業種で絞り込む">
+      <option value="all">業種: すべて</option>
+      <option value="semiconductor">半導体</option>
+      <option value="electric">電気機器</option>
+      <option value="chemical">化学</option>
+      <option value="metal">金属製品</option>
+      <option value="wholesale">卸売業・商社</option>
+      <option value="it">情報・通信</option>
+      <option value="service">サービス業</option>
+      <option value="paper">パルプ・紙</option>
+    </select>
+  </div>
+
   <div class="article-list" id="article-list">
-    <a class="article-card" href="kigyou-seichou-yomikata-case9/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case9/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case9.jpg" alt="アンテナのような形の受信機が、光の線でつながる幾何学的なネットワークへと変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -109,7 +126,7 @@
         <p>米国株シリーズ2本目。MaxLinear(NASDAQ: MXL)を例に、成熟企業が既存事業からAIデータセンター向け光接続事業へ転換する途中で見えてくる数字の読み方を整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case8/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case8/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case8.jpg" alt="小さなチップから電池のようなアイコンへ、省電力の信号がつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -120,7 +137,7 @@
         <p>米国株シリーズ1本目。Ambiq Micro(NYSE: AMBQ)を例に、売上+89.7%という伸び率と、まだ営業赤字という収益基盤の距離をどう読むかを整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-hikaku/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-hikaku/" data-tags="kigyou,ippan" data-country="jp">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-hikaku.jpg" alt="クラウドやサーバー、建物、フラスコなど、成長段階の異なる企業群を象徴する幾何学的な抽象アイコンを並べた比較イメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -131,7 +148,7 @@
         <p>ニッポン高度紙工業・グロービング・さくらインターネット・サンワテクノス・テクノフレックス・大阪有機化学工業・ウシオ電機。日本株シリーズ7本の比較を1つの表にまとめ直した早見ページです。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case7/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case7/" data-tags="kigyou,ippan" data-country="jp" data-industry="electric">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case7.jpg" alt="電球が光を放ちながら小さな半導体チップへとつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -142,7 +159,7 @@
         <p>ウシオ電機(6925)を例に、「売上+27.7%・営業利益+410.5%」というV字回復の中身を、低い比較対象・M&amp;A効果・本業改善の3つに分解して読む。シリーズ7本目・日本株編最終回です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case6/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case6/" data-tags="kigyou,ippan" data-country="jp" data-industry="chemical">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case6.jpg" alt="化学のフラスコから分子構造の線がのびていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -153,7 +170,7 @@
         <p>大阪有機化学工業(4187)を例に、「営業利益は増益、純利益は減益」という一見矛盾した予想を7つの観点で読む。シリーズ6本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case5/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case5/" data-tags="kigyou,ippan" data-country="jp" data-industry="metal">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case5.jpg" alt="配管のような線がビル群から回路基板のような模様へとつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -164,7 +181,7 @@
         <p>テクノフレックス(3449)を例に、「全社は増収増益」という見出しの裏にある事業別の明暗を7つの観点で読む。シリーズ5本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case4/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case4/" data-tags="kigyou,ippan" data-country="jp" data-industry="wholesale">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case4.jpg" alt="流通の箱が歯車とロボットアームへ変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -175,7 +192,7 @@
         <p>サンワテクノス(8137)を例に、「商社は成長株に見えない」という先入観を7つの観点で掘り崩す。前3回との対比シリーズ4本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case3/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case3/" data-tags="kigyou,ippan" data-country="jp" data-industry="it">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case3.jpg" alt="サーバーとクラウドを抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -186,7 +203,7 @@
         <p>さくらインターネット(3778)を例に、営業赤字を出しながら大規模先行投資を行う「投資回収前段階」の会社の成長段階を7つの観点で整理。前2回との対比シリーズ3本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case2/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case2/" data-tags="kigyou,ippan" data-country="jp" data-industry="service">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case2.jpg" alt="ある形が別の形へ変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -197,7 +214,7 @@
         <p>グロービング(277A)を例に、事業モデルが変わりつつある会社の成長段階を7つの観点で整理。前回(素材メーカー)との対比シリーズ2本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case1/" data-tags="kigyou,ippan">
+    <a class="article-card" href="kigyou-seichou-yomikata-case1/" data-tags="kigyou,ippan" data-country="jp" data-industry="paper">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case1.jpg" alt="薄いシートが層をなして積み重なる様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
@@ -260,20 +277,55 @@
 
 <script src="ga.js"></script>
 <script>
-document.querySelectorAll('#portal-filter .scene-tab').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('#portal-filter .scene-tab').forEach((b) => {
-      const selected = b === btn;
-      b.classList.toggle('active', selected);
-      b.setAttribute('aria-pressed', selected);
-    });
-    const filter = btn.dataset.filter;
+(function () {
+  var mainFilter = 'all';
+  var countryFilter = 'all';
+  var industryFilter = 'all';
+  var subfilterRow = document.getElementById('kigyou-subfilter');
+  var industrySelect = document.getElementById('kigyou-industry-select');
+
+  function applyFilters() {
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const tags = (card.dataset.tags || '').split(',');
-      card.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+      const inMain = mainFilter === 'all' || tags.includes(mainFilter);
+      const cardCountry = card.dataset.country;
+      const cardIndustry = card.dataset.industry;
+      const inCountry = countryFilter === 'all' || !cardCountry || cardCountry === countryFilter;
+      const inIndustry = industryFilter === 'all' || !cardIndustry || cardIndustry === industryFilter;
+      card.style.display = (inMain && inCountry && inIndustry) ? '' : 'none';
+    });
+  }
+
+  document.querySelectorAll('#portal-filter .scene-tab').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#portal-filter .scene-tab').forEach((b) => {
+        const selected = b === btn;
+        b.classList.toggle('active', selected);
+        b.setAttribute('aria-pressed', selected);
+      });
+      mainFilter = btn.dataset.filter;
+      subfilterRow.hidden = mainFilter !== 'kigyou';
+      applyFilters();
     });
   });
-});
+
+  document.querySelectorAll('#kigyou-subfilter .scene-tab').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#kigyou-subfilter .scene-tab').forEach((b) => {
+        const selected = b === btn;
+        b.classList.toggle('active', selected);
+        b.setAttribute('aria-pressed', selected);
+      });
+      countryFilter = btn.dataset.country;
+      applyFilters();
+    });
+  });
+
+  industrySelect.addEventListener('change', () => {
+    industryFilter = industrySelect.value;
+    applyFilters();
+  });
+})();
 </script>
 </body>
 </html>

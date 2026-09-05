@@ -193,6 +193,33 @@ h1, h2, h3, .heading-font {
   color: var(--navy);
   background: var(--navy-soft);
 }
+.sub-tabs {
+  margin: -18px 0 28px;
+  padding-left: 4px;
+  align-items: center;
+}
+.sub-tabs[hidden] {
+  display: none;
+}
+.sub-tabs .scene-tab {
+  font-size: 0.8rem;
+  padding: 6px 14px;
+}
+.industry-select {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  color: var(--ink-sub);
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.industry-select:hover,
+.industry-select:focus {
+  border-color: var(--navy);
+  color: var(--navy);
+}
 
 /* ---- article cards ---- */
 .article-list {
