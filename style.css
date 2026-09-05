@@ -75,17 +75,6 @@ h1, h2, h3, .heading-font {
     url("images/hero-bg.svg") center / cover no-repeat,
     radial-gradient(640px 320px at 50% -60px, var(--gold-soft), transparent 70%);
 }
-.hero .eyebrow {
-  display: inline-block;
-  margin: 0 0 20px;
-  padding: 6px 16px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
 .site-logo {
   margin: 0;
   font-size: 2.9rem;
@@ -137,15 +126,27 @@ h1, h2, h3, .heading-font {
 }
 .promise-item {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
-.promise-num {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 900;
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.35);
+.promise-icon {
   flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promise-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .promise-item p {
   margin: 0;
@@ -161,11 +162,11 @@ h1, h2, h3, .heading-font {
 
 /* ---- filter tabs ---- */
 .section-label {
-  margin: 56px 0 20px;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  color: var(--ink-faint);
-  text-transform: uppercase;
+  margin: 56px 0 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .scene-tabs {
   display: flex;
@@ -406,7 +407,7 @@ h1, h2, h3, .heading-font {
   padding: 20px 24px;
   background: var(--bg-warm);
   border-left: 3px solid var(--gold);
-  border-radius: 16px;
+  border-radius: 12px;
   font-size: 0.85rem;
   color: var(--ink-sub);
   line-height: 1.8;
@@ -419,7 +420,7 @@ h1, h2, h3, .heading-font {
   padding: 24px 16px;
   background: var(--bg-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: center;
 }
 .viewpoint-circle svg { width: 100%; max-width: 420px; height: auto; }
@@ -503,7 +504,7 @@ h1, h2, h3, .heading-font {
   padding: 24px 16px;
   background: var(--bg-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: center;
 }
 .biz-model-diagram svg { width: 100%; max-width: 560px; height: auto; }
@@ -590,7 +591,7 @@ h1, h2, h3, .heading-font {
   padding: 24px 16px 16px;
   background: var(--bg-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   text-align: center;
 }
 .market-cap-chart svg { width: 100%; max-width: 520px; height: auto; }
@@ -638,7 +639,7 @@ h1, h2, h3, .heading-font {
   margin: 32px 0;
   padding: 20px 24px;
   background: var(--bg-warm);
-  border-radius: 16px;
+  border-radius: 12px;
   font-size: 0.84rem;
 }
 .source-list h3 {
@@ -653,6 +654,25 @@ h1, h2, h3, .heading-font {
 }
 .source-list li { margin-bottom: 6px; }
 .source-list a { word-break: break-all; }
+
+/* ---- 次の記事への導線リンク ---- */
+.next-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+.next-link::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.next-link:hover::after { transform: rotate(-45deg) translate(2px, 2px); }
 
 @media (max-width: 600px) {
   .hero { padding: 64px 0 48px; }
