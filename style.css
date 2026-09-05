@@ -299,11 +299,24 @@ h1, h2, h3, .heading-font {
   font-size: 0.82rem;
 }
 .back-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 8px 0 40px;
   font-size: 0.85rem;
   color: var(--ink-sub);
 }
+.back-link::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.back-link:hover::before { transform: rotate(45deg) translate(2px, 2px); }
 
 .article-eyecatch {
   margin: 0 0 40px;
