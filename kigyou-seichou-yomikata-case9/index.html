@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=21">
+<link rel="stylesheet" href="../style.css?v=22">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,10 +41,13 @@
 <body>
 
 <nav class="mini-nav">
-  <div class="wrap"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
+  <div class="wrap has-toc"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
 </nav>
 
-<main class="wrap article-page">
+<main class="wrap article-page has-toc">
+  <div class="article-toc-mobile"></div>
+  <div class="article-grid">
+  <div class="article-main">
   <div class="article-header">
     <div class="tags">
       <span class="tag">企業分析</span>
@@ -315,8 +318,12 @@
   </div>
 
   <a class="back-link" href="../">一覧に戻る</a>
+  </div>
+  <aside class="article-toc-desktop"></aside>
+  </div>
 </main>
 
 <script src="../ga.js"></script>
+<script src="../toc.js" defer></script>
 </body>
 </html>
