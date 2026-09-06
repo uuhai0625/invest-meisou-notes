@@ -221,6 +221,38 @@ h1, h2, h3, .heading-font {
   color: var(--navy);
 }
 
+.kigyou-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-warm);
+  color: var(--navy);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+.kigyou-group-header:first-child { margin-top: 0; }
+.kigyou-group-header:hover { border-color: var(--navy); }
+.kigyou-group-header[hidden] { display: none; }
+.kigyou-group-header .chevron-icon {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.15s ease;
+}
+.kigyou-group-header[aria-expanded="false"] .chevron-icon { transform: rotate(-90deg); }
+
 /* ---- article cards ---- */
 .article-list {
   display: grid;
