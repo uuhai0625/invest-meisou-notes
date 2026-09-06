@@ -913,6 +913,57 @@ h1, h2, h3, .heading-font {
 }
 .next-link:hover::after { transform: rotate(-45deg) translate(2px, 2px); }
 
+/* ---- 関連記事(全記事ページ共通、articles-data.js + related-articles.jsで自動生成) ---- */
+.related-articles {
+  margin: 44px 0;
+}
+.related-heading {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: var(--ink);
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.related-card {
+  display: block;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.related-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.related-card-thumb {
+  display: block;
+}
+.related-card-thumb img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+.related-card-title {
+  display: block;
+  padding: 10px 12px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .related-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 600px) {
   .hero { padding: 64px 0 48px; }
   .site-logo { font-size: 1.9rem; }
