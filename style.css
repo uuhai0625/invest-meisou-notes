@@ -17,6 +17,27 @@
   --radius: 16px;
 }
 
+/* ---- ダークモード(OSのprefers-color-schemeに追従、切替トグルなし) ---- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161c;
+    --bg-warm: #1b1e26;
+    --bg-card: #1e212b;
+    --bg-card-hover: #262a35;
+    --ink: #e8e6de;
+    --ink-sub: #aeb2c0;
+    --ink-faint: #888c99;
+    --navy: #6d8eea;
+    --navy-soft: rgba(109, 142, 234, 0.16);
+    --gold: #f0955e;
+    --gold-soft: rgba(240, 149, 94, 0.16);
+    --gold-text: #f0995e;
+    --line: #33374a;
+    --shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
 * { box-sizing: border-box; }
 
 .sr-only {
