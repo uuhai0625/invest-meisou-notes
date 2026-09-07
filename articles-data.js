@@ -24,4 +24,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'] },
   { slug: 'fudousan-kiso-yougo', title: '不動産投資をはじめる前に、静かに整理しておきたい基礎知識', tags: ['fudousan', 'ippan'] },
   { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'] },
+  { slug: 'kasoutsuka-kachi-yomikata-case1', title: '暗号資産の「価値」はどう読むか', tags: ['kasoutsuka', 'ippan'] },
 ];
