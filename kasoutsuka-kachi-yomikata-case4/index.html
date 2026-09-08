@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗号資産の「価値」はどう読むか(4)|資産形成の瞑想ノート</title>
+<meta name="description" content="暗号資産版シリーズ第4弾。XRP(Ripple)を例に、発行体企業と資産の関係を7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク(SEC訴訟の経緯)。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="暗号資産の「価値」はどう読むか(4)——XRP(Ripple)を例に読む7つの観点">
+<meta property="og:description" content="暗号資産版シリーズ第4弾。XRP(Ripple)を例に、発行体企業と資産の関係を7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク(SEC訴訟の経緯)。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case4/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case4/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="暗号資産の「価値」はどう読むか(4)">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=27">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "暗号資産の「価値」はどう読むか(4)——XRP(Ripple)を例に読む7つの観点",
+  "description": "暗号資産版シリーズ第4弾。XRP(Ripple)を例に、発行体企業と資産の関係を7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク(SEC訴訟の経緯)。",
+  "inLanguage": "ja",
+  "datePublished": "2026-09-09",
+  "author": { "@type": "Person", "name": "uuhai0625", "url": "https://x.com/uuhai0625" }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="mini-nav">
+  <div class="wrap"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
+</nav>
+
+<main class="wrap article-page">
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">暗号資産</span>
+      <span class="tag">一般知識</span>
+    </div>
+    <h1>暗号資産の「価値」はどう読むか(4)——XRP(Ripple)を例に読む7つの観点</h1>
+    <p class="meta">2026年9月9日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/kasoutsuka-kachi-yomikata-case4.jpg" alt="二つの岸のような幾何学形が、中央でオレンジ色に光る弧を描く橋によってつながっている様子を抽象的に表したイメージ" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: 本記事は、実在する暗号資産を例にとって「資産の価値をどう読むか」という分析の視点を解説するものであり、当該資産への投資を推奨するものではありません。暗号資産は株式と異なり金融商品取引法上の有価証券ではなく資金決済法上の規制対象で(なお、本記事で扱う米SECとRipple社の証券訴訟は米国の議論であり、日本国内の位置づけとは別の話です)、価格変動は株式よりもさらに大きく、投資には元本割れどころか価値がほぼゼロになるリスクもあります。また暗号資産の業界には詐欺的なプロジェクトも多く存在し、本記事で取り上げること自体が当該資産の安全性・信頼性を保証するものではありません。規制は国内外で流動的に変化しており、将来的に取引条件が変わる可能性があります。取り上げた事実は執筆時点(2026年9月上旬)の調査にもとづくもので、その後に変わっている可能性があります。個別資産の売買を判断される際は、ご自身で最新の情報を確認し、自己責任で行ってください。なお、筆者は本記事執筆時点で、本記事に取り上げた資産(XRP)を保有しています。
+    </div>
+
+    <div class="plain-summary">
+      <p class="label">ひとことで言うと</p>
+      <p>XRP(エックスアールピー)は、2012年にRipple社(旧OpenCoin)関係者が創設した、国際送金の効率化を主目的とする暗号資産です。ビットコインと異なりマイニング不要の独自コンセンサスで数秒に取引が確定し、発行上限1,000億枚は創設時に一括発行済みです。最大の特徴は、発行体であるRipple社が供給の3分の1超を保有する中央集権寄りの構造で、同社は2020年から約5年にわたりSECと証券性を巡る訴訟を続け、2025年8月に完全終結しました。時価総額は暗号資産全体で5位です。</p>
+    </div>
+
+    <p>以前、この日記で「暗号資産の『価値』はどう読むか」の第1弾として<a href="../kasoutsuka-kachi-yomikata-case1/">ビットコイン</a>を、第2弾として<a href="../kasoutsuka-kachi-yomikata-case2/">イーサリアム</a>を、第3弾として<a href="../kasoutsuka-kachi-yomikata-case3/">柴犬コイン(SHIB)</a>を取り上げました。この7つの観点(背景・価値・供給・技術・競合・資金・リスク)は、株式版シリーズ「企業の成長段階はどう読むか」と同じ「型」を暗号資産向けに組み替えたもので、暗号資産版シリーズ共通の固定フレームワークとして使っています。第4弾となる今回はXRP(Ripple)を、同じ7つの観点で読み解いてみます。</p>
+    <p>XRPは私にとって少し扱いにくい対象です。ビットコインのように思想が前面に出ているわけでもなく、SHIBのようにコミュニティだけで走っているわけでもない。真ん中に一つの営利企業が座っていて、その企業と資産の距離感が、見る人によってまったく違って見えます。今回は「Ripple社という会社」と「XRPという資産」を意識的に分けて読む練習をしてみます。</p>
+
+    <div class="company-card">
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>
+        <span class="company-card-label">ティッカー</span>
+        <span class="company-card-value">XRP</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+        <span class="company-card-label">時価総額(2026年9月時点)</span>
+        <span class="company-card-value">約880億ドル(暗号資産全体5位)</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+        <span class="company-card-label">循環供給量</span>
+        <span class="company-card-value">約627億XRP <span style="color:var(--ink-faint);font-weight:400;font-size:0.85em;">(発行済み総量1,000億)</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+        <span class="company-card-label">よく使われる分類</span>
+        <span class="company-card-value accent">決済・送金特化型(企業主導の中央集権寄り)</span>
+      </div>
+    </div>
+
+    <p>XRPを読み解く上で欠かせないのが、発行体Ripple社と米SEC(証券取引委員会)の間で約5年続いた証券訴訟です。まず全体像を図にしておきます(詳しくは観点⑦で扱います)。</p>
+
+    <div class="biz-model-diagram">
+      <svg viewBox="0 0 620 215" role="img" aria-label="SECとRipple社の証券訴訟の経緯: 2020年12月にSECが提訴、2023年7月に一般向け販売は非該当・機関向けは該当という部分判決、2025年8月に両者が控訴を取り下げ訴訟が完全終結">
+        <defs>
+          <marker id="xrp4-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+          <linearGradient id="xrp4-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(47,95,217,0.05)"/>
+            <stop offset="100%" stop-color="rgba(47,95,217,0.16)"/>
+          </linearGradient>
+          <linearGradient id="xrp4-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(239,125,63,0.06)"/>
+            <stop offset="100%" stop-color="rgba(239,125,63,0.18)"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="10" y="26" width="180" height="156" rx="16" style="fill:url(#xrp4-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="100" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(90,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+        </g>
+        <text x="100" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2020年12月</text>
+        <text x="100" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">SECがRipple社を</text>
+        <text x="100" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">未登録証券販売で</text>
+        <text x="100" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">提訴</text>
+
+        <line x1="195" y1="104" x2="215" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#xrp4-arrow)"/>
+        <circle cx="205" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="220" y="26" width="180" height="156" rx="16" style="fill:url(#xrp4-gold);stroke:var(--gold-text);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(162,80,26,.12))"/>
+        <circle cx="310" cy="55" r="17" style="fill:var(--gold-text);filter:drop-shadow(0 4px 8px rgba(162,80,26,.18))"/>
+        <g transform="translate(300,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>
+        </g>
+        <text x="310" y="88" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">2023年7月</text>
+        <text x="310" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">一般向け販売は非該当</text>
+        <text x="310" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">機関向けは証券に</text>
+        <text x="310" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">該当という部分判決</text>
+
+        <line x1="405" y1="104" x2="425" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#xrp4-arrow)"/>
+        <circle cx="415" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="430" y="26" width="180" height="156" rx="16" style="fill:url(#xrp4-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="520" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(510,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </g>
+        <text x="520" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2025年8月</text>
+        <text x="520" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">両者が控訴を</text>
+        <text x="520" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">取り下げ、訴訟が</text>
+        <text x="520" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">完全終結</text>
+      </svg>
+      <p class="bmd-caption">約5年に及んだSECとの証券訴訟は、部分的に分かれた司法判断を経て2025年に完全終結しました。詳しくは観点⑦で補います</p>
+    </div>
+
+    <div class="viewpoint-circle">
+      <svg viewBox="0 0 380 380" role="img" aria-label="価値を読む7つの観点: 背景・価値・供給・技術・競合・資金・リスク">
+        <defs>
+          <radialGradient id="xrp4vc-navy" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#3a68dd"/>
+            <stop offset="100%" stop-color="#2f5fd9"/>
+          </radialGradient>
+          <radialGradient id="xrp4vc-gold" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#ad5b22"/>
+            <stop offset="100%" stop-color="#a2501a"/>
+          </radialGradient>
+        </defs>
+        <g style="stroke:var(--line);stroke-width:1.5;stroke-linecap:round">
+          <line x1="190" y1="190" x2="190" y2="80"/>
+          <line x1="190" y1="190" x2="276" y2="121"/>
+          <line x1="190" y1="190" x2="297" y2="214"/>
+          <line x1="190" y1="190" x2="238" y2="289"/>
+          <line x1="190" y1="190" x2="142" y2="289"/>
+          <line x1="190" y1="190" x2="83" y2="214"/>
+          <line x1="190" y1="190" x2="104" y2="121"/>
+        </g>
+        <circle cx="190" cy="190" r="46" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 6px 16px rgba(47,95,217,.18))"/>
+        <text x="190" y="185" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">7つの</text>
+        <text x="190" y="202" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">観点</text>
+
+        <circle cx="190" cy="80" r="22" style="fill:url(#xrp4vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="190" y="85" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">1</text>
+        <text x="190" y="45" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">背景</text>
+
+        <circle cx="276" cy="121" r="22" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="276" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">2</text>
+        <text x="303" y="99" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">価値</text>
+
+        <circle cx="297" cy="214" r="22" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="297" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">3</text>
+        <text x="331" y="222" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">供給</text>
+
+        <circle cx="238" cy="289" r="22" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="238" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">4</text>
+        <text x="253" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">技術</text>
+
+        <circle cx="142" cy="289" r="22" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="142" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">5</text>
+        <text x="127" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">競合</text>
+
+        <circle cx="83" cy="214" r="22" style="fill:url(#xrp4vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="83" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">6</text>
+        <text x="49" y="222" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">資金</text>
+
+        <circle cx="104" cy="121" r="22" style="fill:url(#xrp4vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="104" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">7</text>
+        <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">リスク</text>
+      </svg>
+      <p class="vc-caption">暗号資産版シリーズの固定フレームワークです。第4弾はこの7つの観点でXRPを読みます</p>
+    </div>
+
+    <div class="viewpoint-summary">
+      <table>
+        <caption class="sr-only">7つの観点の要約</caption>
+        <tbody>
+          <tr><th scope="row">① 背景</th><td>2011年にMcCaleb・Britto・Schwartzの3名が開発、2012年にXRP Ledgerがローンチ。「2004年のRipplePayが起源」という説は開発者本人が否定</td></tr>
+          <tr><th scope="row">② 価値</th><td>国際送金の効率化(ODL)が主目的だが、実際の利用量は独立した第三者による計測がなくRipple発表への依存度が高い</td></tr>
+          <tr><th scope="row">③ 供給</th><td>総発行量1,000億枚は2012年に一括発行。Ripple社保有分の一部はエスクローで拘束、循環供給量は約627億枚</td></tr>
+          <tr><th scope="row">④ 技術</th><td>マイニング・ステーキング不要の独自コンセンサス(RPCA)。信頼ノードリスト(UNL)の発行元を巡り中央集権性の見解が対立</td></tr>
+          <tr><th scope="row">⑤ 競合</th><td>時価総額は暗号資産全体5位(約880億ドル)。直接の競合Stellarに機関採用で先を越される場面も</td></tr>
+          <tr><th scope="row">⑥ 資金</th><td>Ripple社が総供給の3分の1超を保有。2025年11月以降、米国で複数の現物ETFが上場</td></tr>
+          <tr><th scope="row">⑦ リスク</th><td>SECとの証券訴訟は2025年8月に完全終結。中央集権性批判・価格変動(高値から約6割下落)・詐欺リスクが残る</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>1. 観点① 発行の背景・設計思想——マイニングのないビットコインという着想</h2>
+    <p>XRPの起源として広く語られているのは、2004年にRyan Fugger氏が考案した決済ネットワークRipplePayが出発点だという説です。私も最初はそう理解して調べ始めました。ところが、XRP Ledger(XRPL)の公式サイトにある沿革ページにはFugger氏への言及が一切なく、共同開発者のDavid Schwartz氏自身が2026年6月、X上でFugger氏の構想と実際のXRP Ledgerは別物だという趣旨の発言をしています。RipplePayを買収したこと自体は事実のようですが、台帳そのものは2011年に別の3人がゼロから作ったものだ、という整理です。有名な話ほど精査すると輪郭がぼやける、という経験をこのシリーズで何度かしてきましたが、XRPの起源はまさにその一例でした。</p>
+    <p>技術的な起点として一次情報で確認できるのは、2011年5月27日にJed McCaleb氏がbitcointalk.orgに投稿した「Bitcoin without mining(マイニングのないビットコイン)」というスレッドです。ビットコインのProof of Work(マイニングによる計算競争で取引を確定させる仕組み)が電力を浪費していることを批判し、信頼できるノード同士の合意で取引を確定させる方式を提案していました。この投稿の問題意識が、そのままXRPLの設計思想になっています。</p>
+    <p>同じ2011年、David Schwartz氏・Jed McCaleb氏・Arthur Britto氏の3名が開発を始め、2012年6月にXRP Ledgerがローンチしました。このとき1,000億XRPが一括で発行され、以後追加発行する仕組みはありません。うち800億XRPが新設の会社(のちのOpenCoin、さらにRipple Labs)へ、200億XRPが創業者3名に配分されました。会社は2012年9月にNewCoinとして設立され、まもなくOpenCoinに改称、2013年9月にRipple Labsへ社名変更したとされます(この社名変遷は複数の二次情報で一致していますが、公式の当時のプレスリリース原文までは辿り着けませんでした)。</p>
+    <p>設計上で私が興味深いと思ったのは、XRPという資産が合意形成そのものには使われていないという点です。Schwartz氏は2026年5月の投稿で、当時はまだProof of Stake(保有量に応じて合意形成に参加する仕組み)が発明されておらず自分たちもそれを思いつけなかったこと、そしてXRPを合意形成に使えばRippleが仕組みを支配することになってしまうこと、という2つの理由を挙げていると報じられています(メディア経由の引用なので、細部のニュアンスは原文と異なる可能性があります)。資産と合意形成を切り離した設計は、あとで見る中央集権性の議論の伏線になります。</p>
+    <p>なお、McCaleb氏は2013年にRippleを離れ、2014年にStellar(XLM)を創設しています。離脱の理由は、銀行向け商品として洗練させる路線と、銀行口座を持たない人々への金融包摂という原点を重視する路線の対立だったとされます。この分岐が、観点⑤で扱う競合構造をそのまま形作っています。</p>
+
+    <h2>2. 観点② 価値の裏付け——実際に使われている量は誰が測っているのか</h2>
+    <p>XRPの価値の裏付けとして最も頻繁に語られるのが、ODL(On-Demand Liquidity、オンデマンド流動性)です。国際送金で、送金元の法定通貨をいったんXRPに換え、送金先で現地通貨に戻すことで、送金先の口座に事前に資金を積んでおく必要をなくす仕組みです。公式の説明では、このブリッジは約3秒で完了するとされています。</p>
+    <p>台帳の性能自体は、公式ドキュメントで確認できる範囲では明確です。レジャーのクローズは3〜5秒ごと、取引の確定は確率的ではなく決定論的(一度確定したら覆らない)で、標準的な取引手数料は最小10ドロップ、つまり0.00001XRPです。速くて安くて確定が早い、という送金基盤としての要件は確かに満たしています。</p>
+    <p>問題は、それがどれだけ使われているかです。ここが私にとって今回いちばん歯切れの悪い部分でした。ODLの処理量は、情報源によって2024年通年で150億ドルという数字もあれば、2025年第2四半期で13億ドルという数字もあり、桁の感覚が揃いません。しかも、私が探した範囲では、Messariのような独立系の調査機関による直接計測は見当たらず、Ripple社自身の発表か、Ripple寄りの調査会社の推計にほぼ依存しています。仕組みは公開されているのに、利用実態は一次情報では確認できない。価値の裏付けを実需に求めるなら、この非対称は正直に書いておくべきだと思います。</p>
+    <p>一方で、Ripple社は事業の幅を広げています。2024年12月にはドル建てステーブルコインRLUSD(米ドル預金や米国債で裏付け)をローンチし、2026年9月時点の時価総額は約23億ドル。2026年7月には法人向けの発行プラットフォームRipple Mintも発表しました。2023年にカストディ企業(機関投資家などに代わって暗号資産を安全に保管・管理する事業者)Metacoを約2.5億ドルで買収し(BNPパリバ・Citi・DBSなどが採用)、その後もHidden Roadなどを買収して累計約40億ドル規模になったとされます。</p>
+    <p>ただ、これらはRipple社の事業価値であって、XRPの価値ではない、と分けて考える必要があります。RLUSDが普及してもXRPの需要が増えるとは限らないし、カストディ事業の売上がXRP保有者に還元される仕組みもありません。Ripple社がXRPとRLUSDの役割を明示的に切り分けた一次文書は見当たらず、両者の関係は複数メディアの解釈に頼っている状態です。会社が成長することと資産の価値が上がることは、XRPにおいては別々に検証しなければならない、というのが私の現時点の整理です。</p>
+
+    <h2>3. 観点③ トークノミクス(供給設計)——エスクローという時限装置</h2>
+    <p>XRPは総発行量1,000億が2012年のジェネシス(創世、台帳がローンチした時点)で一括発行されており、追加発行はありません。ビットコインの発行上限(2,100万枚)と比べても桁違いに大きい数量が、最初から全部存在していて、その大半をRipple社が持っていた、という出発点です。ビットコインのように徐々に掘り出される設計ではありません。</p>
+    <p>この偏りに対する市場の懸念に応える形で、2017年5月、Ripple社は公式ブログで550億XRP(当時の全供給の55%)を55件のエスクロー契約(第三者やプログラムが条件を満たすまで資産の引き出しを止めておく仕組み)にロックする計画を発表し、同年12月に実行を完了しました。各契約は10億XRPで月次に満期を迎え、その月に使わなかった分は次の空き月へ再ロックされます。つまり、毎月最大10億XRPが市場に出うる、という上限を設けた時限装置です。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 220" role="img" aria-label="Ripple社エスクロー残高の推移: 2026年6月30日時点の約326億XRPから、2026年9月1日の解放後は約312.8億XRPへ減少している">
+        <g style="stroke:var(--line);stroke-width:1;stroke-dasharray:2 6">
+          <line x1="60" y1="55" x2="520" y2="55"/>
+          <line x1="60" y1="110" x2="520" y2="110"/>
+          <line x1="60" y1="165" x2="520" y2="165"/>
+        </g>
+        <path d="M120,55 L440,110" style="fill:none;stroke:var(--navy);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 4px 10px rgba(47,95,217,.15))"/>
+        <circle cx="120" cy="55" r="6" style="fill:var(--navy);stroke:#fff;stroke-width:3"/>
+        <text x="120" y="39" text-anchor="middle" style="fill:var(--navy);font-size:13px;font-weight:700">約326億XRP</text>
+        <text x="120" y="195" text-anchor="middle" style="fill:var(--ink-faint);font-size:12px">2026年6月30日</text>
+        <circle cx="440" cy="110" r="6" style="fill:var(--gold-text);stroke:#fff;stroke-width:3"/>
+        <text x="440" y="94" text-anchor="middle" style="fill:var(--gold-text);font-size:13px;font-weight:700">約312.8億XRP</text>
+        <text x="440" y="195" text-anchor="middle" style="fill:var(--ink-faint);font-size:12px">2026年9月1日(解放後)</text>
+      </svg>
+      <p class="mcc-caption">Ripple公式開示によるエスクロー残高(2026年6月30日時点)と、9月1日の月次解放後の残高(複数の独立系メディア報道)を並べたものです。約2か月で約13億XRP減少しています。月次の解放上限は10億XRPで、多くが再ロックされる設計のため、この減少ペースがそのまま将来も続くとは限りません。</p>
+    </div>
+
+    <p>実績としては、月次で解放される最大10億XRPのうち7〜9割が再エスクローされ、市場への実質的な純供給は月1〜3億XRP程度にとどまるとされます(複数の独立系メディアで一致していますが、月ごとの変動は大きいようです)。上のチャートで示した約2か月で約13億XRPの減少は、月1〜3億という純供給の相場観からすると上振れですが、再ロックされる比率が月によって変動する以上、大きく外れた数字ではないと私は見ています。</p>
+    <p>供給を減らす方向の仕組みもあります。取引手数料の最小10ドロップは焼却されます。ただし2012年以降の累計バーン量は約1,400万XRPと推計され、総供給の約0.014%。SHIB回でも見たように、バーンの存在と供給への影響は別問題で、XRPの場合は事実上無視できる規模です。</p>
+    <p>2026年9月時点の循環供給量は約627億XRP、総供給の約62.7%です。裏返せば、残り約37%は市場に出ていない。この資産の供給を読むとは、Ripple社が今後どのペースで放出するかを読むことに等しく、それは「設計」というより一企業の経営判断に近いものだと私は感じています。</p>
+
+    <h2>4. 観点④ 技術基盤と開発体制——信頼リストは誰が決めるのか</h2>
+    <p>XRPLの合意形成(RPCA、現在の呼称はXRP Ledger Consensus Protocol)は、マイニングもステーキングも使いません。各ノードは自分が信頼するバリデータのリスト(UNL、Unique Node List)を持ち、そのリストの80%以上が合意した取引だけを台帳に反映します。電力を使わず、資産をロックする必要もなく、数秒で確定する。観点①で見たMcCaleb氏の2011年の問題意識が、そのまま実装になっています。</p>
+    <p>議論の焦点はUNLの決め方です。理屈上は各ノードが自由に選べますが、実際にはほとんどのノードがデフォルトUNL(dUNL)をそのまま使っています。2025年9月末以降、このdUNLは新設のXRPL Foundationが公式に発行しています。批判派は、デフォルトから外れるとネットワークがフォークしてしまうため、事実上リストの発行者が台帳を支配していると主張します。対してDavid Schwartz氏は、UNLは不正ノードのなりすましを防ぐための仕組みであって支配のためのものではない、と反論していると報じられています。この点は見解が真っ向から対立していて、私はどちらかに寄せず両論を並べておくのが誠実だと思います。</p>
+    <p>開発体制はどうか。Ripple社は参照実装rippledへの継続的な貢献者ですが、XRP Ledgerを所有も支配もしていない、と公式FAQに明記されています。2024年11月には、Ripple社を含む4団体を創設メンバーとして、フランスの非営利法人としてXRPL Foundationが設立されました。ETH回で見たEthereum Foundation(資源配分者として複数の独立クライアントチームに助成する方式)や、BTC回のBitcoin Core(正式な組織体がなくボランティアのメリトクラシーで運営)と比べると、Ripple社と財団の二本柱という中間的な体制です。</p>
+    <p>数字で見ると、デフォルトUNLは35バリデータで、Ripple社が運用しているのはそのうち1つ(約2.9%)だと公式FAQは説明しています。ネットワーク全体のノード数は800〜1,000超、アクティブなバリデータは119〜150超という推計もありますが、情報源によって数値に揺れがあります。バリデータのシェアだけを見ればRipple社の影響力は小さい。ただ、リストを誰が書くかという一段上の問題は、バリデータ数の議論だけでは解決しません。設計として分散を担保する仕組みと、運用として分散が実現しているかは、別々に評価する必要があります。</p>
+
+    <h2>5. 観点⑤ 競合構造とポジショニング——銀行はXRPを必要としているのか</h2>
+    <p>2026年9月時点で、XRPの時価総額は約870億〜890億ドル、暗号資産全体で5位です。参考までにビットコインの時価総額(約1兆5,840億ドル)と比べると、XRPはその18分の1程度の規模にとどまります。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 140" role="img" aria-label="時価総額の比較: XRP 約880億ドル、Stellar 約66億ドル">
+        <text x="20" y="41" style="fill:var(--gold-text);font-size:13px;font-weight:700">XRP</text>
+        <rect x="100" y="20" width="410" height="32" rx="6" style="fill:var(--gold-text);filter:drop-shadow(0 3px 8px rgba(162,80,26,.2))"/>
+        <text x="495" y="41" text-anchor="end" style="fill:#fff;font-size:13px;font-weight:700">約880億ドル</text>
+
+        <text x="20" y="91" style="fill:var(--ink);font-size:13px;font-weight:700">XLM</text>
+        <rect x="100" y="70" width="31" height="32" rx="6" style="fill:var(--navy)"/>
+        <text x="141" y="91" text-anchor="start" style="fill:var(--ink);font-size:13px;font-weight:700">約66億ドル</text>
+      </svg>
+      <p class="mcc-caption">2026年9月時点、CoinMarketCap/CoinGecko調べの概算です。XRPは直接の競合であるStellar(XLM)の13倍以上の規模を保っています。</p>
+    </div>
+
+    <p>そのStellar(XLM)は、観点①で触れた通り、McCaleb氏が2014年にRippleを離れて設立した、系譜的にも思想的にも最も近い競合です。ところが2026年5月、米国の証券決済の中枢機関DTCC(管理資産約114兆ドル)が、トークン化証券(株式や債券などをブロックチェーン上のトークンとして発行・管理する仕組み)の基盤にStellarを採用すると発表しました(本番稼働は2027年前半予定)。Ripple社が長年狙ってきた機関向けの領域で、規模で13分の1の競合に先を越された形です。時価総額の序列と実装の獲得は必ずしも一致しない、という事例として私は記憶しておきたいと思います。</p>
+    <p>もう一つの軸はSWIFTです。XRPは長らく「SWIFTを置き換える」という文脈で語られてきました。しかし2026年7月、SWIFTはCiti・HSBC・UBSなど17行が参加するブロックチェーンベースの共有台帳(銀行預金をトークン化預金としてブロックチェーン上で移動させる仕組み)を稼働させました。この設計はXRPのようなパブリックな資産を意図的に除外し、規制された銀行預金の枠内に留めています。RippleとSWIFTに公式な提携関係はなく、複数メディアの評価は「置き換え」ではなく「共存・棲み分け」に近い、というものです。なお、Ripple社CEOが2030年までにSWIFTの流動性の14%を獲得するという趣旨の発言をしたと報じられていますが、私は一次発言そのものには到達できませんでした。目標の数字として広まってはいるものの、出所の確認が取れない情報として扱っています。</p>
+    <p>ここから見えてくる問いは、銀行はブリッジ資産としてのXRPを本当に必要としているのか、ということです。SWIFTは自前の台帳を選び、DTCCはStellarを選び、Ripple社自身もRLUSDというステーブルコインを出した。XRPが介在しなくても成立する設計が増えていく中で、XRPの居場所がどこに残るのか。私はこの問いに答えを持っていませんが、問い自体は明確になったと思います。</p>
+
+    <h2>6. 観点⑥ 資金・保有構造——最大の保有者が発行元である資産</h2>
+    <p>XRPの保有構造は、他の暗号資産と比べてかなり特殊です。Ripple社の公式開示によれば、2026年6月末時点で同社は約376.6億XRPを保有しており、うち約326億XRPがエスクローで拘束されています。総供給の3分の1以上を、一つの営利企業が持っている計算です。</p>
+    <p>上位ウォレットの集中も高い水準です。XRPScanの上位保有者リスト(2026年7月時点、二次情報経由)では、上位40ウォレットで供給の約55.85%を保有しているとされます。Ripple関連の16口座で約300億XRP、共同創業者Christian Larsen氏(通称Chris Larsen)名義と報じられている4口座で約19.5億XRP。私はXRPScanを直接確認しておらず、この個人名義分の数値は二次情報の引用にとどまるため、正確な金額としてではなく参考情報として読んでいただければと思います。大枠の構図(取引所カストディと発行元関連が上位を占める)自体は変わらないでしょう。</p>
+    <p>一方で、2025年以降は機関マネーの入口が開きました。米国のXRP現物ETFは、2025年11月にCanary CapitalのXRPCがSEC承認を受けてNasdaqに上場したのが最初で、その後Franklin Templeton・21Shares・Grayscale・Bitwiseなどが相次いで上場しています(個別のローンチ日は情報源によって揺れがあります)。逆にWisdomTreeとCoinSharesは申請を取り下げました。2026年8月中旬時点で、ETFが保有するXRPは合計約9.95億XRP、資産総額約9.34億ドルとされます。</p>
+    <p>トレジャリー会社の動きもあります。XRPの保有を目的とする上場企業Evernorthは、SEC提出書類で4.73億XRP超の購入・コミットを開示し、投資家からのコミットメント総額は10億ドル超、うち2億ドルはSBIホールディングスからと複数のメディアが報じています。SBIは2016年設立の合弁会社SBI Ripple Asia以来のパートナーで、Ripple社の株式を約9%保有しているとされます(この出資比率は複数の報道による二次情報で、SBI・Ripple両社の一次開示までは辿れていません)。ここでも「XRPを持つ」ことと「Ripple社の株を持つ」ことは別の関与だという点は押さえておきたいところです。</p>
+    <p>数字を並べて私が感じたのは、規模の非対称です。ETFの約10億XRPも、Evernorthの約4.7億XRPも、Ripple社が持つ約377億XRPの前では1〜3%程度にすぎません。機関投資家の参入は確かに新しい需要ですが、供給側の支配的なプレイヤーが誰かという構図を変えるほどではまだない、というのが現時点の私の読みです。</p>
+
+    <h2>7. 観点⑦ リスクの所在——訴訟が終わったあとに何が残るのか</h2>
+    <p>XRPのリスクを語るとき、避けて通れないのがSECとRipple社の訴訟です。記事の冒頭で示した3ステップの図は、2020年12月の提訴、2023年7月の部分判決、2025年8月の訴訟完全終結という流れを整理したものです。ここは特に正確に書きたいので、時系列で追います。</p>
+    <p>2020年12月22日、SEC(米証券取引委員会)は、Ripple社と共同創業者Christian Larsen氏、CEOのBradley Garlinghouse氏個人を相手取り、約13億ドル分のXRPを未登録証券として販売したとしてニューヨーク州南部地区連邦地裁に提訴しました。この日を境に米国の主要取引所は次々とXRPを上場廃止し、XRPは長い法的な宙吊り状態に入ります。</p>
+    <p>2023年7月13日、Analisa Torres判事の判決は、部分的に分かれたものでした。取引所を通じた一般投資家向けのプログラム的販売(不特定多数の投資家に、取引所を介して機械的に行われる販売)は、Howeyテスト(投資契約かどうかを判定する基準)の要件を満たさず証券に該当しない。一方で、機関投資家への直接販売は証券に該当する。この読み方は、Skadden・Cooley・Ropes &amp; Grayといった複数の大手法律事務所の独立した解説で一致しています。同年10月、SECは両氏個人への幇助容疑を再提訴できない形で取り下げ、判決直後にはCoinbaseなど米主要取引所がXRPを再上場しました。</p>
+    <p>2024年8月7日の最終判決では、機関投資家向け販売1,278件について1億2,503万5千ドルの民事罰金と、将来の証券法違反を禁じる恒久的差止命令が下されました。SECが当初求めた約20億ドルからは大幅な減額です。その後両者が控訴しましたが、2025年5月にSECとRippleが罰金減額と差止命令解除を共同で申請したのに対し、Torres判事は当事者に最終判決を覆す権限はなく、判決は法律コミュニティ全体に属するものだという趣旨で2度却下。2025年8月7日、両者が控訴取り下げを共同で申し立て、8月22日に第二巡回控訴裁判所がこれを認可して確定しました。2026年9月時点で、この訴訟に係争中の部分は残っていません。</p>
+    <p>私がここで確認しておきたいのは、訴訟が終わったことで消えたリスクと、残ったリスクの区別です。消えたのは、XRPそのものが米国で証券と認定されて取引できなくなる、という最悪シナリオです。残ったのは、Ripple社が米国で機関投資家向けに販売する行為が証券販売だと確定したという事実で、これは同社の今後の放出手段に制約として残り続けます。観点③で見た通り、供給を読むことがRipple社の経営判断を読むことに等しいこの資産にとって、放出の手段に法的な枠がはまったことの意味は小さくありません。</p>
+    <p>訴訟以外のリスクも並べておきます。まず、観点④で見た中央集権性の議論は決着していません。UNLの仕組みを巡ってRipple社と財団の影響力を懸念する声と、Ripple側の明確な反論が併存しています。次に価格の変動で、2025年7月17日に記録した直近の高値約3.65ドルから、2026年9月現在は1.4ドル前後まで、高値比で約61%下落しています(その後この高値を更新した記録はなく、直近1年の安値の正確な値は情報源間でややばらつきがあります)。訴訟が終結し、ETFが上場し、機関の買いが入っても、価格はこれだけ動く。法的な不確実性の解消と価格の安定は別問題だという実例です。</p>
+    <p>最後に詐欺です。送金すれば倍にして返すと謳うギブアウェイ詐欺や、Garlinghouse CEOのディープフェイク動画を使った偽キャンペーンが横行しており、Ripple社自身が公式サイトで注意喚起しています。特定の経営者の顔が知られている資産ならではのリスクで、BTCやSHIBにはなかった種類のものです。</p>
+
+    <h2>結びに——会社の物語と資産の価値を切り離す練習</h2>
+    <p>ここまで構造的なリスクを中心に書いてきたので、冒頭で開示した保有と矛盾すると感じた方もいるかもしれません。私の中では、資産の構造を分析することと、その資産を持ち続けるかどうかの判断は別の軸です。リスクを正直に書くことは、手放す理由にも、持ち続ける理由にもなりうる、というのが私の立場です。</p>
+    <p>XRPを7つの観点で読んでみて、私が一貫して意識せざるを得なかったのは、Ripple社という会社の物語とXRPという資産の価値を、いかに切り離して見るかということでした。</p>
+    <p>会社の側には、はっきりした物語があります。国際送金の効率化という目標、ステーブルコインやカストディへの事業拡大、5年近い訴訟からの生還、ETFの承認。どれも「企業の成長段階」として読めば筋の通った展開です。</p>
+    <p>しかし資産の側に目を移すと、それぞれの物語がXRPの価値にどう接続しているのかは、案外はっきりしません。ODLの利用量は独立した計測がなく、RLUSDはXRPを必要とせず、SWIFTとDTCCはXRPを選びませんでした。供給の3分の1以上を発行元が持ち、その放出ペースは経営判断に委ねられています。訴訟の終結は最悪シナリオを消しましたが、価格はそれでも6割下がりました。</p>
+    <p>私はXRPを、営利企業が設計・保有・放出の主導権を握る資産として見るのが、現時点ではいちばん歪みの少ない見方だと思っています。それが悪いと言いたいのではありません。むしろ、ビットコインのように誰も主導権を持たない資産と比べたとき、責任の所在が明確だという利点もあります。ただ、その場合に読むべきは台帳の技術ではなく、会社の意思決定の方だということになります。</p>
+    <p>暗号資産の価値はどう読むか、という問いに対して、XRP回で得た答えは、その資産の裏に会社がいるなら会社と資産を別々の帳簿で読め、というものでした。次に別の銘柄を見るときも、まず誰が主導権を持っているかを最初に確かめることから始めたいと思います。</p>
+    <p>繰り返しになりますが、この記事は特定の暗号資産への投資を勧めるものではありません。あくまで見方の練習として、読んでいただけたら嬉しいです。</p>
+
+    <div class="data-table-wrap">
+      <table>
+        <caption>定量データ(参考、2026年9月9日時点)</caption>
+        <thead>
+          <tr><th scope="col">項目</th><th scope="col">数値</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">現在価格</th><td class="num">約1.40ドル</td></tr>
+          <tr><th scope="row">時価総額</th><td class="num">約880億ドル</td></tr>
+          <tr><th scope="row">時価総額ランキング</th><td class="num">5位(暗号資産全体)</td></tr>
+          <tr><th scope="row">循環供給量</th><td class="num">約627億XRP</td></tr>
+          <tr><th scope="row">発行時供給量</th><td class="num">1,000億XRP(2012年に一括発行、追加発行なし)</td></tr>
+          <tr><th scope="row">直近の高値</th><td class="num gold">約3.65ドル(2025年7月17日)</td></tr>
+        </tbody>
+      </table>
+      <p class="metric-note">価格・時価総額は日々変動する値です。CoinGecko/CoinMarketCapの実測値をもとにした概算で、掲載時点で変わっている可能性があります。</p>
+    </div>
+
+    <div class="source-list">
+      <h3>参照元(2026年9月9日確認)</h3>
+      <ol>
+        <li>XRP Ledgerの沿革・発行の経緯: <a href="https://xrpl.org/about/history" target="_blank" rel="noopener">XRPL公式「History」</a></li>
+        <li>技術的起点の一次資料: <a href="https://bitcointalk.org/index.php?topic=10193.0" target="_blank" rel="noopener">Jed McCaleb氏「Bitcoin without mining」(bitcointalk.org、2011年5月27日)</a></li>
+        <li>RipplePay起源説への反証: <a href="https://u.today/did-ryan-fugger-create-xrp-ripple-cto-emeritus-david-schwartz-ends-speculation" target="_blank" rel="noopener">U.Today、David Schwartz氏のX投稿を引用(2026年6月26日)</a></li>
+        <li>Ripple Labs社名変遷: <a href="https://en.wikipedia.org/wiki/Ripple_Labs" target="_blank" rel="noopener">Wikipedia「Ripple Labs」</a></li>
+        <li>エスクロー計画の発表: <a href="https://ripple.com/insights/ripple-to-place-55-billion-xrp-in-escrow-to-ensure-certainty-into-total-xrp-supply/" target="_blank" rel="noopener">Ripple公式ブログ(2017年5月16日)</a></li>
+        <li>エスクロー実行完了の説明: <a href="https://xrpl.org/blog/2017/explanation-of-ripples-xrp-escrow" target="_blank" rel="noopener">XRPL公式ブログ(2017年12月15日)</a></li>
+        <li>コンセンサスプロトコル・UNL: <a href="https://xrpl.org/docs/concepts/consensus-protocol" target="_blank" rel="noopener">XRPL公式ドキュメント</a>、<a href="https://xrpl.org/about/faq" target="_blank" rel="noopener">XRPL公式FAQ</a></li>
+        <li>XRPL Foundationの新体制: <a href="https://xrpl.org/blog/2024/a-new-era-for-the-xrp-ledger" target="_blank" rel="noopener">XRPL公式ブログ(2024年11月)</a></li>
+        <li>Ripple社の保有量・エスクロー残高(2026年6月30日時点): <a href="https://ripple.com/xrp/" target="_blank" rel="noopener">Ripple公式「XRP」ページ</a></li>
+        <li>2026年9月1日のエスクロー解放: <a href="https://crypto.news/ripple-unlocks-1b-xrp-as-escrow-falls-to-31-28b/" target="_blank" rel="noopener">crypto.news</a>、<a href="https://www.kucoin.com/news/flash/ripple-unlocks-1-billion-xrp-escrow-balance-drops-to-31-28-billion" target="_blank" rel="noopener">KuCoin</a></li>
+        <li>SEC提訴の一次発表: <a href="https://www.sec.gov/newsroom/press-releases/2020-338" target="_blank" rel="noopener">SEC公式プレスリリース(2020年12月22日)</a></li>
+        <li>2023年7月判決の解説: <a href="https://www.cooley.com/news/insight/2023/2023-07-27-sdny-rules-ripples-xrp-token-was-and-was-not-a-security" target="_blank" rel="noopener">Cooley法律事務所</a></li>
+        <li>訴訟完全終結の経緯: <a href="https://natlawreview.com/article/finally-end-ripple-case-concludes-predicted" target="_blank" rel="noopener">The National Law Review</a></li>
+        <li>RLUSDローンチ: <a href="https://ripple.com/ripple-press/raising-the-standard-for-stablecoins-ripple-usd-launches-globally/" target="_blank" rel="noopener">Ripple公式プレスリリース</a></li>
+        <li>Canary Capital XRP ETF: <a href="https://www.sec.gov/Archives/edgar/data/2039505/000135445725001122/XRPC_8-A_Cert_2039505.pdf" target="_blank" rel="noopener">SEC EDGAR Form 8-A(2025年11月)</a></li>
+        <li>DTCCによるStellar採用: <a href="https://www.coindesk.com/business/2026/05/27/dtcc-plans-to-bring-tokenized-assets-to-stellar-in-latest-wall-street-blockchain-push" target="_blank" rel="noopener">CoinDesk(2026年5月27日)</a></li>
+        <li>SWIFTのブロックチェーン台帳稼働: <a href="https://www.swift.com/news-events/press-releases/swifts-blockchain-ledger-ready-use-17-banks-set-pioneer-tokenised-cross-border-payments-trusted-global-infrastructure" target="_blank" rel="noopener">SWIFT公式プレスリリース(2026年7月9日)</a></li>
+        <li>時価総額・価格データ: <a href="https://coinmarketcap.com/currencies/xrp/" target="_blank" rel="noopener">CoinMarketCap</a>、<a href="https://www.coingecko.com/en/coins/xrp" target="_blank" rel="noopener">CoinGecko</a></li>
+        <li>詐欺・フィッシングへの注意喚起: <a href="https://ripple.com/insights/how-to-spot-and-report-crypto-scams/" target="_blank" rel="noopener">Ripple公式</a></li>
+        <li>成長段階の定性分析(一次調査): 筆者による個人調査(2026年9月9日実施、公開情報の収集・整理)</li>
+      </ol>
+    </div>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の暗号資産の売買を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。暗号資産は価格変動が株式よりさらに大きく、詐欺的なプロジェクトも存在するため、個別資産の売買を判断される際は、ご自身で一次情報を確認し、自己責任で行ってください。なお、本記事をきっかけとした個別の投資相談・勧誘・DMでのご連絡には一切対応しておらず、判断材料になりうる情報は公開の記事という形でしか発信していません。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+</body>
+</html>
