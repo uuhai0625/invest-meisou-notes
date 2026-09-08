@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗号資産の「価値」はどう読むか(3)|資産形成の瞑想ノート</title>
+<meta name="description" content="暗号資産版シリーズ第3弾。柴犬コイン(SHIB)を例に、初めてミームコインを7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="暗号資産の「価値」はどう読むか(3)——柴犬コイン(SHIB)を例に読む7つの観点">
+<meta property="og:description" content="暗号資産版シリーズ第3弾。柴犬コイン(SHIB)を例に、初めてミームコインを7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case3/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case3/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="暗号資産の「価値」はどう読むか(3)">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=27">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "暗号資産の「価値」はどう読むか(3)——柴犬コイン(SHIB)を例に読む7つの観点",
+  "description": "暗号資産版シリーズ第3弾。柴犬コイン(SHIB)を例に、初めてミームコインを7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク。",
+  "inLanguage": "ja",
+  "datePublished": "2026-09-08",
+  "author": { "@type": "Person", "name": "uuhai0625", "url": "https://x.com/uuhai0625" }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="mini-nav">
+  <div class="wrap"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
+</nav>
+
+<main class="wrap article-page">
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">暗号資産</span>
+      <span class="tag">一般知識</span>
+    </div>
+    <h1>暗号資産の「価値」はどう読むか(3)——柴犬コイン(SHIB)を例に読む7つの観点</h1>
+    <p class="meta">2026年9月8日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/kasoutsuka-kachi-yomikata-case3.jpg" alt="小さな紺色の粒子が群れをなして渦を巻き、その中心にオレンジ色の光る核がある様子を抽象的に表したイメージ" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: 本記事は、実在する暗号資産を例にとって「資産の価値をどう読むか」という分析の視点を解説するものであり、当該資産への投資を推奨するものではありません。暗号資産は株式と異なり金融商品取引法上の有価証券ではなく資金決済法上の規制対象で(なお、本記事後半で触れる米SECの見解は米国の議論であり、日本国内の位置づけとは別の話です)、価格変動は株式よりもさらに大きく、投資には元本割れどころか価値がほぼゼロになるリスクもあります。特に本記事で扱うミームコインは、実用性より話題性・コミュニティの熱狂で価格が動く傾向が強く、暗号資産の中でも価格変動が特に大きく、詐欺的なプロジェクトも多い分類です。本記事で取り上げること自体が当該資産の安全性・信頼性を保証するものではありません。規制は国内外で流動的に変化しており、将来的に取引条件が変わる可能性があります。取り上げた事実は執筆時点(2026年9月上旬)の調査にもとづくもので、その後に変わっている可能性があります。個別資産の売買を判断される際は、ご自身で最新の情報を確認し、自己責任で行ってください。なお、筆者は本記事執筆時点で、本記事に取り上げた資産(SHIB)を保有していません。
+    </div>
+
+    <div class="plain-summary">
+      <p class="label">ひとことで言うと</p>
+      <p>柴犬コイン(SHIB)は、2020年に匿名の人物によって作られた「ミームコイン」の代表格です。Dogecoinをもじった柴犬モチーフと、コミュニティの熱狂で価格が動く点が特徴で、技術的な実用性はビットコインやイーサリアムに比べて薄いのが実情です。総供給量1,000兆枚のうち約4割が、著名投資家に送られた後に焼却・寄付されたという特異な経緯を持ちます。時価総額はミームコインの中でDogecoinに次ぐ2位です。</p>
+    </div>
+
+    <p>前々回はビットコイン、前回はイーサリアムと、このシリーズでは「暗号資産の『価値』はどう読むか」という問いを、7つの固定観点に沿って眺めてきました。この7つの観点(背景・価値・供給・技術・競合・資金・リスク)は、株式版シリーズ「企業の成長段階はどう読むか」と同じ「型」を暗号資産向けに組み替えたもので、その資産が何のために存在し、何に支えられているのかを、一次情報を頼りに一つずつ確かめる作業です。</p>
+    <p>第3弾となる今回は、初めてミームコインを扱います。取り上げるのは柴犬コイン(SHIB / Shiba Inu)です。ミームコインとは、技術的な実用性よりも話題性やコミュニティの熱量で価格が動くとされる暗号資産の総称で、BTCやETHとは成り立ちがかなり違います。以前「<a href="../kasoutsuka-2021-furikaeri/">2021年、仮想通貨で学んだこと</a>」に書いた通り、私自身も2021年の春にSNSの盛り上がりに乗って複数のアルトコインを買った経験があります(あの記事では個別の銘柄名は伏せています)。SHIBは、あの頃さかんに話題になっていた銘柄の一つとして記憶に残っています。</p>
+    <p>だからこそ今回は、当時の自分が見ていなかったものを、同じ7つの観点で確かめてみたいと思います。あらかじめお断りしておくと、SHIBは技術的な独自性や組織的なガバナンス、明確な実需といった要素が薄い資産です。該当が薄い項目は薄いままに書くのが、この記事の方針です。</p>
+
+    <div class="company-card">
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>
+        <span class="company-card-label">ティッカー</span>
+        <span class="company-card-value">SHIB</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+        <span class="company-card-label">時価総額(2026年9月時点)</span>
+        <span class="company-card-value">約32億ドル(ミームコイン内2位)</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+        <span class="company-card-label">循環供給量</span>
+        <span class="company-card-value">約589兆SHIB <span style="color:var(--ink-faint);font-weight:400;font-size:0.85em;">(発行時上限1,000兆)</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+        <span class="company-card-label">よく使われる分類</span>
+        <span class="company-card-value accent">ミームコイン(コミュニティ主導・実用性は限定的)</span>
+      </div>
+    </div>
+
+    <p>SHIBを読み解く上で欠かせないのが、総供給量の半分超が誕生直後にVitalik Buterin氏(Ethereum創設者)へ送られ、その後どうなったかという経緯です。まず全体像を図にしておきます(詳しくは観点①③で扱います)。</p>
+
+    <div class="biz-model-diagram">
+      <svg viewBox="0 0 620 215" role="img" aria-label="Vitalik Buterin氏に送られたSHIBの経緯: 2020年8月に505兆SHIBを受領、2021年5月12日に50兆SHIBをインドのコロナ対策基金へ寄付、2021年5月16日に残り約410兆SHIBをバーンアドレスへ送り焼却">
+        <defs>
+          <marker id="shib3-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+          <linearGradient id="shib3-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(47,95,217,0.05)"/>
+            <stop offset="100%" stop-color="rgba(47,95,217,0.16)"/>
+          </linearGradient>
+          <linearGradient id="shib3-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(239,125,63,0.06)"/>
+            <stop offset="100%" stop-color="rgba(239,125,63,0.18)"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="10" y="26" width="180" height="156" rx="16" style="fill:url(#shib3-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="100" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(90,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/>
+        </g>
+        <text x="100" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2020年8月</text>
+        <text x="100" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">505兆SHIBを</text>
+        <text x="100" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">Vitalik氏の</text>
+        <text x="100" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">ウォレットへ送付</text>
+
+        <line x1="195" y1="104" x2="215" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#shib3-arrow)"/>
+        <circle cx="205" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="220" y="26" width="180" height="156" rx="16" style="fill:url(#shib3-gold);stroke:var(--gold-text);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(162,80,26,.12))"/>
+        <circle cx="310" cy="55" r="17" style="fill:var(--gold-text);filter:drop-shadow(0 4px 8px rgba(162,80,26,.18))"/>
+        <g transform="translate(300,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </g>
+        <text x="310" y="88" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">2021年5月12日</text>
+        <text x="310" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">50兆SHIBを</text>
+        <text x="310" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">インドのコロナ</text>
+        <text x="310" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">対策基金へ寄付</text>
+
+        <line x1="405" y1="104" x2="425" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#shib3-arrow)"/>
+        <circle cx="415" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="430" y="26" width="180" height="156" rx="16" style="fill:url(#shib3-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="520" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(510,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M6 18 18 6M6 6l12 12"/>
+        </g>
+        <text x="520" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2021年5月16日</text>
+        <text x="520" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">残り約410兆</text>
+        <text x="520" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">SHIBをバーン</text>
+        <text x="520" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">アドレスへ送り焼却</text>
+      </svg>
+      <p class="bmd-caption">「VBが裏切らない限り育つ」という設計上の賭けは、そのVB自身が保有分の大半を市場に戻さず消す、という形で決着しました。詳しくは観点①③で補います</p>
+    </div>
+
+    <div class="viewpoint-circle">
+      <svg viewBox="0 0 380 380" role="img" aria-label="価値を読む7つの観点: 背景・価値・供給・技術・競合・資金・リスク">
+        <defs>
+          <radialGradient id="shib3vc-navy" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#3a68dd"/>
+            <stop offset="100%" stop-color="#2f5fd9"/>
+          </radialGradient>
+          <radialGradient id="shib3vc-gold" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#ad5b22"/>
+            <stop offset="100%" stop-color="#a2501a"/>
+          </radialGradient>
+        </defs>
+        <g style="stroke:var(--line);stroke-width:1.5;stroke-linecap:round">
+          <line x1="190" y1="190" x2="190" y2="80"/>
+          <line x1="190" y1="190" x2="276" y2="121"/>
+          <line x1="190" y1="190" x2="297" y2="214"/>
+          <line x1="190" y1="190" x2="238" y2="289"/>
+          <line x1="190" y1="190" x2="142" y2="289"/>
+          <line x1="190" y1="190" x2="83" y2="214"/>
+          <line x1="190" y1="190" x2="104" y2="121"/>
+        </g>
+        <circle cx="190" cy="190" r="46" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 6px 16px rgba(47,95,217,.18))"/>
+        <text x="190" y="185" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">7つの</text>
+        <text x="190" y="202" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">観点</text>
+
+        <circle cx="190" cy="80" r="22" style="fill:url(#shib3vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="190" y="85" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">1</text>
+        <text x="190" y="45" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">背景</text>
+
+        <circle cx="276" cy="121" r="22" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="276" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">2</text>
+        <text x="303" y="99" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">価値</text>
+
+        <circle cx="297" cy="214" r="22" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="297" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">3</text>
+        <text x="331" y="222" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">供給</text>
+
+        <circle cx="238" cy="289" r="22" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="238" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">4</text>
+        <text x="253" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">技術</text>
+
+        <circle cx="142" cy="289" r="22" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="142" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">5</text>
+        <text x="127" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">競合</text>
+
+        <circle cx="83" cy="214" r="22" style="fill:url(#shib3vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="83" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">6</text>
+        <text x="49" y="222" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">資金</text>
+
+        <circle cx="104" cy="121" r="22" style="fill:url(#shib3vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="104" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">7</text>
+        <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">リスク</text>
+      </svg>
+      <p class="vc-caption">暗号資産版シリーズの固定フレームワークです。第3弾はこの7つの観点で柴犬コインを読みます</p>
+    </div>
+
+    <div class="viewpoint-summary">
+      <table>
+        <caption class="sr-only">7つの観点の要約</caption>
+        <tbody>
+          <tr><th scope="row">① 背景</th><td>匿名の「Ryoshi」が2020年8月に創設。供給の半分超をVitalik Buterin氏に送付し、信頼性を高める狙いの設計</td></tr>
+          <tr><th scope="row">② 価値</th><td>公式は「ユーティリティ化」を主張するが、Shibariumの実利用は小規模。SECも「実用性を欠く」と名指しで言及</td></tr>
+          <tr><th scope="row">③ 供給</th><td>誕生時1,000兆枚。2021年5月にVitalik氏が50兆枚を寄付・約410兆枚をバーン。現在の循環供給量は約589兆枚</td></tr>
+          <tr><th scope="row">④ 技術</th><td>創設者・現リーダーとも匿名。公式な法人・技術提案プロセスは確認できず。Shibarium自体はPolygon由来の技術基盤</td></tr>
+          <tr><th scope="row">⑤ 競合</th><td>時価総額はミームコイン内でDogecoinに次ぐ2位(約32億ドル)。ミームコイン全体は暗号資産市場の1.2%程度</td></tr>
+          <tr><th scope="row">⑥ 資金</th><td>上位100アドレスで供給の83%を保有するが、内訳はバーン分と取引所カストディが中心。2026年に米欧でETF/ETP登場</td></tr>
+          <tr><th scope="row">⑦ リスク</th><td>ATHから約93.6%下落。Shibariumブリッジ被害・フィッシング詐欺・匿名開発体制・業界全体のラグプルリスク</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>1. 観点① 発行の背景・設計思想——匿名の創設者が残した設計</h2>
+    <p>SHIBが誕生したとされるのは2020年8月1日です。オンチェーンで確認できる最初の確定的な行動は2020年7月31日20時42分(UTC)、日本時間では8月1日早朝で、作成者のウォレットが495兆SHIBと10ETHを分散型取引所Uniswapに流動性として投入した記録がそれにあたります。</p>
+    <p>作成者を名乗ったのは「Ryoshi(リョーシ)」という匿名の人物で、個人か集団かもわかっていません。Ryoshiは「自分は取るに足らない誰かで、重要ではなく、交換可能な存在だ」という趣旨の自己紹介をし、SHIBを1枚も保有していないと明言していました。特定の人物に依存しない「フェアローンチ」(開発チームや投資家など一部の関係者だけが有利な条件で先行取得することなく、誰もが同じ条件で参加できる発行方式)を強調する意図があったのだと思います。2022年5月には自身のSNS投稿や関連記事をすべて削除して姿を消し、以後は同じく匿名の「Shytoshi Kusama」がプロジェクトを主導しています。</p>
+    <p>設計面で目を引くのは、公式文書「WoofPaper」(ホワイトペーパーに相当する文書)の一節です。そこには「私たちは総供給量の50%超をVitalikに送った。脆弱性のない偉大さは存在しない。VBが私たちを裏切らない限り、SHIBAは育ち生き残るだろう」という趣旨の文章があります。実際、2020年8月のローンチ時にUniswapへ投入された流動性(505兆SHIB+10ETH相当のLPトークン)は、Ethereum創設者のVitalik Buterin氏のウォレットに送られました。著名で信頼される第三者に供給の半分を委ねることで、信頼性と分散性を高める狙いだったと説明されています。受け取った分をVitalik氏がどう扱ったかは翌年の話になるので、観点③で触れます。</p>
+    <p>なお、SHIBはDogecoinのフォーク(コピー)ではなく、Ethereum上のERC-20トークンとして独自に作られています。柴犬というモチーフが共通するため「Dogecoin Killer」という異名で呼ばれますが、技術的には別系統です。その後、2021年7月に分散型取引所(DEX、運営会社を介さずプログラムによって暗号資産同士を交換できる仕組み)ShibaSwap(BONE/LEASHといった関連トークンを扱う)がガバナンストークンBONEとともにローンチされ、レイヤー2のShibariumは度々の延期を経て2023年8月にメインネットが稼働しました。私の受け止めとしては、話題性で始まったものを後から実用性のある形に育てようとしてきた、というのがこの設計思想の要約になるように思います。</p>
+
+    <h2>2. 観点② 価値の裏付け——実用性は本当にあるのか</h2>
+    <p>公式やコミュニティ側は「ミームコインからユーティリティ駆動型のエコシステムへの転換」を掲げ、根拠としてShibarium、ShibaSwap、NFT・メタバース関連アプリ、BONEやLEASHといった関連トークン、2024年8月に導入されたバーン機構(Shibariumの基本手数料の70%を自動的にSHIBに転換して焼却する仕組み)などを挙げています。</p>
+    <p>ただ、ここは正直に書かなければならない項目です。2026年8月時点のオンチェーンデータを見る限り、Shibariumの実際の利用は非常に小規模です。TVL(預け入れ資産総額)は8月26日の約12万ドルから48時間後に約3.1万ドルまで急落し、その後も数万ドル規模で推移しています。時価総額が数十億ドル規模のプロジェクトのレイヤー2としては極めて小さい水準です。DEXの取引高は直近7日間で約9.56ドル(取引ゼロの日もある)、日次トランザクション数は約1,210件程度で、過去に数万〜数百万件へ跳ね上がった時期はあるものの、継続的な利用というより散発的なスパイクに依存しているとみられます。</p>
+    <p>外部の見方も厳しめです。米SEC(証券取引委員会)は2025年2月27日、ミームコイン全般に関する公式見解で、「典型的なミームコインは内在的な実用性を欠き、その価値は投機と市場の需要によって駆動される」という趣旨を明記しました(この声明で特定の銘柄名までは挙げられていません)。SHIBもこの「典型的なミームコイン」というカテゴリーに含まれる以上、規制当局がこうした見解を示している事実は、重く受け止めるべきだと私は思います。Motley FoolのアナリストLeo Sun氏も2026年4月、「パロディとして作られたトークンで、ビットコインのような希少性に基づく価値評価はできない」「Ethereum上の単なる1トークンに過ぎない」と評しています。</p>
+    <p>決済手段としては、Newegg(2021年11月〜)やAMC Theatres(2022年3月〜)がBitPay(複数の暗号資産をまとめて扱う決済ゲートウェイ)経由でSHIBを含む複数の暗号資産を受け入れると発表していますが、これはSHIB固有の仕組みというより汎用決済インフラの一部で、実際にどれだけ使われているかを示すデータは見つかりませんでした。裏付けとして提示されているものはあるが、利用実態は現時点で薄い、というのが私の確認できた範囲での結論です。</p>
+
+    <h2>3. 観点③ トークノミクス(供給設計)——1,000兆枚の行方</h2>
+    <p>SHIBの誕生時点の総供給量は1,000兆枚です。桁が大きすぎて実感が湧きにくいのですが、この量が後の出来事の伏線になります。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 220" role="img" aria-label="SHIB循環供給量の推移: 2020年8月の発行時1,000兆枚から、2026年9月時点の約589兆枚へ減少している">
+        <g style="stroke:var(--line);stroke-width:1;stroke-dasharray:2 6">
+          <line x1="60" y1="55" x2="520" y2="55"/>
+          <line x1="60" y1="110" x2="520" y2="110"/>
+          <line x1="60" y1="165" x2="520" y2="165"/>
+        </g>
+        <path d="M120,55 L440,148" style="fill:none;stroke:var(--navy);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 4px 10px rgba(47,95,217,.15))"/>
+        <circle cx="120" cy="55" r="6" style="fill:var(--navy);stroke:#fff;stroke-width:3"/>
+        <text x="120" y="39" text-anchor="middle" style="fill:var(--navy);font-size:13px;font-weight:700">1,000兆SHIB</text>
+        <text x="120" y="195" text-anchor="middle" style="fill:var(--ink-faint);font-size:12px">2020年8月(発行時)</text>
+        <circle cx="440" cy="148" r="6" style="fill:var(--gold-text);stroke:#fff;stroke-width:3"/>
+        <text x="440" y="132" text-anchor="middle" style="fill:var(--gold-text);font-size:13px;font-weight:700">約589兆SHIB</text>
+        <text x="440" y="195" text-anchor="middle" style="fill:var(--ink-faint);font-size:12px">2026年9月(現在)</text>
+      </svg>
+      <p class="mcc-caption">発行時から循環供給量は約4割減少しています。減少分の大半は、2021年5月にVitalik Buterin氏が実施した単発のバーン(約410兆SHIB)によるもので、継続的なバーンメカニズムによる緩やかな減少ではない点に注意してください。</p>
+    </div>
+
+    <p>観点①で触れた通り、供給の半分超は2020年8月にVitalik Buterin氏のウォレットに送られました。それから9か月ほど経った2021年5月、同氏はこの保有分の使い道を決める行動に出ます。まず5月12日、50兆枚(当時の価値で約12億ドル相当)を、Sandeep Nailwal氏が設立したインドの新型コロナウイルス対策基金「India COVID-Crypto Relief Fund」に寄付し、同時にETH500枚(当時約190万ドル相当)も寄付しました。続いて5月16日、残りの保有分のうち約410兆枚(当時の価値で約66億〜68億ドル相当)をバーン用アドレスに送金して焼却し、「そのような(価格を左右する)権力を持ちたくない」という趣旨のコメントを残しています。</p>
+    <p>つまり、WoofPaperで「VBが裏切らない限り」と書かれた設計は、当のVBが供給の約4割を市場に戻すことなく消す、という形で決着しました。私には、開発側が意図した信頼の演出が、想定以上の規模で実現してしまった出来事のように見えます。もっとも、これを初めから計算されていたと読むか偶然の産物と読むかは、見る人によって分かれるかもしれません。</p>
+    <p>現在の循環供給量は約589兆枚(2026年9月8日時点、Etherscan・CoinMarketCap・CoinGeckoともほぼ一致)です。コミュニティ主導のバーン追跡サイト「Shibburn」(2021年6月開設)は累計バーン量約410兆枚・バーン率41.08%といった数字を示していますが、Etherscan等の実データとはやや異なり、集計タイミングによるズレがある点には留意が必要です。</p>
+
+    <h2>4. 観点④ 技術基盤と開発体制——誰が作っているのかわからない</h2>
+    <p>この項目も、薄いものは薄いと書きます。創設者Ryoshiは完全に匿名のまま姿を消し、現在の事実上のリーダー格とされる「Shytoshi Kusama」「Kaal Dhairya」も匿名で活動しています。2024年7月に初めて顔と声を隠した状態でメディア取材に応じ、元Uber運転手や元フードデリバリー配達員だったといった経歴の一部を語りましたが、実名や法的な身元は明かしていません。</p>
+    <p>確認できる範囲では、公式な法人や財団の設立も公表されていません。「Shiba Army」と呼ばれる分散型コミュニティと、「Doggy DAO」というガバナンス機構(SHIB/BONE/LEASHおよびShibariumを組み合わせた仕組み)で運営される建付けです。BTCのBIPやETHのEIPに相当する、公開・バージョン管理された正式な技術提案プロセスは、私が調べた範囲では見当たりませんでした。Doggy DAOは技術仕様の査読や標準化というより、機能追加の可否や資金配分を決める意思決定の仕組みという性質が強いように思います。</p>
+    <p>一方で、Shibariumそのものの技術基盤は相応にしっかりしています。Polygonの「Bor」(ブロック生成・実行を担当)と「Heimdall」(合意形成を担当)をベースにしたEVM互換(Ethereumと同じ形式のプログラムがそのまま動く設計)のプルーフ・オブ・ステーク型サイドチェーンで、BONEを用いたステーキングで運営されています。土台は既存の実績ある技術を借りているが、その上で誰が何を決めているのかは外から見えにくい、というのが私なりの整理です。</p>
+
+    <h2>5. 観点⑤ 競合構造とポジショニング——ミームコイン第2位の座</h2>
+    <p>2026年9月8日時点で、SHIBの時価総額は約32億ドル、暗号資産全体でのランキングは29位(CoinMarketCap)〜32位(CoinGecko)程度で、ミームコインの中ではDogecoin(DOGE)に次ぐ第2位です。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 180" role="img" aria-label="ミームコインの時価総額比較: Dogecoin 約154億ドル、Shiba Inu 約32億ドル、Pepe 約14.8億ドル">
+        <text x="20" y="41" style="fill:var(--ink);font-size:13px;font-weight:700">DOGE</text>
+        <rect x="100" y="20" width="410" height="32" rx="6" style="fill:var(--navy)"/>
+        <text x="495" y="41" text-anchor="end" style="fill:#fff;font-size:13px;font-weight:700">約154億ドル</text>
+
+        <text x="20" y="91" style="fill:var(--gold-text);font-size:13px;font-weight:700">SHIB</text>
+        <rect x="100" y="70" width="85" height="32" rx="6" style="fill:var(--gold-text);filter:drop-shadow(0 3px 8px rgba(162,80,26,.2))"/>
+        <text x="195" y="91" text-anchor="start" style="fill:var(--gold-text);font-size:13px;font-weight:700">約32億ドル</text>
+
+        <text x="20" y="141" style="fill:var(--ink);font-size:13px;font-weight:700">PEPE</text>
+        <rect x="100" y="120" width="39" height="32" rx="6" style="fill:var(--ink-faint);opacity:0.6"/>
+        <text x="149" y="141" text-anchor="start" style="fill:var(--ink);font-size:13px;font-weight:700">約14.8億ドル</text>
+      </svg>
+      <p class="mcc-caption">2026年9月時点、CoinMarketCap/CoinGecko調べの概算です。SHIBはDOGEの4分の1以下ですが、3位のPEPEの2倍以上の規模を保っています。</p>
+    </div>
+
+    <p>首位のDOGEは時価総額約154億ドル、ランキング11位で、SHIBの4倍以上の規模があり、ミームコインで唯一トップ15圏内に入っています。一方、SHIBの下にはPepe(PEPE)約14.8億ドル、Bonk(BONK)約2.8億ドル、Floki(FLOKI)約2.4億ドル前後、dogwifhat(WIF)約2.2億ドル前後が続きますが、SHIBはこれらの2倍以上の規模です。上のDOGEは遠く、下との差は大きい、というやや孤立した中間の位置取りと言えるかもしれません。</p>
+    <p>ミームコイン全体の時価総額は約336億〜338億ドルで、暗号資産市場全体(約2.76兆ドル)の1.2%程度です。ニュースでの露出の大きさに比べると市場全体の中での存在感は意外と小さい、というのが私の印象です。観点①で触れた「Dogecoin Killer」という異名も、現時点の規模で見る限りDOGEとの差は開いており、異名と実態の間には距離があるように見えます。</p>
+
+    <h2>6. 観点⑥ 資金・保有構造——大口保有の正体</h2>
+    <p>Etherscanのトークン保有分布データ(2026年9月8日取得)によれば、上位100アドレスが総供給量の83.30%を保有しており、総保有者数は約169万人です。数字だけ見ると一握りの大口が支配しているように読めるのですが、中身を確かめる必要があります。</p>
+    <p>上位10アドレスの内訳を見ると、1位はバーン用アドレスで41.04%。観点③のVitalik氏のバーン分がここに含まれ、実質的に流通不能です。2位は正体不明の大口アドレスで6.23%。3位以下はRobinhood(3.93%)、Binance(3.76%+0.92%+0.70%)、Crypto.com(2.74%)、Bithumb(1.60%)、OKX(0.68%)と、主要取引所のカストディウォレットが並びます。つまり上位アドレスの多くは、個人の大口保有者というより、取引所が多数のユーザー資金をまとめて管理しているウォレットです。ただし2位のような、本当の大口が存在する可能性は残ります。</p>
+    <p>保有経路の広がりという点では、Binance(2021年5月)、Coinbase(2021年9月)、Kraken(2021年11月)、Robinhood(2022年4月)と、主要取引所への上場が2021年の熱狂期に集中しています。そして2026年6月12日には、米国でT. Rowe Price(運用資産1.8兆ドル超)の「Active Crypto ETF」(ティッカーTKNZ)がSECに承認され、その後NYSE Arcaでの取引が始まりました(承認と実際の取引開始には一定の期間が空いています)。BTC/ETH/SOL/XRP等とともにSHIB・DOGEも組入対象とする複数資産型のETFで、SHIBにとって初の米国上場ETF経由のエクスポージャーです(SHIB単体のETFはまだ存在しません)。欧州では2025年8月29日、スイスのValour社がスウェーデンのSpotlight Stock Marketに「Valour Shiba Inu ETP」(ETF同様に取引所に上場する金融商品の一種)を上場しており、こちらはSHIB単体としては初の規制下の取引所上場商品です。こうした商品への組み入れは、取引のしやすさが広がったことを意味するのであって、SHIBという資産自体の安全性が保証されたということではありません。</p>
+    <p>関係者の保有についても触れておきます。Vitalik氏は2021年5月の寄付・バーン後も約45兆枚(2026年時点の評価額で約5億4,000万ドル相当)を保有し続けているとみられますが、正確な保有アドレスの照合はできていません。創設者Ryoshi氏のその後の保有状況は匿名性のため追跡不能です。開発チームの資金は、SHIB本体の保有というより、ユーティリティトークンTREATの売却(1,200万ドル、Animoca Brands主導)によって調達されています。私が気になるのは、誰がどれだけ持っているかが、バーン分と取引所分を除くと途端に見えにくくなる点です。</p>
+
+    <h2>7. 観点⑦ リスクの所在——熱量が引いた後に残るもの</h2>
+    <p>まず価格変動です。現在価格は約0.0000055ドルで、史上最高値である2021年10月27日の約0.00008616ドルから約93.6%下落しています。直近1年のレンジは約0.00000406〜0.00001482ドルで、2026年に入ってからも新安値を更新する場面がありました。2021年の熱狂の頂点から見れば、価格の大半が失われた計算になります。</p>
+    <ul>
+      <li>規制リスク: SECは2025年2月に「典型的なミームコインは証券に該当しない」との見解を示したが、法的拘束力のある規則ではなく職員声明にとどまる。「詐欺的に証券性を回避する目的で偽装した商品」は対象外とする留保も付いており、この見解が将来も維持されるとは限らない</li>
+      <li>セキュリティ事故: 2025年9月12日、Shibariumのブリッジがハッキングされた。攻撃者は12個中10個のバリデーター署名鍵を掌握し、フラッシュローンで議決権の3分の2を確保、224.57ETHと926億SHIBを含む17種類のトークンを流出させた(被害額は報道により約210万〜410万ドルの幅)。SHIB価格は11.5%、BONE価格は43.5%下落した。観点④で土台はしっかりしていると書いたShibariumだが、運用面では脆さが露呈した形になる</li>
+      <li>なりすまし・フィッシング詐欺: 2025年10月、監視組織Shibarium Trustwatchが、本物のSHIBをウォレットにエアドロップして偽サイトへ誘導するフィッシング詐欺について警告を出しており、公式を騙るなりすましも継続的に発生している</li>
+      <li>開発体制の匿名性: 2025年9月、専門メディアThe Crypto Basicが「匿名の主要開発者との連絡が不安定になっている」「Shibariumの取引活性度が低下している」といった点を挙げ、SHIBが保有者にとってリスクの高い賭けになりつつあると分析している。もっとも、暗号資産の開発チームが匿名・仮名で活動すること自体は、ビットコインのサトシ・ナカモトを含め業界では珍しくない点も付け加えておきます</li>
+      <li>業界全体の詐欺リスク: Merkle Scienceの調査(2025年2月発表)によれば、2024年にミームコインのラグプル(開発者による資金持ち逃げ)や詐欺で投資家が失った金額は5億ドルを超える。2025年のWeb3全体でのラグプル被害を60億ドル規模とする別の調査もあるが、その9割超は非ミームコイン系の単一事件(Mantra/OMトークン)が占めており、ミームコイン特有の被害額として引用するのは適切でない</li>
+    </ul>
+    <p>連絡の途絶や活動の停滞といった具体的な変化が重なると、匿名の開発体制はこうした形で不信を招きやすいのかもしれません。</p>
+
+    <h2>結びに——熱量をどう読むか</h2>
+    <p>7つの観点を通して眺めてみると、SHIBはBTC/ETHとはまったく違う形をした資産だと改めて感じます。設計思想は信頼の演出から始まり、供給の4割はその演出の相手によって消され、実用性は掲げられているものの利用実態は薄く、開発者は匿名のまま、保有構造はバーン分と取引所分を除くと見えにくい。それでもミームコイン第2位の規模を維持しているのは、コミュニティの熱量という、7観点のどこにも綺麗には収まらない要素が支えているからなのだと思います。</p>
+    <p>私自身、2021年春にこの種の熱量に乗った一人でした。当時は「みんなが買っているから」以上の理由を持っていなかったように思います。今回一つずつ確かめてみて感じたのは、熱量そのものは否定できない実在の力である一方、それがどれだけ続くのかは、7つの観点をいくら並べても読み切れない、ということでした。ミームコインの「価値」を読むとは、結局のところ、人の熱がどこまで持続するかを読むことに近いのかもしれません。</p>
+    <p>繰り返しになりますが、この記事は特定の暗号資産への投資を勧めるものではありません。あくまで見方の練習として、読んでいただけたら嬉しいです。</p>
+
+    <div class="data-table-wrap">
+      <table>
+        <caption>定量データ(参考、2026年9月8日時点)</caption>
+        <thead>
+          <tr><th scope="col">項目</th><th scope="col">数値</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">現在価格</th><td class="num">約0.0000055ドル</td></tr>
+          <tr><th scope="row">時価総額</th><td class="num">約32億ドル</td></tr>
+          <tr><th scope="row">時価総額ランキング</th><td class="num">29〜32位(暗号資産全体)</td></tr>
+          <tr><th scope="row">循環供給量</th><td class="num">約589兆SHIB</td></tr>
+          <tr><th scope="row">発行時供給量</th><td class="num">1,000兆SHIB(現在は一部バーン済み)</td></tr>
+          <tr><th scope="row">52週高値</th><td class="num">約0.00001482ドル</td></tr>
+          <tr><th scope="row">史上最高値</th><td class="num gold">約0.00008616ドル(2021年10月)</td></tr>
+        </tbody>
+      </table>
+      <p class="metric-note">価格・時価総額は日々変動する値です。CoinGecko/CoinMarketCapの実測値をもとにした概算で、掲載時点で変わっている可能性があります。</p>
+    </div>
+
+    <div class="source-list">
+      <h3>参照元(2026年9月8日確認)</h3>
+      <ol>
+        <li>誕生の記録: <a href="https://etherscan.io/tx/0x7f1be2ac40313400c83f23fbe3926bf6bf1d6b2b363264b3016444ea28fe21c7" target="_blank" rel="noopener">Etherscanトランザクション記録(2020年7月31日)</a></li>
+        <li>Ryoshi氏の経緯: <a href="https://dailycoin.com/ryoshi-shiba-inu-mystical-creator/" target="_blank" rel="noopener">DailyCoin「Ryoshi: Shiba Inu's Mystical Creator」</a></li>
+        <li>WoofPaper: <a href="https://github.com/shytoshikusama/shibawoofpaper" target="_blank" rel="noopener">GitHub, shytoshikusama/shibawoofpaper</a></li>
+        <li>Vitalik氏の寄付・バーン: <a href="https://www.coindesk.com/markets/2021/05/17/vitalik-buterin-burns-6b-in-shib-tokens-says-he-doesnt-want-the-power/" target="_blank" rel="noopener">CoinDesk(2021年5月17日)</a></li>
+        <li>供給量・保有分布: <a href="https://etherscan.io/token/0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce" target="_blank" rel="noopener">Etherscan「SHIBA INU Token」</a>、<a href="https://etherscan.io/token/tokenholderchart/0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce" target="_blank" rel="noopener">Etherscan保有分布</a></li>
+        <li>Shibarium利用状況: <a href="https://thecryptobasic.com/2026/08/28/shiba-inu-shibarium-tvl-crashes-74-in-48-hours-as-defi-activity-plunges/" target="_blank" rel="noopener">The Crypto Basic(2026年8月28日)</a></li>
+        <li>SEC見解: <a href="https://www.sec.gov/newsroom/speeches-statements/staff-statement-meme-coins" target="_blank" rel="noopener">SEC公式「Staff Statement on Meme Coins」(2025年2月27日)</a></li>
+        <li>Motley Foolの評価: <a href="https://www.fool.com/investing/2026/04/20/forget-shiba-inu-all-hype-no-durable-adoption/" target="_blank" rel="noopener">The Motley Fool, Leo Sun著(2026年4月20日)</a></li>
+        <li>Shibariumブリッジ被害: <a href="https://news.shib.io/2025/09/16/2m-shibarium-bridge-exploit-crucial-response-now-limits-losses/" target="_blank" rel="noopener">The Shib Daily公式(2025年9月16日)</a></li>
+        <li>開発体制の匿名性・活動低下の分析: <a href="https://thecryptobasic.com/2025/09/17/why-shiba-inu-is-becoming-a-risky-bet-for-its-1-5-million-holders/" target="_blank" rel="noopener">The Crypto Basic(2025年9月17日)</a></li>
+        <li>Shytoshi Kusama・Kaal Dhairya氏の匿名インタビュー: <a href="https://www.arabianbusiness.com/industries/technology/exclusive-shiba-inu-leaders-shytoshi-kusama-kaal-dhairya-sit-down-for-first-ever-interview" target="_blank" rel="noopener">Arabian Business(2024年7月12日)</a></li>
+        <li>なりすまし詐欺の警告: <a href="https://u.today/critical-shib-alert-issued-as-real-shiba-inu-token-scam-targets-wallets" target="_blank" rel="noopener">U.Today(2025年10月7日)</a></li>
+        <li>時価総額・競合比較: <a href="https://coinmarketcap.com/currencies/shiba-inu/" target="_blank" rel="noopener">CoinMarketCap</a>、<a href="https://www.coingecko.com/en/coins/shiba-inu" target="_blank" rel="noopener">CoinGecko</a></li>
+        <li>T. Rowe Price ETF: <a href="https://thecryptobasic.com/2026/06/15/us-sec-approves-t-rowe-prices-shiba-inu-and-dogecoin-etf/" target="_blank" rel="noopener">The Crypto Basic(2026年6月15日)</a></li>
+        <li>Valour ETP: <a href="https://www.valour.com/en/newsroom/valour-launches-eight-new-et-ps-on-spotlight-stock-market-including-shiba-inu-shib-pi-pi-ondo-ondo-cronos-cro-mantle-mnt-vechain-vet-ethena-ena-and-celestia-tia" target="_blank" rel="noopener">Valour公式ニュースルーム(2025年8月29日)</a></li>
+        <li>2024年ミームコイン詐欺統計: <a href="https://finance.yahoo.com/news/crypto-investors-lost-over-500m-100000524.html" target="_blank" rel="noopener">Yahoo Finance(CoinDesk配信、2025年2月11日)</a></li>
+        <li>成長段階の定性分析(一次調査): 筆者による個人調査(2026年9月8日実施、公開情報の収集・整理)</li>
+      </ol>
+    </div>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の暗号資産の売買を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。暗号資産、特に本記事で扱うミームコインは価格変動が株式よりさらに大きく、詐欺的なプロジェクトも多い分類であるため、個別資産の売買を判断される際は、ご自身で一次情報を確認し、自己責任で行ってください。なお、本記事をきっかけとした個別の投資相談・勧誘・DMでのご連絡には一切対応しておらず、判断材料になりうる情報は公開の記事という形でしか発信していません。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+</body>
+</html>

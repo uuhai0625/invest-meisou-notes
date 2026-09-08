@@ -26,4 +26,5 @@ const ARTICLES_DATA = [
   { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'] },
   { slug: 'kasoutsuka-kachi-yomikata-case1', title: '暗号資産の「価値」はどう読むか', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'kasoutsuka-kachi-yomikata-case2', title: '暗号資産の「価値」はどう読むか(2)', tags: ['kasoutsuka', 'ippan'] },
+  { slug: 'kasoutsuka-kachi-yomikata-case3', title: '暗号資産の「価値」はどう読むか(3)', tags: ['kasoutsuka', 'ippan'] },
 ];
