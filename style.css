@@ -653,6 +653,38 @@ h1, h2, h3, .heading-font {
 }
 .disclaimer-box strong { color: var(--ink); }
 
+/* ---- ニュースまとめページ用、日付付き項目リスト ---- */
+.news-entry {
+  margin: 0 0 24px;
+  padding: 18px 22px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.news-entry .news-date {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold-text);
+}
+.news-entry h3 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+.news-entry p {
+  margin: 0 0 6px;
+  color: var(--ink-sub);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+.news-entry .news-source {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+.news-entry .news-source a { word-break: break-all; }
+
 /* ---- 観点サークル図(企業分析記事用、7つの観点フレームワークの図解) ---- */
 .viewpoint-circle {
   margin: 32px 0 40px;
