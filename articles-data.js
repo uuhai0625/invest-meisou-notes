@@ -30,4 +30,5 @@ const ARTICLES_DATA = [
   { slug: 'kasoutsuka-kachi-yomikata-case4', title: '暗号資産の「価値」はどう読むか(4)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-news', title: '投資まわりのニュースまとめ', tags: ['ippan'] },
   { slug: 'nisa-ideco-koza-kaisetsu-kiroku', title: 'NISA・iDeCoは、始める前がいちばん大変だった', tags: ['nikki'] },
+  { slug: 'kasoutsuka-kachi-yomikata-case5', title: '暗号資産の「価値」はどう読むか(5)', tags: ['kasoutsuka', 'ippan'] },
 ];

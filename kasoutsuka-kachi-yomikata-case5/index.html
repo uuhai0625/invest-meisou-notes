@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗号資産の「価値」はどう読むか(5)|資産形成の瞑想ノート</title>
+<meta name="description" content="暗号資産版シリーズ第5弾。テザー(USDT)を例に、値上がりを前提としないステーブルコインの価値を7つの観点で読み解きます。発行の背景・ペッグの裏付け・準備資産・技術基盤・競合(USDC)・資金構造・リスク(規制と過去の和解)。">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="暗号資産の「価値」はどう読むか(5)——テザー(USDT)を例に読む7つの観点">
+<meta property="og:description" content="暗号資産版シリーズ第5弾。テザー(USDT)を例に、値上がりを前提としないステーブルコインの価値を7つの観点で読み解きます。発行の背景・ペッグの裏付け・準備資産・技術基盤・競合(USDC)・資金構造・リスク(規制と過去の和解)。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case5/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case5/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="暗号資産の「価値」はどう読むか(5)">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=28">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "暗号資産の「価値」はどう読むか(5)——テザー(USDT)を例に読む7つの観点",
+  "description": "暗号資産版シリーズ第5弾。テザー(USDT)を例に、値上がりを前提としないステーブルコインの価値を7つの観点で読み解きます。発行の背景・ペッグの裏付け・準備資産・技術基盤・競合(USDC)・資金構造・リスク(規制と過去の和解)。",
+  "inLanguage": "ja",
+  "datePublished": "2026-09-10",
+  "author": { "@type": "Person", "name": "uuhai0625", "url": "https://x.com/uuhai0625" }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="mini-nav">
+  <div class="wrap"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
+</nav>
+
+<main class="wrap article-page">
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">暗号資産</span>
+      <span class="tag">一般知識</span>
+    </div>
+    <h1>暗号資産の「価値」はどう読むか(5)——テザー(USDT)を例に読む7つの観点</h1>
+    <p class="meta">2026年9月10日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/kasoutsuka-kachi-yomikata-case5.jpg" alt="波打つ紺色の粒子群の中心に、揺らがず静止したオレンジ色の一点が浮かんでいる様子を抽象的に表したイメージ" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: 本記事は、実在する暗号資産を例にとって「資産の価値をどう読むか」という分析の視点を解説するものであり、特定資産の保有・売買を勧めるものではありません。暗号資産は株式と異なり金融商品取引法上の有価証券ではなく資金決済法上の規制対象で、本記事で扱うステーブルコインは日本国内では改正資金決済法上の電子決済手段として別枠の規制を受けます。価格が安定していることを標榜する資産であっても、発行体の経営・準備資産の状況・規制の変化によって価値を失う可能性はゼロではなく、また暗号資産の業界には詐欺的なプロジェクトも多く存在し、本記事で取り上げること自体が当該資産の安全性・信頼性を保証するものではありません。規制は国内外で流動的に変化しており、将来的に取引条件が変わる可能性があります。取り上げた事実は執筆時点(2026年9月上旬)の調査にもとづくもので、その後に変わっている可能性があります。個別資産の売買を判断される際は、ご自身で最新の情報を確認し、自己責任で行ってください。なお、筆者は本記事執筆時点で、本記事に取り上げた資産(USDT)を保有していません。
+    </div>
+
+    <div class="plain-summary">
+      <p class="label">ひとことで言うと</p>
+      <p>USDT(テザー)は、2014年に設立されたTether社が発行する、1USDTが1米ドルと等価になるよう設計されたステーブルコインです。発行体が受け入れたドルに応じてトークンを発行・償還する仕組みが土台で、その裏付けとして米国短期国債を中心とした準備資産を保有しています。流通供給量は約1,834億ドル(2026年9月時点)、ステーブルコイン市場のシェアは約6割で、複数のブロックチェーン上で発行されています。過去には準備資産の裏付けや透明性を巡って米当局と和解した経緯があり、現在も規制適合の状況は国・地域によって異なります。</p>
+    </div>
+
+    <p>以前、この日記で「暗号資産の『価値』はどう読むか」の第1弾として<a href="../kasoutsuka-kachi-yomikata-case1/">ビットコイン</a>を、第2弾として<a href="../kasoutsuka-kachi-yomikata-case2/">イーサリアム</a>を、第3弾として<a href="../kasoutsuka-kachi-yomikata-case3/">柴犬コイン(SHIB)</a>を、第4弾として<a href="../kasoutsuka-kachi-yomikata-case4/">XRP(Ripple)</a>を取り上げました。この7つの観点(背景・価値・供給・技術・競合・資金・リスク)は、株式版シリーズ「企業の成長段階はどう読むか」と同じ「型」を暗号資産向けに組み替えたもので、暗号資産版シリーズ共通の固定フレームワークとして使っています。第5弾となる今回はUSDT(テザー)を、同じ7つの観点で読み解いてみます。</p>
+    <p>ただ、今回はこれまでの4回と前提がまるで違います。ビットコインもイーサリアムもSHIBもXRPも、程度の差はあれ、値上がりへの期待か、あるいは分散的な価値保存への期待が、価値の核心にありました。買った人の多くは、いつか今より高くなることを、どこかで願っていたはずです。USDTはその逆です。1USDTが1ドルのまま動かないこと、それ自体が価値の核心で、もし1.10ドルになったら、それは成功ではなく設計の失敗を意味します。値上がりしないことこそが価値である資産を、値上がりを前提に組んできた7つの観点で読めるのか。私自身にとっても、これは型の耐久試験のようなものです。</p>
+
+    <div class="company-card">
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>
+        <span class="company-card-label">ティッカー</span>
+        <span class="company-card-value">USDT</span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+        <span class="company-card-label">時価総額(2026年9月時点)</span>
+        <span class="company-card-value">約1,834億ドル<span style="color:var(--ink-faint);font-weight:400;font-size:0.85em;">(ステーブルコイン最大手、市場シェア約58〜61%)</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon navy" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+        <span class="company-card-label">循環供給量</span>
+        <span class="company-card-value">約1,834億USDT <span style="color:var(--ink-faint);font-weight:400;font-size:0.85em;">(発行上限の概念なし、需給で日次伸縮)</span></span>
+      </div>
+      <div class="company-card-item">
+        <span class="company-card-icon gold" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
+        <span class="company-card-label">よく使われる分類</span>
+        <span class="company-card-value accent">法定通貨担保型ステーブルコイン</span>
+      </div>
+    </div>
+
+    <p>会社概要カードの「時価総額」と「循環供給量」が、単位こそ違えほぼ同じ数字(約1,834億ドル/約1,834億USDT)になっているのに気づかれたでしょうか。1USDTが常に1ドルである以上、この2つの数字が一致するのは当然なのですが、これまでの4資産では価格変動のせいで両者が大きく乖離していました。この符合そのものが、USDTという資産の性質を数字の面から表しています。</p>
+    <p>USDTを読み解く上で欠かせないのが、Tether社が「透明性への批判」から「初めての年次監査」へとたどり着くまでの経緯です。まず全体像を図にしておきます(詳しくは観点⑦で扱います)。</p>
+
+    <div class="biz-model-diagram">
+      <svg viewBox="0 0 620 215" role="img" aria-label="Tether社の透明性を巡る経緯: 2021年に米当局と2件の和解、2025年7月に米ステーブルコイン規制法GENIUS法が成立、2026年8月に初のフル年次監査が完了">
+        <defs>
+          <marker id="usdt5-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+          <linearGradient id="usdt5-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(47,95,217,0.05)"/>
+            <stop offset="100%" stop-color="rgba(47,95,217,0.16)"/>
+          </linearGradient>
+          <linearGradient id="usdt5-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(239,125,63,0.06)"/>
+            <stop offset="100%" stop-color="rgba(239,125,63,0.18)"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="10" y="26" width="180" height="156" rx="16" style="fill:url(#usdt5-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="100" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(90,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+        </g>
+        <text x="100" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2021年</text>
+        <text x="100" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">CFTC・NY司法長官と</text>
+        <text x="100" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">相次いで和解</text>
+        <text x="100" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">(計約5,950万ドル)</text>
+
+        <line x1="195" y1="104" x2="215" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#usdt5-arrow)"/>
+        <circle cx="205" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="220" y="26" width="180" height="156" rx="16" style="fill:url(#usdt5-gold);stroke:var(--gold-text);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(162,80,26,.12))"/>
+        <circle cx="310" cy="55" r="17" style="fill:var(--gold-text);filter:drop-shadow(0 4px 8px rgba(162,80,26,.18))"/>
+        <g transform="translate(300,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </g>
+        <text x="310" y="88" text-anchor="middle" style="fill:var(--gold-text);font-size:12px;font-weight:700">2025年7月</text>
+        <text x="310" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">米国でステーブルコイン</text>
+        <text x="310" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">規制法「GENIUS法」が</text>
+        <text x="310" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">成立</text>
+
+        <line x1="405" y1="104" x2="425" y2="104" style="stroke:var(--ink-faint);stroke-width:2.5;stroke-linecap:round" marker-end="url(#usdt5-arrow)"/>
+        <circle cx="415" cy="104" r="2.5" style="fill:var(--ink-faint)"/>
+
+        <rect x="430" y="26" width="180" height="156" rx="16" style="fill:url(#usdt5-navy);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 10px 20px rgba(47,95,217,.12))"/>
+        <circle cx="520" cy="55" r="17" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(47,95,217,.18))"/>
+        <g transform="translate(510,45) scale(0.83)" style="stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </g>
+        <text x="520" y="88" text-anchor="middle" style="fill:var(--navy);font-size:12px;font-weight:700">2026年8月</text>
+        <text x="520" y="108" text-anchor="middle" style="fill:var(--ink);font-size:13px">KPMGによる初の</text>
+        <text x="520" y="127" text-anchor="middle" style="fill:var(--ink);font-size:13px">フル年次監査が</text>
+        <text x="520" y="146" text-anchor="middle" style="fill:var(--ink);font-size:13px">完了</text>
+      </svg>
+      <p class="bmd-caption">Tether社は準備資産の透明性を巡る批判から出発し、規制の枠組みが整い、設立から12年目にして初めての年次監査に至りました。詳しくは観点⑦で補います</p>
+    </div>
+
+    <div class="viewpoint-circle">
+      <svg viewBox="0 0 380 380" role="img" aria-label="価値を読む7つの観点: 背景・価値・供給・技術・競合・資金・リスク">
+        <defs>
+          <radialGradient id="usdt5vc-navy" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#3a68dd"/>
+            <stop offset="100%" stop-color="#2f5fd9"/>
+          </radialGradient>
+          <radialGradient id="usdt5vc-gold" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#ad5b22"/>
+            <stop offset="100%" stop-color="#a2501a"/>
+          </radialGradient>
+        </defs>
+        <g style="stroke:var(--line);stroke-width:1.5;stroke-linecap:round">
+          <line x1="190" y1="190" x2="190" y2="80"/>
+          <line x1="190" y1="190" x2="276" y2="121"/>
+          <line x1="190" y1="190" x2="297" y2="214"/>
+          <line x1="190" y1="190" x2="238" y2="289"/>
+          <line x1="190" y1="190" x2="142" y2="289"/>
+          <line x1="190" y1="190" x2="83" y2="214"/>
+          <line x1="190" y1="190" x2="104" y2="121"/>
+        </g>
+        <circle cx="190" cy="190" r="46" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 6px 16px rgba(47,95,217,.18))"/>
+        <text x="190" y="185" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">7つの</text>
+        <text x="190" y="202" text-anchor="middle" style="fill:#fff;font-size:14px;font-weight:700">観点</text>
+
+        <circle cx="190" cy="80" r="22" style="fill:url(#usdt5vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="190" y="85" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">1</text>
+        <text x="190" y="45" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">背景</text>
+
+        <circle cx="276" cy="121" r="22" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="276" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">2</text>
+        <text x="303" y="99" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">価値</text>
+
+        <circle cx="297" cy="214" r="22" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="297" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">3</text>
+        <text x="331" y="222" text-anchor="start" style="fill:var(--ink-sub);font-size:13px">供給</text>
+
+        <circle cx="238" cy="289" r="22" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="238" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">4</text>
+        <text x="253" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">技術</text>
+
+        <circle cx="142" cy="289" r="22" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="142" y="294" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">5</text>
+        <text x="127" y="323" text-anchor="middle" style="fill:var(--ink-sub);font-size:13px">競合</text>
+
+        <circle cx="83" cy="214" r="22" style="fill:url(#usdt5vc-gold);filter:drop-shadow(0 3px 8px rgba(162,80,26,.18))"/>
+        <text x="83" y="219" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">6</text>
+        <text x="49" y="222" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">資金</text>
+
+        <circle cx="104" cy="121" r="22" style="fill:url(#usdt5vc-navy);filter:drop-shadow(0 3px 8px rgba(47,95,217,.18))"/>
+        <text x="104" y="126" text-anchor="middle" style="fill:#fff;font-size:15px;font-weight:700">7</text>
+        <text x="77" y="99" text-anchor="end" style="fill:var(--ink-sub);font-size:13px">リスク</text>
+      </svg>
+      <p class="vc-caption">暗号資産版シリーズの固定フレームワークです。第5弾はこの7つの観点でUSDTを読みます</p>
+    </div>
+
+    <div class="viewpoint-summary">
+      <table>
+        <caption class="sr-only">7つの観点の要約</caption>
+        <tbody>
+          <tr><th scope="row">① 背景</th><td>2014年にBrock Pierce氏ら3名が「Realcoin」として設立、同年「Tether」へ改称。「現実の通貨への繋留」が理念。2025年7月、米国でステーブルコイン規制法GENIUS法が成立</td></tr>
+          <tr><th scope="row">② 価値</th><td>ドルの直接入出金による発行・償還が土台。2022年5月(Terra崩壊時)に一時デペッグしたが償還は機能、2023年3月(SVB破綻時)は競合USDCが下落する一方USDTは資金の逃避先に</td></tr>
+          <tr><th scope="row">③ 供給</th><td>発行上限なし、需給で日次伸縮。流通供給量約1,834億ドル。準備資産は米国短期国債とリバースレポで約7割、金・ビットコインも1割強含む</td></tr>
+          <tr><th scope="row">④ 技術</th><td>Ethereum・Tron等のマルチチェーン発行。2026年8月、初めてBig4のKPMGによる年次監査(2025年12月期)が完了、無限定適正意見</td></tr>
+          <tr><th scope="row">⑤ 競合</th><td>ステーブルコイン市場シェア約58〜61%、最大の競合USDC(Circle社)は約24%で2銘柄が市場の約9割を占める寡占</td></tr>
+          <tr><th scope="row">⑥ 資金</th><td>2026年Q2純営業利益は約15億ドル、主因は準備資産の金利収入。株主構成は非公開、筆頭株主とされるDevasini氏の資産は推定220億ドル超</td></tr>
+          <tr><th scope="row">⑦ リスク</th><td>2021年に米当局(CFTC・NY司法長官)と計約5,950万ドルで和解(不正の認否はせず)。EU・日本では規制上の制約から取扱いに制限</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>1. 観点① 発行の背景・設計思想——現実の通貨に繋留するという発想</h2>
+    <p>Tetherの起源は2014年7月にさかのぼります。Brock Pierce氏、Reeve Collins氏、Craig Sellars氏の3名が「Realcoin」という名で共同設立し、同年9月に英領バージン諸島(BVI)で法人化、11月に「Tether」へ改称しました。テザー(tether)とは繋ぎ止める綱のことで、デジタルトークンを現実世界の通貨に繋留する、という理念からの命名だとされます。当初はビットコインのブロックチェーン上に構築されたプロトコル「Omni」を基盤に発行されていました。ビットコインの上に、ビットコインとは真逆の性質を持つ資産を載せた、というのが出発点だったわけです。</p>
+    <p>この設計思想は、これまで見てきた4つの資産のどれとも異なります。ビットコインは信頼できる第三者を排除することを目指し、イーサリアムは分散型の計算基盤を志し、SHIBはコミュニティの熱量で走り、XRPは送金効率の改善を掲げました。USDTが目指したのは、既存の法定通貨の価値をそのままブロックチェーン上に持ち込むことです。新しい価値を生むのではなく、既にある価値を移し替える。革新性という点では最も地味に見えますが、暗号資産の取引所間で資金を動かすとき、いちいち銀行を経由せずに済むドル建ての資産があれば便利だ、という実務的な需要に応える発想でした。</p>
+    <p>もう一つ、初期から続く特徴として、取引所Bitfinexとの関係があります。2015年1月にBitfinexでの取引が始まって以降、両社はCEOをはじめとする経営陣を共有する一体的な関係を続けています。WSJの報道によれば、2018年時点で株式の86%を4人の人物が保有していたとされます。発行体と取引所が事実上同じ経営陣の下にある、という構造は、後で見るリスクの議論と密接に関わってきます。</p>
+    <p>規制面での大きな転換点は、つい最近のことです。2025年7月18日、米国で「GENIUS法」がトランプ大統領の署名により成立しました。ステーブルコイン発行体に対して、1対1の準備金保有、その開示、発行体が破綻した場合の保有者への優先弁済などを義務付ける、米国初の連邦法です。10年以上、明確な法的枠組みのないまま成長してきたステーブルコインに、ようやく正式な居場所が用意されたことになります。ただし、Tether社はこの法律が想定する米国免許発行体には現時点で該当していません。法律ができたことと、その法律の枠内に入っていることは別だ、という点は押さえておきたいところです。</p>
+
+    <h2>2. 観点② 価値の裏付け——1ドルはどのようにして1ドルであり続けるのか</h2>
+    <p>USDTの価値の裏付けは、これまでの4資産とは仕組みが根本的に異なります。ビットコインやXRPの価格は、市場での需給によって決まっていました。USDTの場合、KYC審査(本人確認)を通過した法人や機関投資家がTether社へ直接ドルを入金し、それに応じて同額のUSDTが新規発行されます。償還はこの逆で、USDTをTether社に戻せばドルが返ってくる。このプライマリーの発行・償還の仕組みが土台にあるからこそ、市場での取引価格が1ドルから離れても、価格差を利用して利益を得ようとする売買(裁定取引)によって1ドルへ引き戻される力が働きます。この「1USDT=1ドル」という基準値に連動させる設計を、一般に「ペッグ(繋留)」と呼びます。市場価格は結果であって、価値の源泉ではない。この点がUSDTを読む上での出発点です。</p>
+    <p>ただし、このペッグが完全に無風だったわけではありません。2022年5月12日、アルゴリズム型ステーブルコインだったTerra(UST)とLunaの崩壊が連鎖し、USDTも一時的にペッグを外れる「デペッグ」を起こし、主要取引所で0.92〜0.97ドル程度まで下落しました。数十時間から数週間で回復しましたが、その間に70億ドル規模の償還が発生しています。私がここで注目したいのは、下落したことよりも、償還が実際に機能したという事実です。取り付け騒ぎに近い規模の償還要求に対して、ドルが返ってきた。この実績が、その後の信頼の一部を形作っているように思います。</p>
+    <p>対照的な出来事が2023年3月にありました。競合のUSDCを発行するCircle社は、準備金の一部(約8%、33億ドル)をシリコンバレー銀行(SVB)に預けていましたが、同行が破綻し、その資金が一時滞留していることが判明します。USDCは0.87〜0.88ドルまで下落しました。一方でUSDTは、むしろ資金の逃避先となり、一部の取引所では1.06ドルまで上昇しています。準備資産の置き先が米国の銀行預金であったことが、皮肉にも米国の銀行危機のときに弱点になった。この対比は、ステーブルコインであっても、準備資産をどこに置いているかによってリスクの性質がまったく変わる、ということを示す好例だと私は考えています。</p>
+    <p>そして、この2023年の出来事は、観点の冒頭で述べた逆説を別の角度から照らしています。USDTが1.06ドルまで上昇したことは、通常の資産なら喜ばしい出来事ですが、ステーブルコインとしては設計からの逸脱です。上にも下にも動かないことが価値である以上、上振れもまた市場のストレスの表れとして読むべきなのだと思います。</p>
+
+    <h2>3. 観点③ トークノミクス(供給設計)——上限のない供給と、その裏にある帳簿</h2>
+    <p>USDTの流通供給量は、2026年9月時点で約1,834億ドルです。ビットコインのような発行上限は存在しません。入金があれば増え、償還があれば減る。供給量は市場の需要をそのまま映す鏡のようなもので、日次で伸縮する設計です。SHIB回で見たような希少性の演出も、XRP回で見たようなエスクローによる放出管理もありません。供給を読むという行為が、USDTにおいては、需要を読むことと、そして準備資産の帳簿を読むことに置き換わります。</p>
+    <p>その帳簿にあたるのが、四半期ごとに公表される準備金証明です。直近の2026年6月30日時点の証明(BDOイタリア作成)によれば、総資産は約1,877.5億ドル、これに対して発行済みUSDTなどの総負債は約1,836.4億ドルで、超過準備は約41.1億ドルとなっています。1ドルのUSDTに対して1ドル以上の資産がある、という状態が数字の上では維持されています。ただ、この超過準備は前四半期の82.3億ドルから半減しており、四半期ごとの推移を見ておく価値はありそうです。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 230" role="img" aria-label="準備資産の内訳(2026年6月30日時点、総資産約1,877.5億ドル): 米国短期国債61.2%、翌日物リバースレポ9.9%、金10.0%、ビットコイン3.1%、その他15.8%">
+        <g font-size="12">
+          <text x="20" y="30" style="fill:var(--ink);font-weight:700">米国短期国債</text>
+          <rect x="20" y="38" width="336" height="22" rx="4" style="fill:var(--navy)"/>
+          <text x="362" y="54" style="fill:var(--ink);font-size:12px">61.2%</text>
+
+          <text x="20" y="80" style="fill:var(--ink);font-weight:700">翌日物リバースレポ</text>
+          <rect x="20" y="88" width="54" height="22" rx="4" style="fill:var(--navy);opacity:0.75"/>
+          <text x="80" y="104" style="fill:var(--ink);font-size:12px">9.9%</text>
+
+          <text x="20" y="130" style="fill:var(--ink);font-weight:700">金(146トン超)</text>
+          <rect x="20" y="138" width="55" height="22" rx="4" style="fill:var(--gold-text)"/>
+          <text x="81" y="154" style="fill:var(--ink);font-size:12px">10.0%</text>
+
+          <text x="20" y="180" style="fill:var(--ink);font-weight:700">ビットコイン</text>
+          <rect x="20" y="188" width="17" height="22" rx="4" style="fill:var(--gold-text);opacity:0.75"/>
+          <text x="43" y="204" style="fill:var(--ink);font-size:12px">3.1%</text>
+        </g>
+        <text x="380" y="180" text-anchor="end" style="fill:var(--ink-faint);font-size:12px">残りは社債・担保付貸付等の「その他」約15.8%</text>
+      </svg>
+      <p class="mcc-caption">2026年6月30日時点のTether公式準備金証明(BDOイタリア作成)をもとにした概算比率です。カテゴリの取り方により数ポイントの幅がある点にご留意ください。</p>
+    </div>
+
+    <p>資産の内訳を見ると、この資産が何に支えられているかが見えてきます。最大の項目は米国短期国債(T-bills)で約1,149.6億ドル、次いで翌日物リバースレポ(短期の資金運用取引)が約186.3億ドルで、この2つだけで総資産の約7割を占めます。要するに、USDTの大部分は米国政府への短期の貸付によって裏付けられている、と読めます。そこに金が約188.4億ドル(146トン超、この四半期で14トン増加)で約1割、ビットコインが約58.0億ドルで約3%加わります。ドルに繋留された資産の裏付けに、ドル以外の資産である金とビットコインが1割以上含まれているという構成は、私には少し意外でした。ドル建て負債に対して、ドル以外の資産で裏付ける部分がある以上、その部分の価格変動は超過準備の増減に直接影響するはずです。</p>
+
+    <h2>4. 観点④ 技術基盤と開発体制——複数の台帳にまたがる資産と、初めての監査</h2>
+    <p>USDTは単一のブロックチェーン上に存在する資産ではありません。Ethereum上のERC-20トークンとして全体の約4割、Tron上のTRC-20トークンとして約4〜5割、残りがSolanaなどその他のチェーン、というマルチチェーン設計です。特にTron版は、東南アジアや中南米の個人送金用途で優勢とされています。手数料が安く送金が速いチェーンに、ドル建ての価値を載せて使う、という実需がそこにあるようです。技術基盤という点で言えば、USDTは自前の台帳を持たず、他の資産の台帳を借りて存在している。イーサリアム回で見た基盤そのものの技術力を評価する、という読み方はここでは当てはまらず、代わりにどの台帳に依存しているかという分散の度合いを見ることになります。</p>
+    <p>組織面では、2025年に大きな再編がありました。Tether社はエルサルバドルの持株会社の完全子会社として再編され、本社機能をBVIからエルサルバドルへ移しています。エルサルバドルは2021年にビットコインを法定通貨として採用した国です(その後、この位置づけは見直されています)。暗号資産に対して友好的な法域を選んだ、と読むのが自然でしょうが、先に見たGENIUS法との関係で言えば、米国の免許発行体という道を現時点では選んでいないことの裏返しでもあります。</p>
+    <p>私がこの観点で最も重要だと思うのは、監査の問題です。Tether社は長年、四半期ごとの「Attestation」にとどまっていました。これはBDOイタリアが特定時点の残高を証明するもので、フルの財務諸表監査ではありません。ある一日の帳簿が正しいことと、期間を通じて帳簿が正しかったことは、別の話です。この点は長らく批判の的でした。ところが2026年8月13日、Tether社は初めてBig4のKPMG(米国)による2025年12月期の完全な年次監査が完了し、無限定適正意見(重要な問題点がないという意見)を得たと発表しました。設立から12年目にして、初めて年次監査に到達したことになります。</p>
+    <p>ただし、ここにも留保が必要です。この監査で適用された基準が、ステーブルコイン発行体に求められる基準と同じものではないという指摘があり、また監査報告書そのものは公開されていません。監査を受けたという事実と、その監査の内容を第三者が検証できることは、やはり別の話です。長年の課題に一歩踏み出したことは確かですが、その一歩がどこまでの一歩なのかは、私には現時点で判断しきれません。</p>
+
+    <h2>5. 観点⑤ 競合構造とポジショニング——二つのドルは何が違うのか</h2>
+    <p>ステーブルコイン市場全体は約3,000億ドル規模で、そのうちUSDTのシェアは約58〜61%、最大の競合であるUSDC(Circle社発行)が約24%です。この2銘柄だけで市場の約9割を占める、はっきりとした寡占構造です。SHIB回で見たミームコインの群雄割拠や、XRP回で見た送金基盤の乱立とは対照的に、ステーブルコインの市場はほぼ2社の間で決まっています。</p>
+
+    <div class="market-cap-chart">
+      <svg viewBox="0 0 560 140" role="img" aria-label="時価総額の比較: USDT 約1,834億ドル、USDC 約750億ドル">
+        <text x="20" y="41" style="fill:var(--gold-text);font-size:13px;font-weight:700">USDT</text>
+        <rect x="110" y="20" width="400" height="32" rx="6" style="fill:var(--gold-text);filter:drop-shadow(0 3px 8px rgba(162,80,26,.2))"/>
+        <text x="500" y="41" text-anchor="end" style="fill:#fff;font-size:13px;font-weight:700">約1,834億ドル</text>
+
+        <text x="20" y="91" style="fill:var(--ink);font-size:13px;font-weight:700">USDC</text>
+        <rect x="110" y="70" width="163" height="32" rx="6" style="fill:var(--navy)"/>
+        <text x="283" y="91" text-anchor="start" style="fill:var(--ink);font-size:13px;font-weight:700">約750億ドル</text>
+      </svg>
+      <p class="mcc-caption">2026年9月時点、CoinMarketCap等の概算です。USDTはUSDCの約2.4倍の規模を保っています。</p>
+    </div>
+
+    <p>では、市場はどちらを選んでいるのか。これが単純ではありません。取引所での出来高はUSDTがUSDCの3〜5倍とされる一方、オンチェーンでの決済やDeFi(分散型金融)での用途ではUSDCが優勢だという報告もあります。取引所で暗号資産を売買する人はUSDTを、ブロックチェーン上で契約や決済を組む人はUSDCを、という棲み分けが見えてきます。そして、この2社の違いは、技術や価格ではなく、透明性の作り込み方に表れています。Circle社は2025年6月に米NYSEへ上場し、上場企業としての開示義務を負うと同時に、月次でBig4(Deloitte)の関与を伴う準備金の開示を行っています。一方のTether社は非公開企業のままで、観点④で見た通り、年次監査に到達したのは2026年8月のことです。同じ1ドルを表す資産でありながら、その1ドルを信じるための材料の出し方が、両社でまったく異なります。私はここで、どちらが優れているかという結論を出すつもりはありません。透明性を重視する利用者と、流動性や取引所での使いやすさを重視する利用者とで、選ぶ理由が違っている、という事実の対比にとどめておきたいと思います。両者は同じドルを表しながら、似て非なる場所に立っているように見えます。</p>
+
+    <h2>6. 観点⑥ 資金・保有構造——利息で稼ぐ発行体</h2>
+    <p>Tether社の収益構造は、この資産を読む上で見落とせない要素です。同社の2026年第2四半期(4〜6月)の純営業利益は約15億ドルで、その主因は保有する米国短期国債などからの金利収入です。仕組みを整理すると、利用者はドルを預けてUSDTを受け取りますが、USDTには利息がつきません。一方でTether社はそのドルを米国債で運用し、利息を受け取る。預かった資金の運用益がそのまま発行体の利益になる、という構造です。世界的に見ても有数の米国債保有企業の一つとされる規模になっています。この利益は、金利水準に大きく左右されるはずで、金利が下がれば同じ準備資産からの収入は減る、という点は構造上のポイントだと私は見ています。</p>
+    <p>株主構成は非公開企業であるため開示が限定的です。中心にいるのは、2023年末にCFOからCEOに就いたPaolo Ardoino氏と、長年の実質的な筆頭株主とされるGiancarlo Devasini氏です。Devasini氏は元外科医で、Forbesの推定では2025年時点の資産が220億ドル超とされます。観点①で見た2018年の報道(4人で86%を保有)と合わせると、これだけの規模の資産を裏付ける発行体が、ごく少数の個人によって所有されている、という構図が浮かびます。XRP回でRipple社という営利企業と資産を切り離して読む練習をしましたが、USDTの場合はそもそも資産の価値が発行体の帳簿と直結しているため、切り離すこと自体ができません。発行体の所有構造は、そのまま資産のリスク構造の一部です。</p>
+    <p>もう一つ特徴的なのは、Tether社自身が自己勘定で暗号資産と金を保有している点です。2026年6月時点でビットコインを約98,932BTC(評価額約58億ドル)、金を146トン超保有しています。観点③で見た準備資産の内訳と重なる部分ですが、ドルに繋留された資産の発行体が、ドル以外の資産を積極的に積み増している、という動きは、それ自体が一つの姿勢の表明のように読めます。何を意味するかは私には断定できませんが、少なくとも、この発行体は自らを単なるドルの保管庫とは位置づけていないのだろう、と感じています。</p>
+
+    <h2>7. 観点⑦ リスクの所在——過去の経緯と、現在の規制の壁</h2>
+    <p>USDTのリスクを語るとき、避けて通れないのが2021年に米国当局との間で成立した2つの和解です。ここは特に事実関係を正確に書きたいので、順に追います。</p>
+    <p>まず、2021年2月、ニューヨーク州司法長官との和解です。Tether社とBitfinexが、8億5,000万ドル規模の資金を混在させていた疑惑を巡る調査に対して、1,850万ドルの支払いで和解しました。この和解において、両社は不正の認否をしていません。つまり、不正があったと認定されたわけでも、不正がなかったと確認されたわけでもなく、調査を終結させるための合意だった、というのが正確な整理です。</p>
+    <p>次に、2021年10月、CFTC(米商品先物取引委員会)との和解です。2016〜2019年の一時期において、準備金が発行残高を十分に裏付けていなかったこと、具体的にはサンプル期間26カ月のうち、完全に裏付けられていた日数が27.6%にとどまっていたことなどをCFTCが認定し、4,100万ドルの制裁金で和解しています。この和解もNY司法長官との和解と同様、Tether社は不正の認否をしておらず、27.6%という数字もCFTC側の認定であってTether社自身が認めたものではありません。それでも私がこの数字を見て感じたのは、1対1の裏付けというこの資産の唯一の約束が、少なくとも過去の一時期には守られていなかった、ということの重さです。現在の準備金証明の数字を読むときも、この経緯を知った上で読むのと知らずに読むのとでは、見え方が変わると思います。</p>
+    <p>準備資産の内訳も、過去には大きく変遷しています。2021年時点では準備資産の約半分が内訳非開示のコマーシャルペーパー(企業が発行する短期の約束手形)で、格付け機関から市場を不安定化させるリスクを警告されたこともありました。誰に貸しているか分からない資産が半分を占めている、という状態だったわけです。その後、段階的に米国短期国債を中心とした構成へシフトし、観点③で見た現在の内訳に至っています。この変遷は、批判に応えて構成を改善してきた、とも読めますし、改善しなければならない状態が長く続いていた、とも読めます。</p>
+    <p>規制面のリスクは、現在進行形のものです。EUのMiCA規則(2024年施行)は、ステーブルコインの発行体に対して、準備金の一定割合をEU域内の銀行預金で保有することなどを求めています。Tether社はこの要件に適合しなかったため、2024年末以降、複数の欧州系取引所がUSDTの取扱いを終了しました。日本でも、改正資金決済法が求める国内での信託管理体制などの要件を満たしていないため、国内の暗号資産交換業者はUSDTを直接は取り扱えません。世界最大のステーブルコインが、欧州と日本という主要な市場では正式な流通経路を持っていない、という状況です。観点①で見た米国のGENIUS法についても、Tether社は現時点で免許発行体ではありません。規制が整うほど、その枠外にいることの意味が問われる構造になっているように思います。</p>
+    <p>最後に一つ、はっきり書いておきたいことがあります。ここに挙げた事柄は、いずれも実際に償還不能や破綻が生じた事例ではありません。2021年の和解は過去の経緯であり、規制への不適合は現在の状況であって、いずれも透明性と規制適合を巡る問題としてリスクの所在を整理したものです。それらをどう重く見るかは、読む人の判断に委ねられています。</p>
+
+    <h2>結びに——値上がりしない資産を、値上がりする資産の型で読む試み</h2>
+    <p>このシリーズは、ビットコインから始まりました。誰も主導権を持たない資産を読み、次にイーサリアムで基盤としての技術と開発体制を読み、SHIBでコミュニティと希少性の演出を読み、XRPで営利企業と資産の距離を読みました。5つ目にUSDTを置いてみて、私はこの型が意外に持ちこたえたことに少し驚いています。7つの観点はどれも当てはまりましたが、当てはまり方がすべて裏返っていました。</p>
+    <p>供給を読むことは需要と帳簿を読むことに変わり、技術を読むことはどの台帳に依存しているかを読むことに変わり、価格の上昇は成功ではなくストレスの兆候に変わりました。そして、資産の価値を発行体から切り離して読むという、XRP回で身につけたはずの練習は、USDTではそもそも成立しませんでした。発行体の帳簿と、その帳簿を第三者が検証できる度合いが、そのまま価値の全てだからです。</p>
+    <p>暗号資産の価値はどう読むか、という問いに対して、USDT回で得た答えは、値上がりを期待しない資産においては、価値は資産そのものではなく、その資産が結びついている先の信頼性に宿る、というものでした。1ドルが1ドルであり続けることは、当たり前のようでいて、それを支える帳簿と制度と経営の積み重ねの上にしか成り立たない。それを読むことが、この資産を読むことなのだと思います。</p>
+    <p>繰り返しになりますが、この記事は特定の暗号資産への投資を勧めるものではありません。あくまで見方の練習として、読んでいただけたら嬉しいです。</p>
+
+    <div class="data-table-wrap">
+      <table>
+        <caption>定量データ(参考、2026年9月10日時点)</caption>
+        <thead>
+          <tr><th scope="col">項目</th><th scope="col">数値</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">現在価格</th><td class="num">約1.00ドル(ペッグ)</td></tr>
+          <tr><th scope="row">時価総額</th><td class="num">約1,834億ドル</td></tr>
+          <tr><th scope="row">ステーブルコイン市場シェア</th><td class="num">約58〜61%</td></tr>
+          <tr><th scope="row">循環供給量</th><td class="num">約1,834億USDT(発行上限なし)</td></tr>
+          <tr><th scope="row">準備資産の超過分</th><td class="num">約41.1億ドル(2026年6月30日時点)</td></tr>
+          <tr><th scope="row">直近のデペッグ幅</th><td class="num gold">約0.92〜0.97ドル(2022年5月12日)</td></tr>
+        </tbody>
+      </table>
+      <p class="metric-note">時価総額・準備資産の数値は日々・四半期ごとに変動する値です。Tether公式準備金証明およびCoinGecko/CoinMarketCapの実測値をもとにした概算で、掲載時点で変わっている可能性があります。</p>
+    </div>
+
+    <div class="source-list">
+      <h3>参照元(2026年9月10日確認)</h3>
+      <ol>
+        <li>Tether設立の経緯: <a href="https://www.coindesk.com/markets/2014/11/20/realcoin-rebrands-as-tether-to-avoid-altcoin-association" target="_blank" rel="noopener">CoinDesk(2014年11月20日)</a>、<a href="https://en.wikipedia.org/wiki/Tether_Limited" target="_blank" rel="noopener">Wikipedia「Tether Limited」</a></li>
+        <li>株式保有比率の報道: <a href="https://www.coindesk.com/business/2023/02/02/86-of-tether-was-controlled-by-4-people-wsj" target="_blank" rel="noopener">CoinDesk(WSJ報道引用)</a></li>
+        <li>GENIUS法の成立: <a href="https://www.sec.gov/newsroom/speeches-statements/atkins-statement-genius-act-071825" target="_blank" rel="noopener">SEC公式声明</a>、<a href="https://www.congress.gov/crs-product/IN12553" target="_blank" rel="noopener">Congress.gov</a></li>
+        <li>2022年5月のデペッグ: <a href="https://www.coindesk.com/markets/2022/05/12/tether-loses-1-peg-bitcoin-drops-to-2020-levels-of-near-24k" target="_blank" rel="noopener">CoinDesk</a>、<a href="https://www.cnbc.com/2022/05/17/tether-usdt-redemptions-fuel-fears-about-stablecoins-backing.html" target="_blank" rel="noopener">CNBC</a></li>
+        <li>2023年3月のUSDCデペッグ: <a href="https://www.cnbc.com/2023/03/11/stablecoin-usdc-breaks-dollar-peg-after-firm-reveals-it-has-3point3-billion-in-svb-exposure.html" target="_blank" rel="noopener">CNBC</a>、<a href="https://protos.com/history-of-tethers-peg-every-time-usdt-traded-above-or-below-one-dollar/" target="_blank" rel="noopener">Protos</a></li>
+        <li>準備金証明(2026年Q2、資産・負債・内訳): <a href="https://tether.to/en/transparency/" target="_blank" rel="noopener">Tether公式Transparencyページ</a>、<a href="https://tether.io/news/tether-posts-strong-q2-performance-generates-1-5b-net-operating-profit-maintains-4-11b-reserve-buffer-and-expands-gold-holdings-to-more-than-146-tons/" target="_blank" rel="noopener">Tether公式(2026年Q2業績発表)</a></li>
+        <li>マルチチェーン発行シェア: <a href="https://www.coindesk.com/research/tron-network-q2-2026" target="_blank" rel="noopener">CoinDesk Research</a>、<a href="https://coinlaw.io/stablecoin-market-share-by-chain-statistics/" target="_blank" rel="noopener">coinlaw.io</a></li>
+        <li>エルサルバドルへの本社移転: <a href="https://en.wikipedia.org/wiki/Tether_Limited" target="_blank" rel="noopener">Wikipedia「Tether Limited」</a></li>
+        <li>KPMGによる初のフル年次監査: <a href="https://tether.io/news/tether-completes-the-largest-inaugural-financial-audit-in-history/" target="_blank" rel="noopener">Tether公式発表</a>、<a href="https://www.coindesk.com/business/2026/08/13/tether-says-it-completed-long-promised-big-four-audit-of-finances-behind-usd180-billion-usdt-stablecoin" target="_blank" rel="noopener">CoinDesk</a></li>
+        <li>ステーブルコイン市場シェア・USDC比較: <a href="https://coinmarketcap.com/view/stablecoin/" target="_blank" rel="noopener">CoinMarketCap</a>、<a href="https://coinlaw.io/usd-coin-vs-tether-statistics/" target="_blank" rel="noopener">coinlaw.io</a></li>
+        <li>Circle社のNYSE上場: <a href="https://www.cnbc.com/2025/06/04/stablecoin-issuer-circle-prices-ipo-at-31-above-expected-range-ahead-of-nyse-debut.html" target="_blank" rel="noopener">CNBC(2025年6月)</a></li>
+        <li>USDC準備金の開示体制: <a href="https://www.circle.com/blog/new-levels-of-detail-in-the-monthly-usdc-attestation" target="_blank" rel="noopener">Circle公式</a></li>
+        <li>Tether社2026年Q2業績・自己保有BTC/金: <a href="https://news.bitcoin.com/stablecoins/usdt-issuer-tether-hits-1-5b-q2-profit-hoards-98932-bitcoin/" target="_blank" rel="noopener">Bitcoin.com News</a></li>
+        <li>経営陣・株主(Devasini氏資産等): <a href="https://www.icij.org/investigations/coin-laundry/the-200-billion-company-you-cant-look-inside/" target="_blank" rel="noopener">ICIJ</a>、<a href="https://www.forbes.com/profile/paolo-ardoino/" target="_blank" rel="noopener">Forbes</a></li>
+        <li>CFTC和解(2021年10月): <a href="https://www.cftc.gov/PressRoom/PressReleases/8450-21" target="_blank" rel="noopener">CFTC公式プレスリリース</a></li>
+        <li>NY司法長官和解(2021年2月): <a href="https://www.cnbc.com/2021/02/23/tether-bitfinex-reach-settlement-with-new-york-attorney-general.html" target="_blank" rel="noopener">CNBC</a>、<a href="https://www.coindesk.com/markets/2021/02/23/ny-ags-850m-probe-of-bitfinex-tether-ends-in-an-185m-settlement" target="_blank" rel="noopener">CoinDesk</a></li>
+        <li>過去の準備資産構成(コマーシャルペーパー時代): <a href="https://protos.com/history-of-tethers-peg-every-time-usdt-traded-above-or-below-one-dollar/" target="_blank" rel="noopener">Protos</a></li>
+        <li>EU MiCA規則とUSDTデリスト: <a href="https://crypto.news/tether-abandons-europe-as-mica-ban-wipes-usdt/" target="_blank" rel="noopener">crypto.news</a></li>
+        <li>時価総額・価格データ: <a href="https://coinmarketcap.com/currencies/tether/" target="_blank" rel="noopener">CoinMarketCap</a>、<a href="https://www.coingecko.com/en/coins/tether" target="_blank" rel="noopener">CoinGecko</a></li>
+        <li>成長段階の定性分析(一次調査): 筆者による個人調査(2026年9月10日実施、公開情報の収集・整理)</li>
+      </ol>
+    </div>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本記事は、一般的な情報提供および分析視点の解説を目的としたものであり、特定の暗号資産の売買を推奨するものではありません。記載内容は執筆時点の調査にもとづくもので、正確性・完全性を保証するものではなく、その後に変わっている可能性があります。暗号資産は価格変動が株式よりさらに大きく、詐欺的なプロジェクトも存在するため、個別資産の売買を判断される際は、ご自身で一次情報を確認し、自己責任で行ってください。なお、本記事をきっかけとした個別の投資相談・勧誘・DMでのご連絡には一切対応しておらず、判断材料になりうる情報は公開の記事という形でしか発信していません。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+</body>
+</html>
