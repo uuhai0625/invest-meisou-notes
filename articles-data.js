@@ -34,4 +34,5 @@ const ARTICLES_DATA = [
   { slug: 'toushi-literacy-quiz', title: '投資まわりの基礎知識クイズ', tags: ['ippan'] },
   { slug: 'kasoutsuka-kachi-yomikata-hikaku', title: '暗号資産の「価値」はどう読むか——5銘柄を並べて比較する', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-yougo-shu', title: '投資まわりの用語集', tags: ['ippan'] },
+  { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'] },
 ];
