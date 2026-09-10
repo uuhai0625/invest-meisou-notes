@@ -485,7 +485,10 @@
     });
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const tags = (card.dataset.tags || '').split(',');
-      const inMain = mainFilter === 'all' || tags.includes(mainFilter);
+      const inMain = mainFilter === 'all'
+        || (mainFilter === 'ippan'
+          ? tags.includes('ippan') && !tags.includes('kigyou') && !tags.includes('kasoutsuka')
+          : tags.includes(mainFilter));
       const cardCountry = card.dataset.country;
       const cardIndustry = card.dataset.industry;
       const inGroup = !inKigyou || !cardCountry || groupOpen[cardCountry] !== false;
