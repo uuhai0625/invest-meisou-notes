@@ -32,4 +32,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-ideco-koza-kaisetsu-kiroku', title: 'NISA・iDeCoは、始める前がいちばん大変だった', tags: ['nikki'] },
   { slug: 'kasoutsuka-kachi-yomikata-case5', title: '暗号資産の「価値」はどう読むか(5)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-literacy-quiz', title: '投資まわりの基礎知識クイズ', tags: ['ippan'] },
+  { slug: 'kasoutsuka-kachi-yomikata-hikaku', title: '暗号資産の「価値」はどう読むか——5銘柄を並べて比較する', tags: ['kasoutsuka', 'ippan'] },
 ];
