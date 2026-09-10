@@ -36,4 +36,5 @@ const ARTICLES_DATA = [
   { slug: 'toushi-yougo-shu', title: '投資まわりの用語集', tags: ['ippan'] },
   { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'] },
   { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'] },
+  { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'] },
 ];
