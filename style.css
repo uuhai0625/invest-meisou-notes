@@ -1220,3 +1220,109 @@ h1, h2, h3, .heading-font {
 }
 .quiz-result-links p { font-size: 0.82rem; color: var(--ink-faint); margin: 0 0 8px; }
 .quiz-result-links a { display: inline; margin-right: 12px; }
+
+/* ---- サイト内検索(トップページ) ---- */
+.site-search { margin: 0 0 20px; }
+.site-search input {
+  width: 100%;
+  max-width: 420px;
+  padding: 11px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+.site-search input::placeholder { color: var(--ink-faint); }
+.site-search input:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+.no-results-note {
+  display: none;
+  padding: 20px 4px;
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+}
+.no-results-note.visible { display: block; }
+
+/* ---- はじめての方へ(トップページ pickup) ---- */
+.pickup-section { padding: 8px 0 0; }
+.pickup-lead { margin: 4px 0 20px; color: var(--ink-sub); font-size: 0.88rem; }
+.pickup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.pickup-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pickup-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+}
+.pickup-card img { width: 88px; height: 64px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+.pickup-card-title { font-size: 0.88rem; font-weight: 700; line-height: 1.5; }
+@media (max-width: 700px) {
+  .pickup-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- 記事下部: シリーズナビ・シェア ---- */
+.series-nav {
+  display: flex;
+  gap: 12px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+.series-nav-link {
+  flex: 1 1 220px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-card);
+  color: var(--ink);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.series-nav-link:hover { border-color: var(--navy); background: var(--navy-soft); text-decoration: none; }
+.series-nav-link .series-nav-dir {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  margin-bottom: 4px;
+}
+.series-nav-link.next { text-align: right; }
+
+.share-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 32px 0;
+  padding: 16px 20px;
+  background: var(--bg-warm);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+.share-row .share-label { font-size: 0.85rem; color: var(--ink-sub); }
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.share-btn:hover { opacity: 0.82; text-decoration: none; }

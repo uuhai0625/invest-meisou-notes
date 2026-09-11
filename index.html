@@ -15,6 +15,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/">
+<link rel="alternate" type="application/rss+xml" title="資産形成の瞑想ノート" href="https://uuhai0625.github.io/invest-meisou-notes/rss.xml">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="資産形成の瞑想ノート">
@@ -27,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=29">
+<link rel="stylesheet" href="style.css?v=30">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,8 +90,36 @@
   </div>
 </section>
 
+<section class="pickup-section">
+  <div class="wrap">
+    <p class="section-label">はじめての方へ</p>
+    <p class="pickup-lead">記事が増えてきたので、まずこの4本から読むのがおすすめです。</p>
+    <div class="pickup-grid">
+      <a class="pickup-card" href="shoken-koza-hikaku/">
+        <img src="images/eyecatch/shoken-koza-hikaku.jpg" alt="証券口座はどう選ぶか" width="120" height="90" loading="lazy">
+        <span class="pickup-card-title">証券口座はどう選ぶか</span>
+      </a>
+      <a class="pickup-card" href="nisa-ideco-hikaku/">
+        <img src="images/eyecatch/nisa-ideco-hikaku.jpg" alt="新NISAとiDeCo、どこが違うのか" width="120" height="90" loading="lazy">
+        <span class="pickup-card-title">新NISAとiDeCo、どこが違うのか</span>
+      </a>
+      <a class="pickup-card" href="kakei-katachi-toushi-kangaekata/">
+        <img src="images/eyecatch/kakei-katachi-toushi-kangaekata.jpg" alt="投資を始める考え方は、家計の「形」で変わる" width="120" height="90" loading="lazy">
+        <span class="pickup-card-title">投資を始める考え方は、家計の「形」で変わる</span>
+      </a>
+      <a class="pickup-card" href="toushi-yougo-shu/">
+        <img src="images/eyecatch/toushi-yougo-shu.jpg" alt="投資まわりの用語集" width="120" height="90" loading="lazy">
+        <span class="pickup-card-title">投資まわりの用語集</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <main class="wrap">
   <p class="section-label">記事一覧</p>
+  <div class="site-search">
+    <input type="search" id="site-search-input" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+  </div>
   <div class="scene-tabs" id="portal-filter">
     <button class="scene-tab active" data-filter="all" type="button" aria-pressed="true">すべて</button>
     <button class="scene-tab" data-filter="ippan" type="button" aria-pressed="false">一般知識</button>
@@ -470,11 +499,12 @@
       </div>
     </a>
   </div>
+  <p class="no-results-note" id="no-results-note">該当する記事が見つかりませんでした。検索語を変えるか、フィルタを「すべて」に戻してお試しください。</p>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="disclaimer/">免責事項・運営方針</a> — <a href="privacy/">プライバシーポリシー</a></p>
+    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="rss.xml">RSS</a> — <a href="disclaimer/">免責事項・運営方針</a> — <a href="privacy/">プライバシーポリシー</a></p>
   </div>
 </footer>
 
@@ -483,16 +513,20 @@
 (function () {
   var mainFilter = 'all';
   var industryFilter = 'all';
+  var searchQuery = '';
   var groupOpen = { us: true, jp: true };
   var subfilterRow = document.getElementById('kigyou-subfilter');
   var industrySelect = document.getElementById('kigyou-industry-select');
   var groupHeaders = document.querySelectorAll('.kigyou-group-header');
+  var searchInput = document.getElementById('site-search-input');
+  var noResultsNote = document.getElementById('no-results-note');
 
   function applyFilters() {
     var inKigyou = mainFilter === 'kigyou';
     groupHeaders.forEach((header) => {
       header.hidden = !inKigyou;
     });
+    var visibleCount = 0;
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const tags = (card.dataset.tags || '').split(',');
       const inMain = mainFilter === 'all'
@@ -503,7 +537,18 @@
       const cardIndustry = card.dataset.industry;
       const inGroup = !inKigyou || !cardCountry || groupOpen[cardCountry] !== false;
       const inIndustry = cardCountry !== 'jp' || industryFilter === 'all' || !cardIndustry || cardIndustry === industryFilter;
-      card.style.display = (inMain && inGroup && inIndustry) ? '' : 'none';
+      const inSearch = !searchQuery || card.textContent.toLowerCase().indexOf(searchQuery) !== -1;
+      const visible = inMain && inGroup && inIndustry && inSearch;
+      card.style.display = visible ? '' : 'none';
+      if (visible) visibleCount++;
+    });
+    if (noResultsNote) noResultsNote.classList.toggle('visible', visibleCount === 0);
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      applyFilters();
     });
   }
 

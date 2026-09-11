@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>資産形成の瞑想ノート</title>
+  <link>https://uuhai0625.github.io/invest-meisou-notes/</link>
+  <description>日本株・米国株・仮想通貨・不動産にまつわる一般的な知識・比較と、著者自身の投資日記。</description>
+  <language>ja</language>
+  <item>
+    <title>投資を始める考え方は、家計の「形」で変わる</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kakei-katachi-toushi-kangaekata/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kakei-katachi-toushi-kangaekata/</guid>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
+    <description>20代独身から退職後まで、5つの架空の人物設定を通じて、家計の状況によって投資の考え方がどう変わるかを整理しました。特定の行動を指示する診断ではなく、自分の状況を考えるための材料の一つとして書いています。</description>
+  </item>
+  <item>
+    <title>NISAは、売った後にも手続きがある</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-uridashi-tetsuzuki/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-uridashi-tetsuzuki/</guid>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
+    <description>NISA枠が戻るタイミング、配当金を非課税にする受取方式、特定口座と確定申告、損益通算・繰越控除、米国株の二重課税と外国税額控除。売却後に知っておくと安心な制度知識をまとめました。</description>
+  </item>
+  <item>
+    <title>相場が下がったとき、何を確認すればいいか</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/souba-hendou-kakunin/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/souba-hendou-kakunin/</guid>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
+    <description>下落の程度に応じて、一般的に検討される確認項目を整理しました。特定の行動を指示するものではなく、次にどうするかを自分で決めるための材料の一つとして書いています。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか(5)——テザー(USDT)を例に読む7つの観点</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case5/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case5/</guid>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+    <description>暗号資産版シリーズ第5弾。テザー(USDT)を例に、値上がりを前提としないステーブルコインの価値を7つの観点で読み解きます。発行の背景・ペッグの裏付け・準備資産・技術基盤・競合(USDC)・資金構造・リスク(規制と過去の和解)。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか——5銘柄を並べて比較する</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-hikaku/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-hikaku/</guid>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+    <description>シリーズ5本(BTC・ETH・SHIB・XRP・USDT)を、同じ7つの観点で横並びに比較する早見ページです。</description>
+  </item>
+  <item>
+    <title>NISA・iDeCoは、始める前がいちばん大変だった——証券口座選びと、最初の一歩まで</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-ideco-koza-kaisetsu-kiroku/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-ideco-koza-kaisetsu-kiroku/</guid>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0900</pubDate>
+    <description>証券口座の多さに圧倒され、手続きが面倒で先延ばしにし、開設後も何を買うか迷った話。金額や商品名は伏せ、始めるまでの足踏みと、始めてからの実感だけを残す投資日記です。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか(4)——XRP(Ripple)を例に読む7つの観点</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case4/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case4/</guid>
+    <pubDate>Wed, 09 Sep 2026 09:00:00 +0900</pubDate>
+    <description>暗号資産版シリーズ第4弾。XRP(Ripple)を例に、発行体企業と資産の関係を7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク(SEC訴訟の経緯)。</description>
+  </item>
+  <item>
+    <title>投資まわりのニュースまとめ——制度・市場の動きを、気づいた時に</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/toushi-news/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/toushi-news/</guid>
+    <pubDate>Wed, 09 Sep 2026 09:00:00 +0900</pubDate>
+    <description>NISA・iDeCoなどの制度変更、日銀の金融政策、市場全体の動きなど、個別銘柄の売買判断にはつながらない一般知識の範囲のニュースを、気づいたタイミングで日付付きに追記していくまとめページです。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか(2)——イーサリアムを例に読む7つの観点</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case2/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case2/</guid>
+    <pubDate>Tue, 08 Sep 2026 09:00:00 +0900</pubDate>
+    <description>暗号資産版シリーズ第2弾。イーサリアムを例に、発行の背景・価値の裏付け・供給設計・技術基盤と開発体制・競合構造・資金保有構造・リスクの7つの観点で読み解きます。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか(3)——柴犬コイン(SHIB)を例に読む7つの観点</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case3/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case3/</guid>
+    <pubDate>Tue, 08 Sep 2026 09:00:00 +0900</pubDate>
+    <description>暗号資産版シリーズ第3弾。柴犬コイン(SHIB)を例に、初めてミームコインを7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク。</description>
+  </item>
+  <item>
+    <title>2021年、仮想通貨で学んだこと——盛り上がりに乗った春、下落でも止まれなかった5月</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-2021-furikaeri/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-2021-furikaeri/</guid>
+    <pubDate>Mon, 07 Sep 2026 09:00:00 +0900</pubDate>
+    <description>2021年春、SNSの盛り上がりに乗って複数のアルトコインを買い始め、5月の急落相場でも手を止められなかった話。金額は伏せ、比率と反省だけを残す投資日記です。</description>
+  </item>
+  <item>
+    <title>暗号資産の「価値」はどう読むか——ビットコインを例に読む7つの観点</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case1/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-kachi-yomikata-case1/</guid>
+    <pubDate>Mon, 07 Sep 2026 09:00:00 +0900</pubDate>
+    <description>暗号資産版シリーズ1本目。ビットコインを例に、発行の背景・価値の裏付け・トークノミクス・技術基盤・競合構造・資金保有構造・リスクの7つの観点で読み解きます。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(10)——急成長の裏側にある顧客集中を、Astera Labsを例に読む(米国株編3本目)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case10/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case10/</guid>
+    <pubDate>Sun, 06 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ10本目・米国株編の3本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(11)——「設計する会社」から「作る会社」へ、Tower Semiconductorを例に読む(米国株編4本目)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case11/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case11/</guid>
+    <pubDate>Sun, 06 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ11本目・米国株編の4本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(12)——決算は良かったのに、株価はなぜ急落したか。Credo Technologyを例に読む(米国株編5本目)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case12/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case12/</guid>
+    <pubDate>Sun, 06 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ12本目・米国株編の5本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(13)——「装置を作る会社」という視点で、BE Semiconductor Industriesを例に読む(米国株編6本目・最終回)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case13/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case13/</guid>
+    <pubDate>Sun, 06 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ13本目・米国株編の6本目(最終回)です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか——米国株6社を並べて比較する</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-hikaku-us/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-hikaku-us/</guid>
+    <pubDate>Sun, 06 Sep 2026 09:00:00 +0900</pubDate>
+    <description>シリーズ6本(Ambiq Micro・MaxLinear・Astera Labs・Tower Semiconductor・Credo Technology・BE Semiconductor Industries)を、7つの観点で横並びに比較する早見ページです。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(3)——赤字を出しながら投資する会社を、さくらインターネットを例に7つの観点で読む</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case3/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case3/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ3本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(4)——「商社は成長株に見えない」という先入観を、サンワテクノスを例に7つの観点で掘り崩す</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case4/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case4/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ4本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(5)——「全社は増収増益」の裏側を、テクノフレックスを例に7つの観点で読む</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case5/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case5/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ5本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(6)——「営業利益は増益、純利益は減益」を、大阪有機化学工業を例に7つの観点で読む</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case6/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case6/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ6本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(7)——「V字回復」の中身を、ウシオ電機を例に7つの観点で分解する</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case7/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case7/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ7本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(8)——伸び率と収益基盤の距離を、Ambiq Microを例に読む(米国株編1本目)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case8/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case8/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ8本目・米国株編の1本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(9)——成熟企業の「転換」を、MaxLinearを例に読む(米国株編2本目)</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case9/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case9/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ9本目・米国株編の2本目です。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか——7社を並べて比較する</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-hikaku/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-hikaku/</guid>
+    <pubDate>Sat, 05 Sep 2026 09:00:00 +0900</pubDate>
+    <description>シリーズ7本(ニッポン高度紙工業・グロービング・さくらインターネット・サンワテクノス・テクノフレックス・大阪有機化学工業・ウシオ電機)を、7つの観点で横並びに比較する早見ページです。</description>
+  </item>
+  <item>
+    <title>不動産投資をはじめる前に、静かに整理しておきたい基礎知識</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/fudousan-kiso-yougo/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/fudousan-kiso-yougo/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>現物不動産・REIT・不動産クラウドファンディングの違い、利回りの見方、特有のリスク、基礎用語をまとめました。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか——ニッポン高度紙工業を例に、7つの観点を整理する</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case1/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case1/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディです。</description>
+  </item>
+  <item>
+    <title>企業の「成長段階」はどう読むか(2)——事業モデルが変わりつつある会社を、グロービングを例に7つの観点で読む</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case2/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/kigyou-seichou-yomikata-case2/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>実在の一社を例に、企業の成長段階を読むための視点を整理するケーススタディ、シリーズ2本目です。</description>
+  </item>
+  <item>
+    <title>新NISAとiDeCo、どこが違うのか——「いつ使えるお金か」で静かに整理してみる</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-ideco-hikaku/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-ideco-hikaku/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>新NISAとiDeCoの仕組み・限度額・流動性の違いを整理。目的別の考え方をまとめました。</description>
+  </item>
+  <item>
+    <title>いま、私の資産はどこにあるのか——比率だけで残す、最初の定点記録</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/shisan-kouhyou-kiten/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/shisan-kouhyou-kiten/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>金額は伏せ、比率だけを残す最初の定点記録。今後の月次更新の起点となる投資日記です。</description>
+  </item>
+  <item>
+    <title>証券口座はどう選ぶか——手数料・商品・ポイントを、目的別に静かに並べ直す</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/shoken-koza-hikaku/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/shoken-koza-hikaku/</guid>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0900</pubDate>
+    <description>主要ネット証券5社を、手数料・商品・ポイントの軸で比較。特定の1社を断定的に推さず、目的別の選び方を整理しました。</description>
+  </item>
+</channel>
+</rss>
