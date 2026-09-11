@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../style.css?v=32">
+<link rel="stylesheet" href="../../style.css?v=33">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,6 +98,8 @@
       <span>米国株シリーズ(6本+比較1)</span>
       <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
     </button>
+    <div class="kigyou-group-cards" data-group="us">
+    <div class="kigyou-group-cards-inner">
     <a class="article-card" href="../../kigyou-seichou-yomikata-case13/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
       <div class="article-card-thumb"><img src="../../images/eyecatch/kigyou-seichou-yomikata-case13.jpg" alt="目盛りの付いた紺色の精密な計測器から、オレンジ色の粒子が正確に降り注ぎ、整然と積み重なったブロックの柱を形作っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
@@ -181,11 +183,14 @@
         <p>米国株シリーズ1本目。Ambiq Micro(NYSE: AMBQ)を例に、売上+89.7%という伸び率と、まだ営業赤字という収益基盤の距離をどう読むかを整理します。</p>
       </div>
     </a>
-    
+    </div>
+    </div>
     <button class="kigyou-group-header" type="button" data-group="jp" aria-expanded="true">
       <span>日本株シリーズ(7本+比較1)</span>
       <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
     </button>
+    <div class="kigyou-group-cards" data-group="jp">
+    <div class="kigyou-group-cards-inner">
     <a class="article-card" href="../../kigyou-seichou-yomikata-hikaku/" data-tags="kigyou,ippan" data-country="jp">
       <div class="article-card-thumb"><img src="../../images/eyecatch/kigyou-seichou-yomikata-hikaku.jpg" alt="クラウドやサーバー、建物、フラスコなど、成長段階の異なる企業群を象徴する幾何学的な抽象アイコンを並べた比較イメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
@@ -281,7 +286,8 @@
         <p>ニッポン高度紙工業(3891)を例に、成長段階を読む7つの観点を整理。個別銘柄の売買を推奨するものではなく、分析視点を学ぶケーススタディです。</p>
       </div>
     </a>
-    
+    </div>
+    </div>
   </div>
   <a class="category-back-link" href="https://uuhai0625.github.io/invest-meisou-notes/">← 記事一覧トップに戻る</a>
 </main>
@@ -293,12 +299,14 @@
   var groupOpen = { us: true, jp: true };
 
   function applyKigyouFilters() {
+    document.querySelectorAll('.kigyou-group-cards').forEach((wrap) => {
+      wrap.classList.toggle('is-collapsed', groupOpen[wrap.dataset.group] === false);
+    });
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const cardCountry = card.dataset.country;
       const cardIndustry = card.dataset.industry;
-      const inGroup = !cardCountry || groupOpen[cardCountry] !== false;
       const inIndustry = cardCountry !== 'jp' || industrySelect.value === 'all' || !cardIndustry || cardIndustry === industrySelect.value;
-      card.style.display = (inGroup && inIndustry) ? '' : 'none';
+      card.style.display = inIndustry ? '' : 'none';
     });
   }
 

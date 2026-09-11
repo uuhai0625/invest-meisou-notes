@@ -274,6 +274,27 @@ h1, h2, h3, .heading-font {
   transition: transform 0.15s ease;
 }
 .kigyou-group-header[aria-expanded="false"] .chevron-icon { transform: rotate(-90deg); }
+.kigyou-group-cards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transition: grid-template-rows 0.25s ease, opacity 0.2s ease;
+}
+.kigyou-group-cards.is-collapsed {
+  grid-template-rows: 0fr;
+  opacity: 0;
+}
+.kigyou-group-cards-inner {
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 700px) {
+  .kigyou-group-cards-inner { grid-template-columns: 1fr; }
+}
 
 /* ---- article cards ---- */
 .article-list {
