@@ -25,8 +25,8 @@
 <meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=31">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=32">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,9 +53,26 @@
 </head>
 <body>
 
-<nav class="mini-nav">
-  <div class="wrap"><a href="../">資産形成の<span class="accent">瞑想ノート</span></a></div>
-</nav>
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="https://uuhai0625.github.io/invest-meisou-notes/">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/ippan/">一般知識</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/fudousan/">不動産</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/nikki/">投資日記</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kigyou/">企業分析</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="https://uuhai0625.github.io/invest-meisou-notes/" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
 
 <main class="wrap article-page">
   <div class="article-header">
@@ -108,6 +125,7 @@
   <a class="back-link" href="../">一覧に戻る</a>
 </main>
 
+<script src="../header.js" defer></script>
 <script src="../ga.js"></script>
 <script src="../articles-data.js"></script>
 <script src="../related-articles.js" defer></script>

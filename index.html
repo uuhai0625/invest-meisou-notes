@@ -27,8 +27,8 @@
 <meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=31">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=32">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,6 +48,27 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="https://uuhai0625.github.io/invest-meisou-notes/">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/ippan/">一般知識</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/fudousan/">不動産</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/nikki/">投資日記</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kigyou/">企業分析</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="https://uuhai0625.github.io/invest-meisou-notes/" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
 
 <header class="hero">
   <div class="wrap">
@@ -117,30 +138,9 @@
 
 <main class="wrap">
   <p class="section-label">記事一覧</p>
+  <p class="category-jump-lead">カテゴリから探す: <a href="category/ippan/">一般知識</a> ・ <a href="category/fudousan/">不動産</a> ・ <a href="category/nikki/">投資日記</a> ・ <a href="category/kigyou/">企業分析</a> ・ <a href="category/kasoutsuka/">暗号資産</a></p>
   <div class="site-search">
     <input type="search" id="site-search-input" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
-  </div>
-  <div class="scene-tabs" id="portal-filter">
-    <button class="scene-tab active" data-filter="all" type="button" aria-pressed="true">すべて</button>
-    <button class="scene-tab" data-filter="ippan" type="button" aria-pressed="false">一般知識</button>
-    <button class="scene-tab" data-filter="fudousan" type="button" aria-pressed="false">不動産</button>
-    <button class="scene-tab" data-filter="nikki" type="button" aria-pressed="false">投資日記</button>
-    <button class="scene-tab" data-filter="kigyou" type="button" aria-pressed="false">企業分析</button>
-    <button class="scene-tab" data-filter="kasoutsuka" type="button" aria-pressed="false">暗号資産</button>
-  </div>
-
-  <div class="scene-tabs sub-tabs" id="kigyou-subfilter" hidden>
-    <select class="industry-select" id="kigyou-industry-select" aria-label="日本株シリーズを業種で絞り込む">
-      <option value="all">日本株の業種: すべて</option>
-      <option value="semiconductor">半導体</option>
-      <option value="electric">電気機器</option>
-      <option value="chemical">化学</option>
-      <option value="metal">金属製品</option>
-      <option value="wholesale">卸売業・商社</option>
-      <option value="it">情報・通信</option>
-      <option value="service">サービス業</option>
-      <option value="paper">パルプ・紙</option>
-    </select>
   </div>
 
   <div class="article-list" id="article-list">
@@ -284,10 +284,6 @@
         <p>2021年春、SNSの盛り上がりに乗って複数のアルトコインを買い始め、5月の急落相場でも手を止められなかった話。金額は伏せ、比率と反省だけを残す記録です。</p>
       </div>
     </a>
-    <button class="kigyou-group-header" type="button" data-group="us" aria-expanded="true" hidden>
-      <span>米国株シリーズ(6本+比較1)</span>
-      <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-    </button>
     <a class="article-card" href="kigyou-seichou-yomikata-case13/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case13.jpg" alt="目盛りの付いた紺色の精密な計測器から、オレンジ色の粒子が正確に降り注ぎ、整然と積み重なったブロックの柱を形作っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
@@ -365,10 +361,6 @@
         <p>米国株シリーズ1本目。Ambiq Micro(NYSE: AMBQ)を例に、売上+89.7%という伸び率と、まだ営業赤字という収益基盤の距離をどう読むかを整理します。</p>
       </div>
     </a>
-    <button class="kigyou-group-header" type="button" data-group="jp" aria-expanded="true" hidden>
-      <span>日本株シリーズ(7本+比較1)</span>
-      <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-    </button>
     <a class="article-card" href="kigyou-seichou-yomikata-hikaku/" data-tags="kigyou,ippan" data-country="jp">
       <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-hikaku.jpg" alt="クラウドやサーバー、建物、フラスコなど、成長段階の異なる企業群を象徴する幾何学的な抽象アイコンを並べた比較イメージ" width="1200" height="675" loading="lazy"></div>
       <div class="article-card-body">
@@ -508,39 +500,20 @@
   </div>
 </footer>
 
+<script src="header.js" defer></script>
 <script src="ga.js"></script>
 <script>
 (function () {
-  var mainFilter = 'all';
-  var industryFilter = 'all';
   var searchQuery = '';
-  var groupOpen = { us: true, jp: true };
-  var subfilterRow = document.getElementById('kigyou-subfilter');
-  var industrySelect = document.getElementById('kigyou-industry-select');
-  var groupHeaders = document.querySelectorAll('.kigyou-group-header');
   var searchInput = document.getElementById('site-search-input');
   var noResultsNote = document.getElementById('no-results-note');
 
   function applyFilters() {
-    var inKigyou = mainFilter === 'kigyou';
-    groupHeaders.forEach((header) => {
-      header.hidden = !inKigyou;
-    });
     var visibleCount = 0;
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
-      const tags = (card.dataset.tags || '').split(',');
-      const inMain = mainFilter === 'all'
-        || (mainFilter === 'ippan'
-          ? tags.includes('ippan') && !tags.includes('kigyou') && !tags.includes('kasoutsuka')
-          : tags.includes(mainFilter));
-      const cardCountry = card.dataset.country;
-      const cardIndustry = card.dataset.industry;
-      const inGroup = !inKigyou || !cardCountry || groupOpen[cardCountry] !== false;
-      const inIndustry = cardCountry !== 'jp' || industryFilter === 'all' || !cardIndustry || cardIndustry === industryFilter;
       const inSearch = !searchQuery || card.textContent.toLowerCase().indexOf(searchQuery) !== -1;
-      const visible = inMain && inGroup && inIndustry && inSearch;
-      card.style.display = visible ? '' : 'none';
-      if (visible) visibleCount++;
+      card.style.display = inSearch ? '' : 'none';
+      if (inSearch) visibleCount++;
     });
     if (noResultsNote) noResultsNote.classList.toggle('visible', visibleCount === 0);
   }
@@ -550,38 +523,17 @@
       searchQuery = searchInput.value.trim().toLowerCase();
       applyFilters();
     });
-  }
 
-  document.querySelectorAll('#portal-filter .scene-tab').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#portal-filter .scene-tab').forEach((b) => {
-        const selected = b === btn;
-        b.classList.toggle('active', selected);
-        b.setAttribute('aria-pressed', selected);
-      });
-      mainFilter = btn.dataset.filter;
-      subfilterRow.hidden = mainFilter !== 'kigyou';
+    // 固定ヘッダーの検索(?q=)からの遷移、または直接のクエリ付きアクセスに対応
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get('q');
+    if (q) {
+      searchInput.value = q;
+      searchQuery = q.trim().toLowerCase();
       applyFilters();
-    });
-  });
-
-  groupHeaders.forEach((header) => {
-    header.addEventListener('click', () => {
-      var group = header.dataset.group;
-      groupOpen[group] = !groupOpen[group];
-      header.setAttribute('aria-expanded', groupOpen[group]);
-      applyFilters();
-    });
-  });
-
-  industrySelect.addEventListener('change', () => {
-    industryFilter = industrySelect.value;
-    if (industryFilter !== 'all' && !groupOpen.jp) {
-      groupOpen.jp = true;
-      document.querySelector('.kigyou-group-header[data-group="jp"]').setAttribute('aria-expanded', 'true');
+      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-    applyFilters();
-  });
+  }
 })();
 </script>
 </body>
