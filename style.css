@@ -242,6 +242,19 @@ h1, h2, h3, .heading-font {
   border-color: var(--navy);
   color: var(--navy);
 }
+.kigyou-company-search {
+  min-width: 240px;
+  outline: none;
+}
+.kigyou-company-search::placeholder { color: var(--ink-faint); }
+.kigyou-no-results {
+  padding: 14px 18px;
+  margin: -8px 0 28px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--ink-sub);
+  font-size: 0.86rem;
+}
 
 .kigyou-group-header {
   display: flex;
@@ -259,6 +272,7 @@ h1, h2, h3, .heading-font {
   font-weight: 700;
   cursor: pointer;
   text-align: left;
+  scroll-margin-top: 84px;
 }
 .kigyou-group-header:first-child { margin-top: 0; }
 .kigyou-group-header:hover { border-color: var(--navy); }

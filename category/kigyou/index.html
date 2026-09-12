@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../style.css?v=49">
+<link rel="stylesheet" href="../../style.css?v=50">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +80,12 @@
     <p class="section-label">企業分析</p>
     <p>実在の一社を例に、企業の成長段階を読むための分析視点を練習する「企業の成長段階はどう読むか」シリーズです。特定の企業への投資を推奨するものではありません。</p>
   </div>
+  <nav class="scene-tabs kigyou-jumpnav" aria-label="シリーズへのジャンプ">
+    <a class="scene-tab" href="#kigyou-group-us">米国株シリーズへ(6本+比較1)</a>
+    <a class="scene-tab" href="#kigyou-group-jp">日本株シリーズへ(7本+比較1)</a>
+  </nav>
   <div class="scene-tabs sub-tabs" id="kigyou-subfilter">
+    <input type="text" class="industry-select kigyou-company-search" id="kigyou-company-search" placeholder="会社名・ティッカーで絞り込む" aria-label="会社名またはティッカーで絞り込む">
     <select class="industry-select" id="kigyou-industry-select" aria-label="日本株シリーズを業種で絞り込む">
       <option value="all">日本株の業種: すべて</option>
       <option value="semiconductor">半導体</option>
@@ -93,8 +98,9 @@
       <option value="paper">パルプ・紙</option>
     </select>
   </div>
+  <p class="kigyou-no-results" id="kigyou-no-results" hidden>該当する記事が見つかりませんでした。検索語を変えてお試しください。</p>
   <div class="article-list" id="article-list">
-    <button class="kigyou-group-header" type="button" data-group="us" aria-expanded="true">
+    <button class="kigyou-group-header" type="button" data-group="us" id="kigyou-group-us" aria-expanded="true">
       <span>米国株シリーズ(6本+比較1)</span>
       <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
     </button>
@@ -194,7 +200,7 @@
     </a>
     </div>
     </div>
-    <button class="kigyou-group-header" type="button" data-group="jp" aria-expanded="true">
+    <button class="kigyou-group-header" type="button" data-group="jp" id="kigyou-group-jp" aria-expanded="true">
       <span>日本株シリーズ(7本+比較1)</span>
       <svg class="chevron-icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
     </button>
@@ -314,19 +320,44 @@
 <script>
 (function () {
   var industrySelect = document.getElementById('kigyou-industry-select');
+  var companySearch = document.getElementById('kigyou-company-search');
+  var noResultsEl = document.getElementById('kigyou-no-results');
   var groupHeaders = document.querySelectorAll('.kigyou-group-header');
   var groupOpen = { us: true, jp: true };
 
   function applyKigyouFilters() {
-    document.querySelectorAll('.kigyou-group-cards').forEach((wrap) => {
-      wrap.classList.toggle('is-collapsed', groupOpen[wrap.dataset.group] === false);
-    });
+    var query = (companySearch && companySearch.value || '').trim().toLowerCase();
+    var matchByGroup = { us: false, jp: false };
+
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const cardCountry = card.dataset.country;
       const cardIndustry = card.dataset.industry;
       const inIndustry = cardCountry !== 'jp' || industrySelect.value === 'all' || !cardIndustry || cardIndustry === industrySelect.value;
-      card.style.display = inIndustry ? '' : 'none';
+      const inSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+      const visible = inIndustry && inSearch;
+      card.style.display = visible ? '' : 'none';
+      if (visible && cardCountry) matchByGroup[cardCountry] = true;
     });
+
+    document.querySelectorAll('.kigyou-group-cards').forEach((wrap) => {
+      var group = wrap.dataset.group;
+      var forceOpen = !!query && matchByGroup[group];
+      wrap.classList.toggle('is-collapsed', groupOpen[group] === false && !forceOpen);
+    });
+
+    groupHeaders.forEach((header) => {
+      var group = header.dataset.group;
+      var hideGroup = !!query && !matchByGroup[group];
+      header.style.display = hideGroup ? 'none' : '';
+      var nav = header.nextElementSibling;
+      if (nav && nav.classList.contains('kigyou-quicklist')) {
+        nav.style.display = hideGroup ? 'none' : '';
+      }
+    });
+
+    if (noResultsEl) {
+      noResultsEl.hidden = !(query && !matchByGroup.us && !matchByGroup.jp);
+    }
   }
 
   groupHeaders.forEach((header) => {
@@ -346,6 +377,10 @@
       }
       applyKigyouFilters();
     });
+  }
+
+  if (companySearch) {
+    companySearch.addEventListener('input', applyKigyouFilters);
   }
 })();
 </script>
