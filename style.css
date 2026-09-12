@@ -396,8 +396,36 @@ h1, h2, h3, .heading-font {
 .mini-nav .accent { color: var(--gold-text); }
 
 /* ---- article page ---- */
-/* TOCの有無や比較表の列数に関わらず、記事ページは常に同じ幅に統一する */
+/* ページ自体は比較表が全列表示できる幅を確保しつつ、本文・見出し・アイキャッチは
+   読みやすい幅に個別に制限して中央寄せする(表だけが画面幅いっぱいに広がる)。
+   margin:autoは既存の個別要素の margin shorthand(margin:0 0 24px等)に
+   specificityで負けて無効化されるため、flexの中央寄せで確実に効かせる */
 .article-page { max-width: 1440px; }
+/* has-toc/no-toc はtoc.jsが見出し数に応じて実行時に付け替えるため、
+   クラスの有無ではなく構造(article-grid/article-mainの有無)で判定する */
+.article-page, .article-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-page > *, .article-main > * {
+  width: 100%;
+  max-width: 1100px;
+}
+.article-page > .article-body, .article-main > .article-body,
+.article-page > .article-grid {
+  max-width: none;
+}
+.article-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-body > * {
+  width: 100%;
+  max-width: 1100px;
+}
+.article-body > .table-scroll { max-width: none; }
 .article-header {
   padding: 40px 0 24px;
   text-align: center;
