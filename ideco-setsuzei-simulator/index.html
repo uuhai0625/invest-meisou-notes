@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iDeCo節税額シミュレーター|資産形成の瞑想ノート</title>
+<meta name="description" content="毎月の掛金・課税所得・拠出年数を入力するだけで、iDeCoの所得控除による節税額の目安を計算できる無料ツールです。個別の税務相談ではなく、制度を理解するための試算としてお使いください。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="iDeCo節税額シミュレーター——掛金と年収から、所得控除による節税額の目安を計算する">
+<meta property="og:description" content="毎月の掛金・課税所得・拠出年数を入力するだけで、iDeCoの所得控除による節税額の目安を計算できる無料ツールです。個別の税務相談ではなく、制度を理解するための試算としてお使いください。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/ideco-setsuzei-simulator/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/ideco-setsuzei-simulator/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iDeCo節税額シミュレーター">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=34">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "資産形成の瞑想ノート", "item": "https://uuhai0625.github.io/invest-meisou-notes/" },
+    { "@type": "ListItem", "position": 2, "name": "iDeCo節税額シミュレーター", "item": "https://uuhai0625.github.io/invest-meisou-notes/ideco-setsuzei-simulator/" }
+  ]
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="https://uuhai0625.github.io/invest-meisou-notes/">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/ippan/">一般知識</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/fudousan/">不動産</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/nikki/">投資日記</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kigyou/">企業分析</a>
+      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="https://uuhai0625.github.io/invest-meisou-notes/" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
+
+<main class="wrap article-page">
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">一般知識</span>
+    </div>
+    <h1>iDeCo節税額シミュレーター——掛金と年収から、節税額の目安を計算する</h1>
+    <p class="meta">最終更新: 2026年9月12日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/ideco-setsuzei-simulator.jpg" alt="紺色の電卓のような幾何学的な図形の上に、オレンジ色のコインが積み重なっている様子を表した抽象的なイメージ" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: このツールは、iDeCoの掛金が全額所得控除になることによる節税額の「目安」を試算するものであり、個別の税務相談・年金相談・投資助言ではありません。計算結果は入力値をもとにした概算であり、実際の税額・受取額を保証するものではありません。入力内容がサーバーに送信・記録されることはなく、すべてお使いの端末内で完結します。制度に関する数値は執筆時点(2026年9月)のものです。
+    </div>
+
+    <p>iDeCo(個人型確定拠出年金)の掛金は、全額が所得控除の対象になります。つまり、掛金を積み立てるほど、その年の所得税・住民税が軽くなるということです。ただ、「具体的にいくら軽くなるのか」は、加入区分(掛金の上限)と所得税率(課税所得の水準)によって変わるため、実感しにくい部分でもあります。このツールでは、毎月の掛金額・課税所得・拠出を続ける年数を入力するだけで、その概算を確認できます。</p>
+
+    <form id="ideco-sim-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-field">
+        <label for="ideco-sim-category">加入区分</label>
+        <select id="ideco-sim-category">
+          <option value="jieigyo">自営業等(第1号被保険者)</option>
+          <option value="kaisha_nashi">会社員(勤め先に企業年金なし)</option>
+          <option value="kaisha_ari">会社員(企業型DCのみ/DB等併存)・公務員</option>
+          <option value="fuyou">専業主婦・主夫(第3号被保険者)</option>
+        </select>
+      </div>
+
+      <div class="ideco-sim-field">
+        <label for="ideco-sim-contribution">毎月の掛金額(円)</label>
+        <input type="number" id="ideco-sim-contribution" min="5000" step="1000" value="20000" inputmode="numeric">
+        <span class="ideco-sim-hint" id="ideco-sim-contribution-hint"></span>
+      </div>
+
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="ideco-sim-income">課税される所得金額(年間・円)</label>
+          <input type="number" id="ideco-sim-income" min="0" step="10000" value="4000000" inputmode="numeric">
+          <span class="ideco-sim-hint">源泉徴収票の「給与所得控除後の金額」から、社会保険料控除・基礎控除等の各種所得控除を差し引いた金額です。目安が分からない場合は、下の速算表を参考にしてください。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="ideco-sim-years">掛金を拠出する年数(年)</label>
+          <input type="number" id="ideco-sim-years" min="1" max="45" step="1" value="20" inputmode="numeric">
+          <span class="ideco-sim-hint">60歳になるまでの残り年数などを目安に入力してください(最大65歳まで拠出可能な場合もあります)</span>
+        </div>
+      </div>
+
+      <div class="ideco-sim-field">
+        <label for="ideco-sim-return">運用利回り(年率・任意、%)</label>
+        <input type="number" id="ideco-sim-return" min="0" max="15" step="0.1" value="3" inputmode="decimal">
+        <span class="ideco-sim-hint">将来の受取見込み額を試算する場合のみ使用する仮の数値です。将来の運用成果を保証するものではありません。</span>
+      </div>
+
+      <button class="ideco-sim-btn" type="submit">計算する</button>
+
+      <div class="ideco-sim-result" id="ideco-sim-result">
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item">
+            <span class="label">年間の節税額(所得控除分)</span>
+            <span class="value accent" id="ideco-sim-out-annual-saving">—</span>
+          </div>
+          <div class="ideco-sim-result-item">
+            <span class="label">拠出期間中の累計節税額</span>
+            <span class="value" id="ideco-sim-out-total-saving">—</span>
+          </div>
+          <div class="ideco-sim-result-item">
+            <span class="label">拠出期間中の累計掛金額</span>
+            <span class="value" id="ideco-sim-out-total-contribution">—</span>
+          </div>
+          <div class="ideco-sim-result-item">
+            <span class="label">運用利回りを加味した将来の受取見込み額(税引前)</span>
+            <span class="value accent" id="ideco-sim-out-future-value">—</span>
+          </div>
+        </div>
+        <p class="ideco-sim-result-breakdown" id="ideco-sim-out-breakdown"></p>
+        <p class="ideco-sim-result-note">うち運用益の概算: <span id="ideco-sim-out-gain">—</span>(累計掛金額との差額、毎月拠出・複利運用で試算)。この受取見込み額は、実際に受け取る際にかかる税金(退職所得控除・公的年金等控除など、受取方法により大きく変わります)を差し引く前の金額です。入力した運用利回りは仮の数値であり、将来の運用成果を保証するものではありません。</p>
+      </div>
+    </form>
+
+    <h2>所得税の速算表(参考)</h2>
+    <p>節税額の計算では、課税所得の水準に応じた次の所得税率(限界税率)を使っています。住民税は自治体を問わず一律10%として計算し、所得税額には復興特別所得税(2.1%)をあわせて計上しています。</p>
+    <table class="compare-table">
+      <thead><tr><th>課税される所得金額</th><th>所得税率</th></tr></thead>
+      <tbody>
+        <tr><td>195万円以下</td><td>5%</td></tr>
+        <tr><td>195万円超 330万円以下</td><td>10%</td></tr>
+        <tr><td>330万円超 695万円以下</td><td>20%</td></tr>
+        <tr><td>695万円超 900万円以下</td><td>23%</td></tr>
+        <tr><td>900万円超 1,800万円以下</td><td>33%</td></tr>
+        <tr><td>1,800万円超 4,000万円以下</td><td>40%</td></tr>
+        <tr><td>4,000万円超</td><td>45%</td></tr>
+      </tbody>
+    </table>
+
+    <h2>加入区分ごとの掛金上限(参考)</h2>
+    <table class="compare-table">
+      <thead><tr><th>加入者区分</th><th>月額上限(2026年9月時点)</th></tr></thead>
+      <tbody>
+        <tr><td>自営業等(第1号被保険者)</td><td>68,000円(国民年金基金・付加保険料と合算枠)</td></tr>
+        <tr><td>会社員(勤め先に企業年金なし)</td><td>23,000円</td></tr>
+        <tr><td>会社員(企業型DCのみ/DB等併存)・公務員</td><td>20,000円</td></tr>
+        <tr><td>専業主婦・主夫(第3号被保険者)</td><td>23,000円</td></tr>
+      </tbody>
+    </table>
+    <p>自分がどの区分に当てはまるか、企業型DCの加入状況などが分からない場合は、<a href="../ideco-dc-nisa-heiyou/">iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか</a>の「自分の加入状況は、どこで確認できるか」もあわせてご覧ください。</p>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本ツールは、iDeCoの掛金にかかる所得控除の効果を試算する目的で作成したものであり、個別の税務相談・年金相談・投資助言ではなく、特定の金融商品・制度の利用を推奨するものでもありません。計算対象は掛金の所得控除による節税額のみで、実際に受け取る際にかかる税金(退職所得控除・公的年金等控除など、受取方法や他の所得状況により大きく変わります)は考慮していません。住民税率は自治体により均等割額等に差がある場合がありますが、ここでは所得割を一律10%と仮定しています。節税額は、入力された課税所得の税率区分(限界税率)を掛金全額に一律適用して試算しているため、課税所得が税率の境界付近にある場合は、実際の節税額より大きめに算出されることがあります。運用利回りは入力された仮の数値であり、将来の運用成果を保証するものではなく、投資には元本割れのリスクがあります。ご自身の正確な課税所得・加入区分・掛金上限については、源泉徴収票、勤務先の担当部門、年金事務所、税理士等の専門家にご確認ください。税務・年金・投資に関する最終的な判断は、ご自身の責任において行ってください。なお、本ツールをきっかけとした個別の税務・投資相談・勧誘・DMでのご連絡には一切対応しておらず、判断材料になりうる情報は公開のページという形でしか発信していません。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">この記事が参考になったら</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=iDeCo%E7%AF%80%E7%A8%8E%E9%A1%8D%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC%E2%80%94%E2%80%94%E6%8E%9B%E9%87%91%E3%81%A8%E5%B9%B4%E5%8F%8E%E3%81%8B%E3%82%89%E3%80%81%E6%89%80%E5%BE%97%E6%8E%A7%E9%99%A4%E3%81%AB%E3%82%88%E3%82%8B%E7%AF%80%E7%A8%8E%E9%A1%8D%E3%81%AE%E7%9B%AE%E5%AE%89%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B&url=https%3A//uuhai0625.github.io/invest-meisou-notes/ideco-setsuzei-simulator/" target="_blank" rel="noopener">Xでシェア</a>
+    </div>
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<script src="../header.js" defer></script>
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+<script src="simulator.js" defer></script>
+</body>
+</html>
