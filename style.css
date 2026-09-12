@@ -410,7 +410,7 @@ h1, h2, h3, .heading-font {
 }
 .article-page > *, .article-main > * {
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
 }
 .article-page > .article-body, .article-main > .article-body,
 .article-page > .article-grid {
@@ -423,7 +423,7 @@ h1, h2, h3, .heading-font {
 }
 .article-body > * {
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
 }
 .article-body > .table-scroll { max-width: none; }
 .article-header {
