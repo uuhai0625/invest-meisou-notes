@@ -568,6 +568,11 @@ h1, h2, h3, .heading-font {
   border: 1px solid var(--line);
   border-radius: 8px;
 }
+.table-note {
+  margin: -16px 0 24px;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
 .compare-table {
   border-collapse: collapse;
   width: 100%;

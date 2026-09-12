@@ -40,4 +40,5 @@ const ARTICLES_DATA = [
   { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'] },
   { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'] },
   { slug: 'ideco-setsuzei-simulator', title: 'iDeCo節税額シミュレーター', tags: ['ippan'], type: 'tool' },
+  { slug: 'toushin-etf-hikaku', title: '投資信託とETF、何が違うのか', tags: ['ippan'] },
 ];
