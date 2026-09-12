@@ -1394,6 +1394,7 @@ h1, h2, h3, .heading-font {
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
 }
+.pickup-grid .pickup-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .pickup-card {
   display: flex;
   align-items: center;
