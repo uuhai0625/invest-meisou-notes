@@ -580,7 +580,6 @@ h1, h2, h3, .heading-font {
 .compare-table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 720px;
   font-size: 0.86rem;
 }
 .compare-table th, .compare-table td {
