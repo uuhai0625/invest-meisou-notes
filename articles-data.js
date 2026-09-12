@@ -2,6 +2,7 @@
 // 新しい記事を公開したら、sitemap.xml・トップページのarticle-list・hikakuページ更新と同様に、
 // ここにも1行追加すること(忘れやすいので新記事公開チェックリストに含める)。
 // tags: 'kigyou'(企業分析) / 'ippan'(一般知識) / 'nikki'(投資日記) / 'fudousan'(不動産)
+// type: 'tool'(クイズ・用語集・シミュレーター等の記事以外のコンテンツ)。省略時は通常の記事扱い。
 // slugはフォルダ名と一致させる(画像は images/eyecatch/<slug>.jpg を参照する)。
 const ARTICLES_DATA = [
   { slug: 'kigyou-seichou-yomikata-case1', title: '企業の「成長段階」はどう読むか', tags: ['kigyou', 'ippan'], country: 'jp', industry: 'paper' },
@@ -31,12 +32,12 @@ const ARTICLES_DATA = [
   { slug: 'toushi-news', title: '投資まわりのニュースまとめ', tags: ['ippan'] },
   { slug: 'nisa-ideco-koza-kaisetsu-kiroku', title: 'NISA・iDeCoは、始める前がいちばん大変だった', tags: ['nikki'] },
   { slug: 'kasoutsuka-kachi-yomikata-case5', title: '暗号資産の「価値」はどう読むか(5)', tags: ['kasoutsuka', 'ippan'] },
-  { slug: 'toushi-literacy-quiz', title: '投資まわりの基礎知識クイズ', tags: ['ippan'] },
+  { slug: 'toushi-literacy-quiz', title: '投資まわりの基礎知識クイズ', tags: ['ippan'], type: 'tool' },
   { slug: 'kasoutsuka-kachi-yomikata-hikaku', title: '暗号資産の「価値」はどう読むか——5銘柄を並べて比較する', tags: ['kasoutsuka', 'ippan'] },
-  { slug: 'toushi-yougo-shu', title: '投資まわりの用語集', tags: ['ippan'] },
+  { slug: 'toushi-yougo-shu', title: '投資まわりの用語集', tags: ['ippan'], type: 'tool' },
   { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'] },
   { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'] },
   { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'] },
   { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'] },
-  { slug: 'ideco-setsuzei-simulator', title: 'iDeCo節税額シミュレーター', tags: ['ippan'] },
+  { slug: 'ideco-setsuzei-simulator', title: 'iDeCo節税額シミュレーター', tags: ['ippan'], type: 'tool' },
 ];

@@ -996,10 +996,17 @@ h1, h2, h3, .heading-font {
   font-family: "Zen Kaku Gothic New", sans-serif;
   color: var(--ink);
 }
+.related-heading-tool {
+  margin-top: 28px;
+}
 .related-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  justify-content: start;
   gap: 14px;
+}
+.related-grid > .related-card {
+  max-width: 220px;
 }
 .related-card {
   display: block;
@@ -1034,6 +1041,7 @@ h1, h2, h3, .heading-font {
 
 @media (max-width: 600px) {
   .related-grid { grid-template-columns: 1fr; }
+  .related-grid > .related-card { max-width: none; }
 }
 
 @media (max-width: 600px) {

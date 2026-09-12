@@ -1,6 +1,6 @@
 // articles-data.jsの後に読み込むこと。
 // 現在のページのslugをURLから判定し、タグ/国/業種/シリーズ隣接度でスコアリングして
-// 関連記事を3件、id="related-articles"のコンテナに描画する。
+// 関連記事(最大2件)と関連ツール(最大1件)を種類別に分けて、id="related-articles"のコンテナに描画する。
 (function () {
   var container = document.getElementById('related-articles');
   if (!container || typeof ARTICLES_DATA === 'undefined') return;
@@ -39,19 +39,32 @@
     .sort(function (x, y) {
       if (y.score !== x.score) return y.score - x.score;
       return (seriesNumber(y.article.slug) || 0) - (seriesNumber(x.article.slug) || 0);
-    })
-    .slice(0, 3);
+    });
 
-  if (!scored.length) return;
+  var articleItems = scored.filter(function (item) { return item.article.type !== 'tool'; }).slice(0, 2);
+  var toolItems = scored.filter(function (item) { return item.article.type === 'tool'; }).slice(0, 1);
 
-  var html = '<p class="related-heading">関連記事</p><div class="related-grid">';
-  scored.forEach(function (item) {
-    var a = item.article;
-    html += '<a class="related-card" href="../' + a.slug + '/">' +
-      '<span class="related-card-thumb"><img src="../images/eyecatch/' + a.slug + '.jpg" alt="" loading="lazy" width="400" height="225"></span>' +
-      '<span class="related-card-title">' + a.title + '</span>' +
-      '</a>';
-  });
-  html += '</div>';
+  if (!articleItems.length && !toolItems.length) return;
+
+  function renderGrid(items) {
+    var html = '<div class="related-grid">';
+    items.forEach(function (item) {
+      var a = item.article;
+      html += '<a class="related-card" href="../' + a.slug + '/">' +
+        '<span class="related-card-thumb"><img src="../images/eyecatch/' + a.slug + '.jpg" alt="" loading="lazy" width="400" height="225"></span>' +
+        '<span class="related-card-title">' + a.title + '</span>' +
+        '</a>';
+    });
+    html += '</div>';
+    return html;
+  }
+
+  var html = '';
+  if (articleItems.length) {
+    html += '<p class="related-heading">関連記事</p>' + renderGrid(articleItems);
+  }
+  if (toolItems.length) {
+    html += '<p class="related-heading related-heading-tool">関連ツール</p>' + renderGrid(toolItems);
+  }
   container.innerHTML = html;
 })();

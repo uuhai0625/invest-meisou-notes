@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=34">
+<link rel="stylesheet" href="../style.css?v=35">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -144,6 +144,24 @@
         <p class="ideco-sim-result-note">うち運用益の概算: <span id="ideco-sim-out-gain">—</span>(累計掛金額との差額、毎月拠出・複利運用で試算)。この受取見込み額は、実際に受け取る際にかかる税金(退職所得控除・公的年金等控除など、受取方法により大きく変わります)を差し引く前の金額です。入力した運用利回りは仮の数値であり、将来の運用成果を保証するものではありません。</p>
       </div>
     </form>
+
+    <h2>年間節税額の早見表(参考)</h2>
+    <p>掛金と課税所得の水準を入力するのが面倒な場合は、下の早見表でおおよその年間節税額を確認できます。同じ税率区分の中であれば、課税所得の金額によらず節税額は一定です(上記シミュレーターと同じ計算式を使用)。</p>
+    <div class="table-scroll">
+    <table class="compare-table">
+      <thead><tr><th>課税所得の水準(所得税率)</th><th>月10,000円</th><th>月20,000円</th><th>月23,000円</th><th>月68,000円</th></tr></thead>
+      <tbody>
+        <tr><td>195万円以下(5%)</td><td>18,126円</td><td>36,252円</td><td>41,690円</td><td>123,257円</td></tr>
+        <tr><td>195万円超 330万円以下(10%)</td><td>24,252円</td><td>48,504円</td><td>55,780円</td><td>164,914円</td></tr>
+        <tr><td>330万円超 695万円以下(20%)</td><td>36,504円</td><td>73,008円</td><td>83,959円</td><td>248,227円</td></tr>
+        <tr><td>695万円超 900万円以下(23%)</td><td>40,180円</td><td>80,359円</td><td>92,413円</td><td>273,221円</td></tr>
+        <tr><td>900万円超 1,800万円以下(33%)</td><td>52,432円</td><td>104,863円</td><td>120,593円</td><td>356,535円</td></tr>
+        <tr><td>1,800万円超 4,000万円以下(40%)</td><td>61,008円</td><td>122,016円</td><td>140,318円</td><td>414,854円</td></tr>
+        <tr><td>4,000万円超(45%)</td><td>67,134円</td><td>134,268円</td><td>154,408円</td><td>456,511円</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>掛金月額の欄は、上の「加入区分ごとの掛金上限」で紹介している代表的な金額(20,000円・23,000円・68,000円)に、目安として10,000円を加えた4パターンです。年間節税額は、いずれも所得税(復興特別所得税込み)と住民税(一律10%と仮定)の合計です。</p>
 
     <h2>所得税の速算表(参考)</h2>
     <p>節税額の計算では、課税所得の水準に応じた次の所得税率(限界税率)を使っています。住民税は自治体を問わず一律10%として計算し、所得税額には復興特別所得税(2.1%)をあわせて計上しています。</p>
