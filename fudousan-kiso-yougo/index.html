@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=36">
+<link rel="stylesheet" href="../style.css?v=37">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -126,6 +126,80 @@
     <p>国土交通省の資料によれば、この分野の新規案件数・出資額はここ数年で大きく伸びています。ただし、REITとちがって運用期間中は原則として途中解約や売却ができない(換金性が低い)商品が多い点、事業者ごとに仕組みやリスクの度合いが異なる点は、契約前に必ず確認しておきたいところです。</p>
 
     <p>こうして並べると、「実物を持つ」「市場で持ち分を売買する」「案件単位で資金を出す」という関わり方の違いが見えてきます。どれが優れているという話ではなく、資金量・手間・換金のしやすさのどこを重視するかで見え方が変わる、ということだと理解しています。</p>
+
+    <div class="article-diagram">
+      <svg viewBox="0 0 720 280" role="img" aria-label="不動産クラウドファンディング・REIT・現物不動産投資を、最低投資額が低い順に並べ、最低投資額・流動性・管理の手間を比較した図">
+        <defs>
+          <linearGradient id="fky1-navybg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(44,62,99,0.05)"/>
+            <stop offset="100%" stop-color="rgba(44,62,99,0.14)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- 列1: 不動産クラウドファンディング -->
+        <rect x="10" y="20" width="220" height="246" rx="14" style="fill:url(#fky1-navybg);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="120" cy="54" r="22" style="fill:var(--navy)"/>
+        <g transform="translate(120,54)" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="-8" cy="-6" r="2.6" fill="#fff" stroke="none"/>
+          <circle cx="8" cy="-6" r="2.6" fill="#fff" stroke="none"/>
+          <circle cx="0" cy="-9" r="2.6" fill="#fff" stroke="none"/>
+          <line x1="-8" y1="-3" x2="0" y2="6"/>
+          <line x1="8" y1="-3" x2="0" y2="6"/>
+          <line x1="0" y1="-6" x2="0" y2="6"/>
+          <rect x="-6" y="6" width="12" height="6" rx="1" fill="#fff" stroke="none"/>
+        </g>
+        <text x="120" y="90" text-anchor="middle" style="fill:var(--navy);font-size:12.5px;font-weight:700">不動産クラウド</text>
+        <text x="120" y="106" text-anchor="middle" style="fill:var(--navy);font-size:12.5px;font-weight:700">ファンディング</text>
+        <text x="26" y="124" style="fill:var(--ink-faint);font-size:10.5px">最低投資額</text>
+        <text x="26" y="140" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">1万円程度〜</text>
+        <line x1="26" y1="150" x2="214" y2="150" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="26" y="164" style="fill:var(--ink-faint);font-size:10.5px">流動性</text>
+        <text x="26" y="180" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">低い(途中解約は原則不可)</text>
+        <line x1="26" y1="190" x2="214" y2="190" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="26" y="204" style="fill:var(--ink-faint);font-size:10.5px">管理の手間</text>
+        <text x="26" y="220" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">不要(事業者に委託)</text>
+
+        <!-- 列2: REIT -->
+        <rect x="250" y="20" width="220" height="246" rx="14" style="fill:url(#fky1-navybg);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="360" cy="54" r="22" style="fill:var(--navy)"/>
+        <g transform="translate(360,54) scale(1.15)" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="0" cy="0" r="9"/>
+          <path d="M0 -5v10M-3 -3h5a2 2 0 0 1 0 4h-5"/>
+        </g>
+        <text x="360" y="94" text-anchor="middle" style="fill:var(--navy);font-size:14px;font-weight:900">REIT</text>
+        <text x="360" y="110" text-anchor="middle" style="fill:var(--ink-sub);font-size:11px;font-weight:500">(不動産投資信託)</text>
+        <text x="266" y="124" style="fill:var(--ink-faint);font-size:10.5px">最低投資額</text>
+        <text x="266" y="140" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">数万円程度</text>
+        <line x1="266" y1="150" x2="454" y2="150" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="266" y="164" style="fill:var(--ink-faint);font-size:10.5px">流動性</text>
+        <text x="266" y="180" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">高い(市場でいつでも売買)</text>
+        <line x1="266" y1="190" x2="454" y2="190" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="266" y="204" style="fill:var(--ink-faint);font-size:10.5px">管理の手間</text>
+        <text x="266" y="220" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">不要</text>
+
+        <!-- 列3: 現物不動産投資 -->
+        <rect x="490" y="20" width="220" height="246" rx="14" style="fill:url(#fky1-navybg);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="600" cy="54" r="22" style="fill:var(--navy)"/>
+        <g transform="translate(600,54)" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="-8" y="-11" width="16" height="22" rx="1"/>
+          <rect x="-5" y="-7" width="3" height="3" fill="#fff" stroke="none"/>
+          <rect x="2" y="-7" width="3" height="3" fill="#fff" stroke="none"/>
+          <rect x="-5" y="-1" width="3" height="3" fill="#fff" stroke="none"/>
+          <rect x="2" y="-1" width="3" height="3" fill="#fff" stroke="none"/>
+          <rect x="-2" y="5" width="4" height="6" fill="#fff" stroke="none"/>
+        </g>
+        <text x="600" y="98" text-anchor="middle" style="fill:var(--navy);font-size:13px;font-weight:700">現物不動産投資</text>
+        <text x="506" y="124" style="fill:var(--ink-faint);font-size:10.5px">最低投資額</text>
+        <text x="506" y="140" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">数百万〜数千万円</text>
+        <line x1="506" y1="150" x2="694" y2="150" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="506" y="164" style="fill:var(--ink-faint);font-size:10.5px">流動性</text>
+        <text x="506" y="180" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">低い(数か月かかることも)</text>
+        <line x1="506" y1="190" x2="694" y2="190" style="stroke:var(--ink-faint);stroke-width:1;opacity:0.4"/>
+        <text x="506" y="204" style="fill:var(--ink-faint);font-size:10.5px">管理の手間</text>
+        <text x="506" y="220" style="fill:var(--ink-sub);font-size:11.5px;font-weight:700">自分で対応(管理・修繕等)</text>
+      </svg>
+      <p class="diagram-caption">最低投資額が低い順に並べると、流動性や管理の手間もあわせて変わっていく</p>
+    </div>
 
     <h2>2. 利回りの数字は、そのままでは比べられない</h2>
     <p>不動産の広告でよく見かける「利回り◯%」。ここには大事な前提があります。多くの場合、それは<strong>表面利回り</strong>だということです。</p>

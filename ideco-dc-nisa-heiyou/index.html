@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=36">
+<link rel="stylesheet" href="../style.css?v=37">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -119,6 +119,34 @@
     <p>ただし、条件が二つあります。一つ目は、企業型DCの事業主掛金(会社があなたのDC口座に拠出してくれる掛金のことです)が「各月拠出」であること。年単位でまとめて拠出する方式だと併用できません。自分の会社がどちらの方式か分からない場合も、後述する人事・総務部門への確認が確実です。二つ目は、企業型DCの「マッチング拠出」を利用していないこと。マッチング拠出とは、従業員が任意で会社の掛金に上乗せして拠出する仕組みのことで、これを使っている場合はiDeCoとの併用ができません。この両方を満たす必要があります。なお、マッチング拠出の掛金も、iDeCoと同じく全額所得控除の対象です。税制優遇の仕組み自体はどちらも同じで、違うのは「iDeCoか、会社の制度に上乗せするマッチング拠出か」という窓口だと私は捉えています。</p>
 
     <p>そして併用する場合、企業型DCの事業主掛金額とiDeCoの掛金を合算して、月5.5万円以内という上限があります。加えて、iDeCo側には単体でも月2万円という上限があるため、実際には「事業主掛金と合算して5.5万円以内」「iDeCo単体で2万円以内」の両方を同時に満たす必要があります。たとえば会社の事業主掛金が月3万円なら、5.5万円−3万円で計算上は2.5万円まで出せそうに見えますが、iDeCo単体の上限2万円が優先されるため、実際に拠出できるのは2万円まで、という具合です。会社側の掛金がいくらかによって、自分がiDeCoに出せる金額が変わる、というのがこのルールの肝だと私は理解しています。</p>
+
+    <div class="article-diagram">
+      <svg viewBox="0 0 480 160" role="img" aria-label="事業主掛金3万円+iDeCo拠出2万円=5万円で、合算上限5.5万円のうち0.5万円はiDeCo単体上限2万円により拠出できない例">
+        <text x="20" y="24" style="fill:var(--ink-sub);font-size:12px">例: 事業主掛金が月3万円の場合</text>
+
+        <rect x="20" y="40" width="240" height="44" style="fill:var(--navy)"/>
+        <text x="140" y="58" text-anchor="middle" style="fill:#fff;font-size:12px;font-weight:700">事業主掛金</text>
+        <text x="140" y="75" text-anchor="middle" style="fill:#fff;font-size:12px">3.0万円</text>
+
+        <rect x="260" y="40" width="160" height="44" style="fill:var(--gold-text)"/>
+        <text x="340" y="58" text-anchor="middle" style="fill:#fff;font-size:12px;font-weight:700">iDeCo拠出</text>
+        <text x="340" y="75" text-anchor="middle" style="fill:#fff;font-size:12px">2.0万円</text>
+
+        <rect x="420" y="40" width="40" height="44" style="fill:none;stroke:var(--ink-faint);stroke-width:1.5;stroke-dasharray:3 3"/>
+        <text x="440" y="100" text-anchor="middle" style="fill:var(--ink-faint);font-size:11px">0.5万円は</text>
+        <text x="440" y="113" text-anchor="middle" style="fill:var(--ink-faint);font-size:11px">拠出不可</text>
+
+        <line x1="20" y1="100" x2="20" y2="108" style="stroke:var(--ink-faint);stroke-width:1"/>
+        <line x1="460" y1="100" x2="460" y2="108" style="stroke:var(--ink-faint);stroke-width:1"/>
+        <line x1="20" y1="104" x2="460" y2="104" style="stroke:var(--ink-faint);stroke-width:1"/>
+        <text x="240" y="122" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px;font-weight:700">合算上限 5.5万円</text>
+
+        <line x1="260" y1="34" x2="260" y2="8" style="stroke:var(--gold-text);stroke-width:1;stroke-dasharray:2 2"/>
+        <line x1="420" y1="34" x2="420" y2="8" style="stroke:var(--gold-text);stroke-width:1;stroke-dasharray:2 2"/>
+        <text x="340" y="14" text-anchor="middle" style="fill:var(--gold-text);font-size:11px">iDeCo単体上限 2万円が優先</text>
+      </svg>
+      <p class="diagram-caption">「合算5.5万円以内」と「iDeCo単体2万円以内」は両方同時に満たす必要があり、後者が優先されます</p>
+    </div>
 
     <p>「マッチング拠出を使うか、iDeCoに入るか」は、企業型DCがある会社員にとって、ひとつの分かれ道になっているようです。どちらが良いかは、会社の掛金額や本人の考え方で変わるので、ここでは選択肢があるという事実だけを置いておきます。</p>
 

@@ -917,6 +917,33 @@ h1, h2, h3, .heading-font {
   color: var(--ink-faint);
 }
 
+/* ---- 汎用図解カード(一般知識・投資日記記事、文字だけでは伝わりにくい箇所を図で補う) ---- */
+.article-diagram {
+  margin: 32px 0 40px;
+  padding: 24px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: center;
+}
+.article-diagram svg { width: 100%; max-width: 480px; height: auto; }
+.article-diagram .diagram-caption {
+  margin-top: 8px;
+  font-size: 0.76rem;
+  color: var(--ink-faint);
+}
+.diagram-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--ink-sub);
+}
+.diagram-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.diagram-legend-swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex-shrink: 0; }
+
 /* ---- 運営者アバター(トップページ・免責事項ページの運営者紹介) ---- */
 .author-badge {
   display: flex;

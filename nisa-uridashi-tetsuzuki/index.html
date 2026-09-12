@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=36">
+<link rel="stylesheet" href="../style.css?v=37">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,6 +105,36 @@
     <p>二つ目は、戻る時期です。売ってすぐにその年のうちに枠が戻るのではなく、翌年の1月1日に復活します。「値上がりして得をしたのだから、枠もそのぶん増えて、しかもすぐ使えるはず」と思っていた方が、実際には翌年まで待つことになって驚く、という話を見聞きします。私も最初は同じ感覚でした。</p>
 
     <p>得をした金額と、戻る枠の金額は別物で、戻るのは翌年。この二点を知っているだけで、売った後の見通しがずいぶん立てやすくなると感じています。なお、ここで戻るのは生涯の非課税保有限度額(1,800万円の枠)であって、年間投資枠(つみたて120万円・成長240万円)そのものが増えるわけではない、という点も併せて押さえておきたいところです。</p>
+
+    <div class="article-diagram">
+      <svg viewBox="0 0 480 190" role="img" aria-label="タイムライン図解: 取得価格100万円の投資信託を150万円で売却した年には非課税枠は戻らず、翌年1月1日に取得価格分の100万円だけ非課税保有限度額が復活する">
+        <defs>
+          <marker id="nut1-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+        </defs>
+
+        <text x="110" y="38" text-anchor="middle" style="fill:var(--navy);font-size:13px;font-weight:700">売却した年</text>
+        <text x="370" y="38" text-anchor="middle" style="fill:var(--gold-text);font-size:13px;font-weight:700">翌年1月1日</text>
+
+        <line x1="30" y1="100" x2="450" y2="100" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#nut1-arrow)"/>
+
+        <line x1="110" y1="48" x2="110" y2="94" style="stroke:var(--navy);stroke-width:1;stroke-dasharray:2 2"/>
+        <circle cx="110" cy="100" r="7" style="fill:var(--navy)"/>
+
+        <line x1="370" y1="48" x2="370" y2="94" style="stroke:var(--gold-text);stroke-width:1;stroke-dasharray:2 2"/>
+        <circle cx="370" cy="100" r="7" style="fill:var(--gold-text)"/>
+
+        <text x="110" y="130" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px">取得価格100万円の投信を</text>
+        <text x="110" y="146" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px">150万円で売却</text>
+
+        <text x="370" y="130" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px">非課税枠が</text>
+        <text x="370" y="146" text-anchor="middle" style="fill:var(--ink-sub);font-size:12px;font-weight:700">100万円分だけ復活</text>
+
+        <text x="370" y="168" text-anchor="middle" style="fill:var(--ink-faint);font-size:11px">(値上がり分の50万円は対象外)</text>
+      </svg>
+      <p class="diagram-caption">戻る枠は売却額ではなく取得価格(簿価)の分だけ、しかも売却した年ではなく翌年1月1日に復活する</p>
+    </div>
 
     <h2>「NISAだから配当は非課税」は、設定次第で崩れる</h2>
     <p>NISA口座で株式を持っていれば配当金は非課税、と私は長いあいだ単純に思い込んでいました。ところが、これには条件があります。</p>

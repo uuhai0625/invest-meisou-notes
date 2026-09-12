@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=36">
+<link rel="stylesheet" href="../style.css?v=37">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,6 +111,55 @@
 
     <h3>生活費が必要になった場合</h3>
     <p>相場と関係なく、収入の減少や急な出費で現金が必要になることもあります。この場合、投資を続けることより現金を確保することを優先して考える人が多い、というのが一般的な見方だと思います。相場の回復を待つより先に、生活が回るかどうかが問われる局面です。</p>
+
+    <div class="article-diagram">
+      <svg viewBox="0 0 680 520" role="img" aria-label="下落の程度が10%・20%・30%と深くなるにつれて確認の焦点が移っていく流れと、相場とは別に生活費が必要になった場合という独立したケースを示したチェックリスト風の図解">
+        <defs>
+          <marker id="shk1-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink-faint)"/>
+          </marker>
+        </defs>
+
+        <!-- Box 1: 10% -->
+        <rect x="100" y="20" width="480" height="90" rx="14" ry="14" style="fill:rgba(44,62,99,0.06);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="140" cy="65" r="16" style="fill:var(--navy)"/>
+        <polyline points="148 59 137 70 132 65" style="stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <text x="175" y="58" style="font-size:16px;font-weight:700;fill:var(--navy)">目安10%程度の下落</text>
+        <text x="175" y="82" style="font-size:14px;fill:var(--ink-sub)">資産配分・投資目的からのズレを確認</text>
+
+        <line x1="140" y1="110" x2="140" y2="150" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#shk1-arrow)"/>
+
+        <!-- Box 2: 20% -->
+        <rect x="100" y="150" width="480" height="90" rx="14" ry="14" style="fill:rgba(44,62,99,0.06);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="140" cy="195" r="16" style="fill:var(--navy)"/>
+        <polyline points="148 189 137 200 132 195" style="stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <text x="175" y="188" style="font-size:16px;font-weight:700;fill:var(--navy)">目安20%程度の下落</text>
+        <text x="175" y="212" style="font-size:14px;fill:var(--ink-sub)">保有し続ける前提の期間・</text>
+        <text x="175" y="230" style="font-size:14px;fill:var(--ink-sub)">積立を続ける体力の変化を確認</text>
+
+        <line x1="140" y1="240" x2="140" y2="280" style="stroke:var(--ink-faint);stroke-width:2" marker-end="url(#shk1-arrow)"/>
+
+        <!-- Box 3: 30% -->
+        <rect x="100" y="280" width="480" height="90" rx="14" ry="14" style="fill:rgba(44,62,99,0.06);stroke:var(--navy);stroke-width:1.5"/>
+        <circle cx="140" cy="325" r="16" style="fill:var(--navy)"/>
+        <polyline points="148 319 137 330 132 325" style="stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <text x="175" y="318" style="font-size:16px;font-weight:700;fill:var(--navy)">目安30%程度の下落</text>
+        <text x="175" y="342" style="font-size:14px;fill:var(--ink-sub)">生活資金と長期資金の</text>
+        <text x="175" y="360" style="font-size:14px;fill:var(--ink-sub)">区分を確認</text>
+
+        <line x1="140" y1="370" x2="140" y2="410" style="stroke:var(--ink-faint);stroke-width:2;stroke-dasharray:4 4"/>
+        <text x="175" y="394" style="font-size:13px;fill:var(--ink-faint)">(相場と関係なく生じる、別のケース)</text>
+
+        <!-- Box 4: 生活費が必要になった場合(独立ケース) -->
+        <rect x="100" y="410" width="480" height="90" rx="14" ry="14" style="fill:rgba(138,95,42,0.06);stroke:var(--gold-text);stroke-width:1.5;stroke-dasharray:6 4"/>
+        <circle cx="140" cy="455" r="16" style="fill:var(--gold-text)"/>
+        <polyline points="148 449 137 460 132 455" style="stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <text x="175" y="448" style="font-size:16px;font-weight:700;fill:var(--gold-text)">生活費が必要になった場合</text>
+        <text x="175" y="472" style="font-size:14px;fill:var(--ink-sub)">現金の確保を優先して考える</text>
+        <text x="175" y="490" style="font-size:14px;fill:var(--ink-sub)">人が多い、という見方</text>
+      </svg>
+      <p class="diagram-caption">下落の程度に応じて確認の焦点が移っていく流れ(生活費が必要になった場合は相場とは別に生じる独立したケース)</p>
+    </div>
 
     <h2>「暴落したら買い増し」という単純化について</h2>
     <p>ここまでの確認項目は、あくまで「何を見直すか」の入り口です。実際に「買い増すかどうか」まで踏み込もうとすると、よく目にする言葉があります。「暴落は買い場」「安いうちに買い増し」というものです。長い目で見ればそういう結果になった時期があるのは事実ですが、私はこの言葉を一律の正解として受け取るのは危ういと感じています。</p>
