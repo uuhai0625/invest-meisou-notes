@@ -37,4 +37,5 @@ const ARTICLES_DATA = [
   { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'] },
   { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'] },
   { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'] },
+  { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'] },
 ];
