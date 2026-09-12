@@ -371,6 +371,25 @@ h1, h2, h3, .heading-font {
   overflow: hidden;
 }
 .kigyou-group-header { grid-column: 1 / -1; }
+.kigyou-quicklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -6px 0 20px;
+}
+.kigyou-quicklist a {
+  font-size: 0.78rem;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--navy-soft);
+  color: var(--navy);
+  font-weight: 500;
+}
+.kigyou-quicklist a:hover {
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+}
 
 /* ---- footer ---- */
 .site-footer {
