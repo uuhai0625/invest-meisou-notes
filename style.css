@@ -396,9 +396,8 @@ h1, h2, h3, .heading-font {
 .mini-nav .accent { color: var(--gold-text); }
 
 /* ---- article page ---- */
-.article-page { max-width: 700px; }
-/* 列数の多い比較記事(hikaku系)専用の拡張。本文の行長には触れず、表が使える横幅だけ広げる */
-.article-page.article-page-wide { max-width: 1100px; }
+/* TOCの有無や比較表の列数に関わらず、記事ページは常に同じ幅に統一する */
+.article-page { max-width: 1440px; }
 .article-header {
   padding: 40px 0 24px;
   text-align: center;
@@ -487,8 +486,6 @@ h1, h2, h3, .heading-font {
 .article-toc-desktop { display: none; }
 
 @media (min-width: 1024px) {
-  .article-page.has-toc { max-width: 980px; }
-  .article-page.has-toc.article-page-wide { max-width: 1360px; }
   .article-grid { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: start; }
   .article-grid.no-toc { grid-template-columns: 1fr; }
   .article-main { min-width: 0; }
