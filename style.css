@@ -488,6 +488,7 @@ h1, h2, h3, .heading-font {
   .article-page.has-toc { max-width: 980px; }
   .article-grid { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: start; }
   .article-grid.no-toc { grid-template-columns: 1fr; }
+  .article-main { min-width: 0; }
   .article-toc-mobile { display: none; }
   .article-toc-desktop {
     display: block;
