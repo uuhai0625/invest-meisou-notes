@@ -683,7 +683,6 @@ h1, h2, h3, .heading-font {
 .article-body {
   font-size: 1.03rem;
   color: var(--ink);
-  background-image: repeating-linear-gradient(to bottom, transparent, transparent 37px, var(--line) 38px);
 }
 .article-body p { margin: 0 0 24px; }
 .article-body > p:first-of-type::first-letter {
