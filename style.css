@@ -550,8 +550,60 @@ h1, h2, h3, .heading-font {
 .article-toc-desktop { display: none; }
 
 @media (min-width: 1024px) {
-  .article-grid { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: start; }
-  .article-grid.no-toc { grid-template-columns: 1fr; }
+  /* ---- 左マージン欄(タグ・日付、2026-09-17第2次リニューアル) ----
+     has-toc/no-toc いずれの構造でも「rail(110px) / 本文(可変・最大900px) / (TOCありのみ)200px」の
+     3(2)カラムgridに統一する。article-header・article-main を display:contents で透過させ、
+     その子要素(tags/h1/meta)を直接gridアイテムとして配置し直す。 */
+  /* has-toc/no-toc はtoc.jsが見出し数に応じて<main>とarticle-grid双方のクラスを
+     実行時に付け替えるため(既存コード規約通り)、クラスではなく構造(article-gridの有無)で判定する */
+  .article-page:not(:has(.article-grid)) {
+    display: grid;
+    grid-template-columns: 110px min(900px, 100%);
+    column-gap: 32px;
+    justify-content: center;
+    align-items: start;
+  }
+  .article-page:not(:has(.article-grid)) > .article-header { display: contents; }
+
+  .article-grid { display: grid; width: 100%; grid-template-columns: 110px min(900px, 100%) 200px; grid-template-rows: auto auto auto auto; column-gap: 32px; justify-content: center; align-items: start; }
+  .article-grid.no-toc { grid-template-columns: 110px min(900px, 100%); }
+  .article-grid .article-main { display: contents; }
+  .article-grid .article-main > .article-header { display: contents; }
+
+  .article-header .tags {
+    grid-column: 1;
+    grid-row: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .article-header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .article-header .meta { grid-column: 1; grid-row: 2; padding-top: 8px; }
+  .article-page:not(:has(.article-grid)) > .article-eyecatch,
+  .article-grid .article-main > .article-eyecatch {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .article-page:not(:has(.article-grid)) > .article-body,
+  .article-grid .article-main > .article-body {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .article-page:not(:has(.article-grid)) > .back-link,
+  .article-grid .article-main > .back-link {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .article-grid .article-toc-desktop { grid-column: 3; grid-row: 1 / -1; }
+  .article-eyecatch { margin-left: auto; margin-right: auto; }
+
   .article-main { min-width: 0; }
   .article-toc-mobile { display: none; }
   .article-toc-desktop {
