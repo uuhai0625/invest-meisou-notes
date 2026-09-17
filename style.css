@@ -5,7 +5,7 @@
   --bg-card-hover: #f1ebd9;
   --ink: #22242a;
   --ink-sub: #5b5b52;
-  --ink-faint: #7a776a;
+  --ink-faint: #6c6858; /* WCAG AA実測4.86:1(旧#7a776aは3.91:1でNG、--bg#f4efe1に対して算出) */
   --navy: #2e3c58;
   --navy-soft: rgba(46, 60, 88, 0.08);
   --gold: #9a4a2e;
@@ -86,9 +86,9 @@ h1, h2, h3, .heading-font {
 }
 
 .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 1024px) {
-  .wrap.has-toc { max-width: 980px; }
-}
+/* .wrap.has-toc の980px上限は2026-09-17に廃止: article-page(1440px、下記)がTOC付き記事にも
+   常に適用される前提でマージン欄grid(rail 110px+本文+TOC 200px、最小1274px)を設計したため、
+   このルールが特異度(0,2,0 > 0,1,0)で勝ってしまうと980pxに収まらず横溢れする実バグがあった */
 
 /* ---- hero (LP風) ---- */
 .hero {
@@ -476,6 +476,10 @@ h1, h2, h3, .heading-font {
   background: var(--gold-soft);
   color: var(--gold-text);
 }
+@media (prefers-color-scheme: dark) {
+  /* 実測コントラスト比 約4.31:1でWCAG AA(4.5:1)に届かないため、このコンポーネントに限定して明度を上げる */
+  .article-header .tag { color: #d68a5f; }
+}
 .article-header h1 {
   margin: 0 0 14px;
   font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
@@ -578,14 +582,16 @@ h1, h2, h3, .heading-font {
     justify-content: flex-start;
     gap: 8px;
     margin-bottom: 0;
+    text-align: left;
   }
   .article-header h1 {
     grid-column: 2;
     grid-row: 1;
+    text-align: left;
     padding-bottom: 24px;
     border-bottom: 1px solid var(--line);
   }
-  .article-header .meta { grid-column: 1; grid-row: 2; padding-top: 8px; }
+  .article-header .meta { grid-column: 1; grid-row: 2; padding-top: 8px; text-align: left; }
   .article-page:not(:has(.article-grid)) > .article-eyecatch,
   .article-grid .article-main > .article-eyecatch {
     grid-column: 2;
