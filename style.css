@@ -1,38 +1,38 @@
 :root {
-  --bg: #faf8f3;
-  --bg-warm: #f4f0e8;
-  --bg-card: #ffffff;
-  --bg-card-hover: #fdfbf7;
-  --ink: #1c1e26;
-  --ink-sub: #565a6b;
-  --ink-faint: #676b74;
-  --navy: #2c3e63;
-  --navy-soft: rgba(44, 62, 99, 0.08);
-  --gold: #8a5f2a;
-  --gold-soft: rgba(138, 95, 42, 0.10);
-  --gold-text: #8a5f2a;
-  --line: #ece6d8;
-  --shadow: 0 20px 48px rgba(28, 30, 38, 0.10);
-  --shadow-soft: 0 4px 16px rgba(28, 30, 38, 0.06);
+  --bg: #f4efe1;
+  --bg-warm: #ede6d2;
+  --bg-card: #faf7ec;
+  --bg-card-hover: #f1ebd9;
+  --ink: #22242a;
+  --ink-sub: #5b5b52;
+  --ink-faint: #7a776a;
+  --navy: #2e3c58;
+  --navy-soft: rgba(46, 60, 88, 0.08);
+  --gold: #9a4a2e;
+  --gold-soft: rgba(154, 74, 46, 0.10);
+  --gold-text: #9a4a2e;
+  --line: #ddd3ba;
+  --shadow: 0 20px 48px rgba(34, 30, 20, 0.10);
+  --shadow-soft: 0 4px 16px rgba(34, 30, 20, 0.06);
   --radius: 8px;
 }
 
 /* ---- ダークモード(OSのprefers-color-schemeに追従、切替トグルなし) ---- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14161c;
-    --bg-warm: #1b1e26;
-    --bg-card: #1e212b;
-    --bg-card-hover: #262a35;
-    --ink: #e8e6de;
-    --ink-sub: #aeb2c0;
-    --ink-faint: #888c99;
-    --navy: #8fa5d6;
-    --navy-soft: rgba(143, 165, 214, 0.14);
-    --gold: #d9a35c;
-    --gold-soft: rgba(217, 163, 92, 0.14);
-    --gold-text: #d9a35c;
-    --line: #33374a;
+    --bg: #1b1c20;
+    --bg-warm: #232429;
+    --bg-card: #1f2024;
+    --bg-card-hover: #26272c;
+    --ink: #e8e3d3;
+    --ink-sub: #a8a294;
+    --ink-faint: #8b8676;
+    --navy: #8ea0c9;
+    --navy-soft: rgba(142, 160, 201, 0.14);
+    --gold: #c97b52;
+    --gold-soft: rgba(201, 123, 82, 0.14);
+    --gold-text: #c97b52;
+    --line: #2c2d32;
     --shadow: 0 20px 48px rgba(0, 0, 0, 0.45);
     --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.3);
   }
@@ -101,7 +101,7 @@ h1, h2, h3, .heading-font {
 }
 .site-logo {
   margin: 0;
-  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-size: 2.9rem;
   font-weight: 700;
   line-height: 1.35;
@@ -467,15 +467,18 @@ h1, h2, h3, .heading-font {
 }
 .article-header .tags { display: flex; gap: 6px; justify-content: center; margin-bottom: 18px; }
 .article-header .tag {
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-size: 0.72rem;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: var(--navy-soft);
-  color: var(--navy);
+  letter-spacing: 0.04em;
+  padding: 4px 11px;
+  border-radius: 3px;
+  border: 1px solid var(--gold);
+  background: var(--gold-soft);
+  color: var(--gold-text);
 }
 .article-header h1 {
   margin: 0 0 14px;
-  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-size: 1.85rem;
   line-height: 1.55;
 }
@@ -598,11 +601,37 @@ h1, h2, h3, .heading-font {
 .article-body {
   font-size: 1.03rem;
   color: var(--ink);
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 37px, var(--line) 38px);
 }
 .article-body p { margin: 0 0 24px; }
+.article-body > p:first-of-type::first-letter {
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 700;
+  font-size: 2.6em;
+  line-height: 0.82;
+  float: left;
+  padding: 5px 8px 0 0;
+  color: var(--navy);
+}
 .article-body h2 {
   margin: 52px 0 20px;
+  padding-top: 22px;
   font-size: 1.35rem;
+  position: relative;
+}
+.article-body h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 10'%3E%3Cpath d='M2 5c10-4 18 4 28 0s18-5 32 1' fill='none' stroke='%239a4a2e' stroke-width='2' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E") no-repeat left center / contain;
+}
+@media (prefers-color-scheme: dark) {
+  .article-body h2::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 10'%3E%3Cpath d='M2 5c10-4 18 4 28 0s18-5 32 1' fill='none' stroke='%23c97b52' stroke-width='2' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E");
+  }
 }
 .article-body h3 {
   margin: 36px 0 16px;
@@ -1487,7 +1516,7 @@ h1, h2, h3, .heading-font {
   flex-wrap: wrap;
 }
 .site-header-logo {
-  font-family: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--ink);
