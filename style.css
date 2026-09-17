@@ -641,6 +641,26 @@ h1, h2, h3, .heading-font {
   .article-toc-desktop nav a.active { color: var(--navy); border-left-color: var(--navy); font-weight: 700; }
 }
 
+/* ---- 比較表の欄外拡張(2026-09-18) ----
+   7〜8列の比較表は本文の900px幅に収まりきらず、900px化以前より見やすさが落ちたとの
+   指摘(five-reviewer-panel懐疑派)を受けて対応。左は常にrail(110px+gap32px=142px)まで拡張。
+   右はTOC列(200px+gap32px)と物理的に重なるため、TOCが存在しないテンプレート
+   (article-grid非搭載、またはarticle-gridでもno-toc)に限って拡張する。
+   1024px幅の直後(上のマージン欄grid自体が1024〜1280px付近でギリギリ収まらないケースがある)
+   ではこの拡張分だけで横溢れするため、実測で溢れが消える1300px前後に安全マージンを足した
+   1360px以上に限定する(1024〜1360pxの間は従来通り900px幅+横スクロールのフォールバックのまま)。 */
+@media (min-width: 1360px) {
+  .article-page:not(:has(.article-grid)) .article-body > .table-scroll,
+  .article-grid.no-toc .article-main > .article-body > .table-scroll {
+    margin-left: -142px;
+    width: calc(100% + 142px + 232px);
+  }
+  .article-grid:not(.no-toc) .article-main > .article-body > .table-scroll {
+    margin-left: -142px;
+    width: calc(100% + 142px);
+  }
+}
+
 .article-eyecatch {
   max-width: 760px;
   margin: 0 0 40px;
