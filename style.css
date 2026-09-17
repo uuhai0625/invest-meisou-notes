@@ -560,17 +560,21 @@ h1, h2, h3, .heading-font {
      その子要素(tags/h1/meta)を直接gridアイテムとして配置し直す。 */
   /* has-toc/no-toc はtoc.jsが見出し数に応じて<main>とarticle-grid双方のクラスを
      実行時に付け替えるため(既存コード規約通り)、クラスではなく構造(article-gridの有無)で判定する */
+  /* 本文カラムは min(900px,100%) だと「100%」がコンテナ全体基準の固定値になり、
+     rail(110px)+gap(32px)と合計した1042pxが1024px直後の狭い実効幅(約1009px)を
+     超えて横溢れしていた(2026-09-18判明)。minmax(0,900px)にすると本文カラムが
+     真に可変(縮小可能)になり、rail等の固定カラムと合計しても常にコンテナ幅に収まる。 */
   .article-page:not(:has(.article-grid)) {
     display: grid;
-    grid-template-columns: 110px min(900px, 100%);
+    grid-template-columns: 110px minmax(0, 900px);
     column-gap: 32px;
     justify-content: center;
     align-items: start;
   }
   .article-page:not(:has(.article-grid)) > .article-header { display: contents; }
 
-  .article-grid { display: grid; width: 100%; grid-template-columns: 110px min(900px, 100%) 200px; grid-template-rows: auto auto auto auto; column-gap: 32px; justify-content: center; align-items: start; }
-  .article-grid.no-toc { grid-template-columns: 110px min(900px, 100%); }
+  .article-grid { display: grid; width: 100%; grid-template-columns: 110px minmax(0, 900px) 200px; grid-template-rows: auto auto auto auto; column-gap: 32px; justify-content: center; align-items: start; }
+  .article-grid.no-toc { grid-template-columns: 110px minmax(0, 900px); }
   .article-grid .article-main { display: contents; }
   .article-grid .article-main > .article-header { display: contents; }
 
