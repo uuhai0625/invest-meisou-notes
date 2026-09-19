@@ -3,6 +3,8 @@
 // ここにも1行追加すること(忘れやすいので新記事公開チェックリストに含める)。
 // tags: 'kigyou'(企業分析) / 'ippan'(一般知識) / 'nikki'(投資日記) / 'fudousan'(不動産)
 // type: 'tool'(クイズ・用語集・シミュレーター等の記事以外のコンテンツ)。省略時は通常の記事扱い。
+// related: 関連記事を手動指定するslugの配列(指定があればスコアリングより優先、2026-09-19〜)。
+// tool: 関連ツールとして出すslug(省略時は、企業分析・暗号資産シリーズは用語集、それ以外は非表示)。
 // slugはフォルダ名と一致させる(画像は images/eyecatch/<slug>.jpg を参照する)。
 const ARTICLES_DATA = [
   { slug: 'kigyou-seichou-yomikata-case1', title: '企業の「成長段階」はどう読むか', tags: ['kigyou', 'ippan'], country: 'jp', industry: 'paper' },
@@ -20,29 +22,29 @@ const ARTICLES_DATA = [
   { slug: 'kigyou-seichou-yomikata-case12', title: '企業の「成長段階」はどう読むか(12)', tags: ['kigyou', 'ippan'], country: 'us', industry: 'semiconductor' },
   { slug: 'kigyou-seichou-yomikata-case13', title: '企業の「成長段階」はどう読むか(13)', tags: ['kigyou', 'ippan'], country: 'us', industry: 'semiconductor' },
   { slug: 'kigyou-seichou-yomikata-hikaku-us', title: '企業の「成長段階」はどう読むか——米国株6社を並べて比較する', tags: ['kigyou', 'ippan'], country: 'us' },
-  { slug: 'shisan-kouhyou-kiten', title: 'いま、私の資産はどこにあるのか', tags: ['nikki'] },
-  { slug: 'shoken-koza-hikaku', title: '証券口座はどう選ぶか', tags: ['ippan'] },
-  { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'] },
-  { slug: 'fudousan-kiso-yougo', title: '不動産投資をはじめる前に、静かに整理しておきたい基礎知識', tags: ['fudousan', 'ippan'] },
-  { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'] },
-  { slug: 'kasoutsuka-hajimekata', title: '仮想通貨、何から始めればいいのか', tags: ['kasoutsuka', 'ippan'] },
-  { slug: 'kasoutsuka-koza-hikaku', title: '暗号資産取引所はどう選ぶか', tags: ['kasoutsuka', 'ippan'] },
+  { slug: 'shisan-kouhyou-kiten', title: 'いま、私の資産はどこにあるのか', tags: ['nikki'], related: ['nisa-ideco-hikaku', 'kakei-katachi-toushi-kangaekata'] },
+  { slug: 'shoken-koza-hikaku', title: '証券口座はどう選ぶか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'], related: ['ideco-dc-nisa-heiyou', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'fudousan-kiso-yougo', title: '不動産投資をはじめる前に、静かに整理しておきたい基礎知識', tags: ['fudousan', 'ippan'], related: ['toushin-etf-hikaku', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
+  { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'], related: ['kasoutsuka-hajimekata', 'kasoutsuka-koza-hikaku'] },
+  { slug: 'kasoutsuka-hajimekata', title: '仮想通貨、何から始めればいいのか', tags: ['kasoutsuka', 'ippan'], related: ['kasoutsuka-koza-hikaku', 'kasoutsuka-2021-furikaeri'], tool: 'toushi-yougo-shu' },
+  { slug: 'kasoutsuka-koza-hikaku', title: '暗号資産取引所はどう選ぶか', tags: ['kasoutsuka', 'ippan'], related: ['kasoutsuka-hajimekata', 'kasoutsuka-kachi-yomikata-hikaku'] },
   { slug: 'kasoutsuka-kachi-yomikata-case1', title: '暗号資産の「価値」はどう読むか', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'kasoutsuka-kachi-yomikata-case2', title: '暗号資産の「価値」はどう読むか(2)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'kasoutsuka-kachi-yomikata-case3', title: '暗号資産の「価値」はどう読むか(3)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'kasoutsuka-kachi-yomikata-case4', title: '暗号資産の「価値」はどう読むか(4)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-news', title: '投資まわりのニュースまとめ', tags: ['ippan'] },
-  { slug: 'nisa-ideco-koza-kaisetsu-kiroku', title: 'NISA・iDeCoは、始める前がいちばん大変だった', tags: ['nikki'] },
+  { slug: 'nisa-ideco-koza-kaisetsu-kiroku', title: 'NISA・iDeCoは、始める前がいちばん大変だった', tags: ['nikki'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'] },
   { slug: 'kasoutsuka-kachi-yomikata-case5', title: '暗号資産の「価値」はどう読むか(5)', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-literacy-quiz', title: '投資まわりの基礎知識クイズ', tags: ['ippan'], type: 'tool' },
   { slug: 'kasoutsuka-kachi-yomikata-hikaku', title: '暗号資産の「価値」はどう読むか——5銘柄を並べて比較する', tags: ['kasoutsuka', 'ippan'] },
   { slug: 'toushi-yougo-shu', title: '投資まわりの用語集', tags: ['ippan'], type: 'tool' },
-  { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'] },
-  { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'] },
-  { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'] },
-  { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'] },
+  { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'], related: ['tsumitate-ikkatsu-hikaku', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'ideco-dc-nisa-heiyou'], tool: 'toushi-yougo-shu' },
+  { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'ideco-setsuzei-simulator', title: 'iDeCo節税額シミュレーター', tags: ['ippan'], type: 'tool' },
-  { slug: 'toushin-etf-hikaku', title: '投資信託とETF、何が違うのか', tags: ['ippan'] },
-  { slug: 'gaika-shisan-kiso', title: '外貨・ドル建て資産の基礎', tags: ['ippan'] },
-  { slug: 'tsumitate-ikkatsu-hikaku', title: '積立投資と一括投資、何が違うのか', tags: ['ippan'] },
+  { slug: 'toushin-etf-hikaku', title: '投資信託とETF、何が違うのか', tags: ['ippan'], related: ['tsumitate-ikkatsu-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'gaika-shisan-kiso', title: '外貨・ドル建て資産の基礎', tags: ['ippan'], related: ['toushin-etf-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'tsumitate-ikkatsu-hikaku', title: '積立投資と一括投資、何が違うのか', tags: ['ippan'], related: ['toushin-etf-hikaku', 'nisa-ideco-hikaku'], tool: 'toushi-literacy-quiz' },
 ];

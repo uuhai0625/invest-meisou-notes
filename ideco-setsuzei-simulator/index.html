@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=62">
+<link rel="stylesheet" href="../style.css?v=66">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -147,17 +147,17 @@
 
     <h2>年間節税額の早見表(参考)</h2>
     <p>掛金と課税所得の水準を入力するのが面倒な場合は、下の早見表でおおよその年間節税額を確認できます。同じ税率区分の中であれば、課税所得の金額によらず節税額は一定です(上記シミュレーターと同じ計算式を使用)。</p>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead><tr><th>課税所得の水準(所得税率)</th><th>月10,000円</th><th>月20,000円</th><th>月23,000円</th><th>月68,000円</th></tr></thead>
       <tbody>
-        <tr><td>195万円以下(5%)</td><td>18,126円</td><td>36,252円</td><td>41,690円</td><td>123,257円</td></tr>
-        <tr><td>195万円超 330万円以下(10%)</td><td>24,252円</td><td>48,504円</td><td>55,780円</td><td>164,914円</td></tr>
-        <tr><td>330万円超 695万円以下(20%)</td><td>36,504円</td><td>73,008円</td><td>83,959円</td><td>248,227円</td></tr>
-        <tr><td>695万円超 900万円以下(23%)</td><td>40,180円</td><td>80,359円</td><td>92,413円</td><td>273,221円</td></tr>
-        <tr><td>900万円超 1,800万円以下(33%)</td><td>52,432円</td><td>104,863円</td><td>120,593円</td><td>356,535円</td></tr>
-        <tr><td>1,800万円超 4,000万円以下(40%)</td><td>61,008円</td><td>122,016円</td><td>140,318円</td><td>414,854円</td></tr>
-        <tr><td>4,000万円超(45%)</td><td>67,134円</td><td>134,268円</td><td>154,408円</td><td>456,511円</td></tr>
+        <tr><th scope="row">195万円以下(5%)</th><td>18,126円</td><td>36,252円</td><td>41,690円</td><td>123,257円</td></tr>
+        <tr><th scope="row">195万円超 330万円以下(10%)</th><td>24,252円</td><td>48,504円</td><td>55,780円</td><td>164,914円</td></tr>
+        <tr><th scope="row">330万円超 695万円以下(20%)</th><td>36,504円</td><td>73,008円</td><td>83,959円</td><td>248,227円</td></tr>
+        <tr><th scope="row">695万円超 900万円以下(23%)</th><td>40,180円</td><td>80,359円</td><td>92,413円</td><td>273,221円</td></tr>
+        <tr><th scope="row">900万円超 1,800万円以下(33%)</th><td>52,432円</td><td>104,863円</td><td>120,593円</td><td>356,535円</td></tr>
+        <tr><th scope="row">1,800万円超 4,000万円以下(40%)</th><td>61,008円</td><td>122,016円</td><td>140,318円</td><td>414,854円</td></tr>
+        <tr><th scope="row">4,000万円超(45%)</th><td>67,134円</td><td>134,268円</td><td>154,408円</td><td>456,511円</td></tr>
       </tbody>
     </table>
     </div>
@@ -165,30 +165,30 @@
 
     <h2>所得税の速算表(参考)</h2>
     <p>節税額の計算では、課税所得の水準に応じた次の所得税率(限界税率)を使っています。住民税は自治体を問わず一律10%として計算し、所得税額には復興特別所得税(2.1%)をあわせて計上しています。</p>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead><tr><th>課税される所得金額</th><th>所得税率</th></tr></thead>
       <tbody>
-        <tr><td>195万円以下</td><td>5%</td></tr>
-        <tr><td>195万円超 330万円以下</td><td>10%</td></tr>
-        <tr><td>330万円超 695万円以下</td><td>20%</td></tr>
-        <tr><td>695万円超 900万円以下</td><td>23%</td></tr>
-        <tr><td>900万円超 1,800万円以下</td><td>33%</td></tr>
-        <tr><td>1,800万円超 4,000万円以下</td><td>40%</td></tr>
-        <tr><td>4,000万円超</td><td>45%</td></tr>
+        <tr><th scope="row">195万円以下</th><td>5%</td></tr>
+        <tr><th scope="row">195万円超 330万円以下</th><td>10%</td></tr>
+        <tr><th scope="row">330万円超 695万円以下</th><td>20%</td></tr>
+        <tr><th scope="row">695万円超 900万円以下</th><td>23%</td></tr>
+        <tr><th scope="row">900万円超 1,800万円以下</th><td>33%</td></tr>
+        <tr><th scope="row">1,800万円超 4,000万円以下</th><td>40%</td></tr>
+        <tr><th scope="row">4,000万円超</th><td>45%</td></tr>
       </tbody>
     </table>
     </div>
 
     <h2>加入区分ごとの掛金上限(参考)</h2>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead><tr><th>加入者区分</th><th>月額上限(2026年9月時点)</th></tr></thead>
       <tbody>
-        <tr><td>自営業等(第1号被保険者)</td><td>68,000円(国民年金基金・付加保険料と合算枠)</td></tr>
-        <tr><td>会社員(勤め先に企業年金なし)</td><td>23,000円</td></tr>
-        <tr><td>会社員(企業型DCのみ/DB等併存)・公務員</td><td>20,000円</td></tr>
-        <tr><td>専業主婦・主夫(第3号被保険者)</td><td>23,000円</td></tr>
+        <tr><th scope="row">自営業等(第1号被保険者)</th><td>68,000円(国民年金基金・付加保険料と合算枠)</td></tr>
+        <tr><th scope="row">会社員(勤め先に企業年金なし)</th><td>23,000円</td></tr>
+        <tr><th scope="row">会社員(企業型DCのみ/DB等併存)・公務員</th><td>20,000円</td></tr>
+        <tr><th scope="row">専業主婦・主夫(第3号被保険者)</th><td>23,000円</td></tr>
       </tbody>
     </table>
     </div>

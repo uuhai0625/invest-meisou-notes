@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=62">
+<link rel="stylesheet" href="../style.css?v=66">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,7 +116,7 @@
     <h2>1. 外貨建て資産にはどんな種類があるか</h2>
     <p>代表的な6種類を、仕組みと最低投資額の目安とともに並べます。</p>
 
-    <div class="article-diagram">
+    <div class="article-diagram" tabindex="0" role="region" aria-label="図解(横にスクロールできます)">
       <svg viewBox="0 0 480 352" role="img" aria-label="外貨建て資産の6つの種類: 外貨預金・外国債券・外貨建てMMF・外貨建て保険・米国株式/ETF・投資信託(為替ヘッジあり/なし)">
         <rect x="20" y="24" width="138" height="140" rx="14" style="fill:rgba(44,62,99,0.08);stroke:var(--navy);stroke-width:1.5;filter:drop-shadow(0 6px 14px rgba(44,62,99,.12))"/>
         <circle cx="89" cy="58" r="16" style="fill:var(--navy);filter:drop-shadow(0 4px 8px rgba(44,62,99,.18))"/>
@@ -203,16 +203,16 @@
 
     <p>この手数料の水準は、金融機関によってかなり開きがあります。2026年9月時点で確認できた範囲を表にします。</p>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead>
         <tr><th>区分</th><th>為替手数料の水準(米ドル、往復)</th><th>備考</th></tr>
       </thead>
       <tbody>
-        <tr><td>ネット系銀行の外貨預金</td><td>数銭〜十数銭程度</td><td>銀行・時期により変動</td></tr>
-        <tr><td>メガバンクの窓口取引</td><td>1ドルあたり約2円(片道1円)</td><td>三菱UFJ銀行公式の例</td></tr>
-        <tr><td>メガバンクのインターネット取引</td><td>1ドルあたり約50銭(片道25銭)</td><td>同上</td></tr>
-        <tr><td>米国株取引の円貨決済</td><td>無料〜片道25銭</td><td>証券会社により異なる(後述)</td></tr>
+        <tr><th scope="row">ネット系銀行の外貨預金</th><td>数銭〜十数銭程度</td><td>銀行・時期により変動</td></tr>
+        <tr><th scope="row">メガバンクの窓口取引</th><td>1ドルあたり約2円(片道1円)</td><td>三菱UFJ銀行公式の例</td></tr>
+        <tr><th scope="row">メガバンクのインターネット取引</th><td>1ドルあたり約50銭(片道25銭)</td><td>同上</td></tr>
+        <tr><th scope="row">米国株取引の円貨決済</th><td>無料〜片道25銭</td><td>証券会社により異なる(後述)</td></tr>
       </tbody>
     </table>
     </div>
@@ -237,18 +237,18 @@
     </ul>
     <p>同じ「20.315%」という税率でも、総合課税の対象になる所得は他の所得次第でさらに税負担が重くなることがある、という点が分離課税との違いです。</p>
 
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead>
         <tr><th>商品・所得の種類</th><th>所得区分</th><th>課税方式</th><th>備考</th></tr>
       </thead>
       <tbody>
-        <tr><td>外貨預金の利息</td><td>利子所得</td><td>源泉分離課税(20.315%)</td><td>確定申告不要</td></tr>
-        <tr><td>外貨預金の為替差益(円転時)</td><td>雑所得</td><td>総合課税</td><td>給与所得者は少額なら申告不要な場合あり(詳細は本文参照)</td></tr>
-        <tr><td>外国株式の譲渡益</td><td>上場株式等の譲渡所得等</td><td>申告分離課税(20.315%)</td><td>国税庁タックスアンサーNo.1463</td></tr>
-        <tr><td>外国株式の配当</td><td>配当所得</td><td>現地源泉税+日本の税</td><td>外国税額控除で調整可(No.1240)</td></tr>
-        <tr><td>外貨建て保険(一時金受取)</td><td>一時所得</td><td>総合課税</td><td>受取総額−払込保険料−特別控除50万円、の2分の1が課税対象</td></tr>
-        <tr><td>外貨建て保険(年金受取)</td><td>雑所得</td><td>総合課税</td><td>保険金全体としての所得区分で課税</td></tr>
+        <tr><th scope="row">外貨預金の利息</th><td>利子所得</td><td>源泉分離課税(20.315%)</td><td>確定申告不要</td></tr>
+        <tr><th scope="row">外貨預金の為替差益(円転時)</th><td>雑所得</td><td>総合課税</td><td>給与所得者は少額なら申告不要な場合あり(詳細は本文参照)</td></tr>
+        <tr><th scope="row">外国株式の譲渡益</th><td>上場株式等の譲渡所得等</td><td>申告分離課税(20.315%)</td><td>国税庁タックスアンサーNo.1463</td></tr>
+        <tr><th scope="row">外国株式の配当</th><td>配当所得</td><td>現地源泉税+日本の税</td><td>外国税額控除で調整可(No.1240)</td></tr>
+        <tr><th scope="row">外貨建て保険(一時金受取)</th><td>一時所得</td><td>総合課税</td><td>受取総額−払込保険料−特別控除50万円、の2分の1が課税対象</td></tr>
+        <tr><th scope="row">外貨建て保険(年金受取)</th><td>雑所得</td><td>総合課税</td><td>保険金全体としての所得区分で課税</td></tr>
       </tbody>
     </table>
     </div>

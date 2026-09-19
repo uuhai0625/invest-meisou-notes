@@ -1,6 +1,7 @@
 // articles-data.jsの後に読み込むこと。
 // 現在のページのslugをURLから判定し、タグ/国/業種/シリーズ隣接度でスコアリングして
-// 関連記事(最大2件)と関連ツール(最大1件)を種類別に分けて、id="related-articles"のコンテナに描画する。
+// 関連記事(最大2件、articles-data.jsのrelated指定があれば優先)と関連ツール(最大1件、tool指定または用語集)を
+// 種類別に分けて、id="related-articles"のコンテナに描画する。
 (function () {
   var container = document.getElementById('related-articles');
   if (!container || typeof ARTICLES_DATA === 'undefined') return;
@@ -44,8 +45,19 @@
       return y.order - x.order;
     });
 
-  var articleItems = scored.filter(function (item) { return item.article.type !== 'tool'; }).slice(0, 2);
-  var toolItems = scored.filter(function (item) { return item.article.type === 'tool'; }).slice(0, 1);
+  function bySlug(slug) {
+    var a = ARTICLES_DATA.find(function (x) { return x.slug === slug; });
+    return a ? { article: a } : null;
+  }
+
+  // 手動指定(related)があれば優先し、なければスコアリング上位2件
+  var articleItems = current.related
+    ? current.related.map(bySlug).filter(Boolean).slice(0, 2)
+    : scored.filter(function (item) { return item.article.type !== 'tool'; }).slice(0, 2);
+
+  // 関連ツールは「合うものだけ」出す。指定(tool)があればそれ、なければ企業分析・暗号資産シリーズに用語集
+  var toolSlug = current.tool || ((currentIsKigyou || current.tags.indexOf('kasoutsuka') !== -1) ? 'toushi-yougo-shu' : null);
+  var toolItems = toolSlug && toolSlug !== current.slug ? [bySlug(toolSlug)].filter(Boolean) : [];
 
   if (!articleItems.length && !toolItems.length) return;
 

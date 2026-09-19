@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=62">
+<link rel="stylesheet" href="../style.css?v=66">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,7 +116,7 @@
     <h2>1. 投資信託とETFは対立ではなく入れ子の関係</h2>
     <p>ETF(上場投資信託)は、法律の上では投資信託の一種です。「投資信託及び投資法人に関する法律」に基づく投資信託でありながら、証券取引所に上場している商品です(日本取引所グループの解説による)。正確には、投資信託という大きな枠の中に、上場していない投資信託と、上場しているETFがある入れ子の関係で、この記事では便宜上、前者を「投資信託(非上場)」、後者を「ETF」と呼び分けます。</p>
 
-    <div class="article-diagram">
+    <div class="article-diagram" tabindex="0" role="region" aria-label="図解(横にスクロールできます)">
       <svg viewBox="0 0 480 230" role="img" aria-label="投資信託という大きな枠の中に、上場していない投資信託と、上場しているETFがある入れ子構造">
         <defs>
           <linearGradient id="teh1-outer" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -184,24 +184,24 @@
 
     <h2>4. 違いを表で整理する</h2>
     <p>ここまでの内容を一覧にします(表の中の新NISAやiDeCoの対象本数は、5節で制度ごとに説明します)。</p>
-    <div class="table-scroll">
+    <div class="table-scroll" tabindex="0" role="region" aria-label="比較表(横にスクロールできます)">
     <table class="compare-table">
       <thead>
         <tr><th>項目</th><th>投資信託(非上場)</th><th>ETF(上場投資信託)</th></tr>
       </thead>
       <tbody>
-        <tr><td>定義上の位置づけ</td><td>投資信託(非上場)</td><td>投資信託の一種で、証券取引所に上場</td></tr>
-        <tr><td>取引方法</td><td>販売会社を通じて申込む</td><td>取引所で株式と同様に売買(指値・成行可)</td></tr>
-        <tr><td>約定タイミング</td><td>1日1回の基準価額で約定(ブラインド方式)</td><td>取引時間中にリアルタイムで約定</td></tr>
-        <tr><td>コスト構造</td><td>信託報酬+隠れコスト(実質コストで比較)</td><td>信託報酬+隠れコスト+売買手数料(証券会社により無料化あり)</td></tr>
-        <tr><td>最低投資金額</td><td>100円や1,000円からの証券会社が多い</td><td>市場価格×1口(数千円〜数万円程度になる場合も)</td></tr>
-        <tr><td>つみたて投資枠</td><td>対象の大半(363本中354本)</td><td>対象はごく少数(363本中9本)</td></tr>
-        <tr><td>成長投資枠</td><td>対象多数</td><td>対象あり(66本)</td></tr>
-        <tr><td>iDeCo</td><td>対象商品に含まれる</td><td>多くの運営管理機関で対象外</td></tr>
-        <tr><td>分配金の再投資</td><td>再投資コースがあれば自動再投資可</td><td>自動再投資なし(自分で買い直す)</td></tr>
-        <tr><td>分配金の課税(特定口座・一般口座)</td><td>普通分配金は課税、元本払戻金は非課税(一般的な整理)</td><td>上場株式の配当と同様の扱い(税率20.315%、一般的な整理)</td></tr>
-        <tr><td>NISA口座で保有した場合</td><td>分配金・売却益とも非課税</td><td>分配金・売却益とも非課税</td></tr>
-        <tr><td>流動性・価格乖離</td><td>基準価額そのもので約定するため乖離は生じない</td><td>市場価格が基準価額から乖離することがある</td></tr>
+        <tr><th scope="row">定義上の位置づけ</th><td>投資信託(非上場)</td><td>投資信託の一種で、証券取引所に上場</td></tr>
+        <tr><th scope="row">取引方法</th><td>販売会社を通じて申込む</td><td>取引所で株式と同様に売買(指値・成行可)</td></tr>
+        <tr><th scope="row">約定タイミング</th><td>1日1回の基準価額で約定(ブラインド方式)</td><td>取引時間中にリアルタイムで約定</td></tr>
+        <tr><th scope="row">コスト構造</th><td>信託報酬+隠れコスト(実質コストで比較)</td><td>信託報酬+隠れコスト+売買手数料(証券会社により無料化あり)</td></tr>
+        <tr><th scope="row">最低投資金額</th><td>100円や1,000円からの証券会社が多い</td><td>市場価格×1口(数千円〜数万円程度になる場合も)</td></tr>
+        <tr><th scope="row">つみたて投資枠</th><td>対象の大半(363本中354本)</td><td>対象はごく少数(363本中9本)</td></tr>
+        <tr><th scope="row">成長投資枠</th><td>対象多数</td><td>対象あり(66本)</td></tr>
+        <tr><th scope="row">iDeCo</th><td>対象商品に含まれる</td><td>多くの運営管理機関で対象外</td></tr>
+        <tr><th scope="row">分配金の再投資</th><td>再投資コースがあれば自動再投資可</td><td>自動再投資なし(自分で買い直す)</td></tr>
+        <tr><th scope="row">分配金の課税(特定口座・一般口座)</th><td>普通分配金は課税、元本払戻金は非課税(一般的な整理)</td><td>上場株式の配当と同様の扱い(税率20.315%、一般的な整理)</td></tr>
+        <tr><th scope="row">NISA口座で保有した場合</th><td>分配金・売却益とも非課税</td><td>分配金・売却益とも非課税</td></tr>
+        <tr><th scope="row">流動性・価格乖離</th><td>基準価額そのもので約定するため乖離は生じない</td><td>市場価格が基準価額から乖離することがある</td></tr>
       </tbody>
     </table>
     </div>
