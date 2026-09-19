@@ -47,4 +47,5 @@ const ARTICLES_DATA = [
   { slug: 'toushin-etf-hikaku', title: '投資信託とETF、何が違うのか', tags: ['ippan'], related: ['tsumitate-ikkatsu-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'gaika-shisan-kiso', title: '外貨・ドル建て資産の基礎', tags: ['ippan'], related: ['toushin-etf-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'tsumitate-ikkatsu-hikaku', title: '積立投資と一括投資、何が違うのか', tags: ['ippan'], related: ['toushin-etf-hikaku', 'nisa-ideco-hikaku'], tool: 'toushi-literacy-quiz' },
+  { slug: 'toushi-hajimeru-junban', title: '投資を始める前に、決めておくこと', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
 ];
