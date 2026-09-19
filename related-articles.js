@@ -20,10 +20,11 @@
 
   var scored = ARTICLES_DATA
     .filter(function (a) { return a.slug !== current.slug; })
-    .map(function (a) {
+    .map(function (a, idx) {
       var score = 0;
       var sharedTags = current.tags.filter(function (t) { return a.tags.indexOf(t) !== -1; });
       sharedTags.forEach(function (t) { score += (t === 'ippan') ? 2 : 10; });
+      if (sharedTags.length && sharedTags.length === a.tags.length && sharedTags.length === current.tags.length) score += 1;
 
       var aIsKigyou = a.tags.indexOf('kigyou') !== -1;
       if (!currentIsKigyou && !aIsKigyou) score += 3;
@@ -34,11 +35,13 @@
         var aNum = seriesNumber(a.slug);
         if (currentNum != null && aNum != null && Math.abs(currentNum - aNum) === 1) score += 8;
       }
-      return { article: a, score: score };
+      return { article: a, score: score, order: idx };
     })
     .sort(function (x, y) {
       if (y.score !== x.score) return y.score - x.score;
-      return (seriesNumber(y.article.slug) || 0) - (seriesNumber(x.article.slug) || 0);
+      var seriesDiff = (seriesNumber(y.article.slug) || 0) - (seriesNumber(x.article.slug) || 0);
+      if (seriesDiff !== 0) return seriesDiff;
+      return y.order - x.order;
     });
 
   var articleItems = scored.filter(function (item) { return item.article.type !== 'tool'; }).slice(0, 2);
