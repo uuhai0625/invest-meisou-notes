@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=66">
+<link rel="stylesheet" href="style.css?v=68">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,23 +48,24 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ</a>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a class="site-header-logo" href="https://uuhai0625.github.io/invest-meisou-notes/">資産形成の<span class="accent">瞑想ノート</span></a>
+    <a class="site-header-logo" href="./">資産形成の<span class="accent">瞑想ノート</span></a>
     <nav class="site-header-nav" aria-label="カテゴリ">
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/ippan/">一般知識</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/fudousan/">不動産</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/nikki/">投資日記</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kigyou/">企業分析</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kasoutsuka/">暗号資産</a>
+      <a href="./category/ippan/">一般知識</a>
+      <a href="./category/fudousan/">不動産</a>
+      <a href="./category/nikki/">投資日記</a>
+      <a href="./category/kigyou/">企業分析</a>
+      <a href="./category/kasoutsuka/">暗号資産</a>
     </nav>
     <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </button>
   </div>
   <div class="site-header-search-panel" id="site-header-search-panel" hidden>
-    <form class="wrap" action="https://uuhai0625.github.io/invest-meisou-notes/" method="get">
+    <form class="wrap" action="./" method="get">
       <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
     </form>
   </div>
@@ -83,23 +84,23 @@
     <p class="pickup-lead">記事が増えてきたので、まずこの5本から読むのがおすすめです。</p>
     <div class="pickup-grid">
       <a class="pickup-card" href="shoken-koza-hikaku/">
-        <img src="images/eyecatch/shoken-koza-hikaku.jpg" alt="証券口座はどう選ぶか" width="120" height="90" loading="lazy">
+        <img src="images/eyecatch/thumb/shoken-koza-hikaku.jpg" alt="" width="400" height="225" loading="lazy">
         <span class="pickup-card-title">証券口座はどう選ぶか</span>
       </a>
       <a class="pickup-card" href="nisa-ideco-hikaku/">
-        <img src="images/eyecatch/nisa-ideco-hikaku.jpg" alt="新NISAとiDeCo、どこが違うのか" width="120" height="90" loading="lazy">
+        <img src="images/eyecatch/thumb/nisa-ideco-hikaku.jpg" alt="" width="400" height="225" loading="lazy">
         <span class="pickup-card-title">新NISAとiDeCo、どこが違うのか</span>
       </a>
       <a class="pickup-card" href="kakei-katachi-toushi-kangaekata/">
-        <img src="images/eyecatch/kakei-katachi-toushi-kangaekata.jpg" alt="投資を始める考え方は、家計の「形」で変わる" width="120" height="90" loading="lazy">
+        <img src="images/eyecatch/thumb/kakei-katachi-toushi-kangaekata.jpg" alt="" width="400" height="225" loading="lazy">
         <span class="pickup-card-title">投資を始める考え方は、家計の「形」で変わる</span>
       </a>
       <a class="pickup-card" href="toushi-yougo-shu/">
-        <img src="images/eyecatch/toushi-yougo-shu.jpg" alt="投資まわりの用語集" width="120" height="90" loading="lazy">
+        <img src="images/eyecatch/thumb/toushi-yougo-shu.jpg" alt="" width="400" height="225" loading="lazy">
         <span class="pickup-card-title">投資まわりの用語集</span>
       </a>
       <a class="pickup-card" href="kasoutsuka-hajimekata/">
-        <img src="images/eyecatch/kasoutsuka-hajimekata.jpg" alt="仮想通貨、何から始めればいいのか" width="120" height="90" loading="lazy">
+        <img src="images/eyecatch/thumb/kasoutsuka-hajimekata.jpg" alt="" width="400" height="225" loading="lazy">
         <span class="pickup-card-title">仮想通貨、何から始めればいいのか</span>
       </a>
     </div>
@@ -140,26 +141,34 @@
   </div>
 </section>
 
-<main class="wrap">
+<main id="main" class="wrap">
   <p class="section-label">記事一覧</p>
-  <p class="category-jump-lead">カテゴリから探す: <a href="category/ippan/">一般知識</a> ・ <a href="category/fudousan/">不動産</a> ・ <a href="category/nikki/">投資日記</a> ・ <a href="category/kigyou/">企業分析</a> ・ <a href="category/kasoutsuka/">暗号資産</a></p>
+  <nav class="category-chips" aria-label="カテゴリから探す">
+    <a href="category/ippan/">一般知識<span class="chip-count">14</span></a>
+    <a href="category/kigyou/">企業分析<span class="chip-count">15</span></a>
+    <a href="category/kasoutsuka/">暗号資産<span class="chip-count">8</span></a>
+    <a href="category/nikki/">投資日記<span class="chip-count">3</span></a>
+    <a href="category/fudousan/">不動産<span class="chip-count">1</span></a>
+  </nav>
   <div class="site-search">
     <input type="search" id="site-search-input" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
   </div>
+  <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
 
   <div class="article-list" id="article-list">
-    <a class="article-card" href="tsumitate-ikkatsu-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/tsumitate-ikkatsu-hikaku.jpg" alt="小さな紺色の円が横一列に並び、右側に大きな金色の円が一つ置かれた、積立と一括の対比を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="tsumitate-ikkatsu-hikaku/" data-kw="つみたて ドルコスト平均法 積立 一括" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/tsumitate-ikkatsu-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>積立投資と一括投資、何が違うのか——研究と制度から、静かに整理する</h2>
         <p>積立と一括の違いを、過去データの研究・公的機関の説明・新NISAの枠組みから整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="gaika-shisan-kiso/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/gaika-shisan-kiso.jpg" alt="紺色と金色の円形が生成りの背景の上で重なり合いながら散らばっている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="gaika-shisan-kiso/" data-kw="ドル 円安 為替 外貨預金" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/gaika-shisan-kiso.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -168,19 +177,20 @@
         <p>外貨預金・外国債券・米国株式/ETF・外貨建て保険の種類、為替リスクとコストの仕組み、税金とNISAでの扱いを整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-koza-hikaku/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-koza-hikaku.jpg" alt="5つの幾何学的な天秤皿が横に並び、それぞれ異なる重さで釣り合っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-koza-hikaku/" data-kw="仮想通貨 ビットコイン 取引所 比較" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-koza-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>暗号資産取引所はどう選ぶか——主要6社を比較する</h2>
         <p>bitFlyer・Coincheck・GMOコイン・bitbank・SBI VCトレード・Binance Japan、国内主要6社の取引形態・手数料・取扱銘柄数・セキュリティを比較しました。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-hajimekata/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-hajimekata.jpg" alt="紺色の暗い空間に幾何学的な扉が開き、オレンジ色の光が差し込んでいる様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-hajimekata/" data-kw="仮想通貨 ビットコイン 取引所 口座開設" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-hajimekata.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
@@ -190,28 +200,30 @@
         <p>取引所選び・口座開設・「販売所」と「取引所」の違い・保管方法・税金の基本まで、始める前に知っておきたいことを整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="toushin-etf-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/toushin-etf-hikaku.jpg" alt="2種類の幾何学的な入れ物が入れ子になっている抽象イメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="toushin-etf-hikaku/" data-kw="ファンド インデックス ETF 投信" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/toushin-etf-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>投資信託とETF、何が違うのか</h2>
         <p>投資信託とETF(上場投資信託)の取引方法・コスト構造・NISA/iDeCoでの扱い・分配金の課税の違いを整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="ideco-setsuzei-simulator/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/ideco-setsuzei-simulator.jpg" alt="紺色の電卓のような幾何学的な図形の上に、オレンジ色のコインが積み重なっている様子を表した抽象的なイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="ideco-setsuzei-simulator/" data-kw="年金 確定拠出年金 節税 計算" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/ideco-setsuzei-simulator.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ツール</span>
         </div>
         <h2>iDeCo節税額シミュレーター</h2>
         <p>毎月の掛金・課税所得・拠出年数を入力するだけで、iDeCoの所得控除による節税額の目安を計算できる無料ツールです。</p>
       </div>
     </a>
-    <a class="article-card" href="ideco-dc-nisa-heiyou/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/ideco-dc-nisa-heiyou.jpg" alt="紺色の三層に積み重なる階段状の図形と、その上を静かに照らすオレンジ色の光を表した抽象的なイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="ideco-dc-nisa-heiyou/" data-kw="年金 確定拠出年金 企業型DC 会社員" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/ideco-dc-nisa-heiyou.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -220,8 +232,8 @@
         <p>会社員が使える年金・資産形成制度の位置づけと、iDeCoと企業型DCを併用するときの条件・掛金上限を整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="kakei-katachi-toushi-kangaekata/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kakei-katachi-toushi-kangaekata.jpg" alt="紺色の一本の道が五つの異なる幾何学的な形へと枝分かれしていく様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kakei-katachi-toushi-kangaekata/" data-kw="家計 ライフプラン 年代" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kakei-katachi-toushi-kangaekata.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -230,8 +242,8 @@
         <p>20代独身から退職後まで、5つの架空の人物設定を通じて、家計の状況によって投資の考え方がどう変わるかを整理しました。特定の行動を指示する診断ではなく、考えるための材料の一つとして書いています。</p>
       </div>
     </a>
-    <a class="article-card" href="nisa-uridashi-tetsuzuki/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/nisa-uridashi-tetsuzuki.jpg" alt="紺色の書類の束とオレンジ色のチェックマークが並び、手続きの完了を示している様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="nisa-uridashi-tetsuzuki/" data-kw="売却 非課税 枠 復活" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/nisa-uridashi-tetsuzuki.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -240,8 +252,8 @@
         <p>NISA枠が戻るタイミング、配当金を非課税にする受取方式、確定申告、損益通算・繰越控除、米国株の二重課税と外国税額控除。売却後に知っておくと安心な制度知識をまとめました。</p>
       </div>
     </a>
-    <a class="article-card" href="souba-hendou-kakunin/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/souba-hendou-kakunin.jpg" alt="下向きに折れ曲がった紺色の折れ線グラフの谷にオレンジ色のチェックマークが置かれている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="souba-hendou-kakunin/" data-kw="暴落 下落 相場" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/souba-hendou-kakunin.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -250,48 +262,51 @@
         <p>下落の程度に応じて、一般的に検討される確認項目を整理しました。特定の行動を指示するものではなく、次にどうするかを自分で決めるための材料の一つとして書いています。</p>
       </div>
     </a>
-    <a class="article-card" href="toushi-yougo-shu/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/toushi-yougo-shu.jpg" alt="紺色の幾何学的な本が開き、ページの間からオレンジ色の紙片がいくつか舞っている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="toushi-yougo-shu/" data-kw="用語 意味 初心者" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/toushi-yougo-shu.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">用語集</span>
         </div>
         <h2>投資まわりの用語集</h2>
         <p>NISA・iDeCoなど投資の基礎用語と、暗号資産版シリーズで登場した専門用語をまとめました。記事を読んでいて出てきた言葉の意味を確認したいときに。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-hikaku/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-hikaku.jpg" alt="価値の性質が異なる5つの幾何学的な抽象アイコンを横に並べた比較イメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-hikaku/" data-kw="仮想通貨 ビットコイン 比較" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
+          <span class="tag">比較</span>
         </div>
         <h2>暗号資産の「価値」はどう読むか——5銘柄を並べて比較する</h2>
         <p>ビットコイン・イーサリアム・柴犬コイン(SHIB)・XRP・テザー(USDT)、シリーズ5本を同じ7つの観点で横並びに比較する早見ページです。</p>
       </div>
     </a>
-    <a class="article-card" href="toushi-literacy-quiz/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/toushi-literacy-quiz.jpg" alt="紺色の丸の中にチェックマークとクエスチョンマークが交互に並び、中央の一つだけがオレンジ色で強調されている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="toushi-literacy-quiz/" data-kw="クイズ 診断" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/toushi-literacy-quiz.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ツール</span>
         </div>
         <h2>投資まわりの基礎知識クイズ</h2>
         <p>NISA・iDeCo・分散投資・複利など、投資の基礎知識を6問クイズで確かめられます。個別銘柄の診断ではなく、一般知識の理解度チェックです。結果はシェア画像として保存・投稿できます。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-case5/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-case5.jpg" alt="波打つ紺色の粒子群の中心に、揺らがず静止したオレンジ色の一点が浮かんでいる様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-case5/" data-kw="テザー USDT ステーブルコイン 仮想通貨" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-case5.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
         </div>
-        <h2>暗号資産の「価値」はどう読むか(5)</h2>
+        <h2>テザー(USDT)——暗号資産の「価値」を読む【5/5】</h2>
         <p>暗号資産版シリーズ第5弾。テザー(USDT)を例に、値上がりを前提としないステーブルコインの価値を7つの観点で読み解きます。発行の背景・ペッグの裏付け・準備資産・技術基盤・競合(USDC)・資金構造・リスク。</p>
       </div>
     </a>
-    <a class="article-card" href="nisa-ideco-koza-kaisetsu-kiroku/" data-tags="nikki">
-      <div class="article-card-thumb"><img src="images/eyecatch/nisa-ideco-koza-kaisetsu-kiroku.jpg" alt="画面上部に散らばる紺色の小さな四角形が、下に向かって一本のオレンジ色の道筋に静かに収束していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="nisa-ideco-koza-kaisetsu-kiroku/" data-kw="日記 口座開設 体験" data-tags="nikki">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/nisa-ideco-koza-kaisetsu-kiroku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag tag-diary">投資日記</span>
@@ -300,58 +315,59 @@
         <p>証券口座の多さに圧倒され、手続きが面倒で先延ばしにし、開設後も何を買うか迷った話。金額や商品名は伏せ、始めるまでの足踏みと、始めてからの実感だけを残す投資日記です。</p>
       </div>
     </a>
-    <a class="article-card" href="toushi-news/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/toushi-news.jpg" alt="複数の小さな紺色の丸が縦に並び、その一つだけがオレンジ色に光っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="toushi-news/" data-kw="ニュース まとめ" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/toushi-news.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ニュース</span>
         </div>
         <h2>投資まわりのニュースまとめ</h2>
         <p>NISA・iDeCoなどの制度変更、日銀の金融政策、市場全体の動きなど、一般知識の範囲のニュースを気づいた時に日付付きで追記していくまとめページです。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-case4/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-case4.jpg" alt="二つの岸のような幾何学形が、中央でオレンジ色に光る弧を描く橋によってつながっている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-case4/" data-kw="リップル XRP 仮想通貨" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-case4.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
         </div>
-        <h2>暗号資産の「価値」はどう読むか(4)</h2>
+        <h2>XRP(Ripple)——暗号資産の「価値」を読む【4/5】</h2>
         <p>暗号資産版シリーズ第4弾。XRP(Ripple)を例に、発行体企業と資産の関係を7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク(SEC訴訟の経緯)。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-case3/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-case3.jpg" alt="小さな紺色の粒子が群れをなして渦を巻き、その中心にオレンジ色の光る核がある様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-case3/" data-kw="柴犬コイン SHIB ミームコイン 仮想通貨" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-case3.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
         </div>
-        <h2>暗号資産の「価値」はどう読むか(3)</h2>
+        <h2>柴犬コイン(SHIB)——暗号資産の「価値」を読む【3/5】</h2>
         <p>暗号資産版シリーズ第3弾。柴犬コイン(SHIB)を例に、初めてミームコインを7つの観点で読み解きます。発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスク。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-case2/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-case2.jpg" alt="紺色の六角形のネットワークノードが層状に重なり、オレンジ色の小さな粒子が上層から下層へ流れ込んでいく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-case2/" data-kw="イーサリアム ETH 仮想通貨" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-case2.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
         </div>
-        <h2>暗号資産の「価値」はどう読むか(2)</h2>
+        <h2>イーサリアム——暗号資産の「価値」を読む【2/5】</h2>
         <p>暗号資産版シリーズ第2弾。イーサリアムを例に、発行の背景・価値の裏付け・供給設計・技術基盤と開発体制・競合構造・資金保有構造・リスクの7つの観点で読み解きます。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-kachi-yomikata-case1/" data-tags="kasoutsuka,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-kachi-yomikata-case1.jpg" alt="紺色の円と歯車が組み合わさり、オレンジ色の粒子が規則正しい階段状に積み上がっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-kachi-yomikata-case1/" data-kw="ビットコイン BTC 仮想通貨" data-tags="kasoutsuka,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-kachi-yomikata-case1.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">暗号資産</span>
         </div>
-        <h2>暗号資産の「価値」はどう読むか</h2>
+        <h2>ビットコイン——暗号資産の「価値」を読む【1/5】</h2>
         <p>暗号資産版シリーズ第1弾。ビットコインを例に、発行の背景・価値の裏付け・供給設計・技術基盤・競合構造・資金保有構造・リスクの7つの観点で読み解きます。</p>
       </div>
     </a>
-    <a class="article-card" href="kasoutsuka-2021-furikaeri/" data-tags="nikki">
-      <div class="article-card-thumb"><img src="images/eyecatch/kasoutsuka-2021-furikaeri.jpg" alt="紺色とオレンジ色の粒子が、下向きの渦に巻き込まれていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kasoutsuka-2021-furikaeri/" data-kw="仮想通貨 ビットコイン 日記" data-tags="nikki">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kasoutsuka-2021-furikaeri.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag tag-diary">投資日記</span>
@@ -360,173 +376,175 @@
         <p>2021年春、SNSの盛り上がりに乗って複数のアルトコインを買い始め、5月の急落相場でも手を止められなかった話。金額は伏せ、比率と反省だけを残す記録です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case13/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case13.jpg" alt="目盛りの付いた紺色の精密な計測器から、オレンジ色の粒子が正確に降り注ぎ、整然と積み重なったブロックの柱を形作っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case13/" data-kw="オランダ 欧州株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case13.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(13)</h2>
+        <h2>BESI——企業の「成長段階」を読む【米国株 6/6】</h2>
         <p>米国株シリーズ6本目・最終回。BE Semiconductor Industries(BESI)を例に、「装置を作る会社」という視点から受注高の先行指標性と技術採用時期リスクを整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-hikaku-us/" data-tags="kigyou,ippan" data-country="us">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-hikaku-us.jpg" alt="高さも太さも異なる6本の柱が並び、それぞれ違う成長段階の企業群を象徴する抽象的な比較イメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-hikaku-us/" data-kw="米国株 半導体 企業分析 比較" data-tags="kigyou,ippan" data-country="us">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-hikaku-us.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>企業の「成長段階」はどう読むか——米国株6社を並べて比較する</h2>
         <p>Ambiq Micro・MaxLinear・Astera Labs・Tower Semiconductor・Credo Technology・BE Semiconductor Industries。米国株シリーズ6本の比較を1つの表にまとめ直した早見ページです。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case12/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case12.jpg" alt="中央の紺色の丸から放射状に細い線が伸びる中、一本だけ太いオレンジ色の線が一つの大きな円へとつながっている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case12/" data-kw="米国株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case12.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(12)</h2>
+        <h2>Credo Technology——企業の「成長段階」を読む【米国株 5/6】</h2>
         <p>米国株シリーズ5本目。Credo Technology(NASDAQ: CRDO)を例に、好決算にもかかわらず株価が急落した理由をGAAP粗利益率の低下・顧客集中の観点から整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case11/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case11.jpg" alt="円形のウェーハのような格子模様の円盤から、無数の光の筋が放射状に広がっている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case11/" data-kw="米国株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case11.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(11)</h2>
+        <h2>Tower Semiconductor——企業の「成長段階」を読む【米国株 4/6】</h2>
         <p>米国株シリーズ4本目。Tower Semiconductor(NASDAQ: TSEM)を例に、これまでの「設計する会社」とは逆の「作る会社(受託製造)」の視点から成長段階を整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case10/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case10.jpg" alt="二つの六角形のハブに、無数の細い光る線と点が四方から収束していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case10/" data-kw="米国株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case10.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(10)</h2>
+        <h2>Astera Labs——企業の「成長段階」を読む【米国株 3/6】</h2>
         <p>米国株シリーズ3本目。Astera Labs(NASDAQ: ALAB)を例に、売上急拡大・黒字という「良い数字」の裏側にある、少数の大口顧客への依存度を整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case9/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case9.jpg" alt="アンテナのような形の受信機が、光の線でつながる幾何学的なネットワークへと変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case9/" data-kw="米国株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case9.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(9)</h2>
+        <h2>MaxLinear——企業の「成長段階」を読む【米国株 2/6】</h2>
         <p>米国株シリーズ2本目。MaxLinear(NASDAQ: MXL)を例に、成熟企業が既存事業からAIデータセンター向け光接続事業へ転換する途中で見えてくる数字の読み方を整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case8/" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case8.jpg" alt="小さなチップから電池のようなアイコンへ、省電力の信号がつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case8/" data-kw="米国株 半導体 企業分析" data-tags="kigyou,ippan" data-country="us" data-industry="semiconductor">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case8.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(8)</h2>
+        <h2>Ambiq Micro——企業の「成長段階」を読む【米国株 1/6】</h2>
         <p>米国株シリーズ1本目。Ambiq Micro(NYSE: AMBQ)を例に、売上+89.7%という伸び率と、まだ営業赤字という収益基盤の距離をどう読むかを整理します。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-hikaku/" data-tags="kigyou,ippan" data-country="jp">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-hikaku.jpg" alt="クラウドやサーバー、建物、フラスコなど、成長段階の異なる企業群を象徴する幾何学的な抽象アイコンを並べた比較イメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-hikaku/" data-kw="日本株 企業分析 比較" data-tags="kigyou,ippan" data-country="jp">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>企業の「成長段階」はどう読むか——7社を並べて比較する</h2>
         <p>ニッポン高度紙工業・グロービング・さくらインターネット・サンワテクノス・テクノフレックス・大阪有機化学工業・ウシオ電機。日本株シリーズ7本の比較を1つの表にまとめ直した早見ページです。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case7/" data-tags="kigyou,ippan" data-country="jp" data-industry="electric">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case7.jpg" alt="電球が光を放ちながら小さな半導体チップへとつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case7/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="electric">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case7.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(7)</h2>
+        <h2>ウシオ電機——企業の「成長段階」を読む【日本株 7/7】</h2>
         <p>ウシオ電機(6925)を例に、「売上+27.7%・営業利益+410.5%」というV字回復の中身を、低い比較対象・M&amp;A効果・本業改善の3つに分解して読む。シリーズ7本目・日本株編最終回です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case6/" data-tags="kigyou,ippan" data-country="jp" data-industry="chemical">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case6.jpg" alt="化学のフラスコから分子構造の線がのびていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case6/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="chemical">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case6.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(6)</h2>
+        <h2>大阪有機化学工業——企業の「成長段階」を読む【日本株 6/7】</h2>
         <p>大阪有機化学工業(4187)を例に、「営業利益は増益、純利益は減益」という一見矛盾した予想を7つの観点で読む。シリーズ6本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case5/" data-tags="kigyou,ippan" data-country="jp" data-industry="metal">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case5.jpg" alt="配管のような線がビル群から回路基板のような模様へとつながっていく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case5/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="metal">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case5.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(5)</h2>
+        <h2>テクノフレックス——企業の「成長段階」を読む【日本株 5/7】</h2>
         <p>テクノフレックス(3449)を例に、「全社は増収増益」という見出しの裏にある事業別の明暗を7つの観点で読む。シリーズ5本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case4/" data-tags="kigyou,ippan" data-country="jp" data-industry="wholesale">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case4.jpg" alt="流通の箱が歯車とロボットアームへ変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case4/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="wholesale">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case4.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(4)</h2>
+        <h2>サンワテクノス——企業の「成長段階」を読む【日本株 4/7】</h2>
         <p>サンワテクノス(8137)を例に、「商社は成長株に見えない」という先入観を7つの観点で掘り崩す。前3回との対比シリーズ4本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case3/" data-tags="kigyou,ippan" data-country="jp" data-industry="it">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case3.jpg" alt="サーバーとクラウドを抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case3/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="it">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case3.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(3)</h2>
+        <h2>さくらインターネット——企業の「成長段階」を読む【日本株 3/7】</h2>
         <p>さくらインターネット(3778)を例に、営業赤字を出しながら大規模先行投資を行う「投資回収前段階」の会社の成長段階を7つの観点で整理。前2回との対比シリーズ3本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case2/" data-tags="kigyou,ippan" data-country="jp" data-industry="service">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case2.jpg" alt="ある形が別の形へ変化していく様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case2/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="service">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case2.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか(2)</h2>
+        <h2>グロービング——企業の「成長段階」を読む【日本株 2/7】</h2>
         <p>グロービング(277A)を例に、事業モデルが変わりつつある会社の成長段階を7つの観点で整理。前回(素材メーカー)との対比シリーズ2本目です。</p>
       </div>
     </a>
-    <a class="article-card" href="kigyou-seichou-yomikata-case1/" data-tags="kigyou,ippan" data-country="jp" data-industry="paper">
-      <div class="article-card-thumb"><img src="images/eyecatch/kigyou-seichou-yomikata-case1.jpg" alt="薄いシートが層をなして積み重なる様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="kigyou-seichou-yomikata-case1/" data-kw="日本株 企業分析" data-tags="kigyou,ippan" data-country="jp" data-industry="paper">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/kigyou-seichou-yomikata-case1.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">企業分析</span>
           <span class="tag">一般知識</span>
         </div>
-        <h2>企業の「成長段階」はどう読むか</h2>
+        <h2>ニッポン高度紙工業——企業の「成長段階」を読む【日本株 1/7】</h2>
         <p>ニッポン高度紙工業(3891)を例に、成長段階を読む7つの観点を整理。個別銘柄の売買を推奨するものではなく、分析視点を学ぶケーススタディです。</p>
       </div>
     </a>
-    <a class="article-card" href="shisan-kouhyou-kiten/" data-tags="nikki">
-      <div class="article-card-thumb"><img src="images/eyecatch/shisan-kouhyou-kiten.jpg" alt="開いたノートの上に浮かぶ円グラフを抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="shisan-kouhyou-kiten/" data-kw="資産配分 日記" data-tags="nikki">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/shisan-kouhyou-kiten.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag tag-diary">投資日記</span>
@@ -535,28 +553,30 @@
         <p>米国株30%・投資信託30%・日本株20%・仮想通貨10%・現金10%。金額は伏せ、比率だけを残す最初の定点記録です。</p>
       </div>
     </a>
-    <a class="article-card" href="shoken-koza-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/shoken-koza-hikaku.jpg" alt="扇状に並んだカードを抽象的に表した比較のイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="shoken-koza-hikaku/" data-kw="ネット証券 SBI 楽天 口座開設 比較" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/shoken-koza-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>証券口座はどう選ぶか</h2>
         <p>主要ネット証券5社を手数料・商品・ポイントの軸で比較。特定の1社を断定的に推さず、目的別の選び方を整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="nisa-ideco-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/nisa-ideco-hikaku.jpg" alt="2つの流れが1つに合流する様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="nisa-ideco-hikaku/" data-kw="年金 確定拠出年金 つみたて投資枠 成長投資枠" data-tags="ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/nisa-ideco-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>新NISAとiDeCo、どこが違うのか</h2>
         <p>非課税限度額・流動性・所得控除の違いを整理。「いつ使えるお金か」という軸で、目的別の考え方をまとめました。</p>
       </div>
     </a>
-    <a class="article-card" href="fudousan-kiso-yougo/" data-tags="fudousan,ippan">
-      <div class="article-card-thumb"><img src="images/eyecatch/fudousan-kiso-yougo.jpg" alt="設計図グリッドの上に重なる建物のシルエットを抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="fudousan-kiso-yougo/" data-kw="REIT 不動産投資 クラウドファンディング" data-tags="fudousan,ippan">
+      <div class="article-card-thumb"><img src="images/eyecatch/thumb/fudousan-kiso-yougo.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">不動産</span>
@@ -583,15 +603,21 @@
   var searchQuery = '';
   var searchInput = document.getElementById('site-search-input');
   var noResultsNote = document.getElementById('no-results-note');
+  var statusEl = document.getElementById('search-status');
+  var totalCount = document.querySelectorAll('#article-list .article-card').length;
 
   function applyFilters() {
     var visibleCount = 0;
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
-      const inSearch = !searchQuery || card.textContent.toLowerCase().indexOf(searchQuery) !== -1;
+      var hay = (card.textContent + ' ' + (card.dataset.kw || '')).toLowerCase();
+      const inSearch = !searchQuery || hay.indexOf(searchQuery) !== -1;
       card.style.display = inSearch ? '' : 'none';
       if (inSearch) visibleCount++;
     });
     if (noResultsNote) noResultsNote.classList.toggle('visible', visibleCount === 0);
+    if (statusEl) {
+      statusEl.textContent = searchQuery ? ('該当: ' + visibleCount + '件(全' + totalCount + '件中)') : '';
+    }
   }
 
   if (searchInput) {
@@ -607,7 +633,9 @@
       searchInput.value = q;
       searchQuery = q.trim().toLowerCase();
       applyFilters();
-      searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // 画像の遅延読み込みでレイアウトが動くため、読み込み完了後に検索欄まで移動する
+      var goToSearch = function () { searchInput.scrollIntoView({ block: 'start' }); window.scrollBy(0, -80); };
+      if (document.readyState === 'complete') goToSearch(); else window.addEventListener('load', goToSearch);
     }
   }
 })();

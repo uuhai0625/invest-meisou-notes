@@ -76,6 +76,18 @@
   var questionText = document.getElementById("quiz-question-text");
   var optionsList = document.getElementById("quiz-options");
   var explainEl = document.getElementById("quiz-explain");
+  // 正解・不正解や解説を読み上げに伝えるための、常に存在する非表示の通知領域
+  var liveEl = document.createElement("div");
+  liveEl.className = "sr-only";
+  liveEl.setAttribute("role", "status");
+  liveEl.setAttribute("aria-live", "polite");
+  document.body.appendChild(liveEl);
+  function srOnly(btn, text) {
+    var span = document.createElement("span");
+    span.className = "sr-only";
+    span.textContent = text;
+    btn.appendChild(span);
+  }
 
   function resetState() {
     state = { index: 0, score: 0, answered: false };
@@ -90,6 +102,11 @@
     explainEl.classList.remove("is-shown");
     explainEl.textContent = "";
     nextBtn.classList.remove("is-shown");
+    // 「次の問題へ」ボタンが消えるため、キーボード・読み上げの位置を問題文に移す
+    if (state.index > 0) {
+      questionText.setAttribute("tabindex", "-1");
+      questionText.focus({ preventScroll: true });
+    }
 
     optionsList.innerHTML = "";
     q.options.forEach(function (opt, i) {
@@ -111,11 +128,12 @@
     var buttons = optionsList.querySelectorAll(".quiz-option");
     buttons.forEach(function (b, i) {
       b.disabled = true;
-      if (i === q.correct) { b.classList.add("is-correct"); }
-      else if (i === selectedIndex) { b.classList.add("is-wrong"); }
+      if (i === q.correct) { b.classList.add("is-correct"); srOnly(b, "(正解)"); }
+      else if (i === selectedIndex) { b.classList.add("is-wrong"); srOnly(b, "(あなたの回答・不正解)"); }
     });
     if (selectedIndex === q.correct) { state.score += 1; }
     explainEl.textContent = q.explain;
+    liveEl.textContent = (selectedIndex === q.correct ? "正解です。" : "不正解です。") + q.explain;
     explainEl.classList.add("is-shown");
     nextBtn.classList.add("is-shown");
   }
@@ -144,6 +162,10 @@
     document.getElementById("quiz-result-score").textContent = state.score + " / " + QUESTIONS.length + " 問正解";
     document.getElementById("quiz-result-type").textContent = type.title;
     document.getElementById("quiz-result-desc").textContent = type.desc;
+    // 押したボタンが消えるため、結果の見出しへ移動して読み上げ・キーボードの位置を保つ
+    var scoreEl = document.getElementById("quiz-result-score");
+    scoreEl.setAttribute("tabindex", "-1");
+    scoreEl.focus({ preventScroll: true });
 
     drawShareCard(state.score, type.title);
 
@@ -158,11 +180,11 @@
     var w = canvas.width, h = canvas.height;
 
     // background
-    ctx.fillStyle = "#faf8f3";
+    ctx.fillStyle = "#f4efe1";
     ctx.fillRect(0, 0, w, h);
 
     // subtle top accent bar
-    ctx.fillStyle = "#ef7d3f";
+    ctx.fillStyle = "#9a4a2e";
     ctx.fillRect(0, 0, w, 10);
 
     ctx.textAlign = "center";
@@ -170,7 +192,7 @@
     ctx.font = "500 28px 'Noto Sans JP', sans-serif";
     ctx.fillText("投資まわりの基礎知識クイズ", w / 2, 110);
 
-    ctx.fillStyle = "#a2501a";
+    ctx.fillStyle = "#9a4a2e";
     ctx.font = "900 64px 'Zen Kaku Gothic New', sans-serif";
     ctx.fillText(typeTitle, w / 2, 280);
 
@@ -179,7 +201,7 @@
     ctx.fillText(score + " / " + QUESTIONS.length + " 問正解", w / 2, 360);
 
     // decorative dots
-    ctx.fillStyle = "#2f5fd9";
+    ctx.fillStyle = "#36497e";
     var dotCount = QUESTIONS.length;
     var dotSpacing = 66;
     var dotStartX = w / 2 - ((dotCount - 1) * dotSpacing) / 2;
@@ -188,7 +210,7 @@
       var cx = dotStartX + i * dotSpacing;
       ctx.arc(cx, 430, 14, 0, Math.PI * 2);
       if (i < score) { ctx.fill(); } else {
-        ctx.strokeStyle = "#2f5fd9";
+        ctx.strokeStyle = "#36497e";
         ctx.lineWidth = 2;
         ctx.stroke();
       }

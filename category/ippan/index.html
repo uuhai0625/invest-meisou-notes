@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../style.css?v=66">
+<link rel="stylesheet" href="../../style.css?v=68">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,46 +53,48 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ</a>
 
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a class="site-header-logo" href="https://uuhai0625.github.io/invest-meisou-notes/">資産形成の<span class="accent">瞑想ノート</span></a>
+    <a class="site-header-logo" href="../../">資産形成の<span class="accent">瞑想ノート</span></a>
     <nav class="site-header-nav" aria-label="カテゴリ">
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/ippan/" class="active">一般知識</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/fudousan/">不動産</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/nikki/">投資日記</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kigyou/">企業分析</a>
-      <a href="https://uuhai0625.github.io/invest-meisou-notes/category/kasoutsuka/">暗号資産</a>
+      <a href="../../category/ippan/" class="active">一般知識</a>
+      <a href="../../category/fudousan/">不動産</a>
+      <a href="../../category/nikki/">投資日記</a>
+      <a href="../../category/kigyou/">企業分析</a>
+      <a href="../../category/kasoutsuka/">暗号資産</a>
     </nav>
     <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     </button>
   </div>
   <div class="site-header-search-panel" id="site-header-search-panel" hidden>
-    <form class="wrap" action="https://uuhai0625.github.io/invest-meisou-notes/" method="get">
+    <form class="wrap" action="../../" method="get">
       <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
     </form>
   </div>
 </header>
 
-<main class="wrap">
+<main id="main" class="wrap">
   <div class="category-intro">
-    <p class="section-label">一般知識</p>
+    <h1 class="section-label">一般知識</h1>
     <p>NISA・iDeCo・証券口座比較など、特定の銘柄を推奨しない一般的な投資知識・比較コンテンツをまとめています。</p>
   </div>
   <div class="article-list" id="article-list">
-    <a class="article-card" href="../../tsumitate-ikkatsu-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/tsumitate-ikkatsu-hikaku.jpg" alt="小さな紺色の円が横一列に並び、右側に大きな金色の円が一つ置かれた、積立と一括の対比を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../tsumitate-ikkatsu-hikaku/" data-kw="つみたて ドルコスト平均法 積立 一括" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/tsumitate-ikkatsu-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>積立投資と一括投資、何が違うのか——研究と制度から、静かに整理する</h2>
         <p>積立と一括の違いを、過去データの研究・公的機関の説明・新NISAの枠組みから整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="../../gaika-shisan-kiso/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/gaika-shisan-kiso.jpg" alt="紺色と金色の円形が生成りの背景の上で重なり合いながら散らばっている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../gaika-shisan-kiso/" data-kw="ドル 円安 為替 外貨預金" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/gaika-shisan-kiso.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -101,28 +103,30 @@
         <p>外貨預金・外国債券・米国株式/ETF・外貨建て保険の種類、為替リスクとコストの仕組み、税金とNISAでの扱いを整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="../../toushin-etf-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/toushin-etf-hikaku.jpg" alt="2種類の幾何学的な入れ物が入れ子になっている抽象イメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../toushin-etf-hikaku/" data-kw="ファンド インデックス ETF 投信" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/toushin-etf-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>投資信託とETF、何が違うのか</h2>
         <p>投資信託とETF(上場投資信託)の取引方法・コスト構造・NISA/iDeCoでの扱い・分配金の課税の違いを整理しました。</p>
       </div>
     </a>
-    <a class="article-card" href="../../ideco-setsuzei-simulator/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/ideco-setsuzei-simulator.jpg" alt="紺色の電卓のような幾何学的な図形の上に、オレンジ色のコインが積み重なっている様子を表した抽象的なイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../ideco-setsuzei-simulator/" data-kw="年金 確定拠出年金 節税 計算" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/ideco-setsuzei-simulator.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ツール</span>
         </div>
         <h2>iDeCo節税額シミュレーター</h2>
         <p>毎月の掛金・課税所得・拠出年数を入力するだけで、iDeCoの所得控除による節税額の目安を計算できる無料ツールです。</p>
       </div>
     </a>
-    <a class="article-card" href="../../ideco-dc-nisa-heiyou/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/ideco-dc-nisa-heiyou.jpg" alt="紺色の三層に積み重なる階段状の図形と、その上を静かに照らすオレンジ色の光を表した抽象的なイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../ideco-dc-nisa-heiyou/" data-kw="年金 確定拠出年金 企業型DC 会社員" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/ideco-dc-nisa-heiyou.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -132,8 +136,8 @@
       </div>
     </a>
 
-    <a class="article-card" href="../../kakei-katachi-toushi-kangaekata/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/kakei-katachi-toushi-kangaekata.jpg" alt="紺色の一本の道が五つの異なる幾何学的な形へと枝分かれしていく様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../kakei-katachi-toushi-kangaekata/" data-kw="家計 ライフプラン 年代" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/kakei-katachi-toushi-kangaekata.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -143,8 +147,8 @@
       </div>
     </a>
     
-    <a class="article-card" href="../../nisa-uridashi-tetsuzuki/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/nisa-uridashi-tetsuzuki.jpg" alt="紺色の書類の束とオレンジ色のチェックマークが並び、手続きの完了を示している様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../nisa-uridashi-tetsuzuki/" data-kw="売却 非課税 枠 復活" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/nisa-uridashi-tetsuzuki.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -154,8 +158,8 @@
       </div>
     </a>
     
-    <a class="article-card" href="../../souba-hendou-kakunin/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/souba-hendou-kakunin.jpg" alt="下向きに折れ曲がった紺色の折れ線グラフの谷にオレンジ色のチェックマークが置かれている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../souba-hendou-kakunin/" data-kw="暴落 下落 相場" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/souba-hendou-kakunin.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
@@ -165,63 +169,68 @@
       </div>
     </a>
     
-    <a class="article-card" href="../../toushi-yougo-shu/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/toushi-yougo-shu.jpg" alt="紺色の幾何学的な本が開き、ページの間からオレンジ色の紙片がいくつか舞っている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../toushi-yougo-shu/" data-kw="用語 意味 初心者" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/toushi-yougo-shu.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">用語集</span>
         </div>
         <h2>投資まわりの用語集</h2>
         <p>NISA・iDeCoなど投資の基礎用語と、暗号資産版シリーズで登場した専門用語をまとめました。記事を読んでいて出てきた言葉の意味を確認したいときに。</p>
       </div>
     </a>
     
-    <a class="article-card" href="../../toushi-literacy-quiz/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/toushi-literacy-quiz.jpg" alt="紺色の丸の中にチェックマークとクエスチョンマークが交互に並び、中央の一つだけがオレンジ色で強調されている様子を表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../toushi-literacy-quiz/" data-kw="クイズ 診断" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/toushi-literacy-quiz.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ツール</span>
         </div>
         <h2>投資まわりの基礎知識クイズ</h2>
         <p>NISA・iDeCo・分散投資・複利など、投資の基礎知識を6問クイズで確かめられます。個別銘柄の診断ではなく、一般知識の理解度チェックです。結果はシェア画像として保存・投稿できます。</p>
       </div>
     </a>
     
-    <a class="article-card" href="../../toushi-news/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/toushi-news.jpg" alt="複数の小さな紺色の丸が縦に並び、その一つだけがオレンジ色に光っている様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../toushi-news/" data-kw="ニュース まとめ" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/toushi-news.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">ニュース</span>
         </div>
         <h2>投資まわりのニュースまとめ</h2>
         <p>NISA・iDeCoなどの制度変更、日銀の金融政策、市場全体の動きなど、一般知識の範囲のニュースを気づいた時に日付付きで追記していくまとめページです。</p>
       </div>
     </a>
     
-    <a class="article-card" href="../../shoken-koza-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/shoken-koza-hikaku.jpg" alt="扇状に並んだカードを抽象的に表した比較のイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../shoken-koza-hikaku/" data-kw="ネット証券 SBI 楽天 口座開設 比較" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/shoken-koza-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>証券口座はどう選ぶか</h2>
         <p>主要ネット証券5社を手数料・商品・ポイントの軸で比較。特定の1社を断定的に推さず、目的別の選び方を整理しました。</p>
       </div>
     </a>
     
-    <a class="article-card" href="../../nisa-ideco-hikaku/" data-tags="ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/nisa-ideco-hikaku.jpg" alt="2つの流れが1つに合流する様子を抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../nisa-ideco-hikaku/" data-kw="年金 確定拠出年金 つみたて投資枠 成長投資枠" data-tags="ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/nisa-ideco-hikaku.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">一般知識</span>
+          <span class="tag">比較</span>
         </div>
         <h2>新NISAとiDeCo、どこが違うのか</h2>
         <p>非課税限度額・流動性・所得控除の違いを整理。「いつ使えるお金か」という軸で、目的別の考え方をまとめました。</p>
       </div>
     </a>
     
-    <a class="article-card" href="../../fudousan-kiso-yougo/" data-tags="fudousan,ippan">
-      <div class="article-card-thumb"><img src="../../images/eyecatch/fudousan-kiso-yougo.jpg" alt="設計図グリッドの上に重なる建物のシルエットを抽象的に表したイメージ" width="1200" height="675" loading="lazy"></div>
+    <a class="article-card" href="../../fudousan-kiso-yougo/" data-kw="REIT 不動産投資 クラウドファンディング" data-tags="fudousan,ippan">
+      <div class="article-card-thumb"><img src="../../images/eyecatch/thumb/fudousan-kiso-yougo.jpg" alt="" width="400" height="225" loading="lazy"></div>
       <div class="article-card-body">
         <div class="tags">
           <span class="tag">不動産</span>

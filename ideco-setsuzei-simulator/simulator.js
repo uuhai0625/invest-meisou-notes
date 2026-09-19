@@ -90,7 +90,7 @@
       document.getElementById('ideco-sim-out-gain').textContent = yen(investmentGain);
 
       resultBox.classList.add('is-shown');
-      resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      resultBox.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' });
     });
   });
 })();

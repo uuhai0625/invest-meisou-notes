@@ -5,7 +5,7 @@
   --bg-card-hover: #f1ebd9;
   --ink: #22242a;
   --ink-sub: #5b5b52;
-  --ink-faint: #6c6858; /* WCAG AA実測4.86:1(旧#7a776aは3.91:1でNG、--bg#f4efe1に対して算出) */
+  --ink-faint: #67634f; /* WCAG AA: --bg-warm(#ede6d2)上でも4.85:1(旧#6c6858は4.48:1)。--bg#f4efe1上5.26:1 */
   --navy: #2e3c58;
   --navy-soft: rgba(46, 60, 88, 0.08);
   --gold: #9a4a2e;
@@ -29,7 +29,7 @@
     --bg-card-hover: #26272c;
     --ink: #e8e3d3;
     --ink-sub: #a8a294;
-    --ink-faint: #8b8676;
+    --ink-faint: #9a9584; /* --bg-card-hover(#26272c)上でも4.97:1(旧#8b8676は4.09:1) */
     --navy: #8ea0c9;
     --navy-soft: rgba(142, 160, 201, 0.14);
     --gold: #c97b52;
@@ -323,7 +323,7 @@ h1, h2, h3, .heading-font {
   margin: 0 0 64px;
   align-items: start;
 }
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   .article-list { grid-template-columns: 1fr; }
 }
 .article-card {
@@ -625,7 +625,7 @@ h1, h2, h3, .heading-font {
     padding-bottom: 24px;
     border-bottom: 1px solid var(--line);
   }
-  .article-header .meta { grid-column: 1; grid-row: 2; padding-top: 8px; text-align: left; }
+  .article-header .meta { grid-column: 1; grid-row: 2; padding-top: 8px; text-align: left; word-break: keep-all; }
   .article-page:not(:has(.article-grid)) > .article-eyecatch,
   .article-grid .article-main > .article-eyecatch {
     grid-column: 2;
@@ -684,12 +684,12 @@ h1, h2, h3, .heading-font {
    ではこの拡張分だけで横溢れするため、実測で溢れが消える1300px前後に安全マージンを足した
    1360px以上に限定する(1024〜1360pxの間は従来通り900px幅+横スクロールのフォールバックのまま)。 */
 @media (min-width: 1360px) {
-  .article-page:not(:has(.article-grid)) .article-body > .table-scroll,
-  .article-grid.no-toc .article-main > .article-body > .table-scroll {
+  .article-page:not(:has(.article-grid)) .article-body > .table-scroll:has(thead th:nth-child(5)),
+  .article-grid.no-toc .article-main > .article-body > .table-scroll:has(thead th:nth-child(5)) {
     margin-left: -142px;
     width: calc(100% + 142px + 232px);
   }
-  .article-grid:not(.no-toc) .article-main > .article-body > .table-scroll {
+  .article-grid:not(.no-toc) .article-main > .article-body > .table-scroll:has(thead th:nth-child(5)) {
     margin-left: -142px;
     width: calc(100% + 142px);
   }
@@ -986,7 +986,7 @@ h1, h2, h3, .heading-font {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.company-card-icon.navy { background: var(--navy); color: var(--on-navy); box-shadow: 0 4px 10px rgba(47, 95, 217, 0.28); }
+.company-card-icon.navy { background: var(--navy); color: var(--on-navy); box-shadow: 0 4px 10px rgba(46,60,88, 0.28); }
 .company-card-icon.gold { color: var(--on-gold); background: var(--gold-text); box-shadow: 0 4px 10px rgba(162, 80, 26, 0.28); }
 .company-card-label {
   display: block;
@@ -1362,7 +1362,7 @@ h1, h2, h3, .heading-font {
 .quiz-option:hover:not(:disabled) { border-color: var(--navy); }
 .quiz-option:disabled { cursor: default; }
 .quiz-option.is-correct {
-  background: rgba(47, 95, 217, 0.1);
+  background: rgba(46,60,88, 0.1);
   border-color: var(--navy);
   color: var(--navy);
   font-weight: 700;
@@ -1829,4 +1829,83 @@ h1, h2, h3, .heading-font {
     max-width: 8em;
     white-space: normal;
   }
+}
+
+/* ---- サイトレビュー第3弾(2026-09-19) ---- */
+/* スキップリンク: キーボード利用者が固定ヘッダーのナビを飛ばして本文へ行けるようにする */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--navy);
+  color: var(--on-navy);
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+.skip-link:focus { top: 8px; text-decoration: none; }
+
+/* 本文中のリンクは色だけに頼らず下線で示す(WCAG 1.4.1) */
+.article-body p a, .article-body li a, .table-note a, .source-list a, .disclaimer-box a, .compare-table td a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 動きを減らす設定のOS・ブラウザでは、開閉や遷移のアニメーションを実質無効にする */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* カード上のタグ(投資日記)のコントラスト(旧4.11:1)を確保 */
+  .article-card .tag.tag-diary { color: #d68a5f; }
+}
+
+/* ホーム: カテゴリチップ(件数つき) */
+.category-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+.category-chips a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--ink-sub);
+  font-size: 0.86rem;
+}
+.category-chips a:hover { border-color: var(--navy); color: var(--navy); text-decoration: none; }
+.category-chips .chip-count { font-size: 0.76rem; color: var(--ink-faint); }
+.search-status { margin: -8px 0 16px; font-size: 0.84rem; color: var(--ink-sub); }
+.search-status:empty { margin: 0; }
+
+/* カテゴリページのh1(見出し階層を整える) */
+.category-intro h1.section-label {
+  margin: 0 0 12px;
+  font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+/* スマホでフォーカス時に自動ズームされないよう、入力欄は16px以上にする */
+@media (max-width: 700px) {
+  /* クラス指定のfont-sizeに負けないよう、実在する入力欄のセレクタを明示する */
+  input, select, textarea,
+  .site-search input,
+  .site-header-search-panel input,
+  .industry-select,
+  .kigyou-company-search,
+  .ideco-sim-field input[type="number"],
+  .ideco-sim-field select { font-size: 16px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* 固定色の藍の円がダーク背景に沈むため、縁取りで輪郭を保つ */
+  .viewpoint-circle svg circle { stroke: rgba(142, 160, 201, 0.55); stroke-width: 1.5; }
 }

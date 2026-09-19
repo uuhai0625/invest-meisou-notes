@@ -66,7 +66,7 @@
     items.forEach(function (item) {
       var a = item.article;
       html += '<a class="related-card" href="../' + a.slug + '/">' +
-        '<span class="related-card-thumb"><img src="../images/eyecatch/' + a.slug + '.jpg" alt="" loading="lazy" width="400" height="225"></span>' +
+        '<span class="related-card-thumb"><img src="../images/eyecatch/thumb/' + a.slug + '.jpg" alt="" loading="lazy" width="400" height="225"></span>' +
         '<span class="related-card-title">' + a.title + '</span>' +
         '</a>';
     });
