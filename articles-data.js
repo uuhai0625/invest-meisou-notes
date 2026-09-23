@@ -48,4 +48,5 @@ const ARTICLES_DATA = [
   { slug: 'gaika-shisan-kiso', title: '外貨・ドル建て資産の基礎', tags: ['ippan'], related: ['toushin-etf-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'tsumitate-ikkatsu-hikaku', title: '積立投資と一括投資、何が違うのか', tags: ['ippan'], related: ['toushin-etf-hikaku', 'nisa-ideco-hikaku'], tool: 'toushi-literacy-quiz' },
   { slug: 'toushi-hajimeru-junban', title: '投資を始める前に、決めておくこと', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'seikatsu-bouei-shikin', title: '生活防衛資金、いくら・どこに置くか', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
 ];
