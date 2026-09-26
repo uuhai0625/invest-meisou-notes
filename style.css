@@ -481,6 +481,7 @@ a[rel~="sponsored"]::after {
   text-decoration: none;
 }
 .affiliate-cta:hover { opacity: 0.85; text-decoration: none; }
+.affiliate-cta:focus-visible { border-radius: 999px; }
 a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: var(--on-navy); }
 
 /* ---- footer ---- */
