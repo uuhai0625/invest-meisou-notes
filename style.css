@@ -468,6 +468,20 @@ a[rel~="sponsored"]::after {
 }
 .pr-notice .pr-badge { margin-right: 8px; }
 .pr-notice a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+.affiliate-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  margin: 4px 0 20px;
+  border-radius: 999px;
+  background: var(--navy);
+  color: var(--on-navy);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.affiliate-cta:hover { opacity: 0.85; text-decoration: none; }
+a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: var(--on-navy); }
 
 /* ---- footer ---- */
 .site-footer {
