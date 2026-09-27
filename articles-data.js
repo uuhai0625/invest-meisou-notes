@@ -51,4 +51,5 @@ const ARTICLES_DATA = [
   { slug: 'seikatsu-bouei-shikin', title: '生活防衛資金、いくら・どこに置くか', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
   { slug: 'kojinmuke-kokusai', title: '個人向け国債は、生活防衛資金の置き場所になるか', tags: ['ippan'], related: ['seikatsu-bouei-shikin', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-tsumitate-gaku', title: '新NISAの積立額は、どう決めるか', tags: ['ippan'], related: ['kojinmuke-kokusai', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'toushi-kakutei-shinkoku', title: '投資の利益、確定申告は必要か', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
 ];
