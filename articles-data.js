@@ -49,4 +49,5 @@ const ARTICLES_DATA = [
   { slug: 'tsumitate-ikkatsu-hikaku', title: '積立投資と一括投資、何が違うのか', tags: ['ippan'], related: ['toushin-etf-hikaku', 'nisa-ideco-hikaku'], tool: 'toushi-literacy-quiz' },
   { slug: 'toushi-hajimeru-junban', title: '投資を始める前に、決めておくこと', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'seikatsu-bouei-shikin', title: '生活防衛資金、いくら・どこに置くか', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
+  { slug: 'kojinmuke-kokusai', title: '個人向け国債は、生活防衛資金の置き場所になるか', tags: ['ippan'], related: ['seikatsu-bouei-shikin', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
 ];
