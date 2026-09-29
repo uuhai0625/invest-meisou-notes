@@ -52,4 +52,5 @@ const ARTICLES_DATA = [
   { slug: 'kojinmuke-kokusai', title: '個人向け国債は、生活防衛資金の置き場所になるか', tags: ['ippan'], related: ['seikatsu-bouei-shikin', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-tsumitate-gaku', title: '新NISAの積立額は、どう決めるか', tags: ['ippan'], related: ['kojinmuke-kokusai', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'toushi-kakutei-shinkoku', title: '投資の利益、確定申告は必要か', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-seido-kaisei-2026', title: 'NISA、2026年度の税制改正で何が変わるのか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
 ];
