@@ -53,4 +53,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-tsumitate-gaku', title: '新NISAの積立額は、どう決めるか', tags: ['ippan'], related: ['kojinmuke-kokusai', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'toushi-kakutei-shinkoku', title: '投資の利益、確定申告は必要か', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-seido-kaisei-2026', title: 'NISA、2026年度の税制改正で何が変わるのか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'kojin-kinyu-shisan-2519chou', title: '個人金融資産2,519兆円、何が増えたのか', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
 ];
