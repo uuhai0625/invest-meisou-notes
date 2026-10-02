@@ -494,20 +494,6 @@ a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: 
 }
 .site-footer a { color: var(--ink-faint); text-decoration: underline; display: inline-block; padding: 6px 2px; }
 
-/* ---- mini nav (article pages) ---- */
-.mini-nav {
-  padding: 22px 0;
-  border-bottom: 1px solid var(--line);
-}
-.mini-nav a {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  color: var(--ink);
-}
-.mini-nav a:hover { text-decoration: none; opacity: 0.75; }
-.mini-nav .accent { color: var(--gold-text); }
-
 /* ---- article page ---- */
 /* ページ自体は比較表が全列表示できる幅を確保しつつ、本文・見出し・アイキャッチは
    読みやすい幅に個別に制限して中央寄せする(表だけが画面幅いっぱいに広がる)。
@@ -574,7 +560,8 @@ a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 8px 0 40px;
+  min-height: 44px;
+  margin: 0 0 30px;
   font-size: 0.85rem;
   color: var(--ink-sub);
 }
@@ -1708,6 +1695,9 @@ a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: 
   flex-shrink: 0;
   padding: 0;
 }
+.site-header-search-toggle { position: relative; }
+/* 見た目は36pxのまま、押せる範囲だけ44pxにする */
+.site-header-search-toggle::after { content: ""; position: absolute; inset: -4px; }
 .site-header-search-toggle svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .site-header-search-toggle:hover { border-color: var(--navy); color: var(--navy); }
 .site-header-search-panel { border-bottom: 1px solid var(--line); background: var(--bg-warm); }
@@ -1738,7 +1728,7 @@ a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: 
 .category-intro { padding: 40px 0 8px; }
 .category-intro .section-label { margin-top: 0; }
 .category-intro p { color: var(--ink-sub); font-size: 0.92rem; max-width: 620px; }
-.category-back-link { display: inline-flex; align-items: center; gap: 6px; margin: 8px 0 0; font-size: 0.85rem; color: var(--ink-sub); }
+.category-back-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: 0; font-size: 0.85rem; color: var(--ink-sub); }
 
 /* ---- iDeCo節税額シミュレーター ---- */
 .ideco-sim-card {

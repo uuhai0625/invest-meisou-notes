@@ -5,8 +5,6 @@
     if (grid) grid.classList.add("no-toc");
     var page = document.querySelector(".article-page");
     if (page) page.classList.remove("has-toc");
-    var navWrap = document.querySelector(".mini-nav .wrap");
-    if (navWrap) navWrap.classList.remove("has-toc");
     return;
   }
 

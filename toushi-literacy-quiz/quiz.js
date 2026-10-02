@@ -168,6 +168,15 @@
     scoreEl.focus({ preventScroll: true });
 
     drawShareCard(state.score, type.title);
+    // Webフォントの読み込み前に描くとフォールバック字体の画像になるため、読み込み後にもう一度描く
+    if (document.fonts && document.fonts.load) {
+      var finalScore = state.score, finalTitle = type.title;
+      Promise.all([
+        document.fonts.load("500 28px 'Noto Sans JP'"),
+        document.fonts.load("700 34px 'Noto Sans JP'"),
+        document.fonts.load("900 64px 'Zen Kaku Gothic New'")
+      ]).then(function () { drawShareCard(finalScore, finalTitle); }).catch(function () {});
+    }
 
     var tweetText = "投資まわりの基礎知識クイズ(制度の理解度チェック)、" + state.score + "/" + QUESTIONS.length + "問正解で「" + type.title + "」でした。#資産形成の瞑想ノート";
     var tweetUrl = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetText) + "&url=" + encodeURIComponent(location.href);

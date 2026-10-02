@@ -19,6 +19,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="企業分析の記事一覧|資産形成の瞑想ノート">
+<meta name="twitter:description" content="実在の一社を例に、企業の成長段階を読むための分析視点を練習する「企業の成長段階はどう読むか」シリーズです。特定の企業への投資を推奨するものではありません。">
 <meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/og-image.png">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
@@ -27,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../style.css?v=73">
+<link rel="stylesheet" href="../../style.css?v=74">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -336,6 +337,7 @@
   function applyKigyouFilters() {
     var query = (companySearch && companySearch.value || '').trim().toLowerCase();
     var matchByGroup = { us: false, jp: false };
+    var visibleHrefs = {};
 
     document.querySelectorAll('#article-list .article-card').forEach((card) => {
       const cardCountry = card.dataset.country;
@@ -344,6 +346,7 @@
       const inSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
       const visible = inIndustry && inSearch;
       card.style.display = visible ? '' : 'none';
+      visibleHrefs[card.getAttribute('href')] = visible;
       if (visible && cardCountry) matchByGroup[cardCountry] = true;
     });
 
@@ -360,9 +363,15 @@
       var group = header.dataset.group;
       var hideGroup = !!query && !matchByGroup[group];
       header.style.display = hideGroup ? 'none' : '';
+      // 検索中に強制展開されているグループは、実際に開いているので aria-expanded も開いた状態にそろえる
+      header.setAttribute('aria-expanded', String(groupOpen[group] !== false || (!!query && matchByGroup[group])));
       var nav = header.nextElementSibling;
       if (nav && nav.classList.contains('kigyou-quicklist')) {
         nav.style.display = hideGroup ? 'none' : '';
+        // 早見リンクも、業種・会社名の絞り込みに合わせて該当する会社だけを残す
+        nav.querySelectorAll('a').forEach((a) => {
+          a.style.display = visibleHrefs[a.getAttribute('href')] === false ? 'none' : '';
+        });
       }
     });
 
