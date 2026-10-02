@@ -230,6 +230,9 @@
     resultEl.style.display = "none";
     questionEl.style.display = "block";
     showQuestion();
+    // 押した「もう一度挑戦する」ボタンが非表示になるため、フォーカスを問題文へ移す
+    questionText.setAttribute("tabindex", "-1");
+    questionText.focus({ preventScroll: true });
   }
 
   startBtn.addEventListener("click", function () {

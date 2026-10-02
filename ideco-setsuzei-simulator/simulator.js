@@ -10,12 +10,12 @@
   var RESIDENT_TAX_RATE = 0.10; // 住民税(所得割)は自治体を問わず一律10%と仮定
 
   function marginalIncomeTaxRate(taxableIncome) {
-    if (taxableIncome <= 1949000) return 0.05;
-    if (taxableIncome <= 3299000) return 0.10;
-    if (taxableIncome <= 6949000) return 0.20;
-    if (taxableIncome <= 8999000) return 0.23;
-    if (taxableIncome <= 17999000) return 0.33;
-    if (taxableIncome <= 39999000) return 0.40;
+    if (taxableIncome <= 1950000) return 0.05;
+    if (taxableIncome <= 3300000) return 0.10;
+    if (taxableIncome <= 6950000) return 0.20;
+    if (taxableIncome <= 9000000) return 0.23;
+    if (taxableIncome <= 18000000) return 0.33;
+    if (taxableIncome <= 40000000) return 0.40;
     return 0.45;
   }
 
@@ -52,6 +52,7 @@
 
       var cat = CATEGORY_LIMITS[categorySelect.value];
       var monthly = Number(contributionInput.value) || 0;
+      monthly = Math.round(monthly / 1000) * 1000;
       monthly = Math.max(5000, Math.min(monthly, cat.max));
       contributionInput.value = monthly;
 
@@ -61,12 +62,15 @@
       years = Math.max(1, Math.min(years, 45));
       yearsInput.value = years;
 
-      var annualReturnPct = Math.max(Number(returnInput.value) || 0, 0);
+      var annualReturnPct = Math.min(Math.max(Number(returnInput.value) || 0, 0), 15);
+      returnInput.value = annualReturnPct;
 
       var annualContribution = monthly * 12;
-      var rate = marginalIncomeTaxRate(taxableIncome);
+      // 課税所得が0円なら控除しても軽くなる税額がないため、節税額は0円とする
+      var hasTax = taxableIncome > 0;
+      var rate = hasTax ? marginalIncomeTaxRate(taxableIncome) : 0;
       var incomeTaxSaving = annualContribution * rate * RECONSTRUCTION_SURTAX;
-      var residentTaxSaving = annualContribution * RESIDENT_TAX_RATE;
+      var residentTaxSaving = hasTax ? annualContribution * RESIDENT_TAX_RATE : 0;
       var annualSaving = incomeTaxSaving + residentTaxSaving;
       var totalSaving = annualSaving * years;
       var totalContribution = annualContribution * years;
@@ -83,7 +87,8 @@
 
       document.getElementById('ideco-sim-out-annual-saving').textContent = yen(annualSaving);
       document.getElementById('ideco-sim-out-breakdown').textContent =
-        '内訳(年間): 所得税分 約' + yen(incomeTaxSaving) + '(税率' + Math.round(rate * 100) + '%、復興特別所得税込み) + 住民税分 約' + yen(residentTaxSaving) + '(税率10%)';
+        '内訳(年間): 所得税分 約' + yen(incomeTaxSaving) + '(税率' + Math.round(rate * 100) + '%、復興特別所得税込み) + 住民税分 約' + yen(residentTaxSaving) + '(税率10%)' +
+        (categorySelect.value === 'fuyou' ? '。専業主婦・主夫の方は、ご自身に課税所得(パート収入など)がある場合のみ節税効果が出ます。課税所得がゼロなら節税額は0円です。' : '');
       document.getElementById('ideco-sim-out-total-saving').textContent = yen(totalSaving);
       document.getElementById('ideco-sim-out-total-contribution').textContent = yen(totalContribution);
       document.getElementById('ideco-sim-out-future-value').textContent = yen(futureValue);

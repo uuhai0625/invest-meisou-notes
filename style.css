@@ -360,6 +360,7 @@ h1, h2, h3, .heading-font {
 }
 .article-card .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 6px;
 }
@@ -851,7 +852,7 @@ a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: 
   color: var(--navy);
   white-space: nowrap;
 }
-.table-scroll:focus-visible, .biz-model-diagram:focus-visible, .market-cap-chart:focus-visible, .article-diagram:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+.table-scroll:focus-visible, .data-table-wrap:focus-visible, .biz-model-diagram:focus-visible, .market-cap-chart:focus-visible, .article-diagram:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 
 .term-list {
   list-style: none;

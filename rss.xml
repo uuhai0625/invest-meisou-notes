@@ -19,12 +19,7 @@
     <pubDate>Thu, 01 Oct 2026 12:00:00 +0900</pubDate>
     <description>個人金融資産2,519兆円のニュースを、日本銀行の資金循環統計にもとづき読み解いた記事です。投資・金融系トレンドニュース解説の第2回です。</description>
   </item>
-  <item>
-    <title>個人金融資産2,519兆円、何が増えたのか</title>
-    <pubDate>Thu, 01 Oct 2026 12:00:00 +0900</pubDate>
-    <description>個人金融資産2,519兆円のニュースを、日本銀行の資金循環統計にもとづき読み解いた記事です。投資・金融系トレンドニュース解説の第2回です。</description>
-  </item>
-  <item>
+    <item>
     <title>NISA、2026年度の税制改正で何が変わるのか</title>
     <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-seido-kaisei-2026/</link>
     <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-seido-kaisei-2026/</guid>
@@ -86,6 +81,13 @@
     <guid>https://uuhai0625.github.io/invest-meisou-notes/kasoutsuka-koza-hikaku/</guid>
     <pubDate>Sun, 13 Sep 2026 09:00:00 +0900</pubDate>
     <description>bitFlyer・Coincheck・GMOコイン・bitbank・SBI VCトレード・Binance Japan、国内主要6社の取引形態・手数料・取扱銘柄数・セキュリティを比較しました。</description>
+  </item>
+  <item>
+    <title>iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/ideco-dc-nisa-heiyou/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/ideco-dc-nisa-heiyou/</guid>
+    <pubDate>Sat, 12 Sep 2026 11:00:00 +0900</pubDate>
+    <description>会社員が使える年金・資産形成制度の位置づけと、iDeCoと企業型DCを併用するときの条件・掛金上限を整理しました。</description>
   </item>
   <item>
     <title>仮想通貨、何から始めればいいのか</title>

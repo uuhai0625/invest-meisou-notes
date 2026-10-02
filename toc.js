@@ -59,6 +59,14 @@
       mobileNav.hidden = expanded;
     });
 
+    // 目次のリンクを押したら、遷移後に見出しを隠さないよう目次を閉じる
+    mobileNav.addEventListener("click", function (e) {
+      if (e.target.closest("a")) {
+        toggle.setAttribute("aria-expanded", "false");
+        mobileNav.hidden = true;
+      }
+    });
+
     mobileContainer.appendChild(toggle);
     mobileContainer.appendChild(mobileNav);
   }
