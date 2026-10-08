@@ -24,7 +24,7 @@ const ARTICLES_DATA = [
   { slug: 'kigyou-seichou-yomikata-hikaku-us', title: '企業の「成長段階」はどう読むか——米国株6社を並べて比較する', tags: ['kigyou', 'ippan'], country: 'us' },
   { slug: 'shisan-kouhyou-kiten', title: 'いま、私の資産はどこにあるのか', tags: ['nikki'], related: ['nisa-ideco-hikaku', 'kakei-katachi-toushi-kangaekata'] },
   { slug: 'shoken-koza-hikaku', title: '証券口座はどう選ぶか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
-  { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'], related: ['ideco-dc-nisa-heiyou', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'fudousan-kiso-yougo', title: '不動産投資をはじめる前に、静かに整理しておきたい基礎知識', tags: ['fudousan', 'ippan'], related: ['toushin-etf-hikaku', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
   { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'], related: ['kasoutsuka-hajimekata', 'kasoutsuka-koza-hikaku'] },
   { slug: 'kasoutsuka-hajimekata', title: '仮想通貨、何から始めればいいのか', tags: ['kasoutsuka', 'ippan'], related: ['kasoutsuka-koza-hikaku', 'kasoutsuka-2021-furikaeri'], tool: 'toushi-yougo-shu' },
@@ -42,7 +42,7 @@ const ARTICLES_DATA = [
   { slug: 'souba-hendou-kakunin', title: '相場が下がったとき、何を確認すればいいか', tags: ['ippan'], related: ['tsumitate-ikkatsu-hikaku', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-uridashi-tetsuzuki', title: 'NISAは、売った後にも手続きがある', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'ideco-dc-nisa-heiyou'], tool: 'toushi-yougo-shu' },
   { slug: 'kakei-katachi-toushi-kangaekata', title: '投資を始める考え方は、家計の「形」で変わる', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
-  { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'ideco-dc-nisa-heiyou', title: 'iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'ideco-setsuzei-simulator', title: 'iDeCo節税額シミュレーター', tags: ['ippan'], type: 'tool' },
   { slug: 'toushin-etf-hikaku', title: '投資信託とETF、何が違うのか', tags: ['ippan'], related: ['tsumitate-ikkatsu-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'gaika-shisan-kiso', title: '外貨・ドル建て資産の基礎', tags: ['ippan'], related: ['toushin-etf-hikaku', 'shoken-koza-hikaku'], tool: 'toushi-yougo-shu' },
@@ -55,4 +55,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-seido-kaisei-2026', title: 'NISA、2026年度の税制改正で何が変わるのか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'kojin-kinyu-shisan-2519chou', title: '個人金融資産2,519兆円、何が増えたのか', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nichigin-riage-yokin-loan', title: '日銀が政策金利1.25%に、預金と住宅ローンに何が起きるのか', tags: ['ippan'], related: ['kojin-kinyu-shisan-2519chou', 'nisa-seido-kaisei-2026'], tool: 'toushi-yougo-shu' },
+  { slug: 'ideco-2026-12-kaisei', title: 'iDeCoの掛金上限が2026年12月に上がる——何が変わり、何は変わらないのか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'ideco-dc-nisa-heiyou'], tool: 'ideco-setsuzei-simulator' },
 ];
