@@ -483,7 +483,9 @@ a[rel~="sponsored"]::after {
 }
 .affiliate-cta:hover { opacity: 0.85; text-decoration: none; }
 .affiliate-cta:focus-visible { border-radius: 999px; }
-a[rel~="sponsored"].affiliate-cta::after { color: var(--on-navy); border-color: var(--on-navy); }
+a[rel~="sponsored"].affiliate-cta::after,
+.compare-table thead th a[rel~="sponsored"]::after { color: var(--on-navy); border-color: var(--on-navy); }
+.affiliate-cta-group { display: flex; flex-wrap: wrap; column-gap: 12px; }
 
 /* ---- footer ---- */
 .site-footer {
