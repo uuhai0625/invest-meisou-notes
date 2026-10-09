@@ -52,8 +52,9 @@ const ARTICLES_DATA = [
   { slug: 'kojinmuke-kokusai', title: '個人向け国債は、生活防衛資金の置き場所になるか', tags: ['ippan'], related: ['seikatsu-bouei-shikin', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-tsumitate-gaku', title: '新NISAの積立額は、どう決めるか', tags: ['ippan'], related: ['kojinmuke-kokusai', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'toushi-kakutei-shinkoku', title: '投資の利益、確定申告は必要か', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'toushi-hajimeru-junban'], tool: 'toushi-yougo-shu' },
-  { slug: 'nisa-seido-kaisei-2026', title: 'NISA、2026年度の税制改正で何が変わるのか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-ideco-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-seido-kaisei-2026', title: 'NISA、2026年度の税制改正で何が変わるのか', tags: ['ippan'], related: ['kodomo-nisa-okane-ugoki', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'kojin-kinyu-shisan-2519chou', title: '個人金融資産2,519兆円、何が増えたのか', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nichigin-riage-yokin-loan', title: '日銀が政策金利1.25%に、預金と住宅ローンに何が起きるのか', tags: ['ippan'], related: ['kojin-kinyu-shisan-2519chou', 'nisa-seido-kaisei-2026'], tool: 'toushi-yougo-shu' },
   { slug: 'ideco-2026-12-kaisei', title: 'iDeCoの掛金上限が2026年12月に上がる——何が変わり、何は変わらないのか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'ideco-dc-nisa-heiyou'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'kodomo-nisa-okane-ugoki', title: 'こどもNISAでお金はどう動くのか——口座・払出し・贈与税の基本', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
 ];
