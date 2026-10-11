@@ -12,4 +12,19 @@ if (GA_MEASUREMENT_ID && !isLocalDev) {
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', GA_MEASUREMENT_ID);
+
+  // 収益導線の判定用(2026-10-11)。広告リンクのクリックと、広告を含む比較記事への遷移を送る。
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    if (a.matches('a[rel~="sponsored"]')) {
+      var place = a.closest('table') ? 'table' : (a.classList.contains('affiliate-cta') ? 'cta' : 'other');
+      gtag('event', 'affiliate_click', {
+        link_url: a.href, link_text: (a.textContent || '').trim().slice(0, 40),
+        place: place, page_path: location.pathname, transport_type: 'beacon'
+      });
+    } else if (a.href.indexOf('/shoken-koza-hikaku/') !== -1) {
+      gtag('event', 'to_comparison', { page_path: location.pathname, transport_type: 'beacon' });
+    }
+  });
 }
