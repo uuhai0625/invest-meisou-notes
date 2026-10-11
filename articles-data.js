@@ -23,7 +23,7 @@ const ARTICLES_DATA = [
   { slug: 'kigyou-seichou-yomikata-case13', title: 'BESI——企業の「成長段階」を読む【米国株 6/6】', tags: ['kigyou', 'ippan'], country: 'us', industry: 'semiconductor' },
   { slug: 'kigyou-seichou-yomikata-hikaku-us', title: '企業の「成長段階」はどう読むか——米国株6社を並べて比較する', tags: ['kigyou', 'ippan'], country: 'us' },
   { slug: 'shisan-kouhyou-kiten', title: 'いま、私の資産はどこにあるのか', tags: ['nikki'], related: ['nisa-ideco-hikaku', 'kakei-katachi-toushi-kangaekata'] },
-  { slug: 'shoken-koza-hikaku', title: '証券口座はどう選ぶか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'shoken-koza-hikaku', title: '証券口座はどう選ぶか', ad: true, tags: ['ippan'], related: ['nisa-ideco-hikaku', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-ideco-hikaku', title: '新NISAとiDeCo、どこが違うのか', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'shoken-koza-hikaku'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'fudousan-kiso-yougo', title: '不動産投資をはじめる前に、静かに整理しておきたい基礎知識', tags: ['fudousan', 'ippan'], related: ['toushin-etf-hikaku', 'kakei-katachi-toushi-kangaekata'], tool: 'toushi-yougo-shu' },
   { slug: 'kasoutsuka-2021-furikaeri', title: '2021年、仮想通貨で学んだこと', tags: ['nikki'], related: ['kasoutsuka-hajimekata', 'kasoutsuka-koza-hikaku'] },

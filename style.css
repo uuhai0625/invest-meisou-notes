@@ -457,6 +457,9 @@ a[rel~="sponsored"]::after {
   margin-left: 6px;
   vertical-align: 0.12em;
 }
+.related-card-title .pr-badge,
+.pickup-card-title .pr-badge,
+.article-card h2 .pr-badge { margin-right: 6px; vertical-align: 0.12em; }
 .pr-notice {
   margin: 0 0 20px;
   padding: 10px 14px;
