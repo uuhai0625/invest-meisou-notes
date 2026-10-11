@@ -460,6 +460,7 @@ a[rel~="sponsored"]::after {
 .related-card-title .pr-badge,
 .pickup-card-title .pr-badge,
 .article-card h2 .pr-badge { margin-right: 6px; vertical-align: 0.12em; }
+.next-read { margin: 28px 0 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: 0.92rem; }
 .pr-notice {
   margin: 0 0 20px;
   padding: 10px 14px;
