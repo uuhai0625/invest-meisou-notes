@@ -538,6 +538,7 @@ a[rel~="sponsored"].affiliate-cta::after,
   margin-bottom: 40px;
 }
 .article-header .tags { display: flex; gap: 6px; justify-content: center; margin-bottom: 18px; }
+.article-header .tag.tag-pr { font-weight: 700; }
 .article-header .tag {
   font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-size: 0.72rem;
