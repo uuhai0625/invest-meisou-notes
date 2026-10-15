@@ -58,4 +58,5 @@ const ARTICLES_DATA = [
   { slug: 'ideco-2026-12-kaisei', title: 'iDeCoの掛金上限が2026年12月に上がる——何が変わり、何は変わらないのか', tags: ['ippan'], related: ['nisa-ideco-hikaku', 'ideco-dc-nisa-heiyou'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'kodomo-nisa-okane-ugoki', title: 'こどもNISAでお金はどう動くのか——口座・払出し・贈与税の基本', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-koza-riyou-jokyo', title: 'NISA口座が3,000万を超えた——口座数・買付額の統計をどう読むか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-seido-kaisei-2026'], tool: 'toushi-yougo-shu' },
+  { slug: 'ideco-nenmatsu-chosei', title: 'iDeCoの控除証明書はいつ届く? 年末調整で書く場所と、届かないとき(令和8年分)', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'nisa-ideco-hikaku'], tool: 'ideco-setsuzei-simulator' },
 ];
