@@ -6,6 +6,13 @@
   <description>日本株・米国株・仮想通貨・不動産にまつわる一般的な知識・比較と、著者自身の投資日記。</description>
   <language>ja</language>
   <item>
+    <title>NISAの配当金は、受取方式しだいで課税される——「株式数比例配分方式」とは何か</title>
+    <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-haito-uketori-houshiki/</link>
+    <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-haito-uketori-houshiki/</guid>
+    <pubDate>Fri, 16 Oct 2026 13:00:00 +0900</pubDate>
+    <description>NISA口座の配当金を非課税にするための受取方式を、日本証券業協会のQ&amp;Aをもとに整理した記事です。方式による課税の違い、選ぶときの注意、課税されたときの扱いをまとめています。</description>
+  </item>
+  <item>
     <title>iDeCoの控除証明書はいつ届く? 年末調整で書く場所と、届かないとき(令和8年分)</title>
     <link>https://uuhai0625.github.io/invest-meisou-notes/ideco-nenmatsu-chosei/</link>
     <guid>https://uuhai0625.github.io/invest-meisou-notes/ideco-nenmatsu-chosei/</guid>
@@ -143,7 +150,7 @@
     <link>https://uuhai0625.github.io/invest-meisou-notes/nisa-uridashi-tetsuzuki/</link>
     <guid>https://uuhai0625.github.io/invest-meisou-notes/nisa-uridashi-tetsuzuki/</guid>
     <pubDate>Fri, 11 Sep 2026 09:00:00 +0900</pubDate>
-    <description>NISA枠が戻るタイミング、配当金を非課税にする受取方式、特定口座と確定申告、損益通算・繰越控除、米国株の二重課税と外国税額控除。売却後に知っておくと安心な制度知識をまとめました。</description>
+    <description>NISA枠が戻るタイミング、配当金の受取方式、特定口座と確定申告、損益通算・繰越控除、米国株の二重課税と外国税額控除。売却後に知っておくと安心な制度知識をまとめました。</description>
   </item>
   <item>
     <title>相場が下がったとき、何を確認すればいいか</title>

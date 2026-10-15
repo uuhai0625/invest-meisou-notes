@@ -59,4 +59,5 @@ const ARTICLES_DATA = [
   { slug: 'kodomo-nisa-okane-ugoki', title: 'こどもNISAでお金はどう動くのか——口座・払出し・贈与税の基本', tags: ['ippan'], related: ['nisa-seido-kaisei-2026', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-koza-riyou-jokyo', title: 'NISA口座が3,000万を超えた——口座数・買付額の統計をどう読むか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-seido-kaisei-2026'], tool: 'toushi-yougo-shu' },
   { slug: 'ideco-nenmatsu-chosei', title: 'iDeCoの控除証明書はいつ届く? 年末調整で書く場所と、届かないとき(令和8年分)', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'nisa-ideco-hikaku'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'nisa-haito-uketori-houshiki', title: 'NISAの配当金は、受取方式しだいで課税される——「株式数比例配分方式」とは何か', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
 ];
