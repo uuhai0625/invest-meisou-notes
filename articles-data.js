@@ -60,5 +60,6 @@ const ARTICLES_DATA = [
   { slug: 'nisa-koza-riyou-jokyo', title: 'NISA口座が3,000万を超えた——口座数・買付額の統計をどう読むか', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-seido-kaisei-2026'], tool: 'toushi-yougo-shu' },
   { slug: 'ideco-nenmatsu-chosei', title: 'iDeCoの控除証明書はいつ届く? 年末調整で書く場所と、届かないとき(令和8年分)', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'nisa-ideco-hikaku'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'nisa-haito-uketori-houshiki', title: 'NISAの配当金は、受取方式しだいで課税される——「株式数比例配分方式」とは何か', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
-  { slug: 'nisa-kinyuukikan-henkou', title: 'NISAの金融機関は変更できる——手続き・時期と、保有中の商品はどうなるか', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-kinyuukikan-henkou', title: 'NISAの金融機関は変更できる——手続き・時期と、保有中の商品はどうなるか', tags: ['ippan'], related: ['nisa-koza-kaisetsu-tetsuzuki', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-koza-kaisetsu-tetsuzuki', title: 'NISA口座の開設は、何が必要で、いつから買えるのか——書類・日数・手続きの流れ', tags: ['ippan'], related: ['nisa-kinyuukikan-henkou', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
 ];
