@@ -62,4 +62,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-haito-uketori-houshiki', title: 'NISAの配当金は、受取方式しだいで課税される——「株式数比例配分方式」とは何か', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'toushin-etf-hikaku'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-kinyuukikan-henkou', title: 'NISAの金融機関は変更できる——手続き・時期と、保有中の商品はどうなるか', tags: ['ippan'], related: ['nisa-koza-kaisetsu-tetsuzuki', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-koza-kaisetsu-tetsuzuki', title: 'NISA口座の開設は、何が必要で、いつから買えるのか——書類・日数・手続きの流れ', tags: ['ippan'], related: ['nisa-kinyuukikan-henkou', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
+  { slug: 'nisa-nenmatsu-kaitsuke', title: 'NISAの年内の買付けは、いつまでなら間に合うか——受渡日と年間投資枠の考え方', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-koza-kaisetsu-tetsuzuki'], tool: 'toushi-yougo-shu' },
 ];
