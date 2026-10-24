@@ -63,4 +63,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-kinyuukikan-henkou', title: 'NISAの金融機関は変更できる——手続き・時期と、保有中の商品はどうなるか', tags: ['ippan'], related: ['nisa-koza-kaisetsu-tetsuzuki', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-koza-kaisetsu-tetsuzuki', title: 'NISA口座の開設は、何が必要で、いつから買えるのか——書類・日数・手続きの流れ', tags: ['ippan'], related: ['nisa-kinyuukikan-henkou', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-nenmatsu-kaitsuke', title: 'NISAの年内の買付けは、いつまでなら間に合うか——受渡日と年間投資枠の考え方', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-koza-kaisetsu-tetsuzuki'], tool: 'toushi-yougo-shu' },
+  { slug: 'tokutei-koza-nenkan-torihiki', title: '特定口座の「源泉徴収あり・なし」は何が違うのか——年間取引報告書の中身と、年明けの流れ', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'nisa-nenmatsu-kaitsuke'], tool: 'toushi-yougo-shu' },
 ];
