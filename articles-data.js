@@ -64,4 +64,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-koza-kaisetsu-tetsuzuki', title: 'NISA口座の開設は、何が必要で、いつから買えるのか——書類・日数・手続きの流れ', tags: ['ippan'], related: ['nisa-kinyuukikan-henkou', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'nisa-nenmatsu-kaitsuke', title: 'NISAの年内の買付けは、いつまでなら間に合うか——受渡日と年間投資枠の考え方', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-koza-kaisetsu-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'tokutei-koza-nenkan-torihiki', title: '特定口座の「源泉徴収あり・なし」は何が違うのか——年間取引報告書の中身と、年明けの流れ', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'nisa-nenmatsu-kaitsuke'], tool: 'toushi-yougo-shu' },
+  { slug: 'haito-shinkoku-fuyou-juminzei', title: '配当の「確定申告不要」は住民税にも及ぶのか——3つの課税方式と、令和6年度分からの住民税のルール', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'tokutei-koza-nenkan-torihiki'], tool: 'toushi-yougo-shu' },
 ];
