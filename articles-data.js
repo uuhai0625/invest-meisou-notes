@@ -65,4 +65,5 @@ const ARTICLES_DATA = [
   { slug: 'nisa-nenmatsu-kaitsuke', title: 'NISAの年内の買付けは、いつまでなら間に合うか——受渡日と年間投資枠の考え方', tags: ['ippan'], related: ['nisa-tsumitate-gaku', 'nisa-koza-kaisetsu-tetsuzuki'], tool: 'toushi-yougo-shu' },
   { slug: 'tokutei-koza-nenkan-torihiki', title: '特定口座の「源泉徴収あり・なし」は何が違うのか——年間取引報告書の中身と、年明けの流れ', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'nisa-nenmatsu-kaitsuke'], tool: 'toushi-yougo-shu' },
   { slug: 'haito-shinkoku-fuyou-juminzei', title: '配当の「確定申告不要」は住民税にも及ぶのか——3つの課税方式と、令和6年度分からの住民税のルール', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'tokutei-koza-nenkan-torihiki'], tool: 'toushi-yougo-shu' },
+  { slug: 'jouto-sonshitsu-kurikoshi-kojo', title: '株の売却損は確定申告で3年繰り越せる——繰越控除の申告手順と、取引がない年の扱い', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'haito-shinkoku-fuyou-juminzei'], tool: 'toushi-yougo-shu' },
 ];
