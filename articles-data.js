@@ -67,4 +67,5 @@ const ARTICLES_DATA = [
   { slug: 'haito-shinkoku-fuyou-juminzei', title: '配当の「確定申告不要」は住民税にも及ぶのか——3つの課税方式と、令和6年度分からの住民税のルール', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'tokutei-koza-nenkan-torihiki'], tool: 'toushi-yougo-shu' },
   { slug: 'jouto-sonshitsu-kurikoshi-kojo', title: '株の売却損は確定申告で3年繰り越せる——繰越控除の申告手順と、取引がない年の扱い', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'haito-shinkoku-fuyou-juminzei'], tool: 'toushi-yougo-shu' },
   { slug: 'kabu-shinkoku-etax-junbi', title: '株の確定申告をe-Taxで出す前に——マイナポータル連携の事前準備と、証券会社の電子交付の時期(令和8年分)', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'tokutei-koza-nenkan-torihiki'], tool: 'toushi-yougo-shu' },
+  { slug: 'toushi-nenmatsu-calendar', title: 'NISA・iDeCo・特定口座の年末カレンダー——2026年11月から2027年3月までの日付(令和8年分)', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
 ];
