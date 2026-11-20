@@ -68,4 +68,5 @@ const ARTICLES_DATA = [
   { slug: 'jouto-sonshitsu-kurikoshi-kojo', title: '株の売却損は確定申告で3年繰り越せる——繰越控除の申告手順と、取引がない年の扱い', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'haito-shinkoku-fuyou-juminzei'], tool: 'toushi-yougo-shu' },
   { slug: 'kabu-shinkoku-etax-junbi', title: '株の確定申告をe-Taxで出す前に——マイナポータル連携の事前準備と、証券会社の電子交付の時期(令和8年分)', tags: ['ippan'], related: ['toushi-kakutei-shinkoku', 'tokutei-koza-nenkan-torihiki'], tool: 'toushi-yougo-shu' },
   { slug: 'toushi-nenmatsu-calendar', title: 'NISA・iDeCo・特定口座の年末カレンダー——2026年11月から2027年3月までの日付(令和8年分)', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
+  { slug: 'gaikoku-zeigaku-koujo', title: '米国株の配当に引かれた外国の税は、日本の所得税から差し引けるのか——外国税額控除と口座ごとの違い(令和8年分)', tags: ['ippan'], related: ['gaika-shisan-kiso', 'haito-shinkoku-fuyou-juminzei'], tool: 'toushi-yougo-shu' },
 ];
