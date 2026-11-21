@@ -70,4 +70,5 @@ const ARTICLES_DATA = [
   { slug: 'toushi-nenmatsu-calendar', title: 'NISA・iDeCo・特定口座の年末カレンダー——2026年11月から2027年3月までの日付(令和8年分)', tags: ['ippan'], related: ['nisa-uridashi-tetsuzuki', 'nisa-tsumitate-gaku'], tool: 'toushi-yougo-shu' },
   { slug: 'gaikoku-zeigaku-koujo', title: '米国株の配当に引かれた外国の税は、日本の所得税から差し引けるのか——外国税額控除と口座ごとの違い(令和8年分)', tags: ['ippan'], related: ['gaika-shisan-kiso', 'haito-shinkoku-fuyou-juminzei'], tool: 'toushi-yougo-shu' },
   { slug: 'furusato-onestop-kabu-shinkoku', title: '株の確定申告をすると、ふるさと納税のワンストップ特例はどうなるのか——申告するときの寄附金控除の入れ方(令和8年分)', tags: ['ippan'], related: ['haito-shinkoku-fuyou-juminzei', 'toushi-kakutei-shinkoku'], tool: 'toushi-yougo-shu' },
+  { slug: 'kabu-shinkoku-juminzei-chousyu', title: '株の確定申告をすると、住民税の通知は勤務先に届くのか——申告書の「徴収方法」欄の読み方(令和7年分の案内)', tags: ['ippan'], related: ['haito-shinkoku-fuyou-juminzei', 'toushi-kakutei-shinkoku'], tool: 'toushi-yougo-shu' },
 ];
