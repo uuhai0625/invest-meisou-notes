@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>積立シミュレーター|毎月いくらで何年後にいくらか、新NISAの枠と税引後も試算|資産形成の瞑想ノート</title>
+<meta name="description" content="月3万円を20年のように、毎月の積立額・年数・仮の年利から元本と評価額を試算し、目標額からの逆算もできる無料ツールです。新NISAの枠との関係と、課税口座の税引後の目安も確認できます。結果は将来の成果を保証しません。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="積立シミュレーター——毎月の積立額と年数から、元本と評価額を試算する">
+<meta property="og:description" content="月3万円を20年のように、毎月の積立額・年数・仮の年利から元本と評価額を試算し、目標額からの逆算もできる無料ツールです。新NISAの枠との関係と、課税口座の税引後の目安も確認できます。結果は将来の成果を保証しません。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/tsumitate-fukuri-simulator/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/tsumitate-fukuri-simulator.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/tsumitate-fukuri-simulator/">
+<link rel="alternate" type="application/rss+xml" title="資産形成の瞑想ノート" href="https://uuhai0625.github.io/invest-meisou-notes/rss.xml">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="積立シミュレーター">
+<meta name="twitter:description" content="月3万円を20年のように、毎月の積立額・年数・仮の年利から元本と評価額を試算し、目標額からの逆算もできる無料ツールです。新NISAの枠との関係と、課税口座の税引後の目安も確認できます。結果は将来の成果を保証しません。">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/tsumitate-fukuri-simulator.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#f4efe1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1c20" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=79">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "資産形成の瞑想ノート", "item": "https://uuhai0625.github.io/invest-meisou-notes/" },
+    { "@type": "ListItem", "position": 2, "name": "一般知識", "item": "https://uuhai0625.github.io/invest-meisou-notes/category/ippan/" },
+    { "@type": "ListItem", "position": 3, "name": "積立シミュレーター", "item": "https://uuhai0625.github.io/invest-meisou-notes/tsumitate-fukuri-simulator/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "積立シミュレーター",
+  "url": "https://uuhai0625.github.io/invest-meisou-notes/tsumitate-fukuri-simulator/",
+  "description": "月3万円を20年のように、毎月の積立額・年数・仮の年利から元本と評価額を試算し、目標額からの逆算もできる無料ツールです。新NISAの枠との関係と、課税口座の税引後の目安も確認できます。結果は将来の成果を保証しません。",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (Web browser)",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja",
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24",
+  "author": { "@type": "Person", "name": "うーはい", "url": "https://uuhai0625.github.io/invest-meisou-notes/profile/", "sameAs": ["https://x.com/uuhai0625"] }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+<style>
+.fs-page .fs-card h2 { margin-top: 36px; }
+.fs-page .fs-error { margin: 12px 0 0; padding: 10px 12px; border: 1px solid #b4472c; border-radius: 8px; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .ideco-sim-row { margin-bottom: 20px; }
+.fs-page .ideco-sim-row .ideco-sim-field { margin-bottom: 0; }
+.fs-page .ideco-sim-card > .ideco-sim-field:last-of-type { margin-bottom: 20px; }
+.fs-page .fs-chart { margin: 18px 0 0; }
+.fs-page .fs-chart svg { display: block; width: 100%; height: auto; }
+.fs-page .fs-grid { stroke: var(--line); stroke-width: 1; }
+.fs-page .fs-axis { fill: var(--ink-sub); font-size: 22px; }
+.fs-page .fs-line-principal { stroke: var(--ink-sub); stroke-width: 3; stroke-dasharray: 8 6; }
+.fs-page .fs-line-value { stroke: var(--gold-text); stroke-width: 4; }
+.fs-page .fs-line-zero { stroke: var(--ink-faint); stroke-width: 2; stroke-dasharray: 2 5; }
+.fs-page .fs-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; font-size: 0.88rem; color: var(--ink-sub); }
+.fs-page .fs-legend span::before { content: ""; display: inline-block; width: 22px; height: 0; margin-right: 6px; vertical-align: middle; border-top: 3px solid var(--gold-text); }
+.fs-page .fs-legend span.p::before { border-top: 3px dashed var(--ink-sub); }
+.fs-page .fs-legend span.z::before { border-top: 2px dotted var(--ink-faint); }
+.fs-page .fs-nisa { margin: 18px 0 0; padding: 14px 16px; background: var(--bg-warm); border: 1px solid var(--line); border-radius: 8px; }
+.fs-page .fs-nisa h3 { margin: 0 0 6px; font-size: 1rem; }
+.fs-page .fs-nisa ul { margin: 0; padding-left: 1.2em; font-size: 0.92rem; line-height: 1.8; }
+.fs-page .fs-nisa p { margin: 8px 0 0; font-size: 0.88rem; line-height: 1.7; color: var(--ink-sub); }
+.fs-page details { margin: 16px 0 0; }
+.fs-page details summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-weight: 700; }
+.fs-page .fs-summary { margin: 0 0 14px; font-size: 1rem; font-weight: 700; line-height: 1.7; }
+.fs-page .fs-v-main { display: block; }
+.fs-page .fs-v-sub { display: block; font-size: 0.8rem; font-weight: 400; color: var(--ink-sub); }
+.fs-page .ideco-sim-result-note { font-size: 0.88rem; }
+.fs-page .fs-anchor { margin: 0 0 8px; font-size: 0.92rem; }
+.fs-page table { min-width: 0; }
+.fs-page table td, .fs-page table th { font-size: 0.88rem; }
+.fs-page tr.fs-mine th, .fs-page tr.fs-mine td { font-weight: 700; }
+.fs-page .fs-glossary dt { margin: 10px 0 0; font-weight: 700; font-size: 0.92rem; }
+.fs-page .fs-glossary dd { margin: 2px 0 0; font-size: 0.9rem; line-height: 1.7; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="../">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="../toushi-guide/">ガイド</a>
+      <a href="../category/ippan/">一般知識</a>
+      <a href="../category/fudousan/">不動産</a>
+      <a href="../category/nikki/">投資日記</a>
+      <a href="../category/kigyou/">企業分析</a>
+      <a href="../category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="../" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
+
+<main id="main" class="wrap article-page fs-page">
+  <nav class="breadcrumb" aria-label="パンくず"><a href="../">トップ</a><span aria-hidden="true">›</span><a href="../category/ippan/">一般知識</a><span aria-hidden="true">›</span><span aria-current="page">積立シミュレーター</span></nav>
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">一般知識</span>
+      <span class="tag">ツール</span>
+    </div>
+    <h1>積立シミュレーター——毎月の積立額と年数から、元本と評価額を試算する</h1>
+    <p class="meta">2026年11月24日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/tsumitate-fukuri-simulator.jpg" alt="紺色の積み上がる棒グラフの上に、金色の棒が重なって右肩上がりに伸びている、抽象的なイメージ図(実際の成果を示すものではありません)" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: このツールは、積立の計算を理解するための試算です。入れる年利は「仮の数字」で、将来の運用成果を保証せず、特定の商品や買い方を勧めるものでもありません。実際の運用は年ごとに上下し、元本を下回ることがあります。入力した内容は、お使いの端末の中だけで計算し、送信も保存もしません。
+    </div>
+
+    <p>毎月同じ金額を積み立てると、元本はいくらになり、仮の年利で運用できたとしたら、評価額はいくらになるのか。数字のイメージをつかむためのツールです。最初から入っている数字は、計算の例です。自分の数字に変えると、結果がその場で変わります。</p>
+    <p class="fs-anchor"><a href="#fs-h-sim">↓ 積立を試算する</a> / <a href="#fs-h-goal">目標額から逆算したい方はこちら</a> / <a href="#fs-h-table">月◯万円×◯年の早見表</a></p>
+
+    <details>
+      <summary>用語の意味(元本・評価額・課税口座など)</summary>
+      <dl class="fs-glossary">
+        <dt>元本の合計</dt><dd>自分で積み立てた金額の合計です。増えた分は入りません。</dd>
+        <dt>評価額</dt><dd>増減を含めた、その時点の価値です。このツールでは、仮の年利のとおりに増えた場合の計算です。</dd>
+        <dt>運用益</dt><dd>評価額から元本を引いた金額です。マイナスなら元本割れです。</dd>
+        <dt>仮の年利</dt><dd>1年あたりの実質の増加率(年複利)を仮に置いた数字です。予想ではありません。</dd>
+        <dt>年間のコスト</dt><dd>投資信託の信託報酬など、毎年かかる費用の仮の数字です。年利から差し引きます。商品によって違うので、実際の費用は各商品の目論見書で確かめてください。</dd>
+        <dt>課税口座</dt><dd>NISA以外の口座(特定口座・一般口座)です。売却益などに税金がかかります。</dd>
+        <dt>非課税保有限度額</dt><dd>新NISAで、生涯に非課税で持てる上限(1,800万円)です。買ったときの金額(簿価)で数えます。</dd>
+      </dl>
+    </details>
+
+    <section class="fs-card" aria-labelledby="fs-h-sim">
+    <h2 id="fs-h-sim" style="margin-top:0">積立シミュレーション(元本・評価額・税引後)</h2>
+    <form id="fs-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="fs-pay">毎月の積立額(円)</label>
+          <input type="number" id="fs-pay" min="0" step="1000" value="30000" inputmode="numeric" aria-describedby="fs-pay-hint">
+          <span class="ideco-sim-hint" id="fs-pay-hint">1か月に積み立てる金額です。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="fs-years">積立年数(年・整数)</label>
+          <input type="number" id="fs-years" min="1" max="60" step="1" value="20" inputmode="numeric">
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="fs-rate">仮の年利(%)</label>
+          <input type="number" id="fs-rate" min="-10" max="30" step="0.1" value="3" aria-describedby="fs-rate-hint">
+          <span class="ideco-sim-hint" id="fs-rate-hint">計算用の例で、予想ではありません。0%やマイナスでも試してください。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="fs-cost">年間のコスト(%)</label>
+          <input type="number" id="fs-cost" min="0" max="5" step="0.01" value="0.2" aria-describedby="fs-cost-hint">
+          <span class="ideco-sim-hint" id="fs-cost-hint">信託報酬などの仮の数字です。商品によって異なります。</span>
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="fs-init">最初に入れる金額(円・任意)</label>
+          <input type="number" id="fs-init" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="fs-init-hint">
+          <span class="ideco-sim-hint" id="fs-init-hint">すでに積立中の方は、これまでに払い込んだ金額(元本)を入れてください。評価額を入れると、運用益と税額がずれます。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="fs-infl">物価の上昇率(年%・仮)</label>
+          <input type="number" id="fs-infl" min="0" max="10" step="0.1" value="2" aria-describedby="fs-infl-hint">
+          <span class="ideco-sim-hint" id="fs-infl-hint">将来の金額を、いまのお金に直して見るための仮の数字です。</span>
+        </div>
+      </div>
+      <button class="ideco-sim-btn" type="submit">計算する</button>
+      <p class="fs-error" id="fs-error" role="alert" hidden></p>
+      <p class="sr-only" id="fs-sr" aria-live="polite"></p>
+
+      <div class="ideco-sim-result" id="fs-result">
+        <p class="fs-summary" id="fs-summary"></p>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">元本の合計(自分で積み立てた金額)</span><span class="value" id="fs-out-principal">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">評価額(仮の年利のとおりに増えた場合)</span><span class="value accent" id="fs-out-value">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">運用益(評価額−元本)</span><span class="value" id="fs-out-gain">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">評価額を、いまのお金に直した目安(物価が年<span id="fs-real-infl">2%</span>上がる仮定)</span><span class="value" id="fs-out-real">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">課税口座で売った場合の税引後(目安)</span><span class="value" id="fs-out-after-tax">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note" id="fs-out-compare"></p>
+        <p class="ideco-sim-result-note">課税口座の税額は、運用益の全額に、売却時に税率20.315%がかかると仮定した単純な計算です(所得税15%・住民税5%に、所得税額の2.1%分の付加税を加えた率。付加税は、令和8年までは復興特別所得税、令和9年以後は復興特別所得税1.1%と防衛特別所得税1%の合計で、合計は同じです)。分配金・途中の売却・損益通算・繰越控除は考えていません。最後に1回だけ売る前提のため、実際の課税口座では税額が増えることがあります。</p>
+
+        <div class="fs-nisa">
+          <h3>NISAの枠との関係(目安)</h3>
+          <ul id="fs-nisa-list"></ul>
+          <p>NISAだけで積み立て、途中で売らない前提の単純な比較です(2026年11月時点の金融庁の案内にもとづく数字)。つみたて投資枠で買えるのは、金融庁が定めた条件を満たす投資信託などに限られ、金融機関によって取扱商品が違います。成長投資枠の上限(1,200万円)や制度の改正は考えていません。NISAの枠は、買ったときの金額(簿価)で数え、売却すると、その簿価の分が翌年以降に再び使えるようになります。詳しくは<a href="../nisa-tsumitate-gaku/">新NISAの積立額は、どう決めるか</a>と<a href="../nisa-uridashi-tetsuzuki/">NISAは、売った後にも手続きがある</a>にあります。</p>
+        </div>
+
+        <div class="fs-chart" id="fs-chart"></div>
+        <p class="fs-legend"><span>評価額(仮の年利)</span><span class="p">元本の合計</span><span class="z">年利0%の場合(コスト後)</span></p>
+        <p class="ideco-sim-result-note">この線は、毎年同じ率で増え続けると仮定した計算です。実際の運用は、年ごとに上下し、グラフのようにまっすぐ増えるとは限りません。</p>
+
+        <details>
+          <summary>年ごとの数字を表で見る</summary>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="年ごとの元本と評価額">
+            <table>
+              <caption>年ごとの元本と評価額(仮の年利)</caption>
+              <thead><tr><th scope="col">経過</th><th scope="col">元本</th><th scope="col">評価額</th><th scope="col">運用益</th></tr></thead>
+              <tbody id="fs-year-body"></tbody>
+            </table>
+          </div>
+        </details>
+
+        <h3 style="margin:22px 0 6px;font-size:1rem">年利が違っていたら(同じ積立額・<span id="fs-rate-years">20年</span>・コスト<span id="fs-rate-cost">0.2%</span>)</h3>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-label="仮の年利ごとの評価額">
+          <table>
+            <caption>仮の年利ごとの評価額と運用益</caption>
+            <thead><tr><th scope="col">仮の年利</th><th scope="col">評価額</th><th scope="col">運用益</th></tr></thead>
+            <tbody id="fs-rate-body"></tbody>
+          </table>
+        </div>
+        <p class="ideco-sim-result-note">年0%やマイナスの行は、コストを引いたあとの結果なので、元本を下回ることがあります。どの行の数字も、実現するという意味ではありません。実際の運用は年ごとに上下し、元本を下回ることもあります。</p>
+      </div>
+    </form>
+    </section>
+
+    <section class="fs-card" aria-labelledby="fs-h-goal">
+    <h2 id="fs-h-goal">目標額から逆算する</h2>
+    <p>届きたい金額と年数を入れると、仮の年利が続いたとした場合に、毎月いくら積み立てる計算になるかを表示します。上の入力とは別の欄です。</p>
+    <form id="fg-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="fg-target">目標額(円)</label>
+          <input type="number" id="fg-target" min="10000" step="100000" value="10000000" inputmode="numeric">
+        </div>
+        <div class="ideco-sim-field">
+          <label for="fg-years">積立年数(年・整数)</label>
+          <input type="number" id="fg-years" min="1" max="60" step="1" value="20" inputmode="numeric">
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="fg-rate">仮の年利(%)</label>
+          <input type="number" id="fg-rate" min="-10" max="30" step="0.1" value="3" aria-describedby="fg-rate-hint">
+          <span class="ideco-sim-hint" id="fg-rate-hint">計算用の例で、予想ではありません。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="fg-cost">年間のコスト(%)</label>
+          <input type="number" id="fg-cost" min="0" max="5" step="0.01" value="0.2" aria-describedby="fg-cost-hint">
+          <span class="ideco-sim-hint" id="fg-cost-hint">信託報酬などの仮の数字です。</span>
+        </div>
+      </div>
+      <div class="ideco-sim-field">
+        <label for="fg-init">最初に入れる金額(円・任意)</label>
+        <input type="number" id="fg-init" min="0" step="10000" value="0" inputmode="numeric">
+      </div>
+      <button class="ideco-sim-btn" type="submit">必要な毎月の額を計算する</button>
+      <p class="fs-error" id="fg-error" role="alert" hidden></p>
+      <p class="sr-only" id="fg-sr" aria-live="polite"></p>
+      <div class="ideco-sim-result" id="fg-result">
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">目標額に届く計算になる毎月の額(仮の年利の場合)</span><span class="value accent" id="fg-out-pay">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">元本の合計</span><span class="value" id="fg-out-principal">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">運用益(評価額−元本)</span><span class="value" id="fg-out-gain">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">年利0%・コスト0%なら、毎月</span><span class="value" id="fg-out-zero">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note" id="fg-out-note"></p>
+        <p class="ideco-sim-result-note">この額を積み立てれば目標に届く、という意味ではありません。仮の年利が高いほど、必要な毎月の額は小さく出ますが、その年利が実現する保証はありません。「年利0%・コスト0%なら、毎月」の欄は、運用益がまったくなかった場合の額です。目標額は、いまのお金に直していない名目の金額です。</p>
+      </div>
+    </form>
+    </section>
+
+    <h2 id="fs-h-table">月◯万円×◯年の早見表(元本と評価額の例)</h2>
+    <p>毎月の積立額と年数ごとに、元本と、仮の年利0%・3%・5%の評価額を並べた表です。コスト0.2%、最初に入れる金額0円、月末積立で計算しています。上の計算と同じ式です。どの年利も予想ではなく、比べるための数字です。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="月の積立額と年数ごとの元本と評価額">
+      <table>
+        <caption>月の積立額と年数ごとの元本と評価額(コスト0.2%)</caption>
+        <thead><tr><th scope="col">毎月</th><th scope="col">年数</th><th scope="col">元本</th><th scope="col">年0%</th><th scope="col">年3%</th><th scope="col">年5%</th></tr></thead>
+        <tbody>
+<tr><th scope="row">月1万円</th><td>10年</td><td>120万円</td><td>119万円</td><td>138万円</td><td>153万円</td></tr>
+<tr><th scope="row">月1万円</th><td>20年</td><td>240万円</td><td>235万円</td><td>320万円</td><td>397万円</td></tr>
+<tr><th scope="row">月1万円</th><td>30年</td><td>360万円</td><td>349万円</td><td>560万円</td><td>787万円</td></tr>
+<tr><th scope="row">月3万円</th><td>10年</td><td>360万円</td><td>356万円</td><td>414万円</td><td>458万円</td></tr>
+<tr><th scope="row">月3万円</th><td>20年</td><td>720万円</td><td>706万円</td><td>960万円</td><td>1,191万円</td></tr>
+<tr><th scope="row">月3万円</th><td>30年</td><td>1,080万円</td><td>1,048万円</td><td>1,679万円</td><td>2,362万円</td></tr>
+<tr><th scope="row">月5万円</th><td>10年</td><td>600万円</td><td>594万円</td><td>690万円</td><td>764万円</td></tr>
+<tr><th scope="row">月5万円</th><td>20年</td><td>1,200万円</td><td>1,176万円</td><td>1,600万円</td><td>1,985万円</td></tr>
+<tr><th scope="row">月5万円</th><td>30年</td><td>1,800万円</td><td>1,747万円</td><td>2,799万円</td><td>3,936万円</td></tr>
+<tr><th scope="row">月10万円</th><td>10年</td><td>1,200万円</td><td>1,188万円</td><td>1,380万円</td><td>1,528万円</td></tr>
+<tr><th scope="row">月10万円</th><td>20年</td><td>2,400万円</td><td>2,353万円</td><td>3,200万円</td><td>3,970万円</td></tr>
+<tr><th scope="row">月10万円</th><td>30年</td><td>3,600万円</td><td>3,494万円</td><td>5,598万円</td><td>7,872万円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">年0%は、コストを引いたあとの結果なので、元本を下回ります。</p>
+
+    <h2 id="fs-h-nisa">新NISAの1,800万円が埋まるまでの年数(元本で数えた場合)</h2>
+    <p>新NISAの非課税保有限度額(1,800万円)は、買ったときの金額で数えます。毎月同じ額を積み立てて売らない場合、元本が1,800万円に届くまでの年数は次のとおりです。値上がりした分は、この数え方に入りません。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="毎月の積立額と1,800万円に届くまでの年数">
+      <table>
+        <caption>毎月の積立額と、元本が1,800万円に届くまでの年数</caption>
+        <thead><tr><th scope="col">毎月</th><th scope="col">年間</th><th scope="col">年数</th><th scope="col">メモ</th></tr></thead>
+        <tbody>
+<tr><th scope="row">月3万円</th><td>36万円</td><td>50年</td><td>—</td></tr>
+<tr><th scope="row">月5万円</th><td>60万円</td><td>30年</td><td>—</td></tr>
+<tr><th scope="row">月10万円</th><td>120万円</td><td>15年</td><td>つみたて投資枠の年間上限(120万円)いっぱい</td></tr>
+<tr><th scope="row">月15万円</th><td>180万円</td><td>10年</td><td>年180万円で、つみたて投資枠の年間上限(120万円)を超える分は成長投資枠</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">最初に入れる金額はなし、途中で売らない前提の単純な計算です。年間の枠の上限や、成長投資枠の上限(1,200万円)は、<a href="../nisa-tsumitate-gaku/">新NISAの積立額は、どう決めるか</a>で整理しています。</p>
+
+    <h2>計算の前提と、数字の読み方</h2>
+    <p>毎月の月末に積み立て、年利からコストを引いた率を、1年あたりの実質の増加率(年複利)として、1か月あたりの率に直して増やしています。購入時の手数料、為替の影響、分配金の受け取り方、税金は、評価額には入れていません。他の計算ツールとは、年利の扱い(年率を12で割る方法など)の違いで、少し数字がずれることがあります。</p>
+    <p>仮の年利を高くすると、数字はきれいに右肩上がりになります。実際の運用は、ある年に大きく下がったり、長く横ばいになったりします。評価額は物価の上昇も考えていないので、いまのお金に直した目安も別に出しています。数字は「この前提ならこうなる」という計算練習として見てください。</p>
+    <p>NISAの枠(つみたて投資枠は年120万円、成長投資枠は年240万円、非課税保有限度額は1,800万円)は、2026年11月時点の金融庁の案内にもとづく数字です。制度は改正されることがあるため、最新の内容は<a href="https://www.fsa.go.jp/policy/nisa2/about/" target="_blank" rel="noopener">金融庁のNISA特設サイト</a>でご確認ください。</p>
+    <p>積立と一括の違いは<a href="../tsumitate-ikkatsu-hikaku/">積立投資と一括投資、何が違うのか</a>、投資信託のコストの見方は<a href="../toushin-etf-hikaku/">投資信託とETF、何が違うのか</a>、iDeCoの掛金の節税額は<a href="../ideco-setsuzei-simulator/">iDeCo節税額シミュレーター</a>に書いています。</p>
+    <p>このページの利用状況の計測(Google アナリティクス)では、「計算する」ボタンを押した回数と計算の種類だけを使い、金額・年数・利回りは含めません。ほかに、ページの閲覧状況は通常どおり計測されます(詳しくは<a href="../privacy/">プライバシーポリシー</a>)。</p>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本ツールは、積立の計算を理解する目的の試算であり、個別の投資助言・税務相談ではなく、特定の金融商品・買い方・制度の利用を推奨するものでもありません。計算結果は、入力した仮の数字にもとづく概算で、将来の運用成果や税額を保証しません。投資には元本割れのリスクがあります。税の計算は、運用益の全額に20.315%がかかるという単純な仮定で、税率は現行の税制にもとづく仮定です。個々の状況(他の所得との通算、繰越控除、口座の種類、年度ごとの売却など)は考えていません。評価額は物価の上昇(インフレ)を考えていないため、将来の同じ金額は、いまと同じ価値とは限りません。NISAの枠の数字や制度は改正されることがあり、この表示の数字の更新が間に合わない場合があります。商品の選び方や金額は、ご自身で目論見書などの公式資料を確認し、必要に応じて専門家にご相談ください。最終的な判断は、ご自身の責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">この記事が参考になったら</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=%E7%A9%8D%E7%AB%8B%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC&url=https%3A//uuhai0625.github.io/invest-meisou-notes/tsumitate-fukuri-simulator/" target="_blank" rel="noopener">Xでシェア</a>
+    </div>
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="../profile/">運営者について</a> — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="../rss.xml">RSS</a> — <a href="../disclaimer/">免責事項・運営方針</a> — <a href="../privacy/">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+<script src="../header.js" defer></script>
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+<script src="calc.js?v=3" defer></script>
+</body>
+</html>
