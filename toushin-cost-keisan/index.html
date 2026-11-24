@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>投資信託の信託報酬の差を計算|0.1%と1%は将来いくらの差?|資産形成の瞑想ノート</title>
+<meta name="description" content="信託報酬0.1%と1%のように、2つのコストの差が20年後にいくらの差になるかを、毎月の積立額・年数・仮の年利から円で計算できる無料ツールです。特定の商品を勧めるものではなく、結果は将来の成果を保証しません。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="投資信託の信託報酬の差を計算する——0.1%と1%は、将来いくらの差になるか">
+<meta property="og:description" content="信託報酬0.1%と1%のように、2つのコストの差が20年後にいくらの差になるかを、毎月の積立額・年数・仮の年利から円で計算できる無料ツールです。特定の商品を勧めるものではなく、結果は将来の成果を保証しません。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/toushin-cost-keisan/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/toushin-cost-keisan.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/toushin-cost-keisan/">
+<link rel="alternate" type="application/rss+xml" title="資産形成の瞑想ノート" href="https://uuhai0625.github.io/invest-meisou-notes/rss.xml">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="信託報酬の差を計算するツール">
+<meta name="twitter:description" content="信託報酬0.1%と1%のように、2つのコストの差が20年後にいくらの差になるかを、毎月の積立額・年数・仮の年利から円で計算できる無料ツールです。特定の商品を勧めるものではなく、結果は将来の成果を保証しません。">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/toushin-cost-keisan.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#f4efe1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1c20" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=79">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "資産形成の瞑想ノート", "item": "https://uuhai0625.github.io/invest-meisou-notes/" },
+    { "@type": "ListItem", "position": 2, "name": "一般知識", "item": "https://uuhai0625.github.io/invest-meisou-notes/category/ippan/" },
+    { "@type": "ListItem", "position": 3, "name": "信託報酬の差を計算するツール", "item": "https://uuhai0625.github.io/invest-meisou-notes/toushin-cost-keisan/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "信託報酬の差を計算するツール",
+  "url": "https://uuhai0625.github.io/invest-meisou-notes/toushin-cost-keisan/",
+  "description": "信託報酬0.1%と1%のように、2つのコストの差が20年後にいくらの差になるかを、毎月の積立額・年数・仮の年利から円で計算できる無料ツールです。特定の商品を勧めるものではなく、結果は将来の成果を保証しません。",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (Web browser)",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja",
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24",
+  "author": { "@type": "Person", "name": "うーはい", "url": "https://uuhai0625.github.io/invest-meisou-notes/profile/", "sameAs": ["https://x.com/uuhai0625"] }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+<style>
+.fs-page .fs-card h2 { margin-top: 36px; }
+.fs-page .fs-error { margin: 12px 0 0; padding: 10px 12px; border: 1px solid #b4472c; border-radius: 8px; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .ideco-sim-row { margin-bottom: 20px; }
+.fs-page .ideco-sim-row .ideco-sim-field { margin-bottom: 0; }
+.fs-page .ideco-sim-card > .ideco-sim-field:last-of-type { margin-bottom: 20px; }
+.fs-page .fs-chart { margin: 18px 0 0; }
+.fs-page .fs-chart svg { display: block; width: 100%; height: auto; }
+.fs-page .fs-grid { stroke: var(--line); stroke-width: 1; }
+.fs-page .fs-axis { fill: var(--ink-sub); font-size: 22px; }
+.fs-page .fs-line-principal { stroke: var(--ink-sub); stroke-width: 3; stroke-dasharray: 8 6; }
+.fs-page .fs-line-value { stroke: var(--gold-text); stroke-width: 4; }
+.fs-page .fs-line-zero { stroke: var(--ink-faint); stroke-width: 2; stroke-dasharray: 2 5; }
+.fs-page .fs-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; font-size: 0.88rem; color: var(--ink-sub); }
+.fs-page .fs-legend span::before { content: ""; display: inline-block; width: 22px; height: 0; margin-right: 6px; vertical-align: middle; border-top: 3px solid var(--gold-text); }
+.fs-page .fs-legend span.p::before { border-top: 3px dashed var(--ink-sub); }
+.fs-page .fs-legend span.z::before { border-top: 2px dotted var(--ink-faint); }
+.fs-page .fs-nisa { margin: 18px 0 0; padding: 14px 16px; background: var(--bg-warm); border: 1px solid var(--line); border-radius: 8px; }
+.fs-page .fs-nisa h3 { margin: 0 0 6px; font-size: 1rem; }
+.fs-page .fs-nisa ul { margin: 0; padding-left: 1.2em; font-size: 0.92rem; line-height: 1.8; }
+.fs-page .fs-nisa p { margin: 8px 0 0; font-size: 0.88rem; line-height: 1.7; color: var(--ink-sub); }
+.fs-page details { margin: 16px 0 0; }
+.fs-page details summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-weight: 700; }
+.fs-page .fs-summary { margin: 0 0 14px; font-size: 1rem; font-weight: 700; line-height: 1.7; }
+.fs-page .fs-v-main { display: block; }
+.fs-page .fs-v-sub { display: block; font-size: 0.8rem; font-weight: 400; color: var(--ink-sub); }
+.fs-page .ideco-sim-result-note { font-size: 0.88rem; }
+.fs-page .fs-anchor { margin: 0 0 8px; font-size: 0.92rem; }
+.fs-page table { min-width: 0; }
+.fs-page table td, .fs-page table th { font-size: 0.88rem; }
+.fs-page tr.fs-mine th, .fs-page tr.fs-mine td { font-weight: 700; }
+.fs-page .fs-glossary dt { margin: 10px 0 0; font-weight: 700; font-size: 0.92rem; }
+.fs-page .fs-glossary dd { margin: 2px 0 0; font-size: 0.9rem; line-height: 1.7; }
+</style>
+<style>
+.fs-page .fs-card h2 { margin-top: 36px; }
+.fs-page .fs-error { margin: 12px 0 0; padding: 10px 12px; border: 1px solid #b4472c; border-radius: 8px; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .ideco-sim-row { margin-bottom: 20px; }
+.fs-page .ideco-sim-row .ideco-sim-field { margin-bottom: 0; }
+.fs-page .ideco-sim-card > .ideco-sim-field:last-of-type { margin-bottom: 20px; }
+.fs-page .fs-chart { margin: 18px 0 0; }
+.fs-page .fs-chart svg { display: block; width: 100%; height: auto; }
+.fs-page .fs-grid { stroke: var(--line); stroke-width: 1; }
+.fs-page .fs-axis { fill: var(--ink-sub); font-size: 22px; }
+.fs-page .fs-line-a { stroke: var(--gold-text); stroke-width: 4; }
+.fs-page .fs-line-b { stroke: var(--ink-sub); stroke-width: 3; stroke-dasharray: 8 6; }
+.fs-page .fs-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; font-size: 0.88rem; color: var(--ink-sub); }
+.fs-page .fs-legend span::before { content: ""; display: inline-block; width: 22px; height: 0; margin-right: 6px; vertical-align: middle; border-top: 3px solid var(--gold-text); }
+.fs-page .fs-legend span.p::before { border-top: 3px dashed var(--ink-sub); }
+.fs-page details { margin: 16px 0 0; }
+.fs-page details summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-weight: 700; }
+.fs-page .fs-summary { margin: 0 0 14px; font-size: 1rem; font-weight: 700; line-height: 1.7; }
+.fs-page .fs-v-main { display: block; }
+.fs-page .fs-v-sub { display: block; font-size: 0.8rem; font-weight: 400; color: var(--ink-sub); }
+.fs-page .ideco-sim-result-note { font-size: 0.88rem; }
+.fs-page .fs-anchor { margin: 0 0 8px; font-size: 0.92rem; }
+.fs-page table { min-width: 0; }
+.fs-page table td, .fs-page table th { font-size: 0.88rem; }
+.fs-page .data-table-wrap th, .fs-page .data-table-wrap td, .fs-page .data-table-wrap tbody th { white-space: normal; overflow-wrap: anywhere; }
+.fs-page .fs-conv { margin-top: 4px; font-weight: 700; color: var(--ink-sub); min-height: 1.3em; }
+.fs-page .fs-glossary dt { margin: 10px 0 0; font-weight: 700; font-size: 0.92rem; }
+.fs-page .fs-glossary dd { margin: 2px 0 0; font-size: 0.9rem; line-height: 1.7; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="../">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="../toushi-guide/">ガイド</a>
+      <a href="../category/ippan/">一般知識</a>
+      <a href="../category/fudousan/">不動産</a>
+      <a href="../category/nikki/">投資日記</a>
+      <a href="../category/kigyou/">企業分析</a>
+      <a href="../category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="../" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
+
+<main id="main" class="wrap article-page fs-page">
+  <nav class="breadcrumb" aria-label="パンくず"><a href="../">トップ</a><span aria-hidden="true">›</span><a href="../category/ippan/">一般知識</a><span aria-hidden="true">›</span><span aria-current="page">信託報酬の差を計算するツール</span></nav>
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">一般知識</span>
+      <span class="tag">ツール</span>
+    </div>
+    <h1>投資信託の信託報酬の差を計算する——0.1%と1%は、将来いくらの差になるか</h1>
+    <p class="meta">2026年11月24日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/toushin-cost-keisan.jpg" alt="紺色と金色の2本の曲線が、同じ点から右上へ伸び、少しずつ離れていく抽象的なイメージ図。間の差が年々広がる様子を表す(実際の成果を示すものではありません)" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: このツールは、信託報酬の差を理解するための試算で、特定の商品を勧めるものではありません。年利とコストは「仮の数字」で予想ではなく、元本を下回ることもあります。入力した内容は、お使いの端末の中だけで計算し、送信も保存もしません。
+    </div>
+
+    <p>信託報酬が年0.1%の場合と年1%の場合で、積立の評価額が将来いくら違うのかを、自分の金額で円に直して確かめられます。コストが低いことは、良い商品という意味ではありません。運用成績やリスクは別の話です。</p>
+    <p class="fs-anchor"><a href="#fs-h-sim">↓ 計算する</a> / <a href="#fs-h-how">信託報酬のしくみ</a> / <a href="#fs-h-terms">用語の意味</a> / <a href="#fs-h-table1">保有額ごとの年間コスト額</a> / <a href="#fs-h-table2">月3万円×20年の早見表</a></p>
+
+    <section class="fs-card" aria-labelledby="fs-h-sim">
+    <h2 id="fs-h-sim" style="margin-top:0">信託報酬の差を計算する(2つのコストを比べる)</h2>
+    <form id="tc-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="tc-pay">毎月の積立額(円)</label>
+          <input type="number" id="tc-pay" min="0" step="1000" value="30000" inputmode="numeric" aria-describedby="tc-pay-conv tc-pay-hint">
+          <span class="ideco-sim-hint fs-conv" id="tc-pay-conv"></span>
+          <span class="ideco-sim-hint" id="tc-pay-hint">1か月に積み立てる金額です。3万円なら30000と入れます。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="tc-years">積立年数(年・整数)</label>
+          <input type="number" id="tc-years" min="1" max="60" step="1" value="20" inputmode="numeric">
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="tc-init">最初に入れる金額(円・任意)</label>
+          <input type="number" id="tc-init" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="tc-init-conv tc-init-hint">
+          <span class="ideco-sim-hint fs-conv" id="tc-init-conv"></span>
+          <span class="ideco-sim-hint" id="tc-init-hint">すでに持っている分を入れる場合は、差を元本と比べるため、いまの評価額ではなく、払い込んだ金額(元本)を入れてください。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="tc-rate">仮の年利(%・信託報酬を引く前)</label>
+          <input type="number" id="tc-rate" min="-10" max="30" step="0.1" value="3" aria-describedby="tc-rate-hint">
+          <span class="ideco-sim-hint" id="tc-rate-hint">AとBに同じ数字が入ります。ファンドの公表利回りはそのまま入れず、コストを引く前の仮の数字を入れてください(コストは下の欄で引きます)。予想ではなく、0%やマイナスでも試せます。</span>
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="tc-ca">ファンドAの年間コスト(%)</label>
+          <input type="number" id="tc-ca" min="0" max="5" step="0.01" value="0.1" inputmode="decimal" aria-describedby="tc-ca-hint">
+          <span class="ideco-sim-hint" id="tc-ca-hint">信託報酬などの仮の数字です(0〜5%)。0.1%は 0.1 と入れます。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="tc-cb">ファンドBの年間コスト(%)</label>
+          <input type="number" id="tc-cb" min="0" max="5" step="0.01" value="1" inputmode="decimal" aria-describedby="tc-cb-hint">
+          <span class="ideco-sim-hint" id="tc-cb-hint">実際のコストは、各商品の目論見書や運用報告書で確かめてください。税込・税抜の表記は商品ごとに違います。</span>
+        </div>
+      </div>
+      <button class="ideco-sim-btn" type="submit">計算する</button>
+      <p class="fs-error" id="tc-error" role="alert" hidden></p>
+      <p class="sr-only" id="tc-sr" aria-live="polite"></p>
+
+      <div class="ideco-sim-result" id="tc-result">
+        <h2 id="fs-h-result" style="margin-top:0">計算の結果(AとBの評価額の差)</h2>
+        <p class="fs-summary" id="tc-summary"></p>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">ファンドAの評価額(コストを引いたあと)</span><span class="value accent" id="tc-out-a">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">ファンドBの評価額(コストを引いたあと)</span><span class="value accent" id="tc-out-b">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">AとBの評価額の差</span><span class="value" id="tc-out-diff">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">差は、積み立てた総額(元本)の何%か</span><span class="value" id="tc-out-pct">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note">この差は、AとBの運用成績が同じだと仮定したときの、コストだけの差です。実際の成績はファンドごとに違い、コストの高いほうが劣るという意味ではありません。</p>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">最初の1年に払うコストの目安(ファンドA・年<span id="tc-cost-a-label">0.1%</span>)</span><span class="value" id="tc-out-cost-a">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">最初の1年に払うコストの目安(ファンドB・年<span id="tc-cost-b-label">1%</span>)</span><span class="value" id="tc-out-cost-b">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note" id="tc-out-compare"></p>
+        <p class="ideco-sim-result-note">同じ年利でもコストが違うと差が出るのは、コストが毎日の基準価額から差し引かれて毎年の増え方が小さくなり、その差が複利で年々広がるためです。</p>
+        <details>
+          <summary>最初の1年のコスト額の目安の計算方法</summary>
+          <p class="ideco-sim-result-note">1年間の平均保有額(<span id="tc-avg-hold">—</span>)に、コスト率をかけた金額です。平均保有額は、最初の金額に毎月の積立額の5.5回分を足して求めています(月末に積み立てるため)。値動きは考えていません。</p>
+        </details>
+
+        <div class="fs-chart" id="tc-chart"></div>
+        <p class="fs-legend"><span>ファンドAの評価額</span><span class="p">ファンドBの評価額</span></p>
+        <p class="ideco-sim-result-note">この線は、毎年同じ率で増え続けると仮定した計算です。実際の運用は、年ごとに上下し、グラフのようにまっすぐ増えるとは限りません。</p>
+
+        <details>
+          <summary>年ごとの差を表で見る</summary>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="年ごとのファンドAとBの評価額と差">
+            <table>
+              <caption>年ごとのファンドAとBの評価額と、その差(A−B)</caption>
+              <thead><tr><th scope="col">経過</th><th scope="col">ファンドA</th><th scope="col">ファンドB</th><th scope="col">差(A−B)</th></tr></thead>
+              <tbody id="tc-year-body"></tbody>
+            </table>
+          </div>
+        </details>
+        <p class="ideco-sim-result-note">どの数字も、実現するという意味ではありません。実際の運用は年ごとに上下し、元本を下回ることもあります。</p>
+      </div>
+    </form>
+    </section>
+
+    <h2 id="fs-h-how">信託報酬は、どう差し引かれるのか</h2>
+    <p>信託報酬は、投資信託を持っている間、保有額に応じて毎日かかる費用です。信託財産から間接的に差し引かれるので、別に請求されることはありません。年率で示されますが、実際には毎日の基準価額に反映されます。</p>
+    <p>信託報酬は、運用会社、販売会社、信託銀行に配分されます。運用の成績にかかわらず、純資産総額に対して所定の金額が差し引かれます(日本証券業協会の説明)。</p>
+    <p>信託報酬以外にも、費用はかかります。次の表は、投資信託の主な費用を、いつ・どこへ払うかで並べたものです。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="投資信託の主な費用の種類">
+      <table>
+        <caption>投資信託の主な費用と、このツールでの扱い</caption>
+        <thead><tr><th scope="col">費用</th><th scope="col">いつかかるか</th><th scope="col">払う先</th><th scope="col">このツールでは</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">購入時手数料</th><td>買うとき</td><td>販売会社</td><td>入れていません</td></tr>
+          <tr><th scope="row">信託報酬</th><td>持っている間(毎日)</td><td>信託財産から。運用会社・販売会社・信託銀行に配分</td><td>年間のコストとして入れます</td></tr>
+          <tr><th scope="row">信託財産留保額</th><td>解約(換金)するとき</td><td>信託財産に残す(販売会社の収入にはならない)</td><td>入れていません</td></tr>
+          <tr><th scope="row">監査報酬・売買委託手数料など</th><td>持っている間(間接的に)</td><td>信託財産から</td><td>信託報酬以外の費用を含めた率を年間のコストに入れれば、近い形で試算できます</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">出典: 金融庁の資料(2024年6月)、日本証券業協会「投資の時間」、資産運用業協会「投資信託のコスト」。確認日は2026年11月24日です。</p>
+    <p>実際の負担は、信託報酬だけでは分かりません。信託報酬以外の費用を含めた負担(実質コストなどと呼ばれます)は、運用報告書などの費用の項目で確かめられます。定義は資料によって異なるので、各ファンドの表示を確認してください。</p>
+
+    <h2 id="fs-h-terms">用語の意味(信託報酬・実質コスト・購入時手数料など)</h2>
+    <dl class="fs-glossary">
+      <dt>信託報酬(運用管理費用)</dt><dd>投資信託を持っている間、保有額に応じて毎日かかる費用です。年率(例: 年0.1%)で示され、運用会社・販売会社・信託銀行に配分されます。</dd>
+      <dt>実質コスト</dt><dd>運用報告書などで確かめられる、信託報酬以外の費用も含めた負担のことです。定義は資料によって異なるため、各ファンドの表示を確認してください。</dd>
+      <dt>購入時手数料</dt><dd>買うときに、販売会社へ支払う手数料です。かからない商品(ノーロード)もあります。</dd>
+      <dt>信託財産留保額</dt><dd>解約(換金)するときに、信託財産に残すお金です。販売会社の収入にはなりません。差し引く商品と、差し引かない商品があります。</dd>
+      <dt>年間のコスト(このツール)</dt><dd>信託報酬などの、毎年かかる費用の仮の数字です。このツールでは、仮の年利から差し引いて計算します。</dd>
+      <dt>仮の年利</dt><dd>1年あたり何%ずつ増えるか(年複利)を仮に置いた数字です。コストを引く前の率で、予想ではありません。</dd>
+      <dt>元本</dt><dd>自分で入れた金額の合計です。増えた分は入りません。</dd>
+    </dl>
+
+    <h2 id="fs-h-table1">保有額と信託報酬ごとの年間コスト額(早見表)</h2>
+    <p>保有額に信託報酬の年率をかけた、1年間のコスト額の目安です。保有額が1年間変わらないと仮定した、単純な計算です。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="保有額と信託報酬ごとの年間コスト額">
+      <table>
+        <caption>保有額と信託報酬ごとの、1年間のコスト額の目安</caption>
+        <thead><tr><th scope="col">信託報酬(年率)</th><th scope="col">保有100万円</th><th scope="col">保有300万円</th></tr></thead>
+        <tbody>
+<tr><th scope="row">年0.1%</th><td>1,000円</td><td>3,000円</td></tr>
+<tr><th scope="row">年0.5%</th><td>5,000円</td><td>15,000円</td></tr>
+<tr><th scope="row">年1%</th><td>10,000円</td><td>30,000円</td></tr>
+<tr><th scope="row">年1.5%</th><td>15,000円</td><td>45,000円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">税は含みません。実際は、保有額が値動きで変わると、コスト額も変わります。0.1〜1.5%は計算のための例で、特定の商品の料率ではありません。</p>
+    <p>参考までに、金融庁の資料(2024年6月時点)では、つみたて投資枠の対象商品に、信託報酬(税抜)の上限があります。指定インデックス投資信託は、国内資産が対象なら年0.5%以下、海外資産が対象なら年0.75%以下です。アクティブ運用などは、国内資産が対象なら年1%以下、海外資産が対象なら年1.5%以下とされています。</p>
+    <p>2026年11月16日時点の金融庁の資料でも、指定インデックス投資信託の法令上の上限は、国内資産が対象なら0.5%、内外・海外が対象なら0.75%です。</p>
+
+    <h2 id="fs-h-table2">月3万円×20年の評価額の差(年利3%の場合)</h2>
+    <p>月3万円を20年積み立て、仮の年利を3%(コストを引く前)としたときの評価額です。元本は720万円、最初に入れる金額は0円、月末積立で計算しています。上のツールと同じ式です。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="年間のコストごとの評価額と差">
+      <table>
+        <caption>月3万円×20年・仮の年利3%での、年間のコストごとの評価額(元本720万円)</caption>
+        <thead><tr><th scope="col">年間のコスト</th><th scope="col">評価額</th><th scope="col">0.1%との差</th></tr></thead>
+        <tbody>
+<tr><th scope="row">年0.1%</th><td>9,702,155円</td><td>—</td></tr>
+<tr><th scope="row">年0.5%</th><td>9,300,979円</td><td>401,176円</td></tr>
+<tr><th scope="row">年1%</th><td>8,826,948円</td><td>875,207円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">年0.1%と年1.0%の差は約88万円で、元本720万円の約12%にあたります。年利3%は計算のための仮の数字で、予想ではありません。</p>
+
+    <h2>よくある勘違い</h2>
+    <ul>
+      <li><strong>「コストが低い商品が、良い商品」</strong>: コストが低いと、手元に残る金額が増える方向に働くだけです。運用成績やリスク、自分の目的に合うかは、別に確かめる必要があります。</li>
+      <li><strong>「信託報酬だけ見ればよい」</strong>: 売買委託手数料など、信託報酬に含まれない費用もあります。実際の負担は、運用報告書で確かめられます。</li>
+      <li><strong>「年1%や年0.1%の差なら、小さい」</strong>: 年率の差は小さく見えますが、毎年かかり、複利で積み重なります。期間が長いほど、金額の差は大きくなります。</li>
+      <li><strong>「購入時手数料がなければ、コストはかからない」</strong>: 購入時手数料がなくても、持っている間は信託報酬がかかります。</li>
+      <li><strong>「コストの差が、そのまま最終的な成績の差になる」</strong>: このツールは、2つに同じ年利を仮定した比較です。実際の2つの商品は運用の中身が違うので、成績の差はコストの差だけでは決まりません。</li>
+    </ul>
+
+    <h2>計算の前提と、数字の読み方</h2>
+    <p>毎月の月末に積み立て、年利からコストを引いた率を、1年あたり何%ずつ増えるか(年複利)として、1か月あたりの率に直して増やしています。購入時手数料、信託財産留保額、為替の影響、分配金の受け取り方、税金は、評価額に入れていません。</p>
+    <p>仮の年利は、コストを引く前の率です。2つのファンドに同じ年利を入れるので、結果の差は、コストの差だけから生まれます。実際の商品は運用の中身が違うため、同じ年利にはなりません。</p>
+    <p>他の計算ツールとは、年利の扱い(年率を12で割る方法など)の違いで、数字が少しずれることがあります。数字は「この前提ならこうなる」という計算練習として見てください。</p>
+    <p>積立の計算は<a href="../tsumitate-fukuri-simulator/">積立シミュレーター</a>、投資信託とETFのコストの違いは<a href="../toushin-etf-hikaku/">投資信託とETF、何が違うのか</a>、新NISAの積立額の決め方は<a href="../nisa-tsumitate-gaku/">新NISAの積立額は、どう決めるか</a>、用語は<a href="../toushi-yougo-shu/">投資まわりの用語集</a>に書いています。</p>
+    <p>このページの利用状況の計測(Google アナリティクス)では、「計算する」ボタンを押した回数だけを使い、金額・年数・利回り・コスト率は含めません。ほかに、ページの閲覧状況は通常どおり計測されます(詳しくは<a href="../privacy/">プライバシーポリシー</a>)。</p>
+
+    <div class="source-list">
+      <h3>参照元(2026年11月24日確認)</h3>
+      <p>★は本文の中核の根拠です。日本証券業協会の「投資の時間」は、2024年6月以降は内容が更新されていません。</p>
+      <ol>
+        <li>★【金融庁】金融庁「NISAを利用する皆さまへ」(2024年6月)の「投資信託の主な費用」(12ページ)と「つみたて投資枠対象商品の要件」(16ページ): <a href="https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf</a></li>
+        <li>★【日本証券業協会】「投資の時間」投資信託購入に係る手数料などの費用は?: <a href="https://www.j-flec.go.jp/links/jikan/qa/049.html" target="_blank" rel="noopener">https://www.j-flec.go.jp/links/jikan/qa/049.html</a></li>
+        <li>★【日本証券業協会】「投資の時間」信託報酬: <a href="https://www.j-flec.go.jp/links/jikan/word/072.html" target="_blank" rel="noopener">https://www.j-flec.go.jp/links/jikan/word/072.html</a></li>
+        <li>【金融庁】つみたて投資枠対象商品の分類と信託報酬率の分布(2026年11月16日時点・2ページ。指定インデックス投信の法令上の上限0.5%・0.75%を確認): <a href="https://www.fsa.go.jp/policy/nisa2/products/20261116/28.pdf" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/products/20261116/28.pdf</a></li>
+        <li>【資産運用業協会】投資信託のコスト: <a href="https://www.imaj.or.jp/study/investmenttrust/costtax/cost.html" target="_blank" rel="noopener">https://www.imaj.or.jp/study/investmenttrust/costtax/cost.html</a></li>
+      </ol>
+    </div>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本ツールは、投資信託のコスト(信託報酬)の差を理解する目的の試算であり、個別の投資助言ではなく、特定の金融商品・買い方・制度の利用を推奨するものでもありません。計算結果は、入力した仮の数字にもとづく概算で、将来の運用成果を保証しません。投資には元本割れのリスクがあります。評価額には、購入時手数料、信託財産留保額、為替の影響、分配金、税金、物価の上昇(インフレ)を入れていません。実際の商品のコストや運用成績は、商品ごとに異なります。制度や費用の説明は、確認した時点の公開資料にもとづくもので、改正や変更により、この表示の更新が間に合わない場合があります。商品の選び方や金額は、ご自身で目論見書や運用報告書などの公式資料を確認し、必要に応じて専門家にご相談ください。最終的な判断は、ご自身の責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">この記事が参考になったら</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=%E4%BF%A1%E8%A8%97%E5%A0%B1%E9%85%AC%E3%81%AE%E5%B7%AE%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%AB&url=https%3A//uuhai0625.github.io/invest-meisou-notes/toushin-cost-keisan/" target="_blank" rel="noopener">Xでシェア</a>
+    </div>
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="../profile/">運営者について</a> — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="../rss.xml">RSS</a> — <a href="../disclaimer/">免責事項・運営方針</a> — <a href="../privacy/">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+<script src="../header.js" defer></script>
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+<script src="../feedback.js?v=2" defer></script>
+<script src="calc.js?v=2" defer></script>
+</body>
+</html>

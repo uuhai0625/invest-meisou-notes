@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>資産の取り崩しシミュレーター|毎月いくら取り崩すと何年もつか、定額・定率・税引後も試算|資産形成の瞑想ノート</title>
+<meta name="description" content="資産2,000万円から毎月8万円を取り崩すと何年もつか、のように、定額または定率の取り崩しを仮の年利で試算する無料ツールです。課税口座の税引後や、年利を変えた場合の比較も確認できます。結果は将来の成果を保証しません。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="資産の取り崩しシミュレーター——毎月いくら取り崩すと、何年もつか">
+<meta property="og:description" content="資産2,000万円から毎月8万円を取り崩すと何年もつか、のように、定額または定率の取り崩しを仮の年利で試算する無料ツールです。課税口座の税引後や、年利を変えた場合の比較も確認できます。結果は将来の成果を保証しません。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/torikuzushi-simulator/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/torikuzushi-simulator.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/torikuzushi-simulator/">
+<link rel="alternate" type="application/rss+xml" title="資産形成の瞑想ノート" href="https://uuhai0625.github.io/invest-meisou-notes/rss.xml">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="資産の取り崩しシミュレーター">
+<meta name="twitter:description" content="資産2,000万円から毎月8万円を取り崩すと何年もつか、のように、定額または定率の取り崩しを仮の年利で試算する無料ツールです。課税口座の税引後や、年利を変えた場合の比較も確認できます。結果は将来の成果を保証しません。">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/torikuzushi-simulator.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#f4efe1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1c20" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=79">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "資産形成の瞑想ノート", "item": "https://uuhai0625.github.io/invest-meisou-notes/" },
+    { "@type": "ListItem", "position": 2, "name": "一般知識", "item": "https://uuhai0625.github.io/invest-meisou-notes/category/ippan/" },
+    { "@type": "ListItem", "position": 3, "name": "資産の取り崩しシミュレーター", "item": "https://uuhai0625.github.io/invest-meisou-notes/torikuzushi-simulator/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "資産の取り崩しシミュレーター",
+  "url": "https://uuhai0625.github.io/invest-meisou-notes/torikuzushi-simulator/",
+  "description": "資産2,000万円から毎月8万円を取り崩すと何年もつか、のように、定額または定率の取り崩しを仮の年利で試算する無料ツールです。課税口座の税引後や、年利を変えた場合の比較も確認できます。結果は将来の成果を保証しません。",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (Web browser)",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja",
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24",
+  "author": { "@type": "Person", "name": "うーはい", "url": "https://uuhai0625.github.io/invest-meisou-notes/profile/", "sameAs": ["https://x.com/uuhai0625"] }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+<style>
+.fs-page .fs-card h2 { margin-top: 36px; }
+.fs-page .fs-error { margin: 12px 0 0; padding: 10px 12px; border: 1px solid #b4472c; border-radius: 8px; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .ideco-sim-row { margin-bottom: 20px; }
+.fs-page .ideco-sim-row .ideco-sim-field { margin-bottom: 0; }
+.fs-page .ideco-sim-card > .ideco-sim-field:last-of-type { margin-bottom: 20px; }
+.fs-page .fs-chart { margin: 18px 0 0; }
+.fs-page .fs-chart svg { display: block; width: 100%; height: auto; }
+.fs-page .fs-grid { stroke: var(--line); stroke-width: 1; }
+.fs-page .fs-axis { fill: var(--ink-sub); font-size: 22px; }
+.fs-page .fs-line-principal { stroke: var(--ink-sub); stroke-width: 3; stroke-dasharray: 8 6; }
+.fs-page .fs-line-value { stroke: var(--gold-text); stroke-width: 4; }
+.fs-page .fs-line-zero { stroke: var(--ink-faint); stroke-width: 2; stroke-dasharray: 2 5; }
+.fs-page .fs-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; font-size: 0.88rem; color: var(--ink-sub); }
+.fs-page .fs-legend span::before { content: ""; display: inline-block; width: 22px; height: 0; margin-right: 6px; vertical-align: middle; border-top: 3px solid var(--gold-text); }
+.fs-page .fs-legend span.p::before { border-top: 3px dashed var(--ink-sub); }
+.fs-page .fs-legend span.z::before { border-top: 2px dotted var(--ink-faint); }
+.fs-page .fs-nisa { margin: 18px 0 0; padding: 14px 16px; background: var(--bg-warm); border: 1px solid var(--line); border-radius: 8px; }
+.fs-page .fs-nisa h3 { margin: 0 0 6px; font-size: 1rem; }
+.fs-page .fs-nisa ul { margin: 0; padding-left: 1.2em; font-size: 0.92rem; line-height: 1.8; }
+.fs-page .fs-nisa p { margin: 8px 0 0; font-size: 0.88rem; line-height: 1.7; color: var(--ink-sub); }
+.fs-page details { margin: 16px 0 0; }
+.fs-page details summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-weight: 700; }
+.fs-page .fs-summary { margin: 0 0 14px; font-size: 1rem; font-weight: 700; line-height: 1.7; }
+.fs-page .fs-v-main { display: block; }
+.fs-page .fs-v-sub { display: block; font-size: 0.8rem; font-weight: 400; color: var(--ink-sub); }
+.fs-page .ideco-sim-result-note { font-size: 0.88rem; }
+.fs-page .fs-anchor { margin: 0 0 8px; font-size: 0.92rem; }
+.fs-page table { min-width: 0; }
+.fs-page table td, .fs-page table th { font-size: 0.88rem; }
+.fs-page tr.fs-mine th, .fs-page tr.fs-mine td { font-weight: 700; }
+.fs-page .fs-glossary dt { margin: 10px 0 0; font-weight: 700; font-size: 0.92rem; }
+.fs-page li a, .fs-page p a { overflow-wrap: anywhere; }
+.fs-page .fs-glossary dd { margin: 2px 0 0; font-size: 0.9rem; line-height: 1.7; }
+.fs-page [hidden] { display: none !important; }
+.fs-page .data-table-wrap tbody th, .fs-page .data-table-wrap th, .fs-page .data-table-wrap td { white-space: normal; }
+.fs-page .data-table-wrap tbody th { min-width: 5em; }
+.fs-page .fs-conv { margin-top: 2px; min-height: 1.6em; font-weight: 700; color: var(--ink-sub); }
+.fs-page .fs-card h2.fs-subh { margin: 4px 0 14px; font-size: 1.05rem; }
+.fs-page .fs-fact { margin: 0 0 16px; min-height: 1.6em; }
+.fs-page .fs-refs { margin: 8px 0 0; padding-left: 1.2em; font-size: 0.9rem; line-height: 1.8; }
+.fs-page .fs-q { margin: 14px 0 0; font-weight: 700; font-size: 0.95rem; line-height: 1.7; }
+.fs-page .fs-q + p { margin-top: 4px; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="../">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="../toushi-guide/">ガイド</a>
+      <a href="../category/ippan/">一般知識</a>
+      <a href="../category/fudousan/">不動産</a>
+      <a href="../category/nikki/">投資日記</a>
+      <a href="../category/kigyou/">企業分析</a>
+      <a href="../category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="../" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
+
+<main id="main" class="wrap article-page fs-page">
+  <nav class="breadcrumb" aria-label="パンくず"><a href="../">トップ</a><span aria-hidden="true">›</span><a href="../category/ippan/">一般知識</a><span aria-hidden="true">›</span><span aria-current="page">資産の取り崩しシミュレーター</span></nav>
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">一般知識</span>
+      <span class="tag">ツール</span>
+    </div>
+    <h1>資産の取り崩しシミュレーター——毎月いくら取り崩すと、何年もつか</h1>
+    <p class="meta">2026年11月24日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/torikuzushi-simulator.jpg" alt="紺色の水平線の上で、金色の線が右へゆるやかに下がっていく、抽象的なイメージ図(実際の成果を示すものではありません)" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: これは仮の年利で計算する試算で、将来の運用成果や資産が尽きる時期を保証せず、特定の商品や取り崩し方を勧めるものでもありません。入力した内容は、お使いの端末の中だけで計算し、送信も保存もしません。
+    </div>
+
+    <p>毎月◯円を取り崩すと、資産は何年もつのか。定額または定率で取り崩した場合の、尽きる時期と残高を試算します。対象はNISAや課税口座の資産で、公的年金・iDeCoの受取・退職金・相続は扱いません。</p>
+    <p class="fs-anchor"><a href="#fs-h-sim">↓ 取り崩しを試算する</a> / <a href="#fs-h-table">早見表(資産2,000万円の例)</a> / <a href="#fs-h-wrong">よくある勘違い</a></p>
+
+    <section class="fs-card" aria-labelledby="fs-h-sim">
+    <h2 id="fs-h-sim" style="margin-top:0">取り崩しシミュレーション(尽きる時期・残高・税引後)</h2>
+    <form id="wd-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="wd-init">取り崩し開始時の資産額(円)</label>
+          <input type="number" id="wd-init" min="10000" step="100000" value="20000000" inputmode="numeric" aria-describedby="wd-init-hint wd-init-conv">
+          <span class="ideco-sim-hint" id="wd-init-hint">取り崩しを始める時点の評価額です。2,000万円なら20000000と入れます。</span>
+          <span class="ideco-sim-hint fs-conv" id="wd-init-conv"></span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="wd-method">取り崩しの方法</label>
+          <select id="wd-method" aria-describedby="wd-method-hint">
+            <option value="fixed" selected>毎月、同じ金額(定額)</option>
+            <option value="rate">毎年、資産の一定割合(定率)</option>
+          </select>
+          <span class="ideco-sim-hint" id="wd-method-hint">毎月、同じ金額を売って取り崩します。</span>
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field" id="wd-pay-field">
+          <label for="wd-pay">毎月の取り崩し額(円・売却額)</label>
+          <input type="number" id="wd-pay" min="1" step="1000" value="80000" inputmode="numeric" aria-describedby="wd-pay-hint wd-pay-conv">
+          <span class="ideco-sim-hint" id="wd-pay-hint">税金を引く前の、売る金額で入れます。8万円なら80000です。</span>
+          <span class="ideco-sim-hint fs-conv" id="wd-pay-conv"></span>
+        </div>
+        <div class="ideco-sim-field" id="wd-pct-field" hidden>
+          <label for="wd-pct">年の取り崩し率(%)</label>
+          <input type="number" id="wd-pct" min="0.1" max="100" step="0.1" value="4" aria-describedby="wd-pct-hint">
+          <span class="ideco-sim-hint" id="wd-pct-hint">計算用の例です。この率を勧めるものではありません。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="wd-rate">仮の年利(%)</label>
+          <input type="number" id="wd-rate" min="-10" max="30" step="0.1" value="3" aria-describedby="wd-rate-hint">
+          <span class="ideco-sim-hint" id="wd-rate-hint">計算用の例で、予想ではありません。0%やマイナスでも試してください。</span>
+        </div>
+      </div>
+      <h2 id="wd-h-assume" class="fs-subh">運用の仮定と口座の種類</h2>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field">
+          <label for="wd-cost">年間のコスト(%)</label>
+          <input type="number" id="wd-cost" min="0" max="5" step="0.01" value="0.2" aria-describedby="wd-cost-hint">
+          <span class="ideco-sim-hint" id="wd-cost-hint">信託報酬などの仮の数字です。年利には、コストを引く前の値を入れます。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="wd-years">何年先までの様子を見るか(年・整数)</label>
+          <input type="number" id="wd-years" min="1" max="60" step="1" value="40" inputmode="numeric" aria-describedby="wd-years-hint">
+          <span class="ideco-sim-hint" id="wd-years-hint">資産が尽きなければ、その年数先の残高を表示します。</span>
+        </div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field" id="wd-infl-field">
+          <label for="wd-infl">毎年、取り崩し額を何%ずつ増やすか(物価上昇の分・任意)</label>
+          <input type="number" id="wd-infl" min="0" max="10" step="0.1" value="0" aria-describedby="wd-infl-hint">
+          <span class="ideco-sim-hint" id="wd-infl-hint">0なら増やしません。定額のときだけ使います。</span>
+        </div>
+        <div class="ideco-sim-field">
+          <label for="wd-acct">口座の種類</label>
+          <select id="wd-acct">
+            <option value="nisa" selected>NISAなど非課税</option>
+            <option value="taxable">課税口座(特定口座・一般口座)</option>
+          </select>
+        </div>
+      </div>
+      <div class="ideco-sim-field" id="wd-share-field" hidden>
+        <label for="wd-share">売却額のうち、利益にあたる割合(%)</label>
+        <input type="number" id="wd-share" min="0" max="100" step="1" value="50" inputmode="numeric" aria-describedby="wd-share-hint">
+        <span class="ideco-sim-hint" id="wd-share-hint">求め方は、利益÷売却額です。買ったときの2倍に値上がりした資産なら、売却額の半分で50%です。売却額 × この割合 × 20.315% を、税として手取りから引きます。</span>
+      </div>
+      <p class="ideco-sim-hint fs-fact" id="wd-fact"></p>
+      <button class="ideco-sim-btn" type="submit">計算する</button>
+      <p class="fs-error" id="wd-error" role="alert" hidden></p>
+      <p class="sr-only" id="wd-sr" aria-live="polite"></p>
+
+      <div class="ideco-sim-result" id="wd-result">
+        <h2 id="wd-h-result" style="margin-top:0">計算結果</h2>
+        <p class="fs-summary" id="wd-summary"></p>
+        <p class="ideco-sim-result-note">実際の運用は元本割れすることがあり、資産が尽きる時期は運用成績で大きく変わります。取り崩しの開始直後に下がると減りが早くなる「並び順のリスク」は、この計算に入っていません。</p>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">資産が尽きる時期</span><span class="value accent" id="wd-out-dep">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label"><span id="wd-limit-years">40年</span>後の残高(尽きない場合)</span><span class="value" id="wd-out-end">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">売却額の合計(税引前)</span><span class="value" id="wd-out-sold">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label" id="wd-out-tax-label">税額の合計</span><span class="value" id="wd-out-tax">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">手取りの合計(売却額−税額)</span><span class="value" id="wd-out-net">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note" id="wd-out-last"></p>
+        <p class="ideco-sim-result-note">課税口座の税額は、売却額に、利益にあたる割合と税率20.315%をかけた単純な計算です。損益通算・繰越控除・配当などは入れていません。</p>
+        <details>
+          <summary>税率20.315%の内訳</summary>
+          <p class="ideco-sim-result-note">所得税15%・住民税5%に、所得税額の2.1%分の付加税を加えた率です。付加税は、令和8年までは復興特別所得税で、令和9年以後は復興特別所得税1.1%と防衛特別所得税1%の合計です。合計は同じです。</p>
+        </details>
+
+        <div class="fs-chart" id="wd-chart"></div>
+        <p class="fs-legend"><span>残高(仮の年利で取り崩した場合)</span><span class="z">取り崩さなかった場合(同じ年利・コスト。上にはみ出す部分は省略)</span></p>
+        <p class="ideco-sim-result-note">この線は、毎年同じ率で増減すると仮定した計算です。実際の運用は、年ごとに上下し、グラフのようになめらかに動くとは限りません。</p>
+
+        <details>
+          <summary>年ごとの数字を表で見る</summary>
+          <div class="data-table-wrap" tabindex="0" role="region" aria-label="年ごとの残高と売却額">
+            <table>
+              <caption>年ごとの年末の残高と、その年の売却額(税引前)</caption>
+              <thead><tr><th scope="col">経過</th><th scope="col">年末の残高</th><th scope="col">その年の売却額</th></tr></thead>
+              <tbody id="wd-year-body"></tbody>
+            </table>
+          </div>
+        </details>
+
+        <h2 id="wd-h-rate" style="margin:28px 0 6px;font-size:1.1rem">年利が違っていたら(同じ取り崩し・<span id="wd-rate-years">40年</span>先まで・コスト<span id="wd-rate-cost">0.2%</span>)</h2>
+        <div class="data-table-wrap" tabindex="0" role="region" aria-label="仮の年利ごとの尽きる時期と最終年の残高">
+          <table>
+            <caption>仮の年利ごとの、資産が尽きる時期と最終年の残高</caption>
+            <thead><tr><th scope="col">仮の年利</th><th scope="col">資産が尽きる時期</th><th scope="col">最終年の残高</th></tr></thead>
+            <tbody id="wd-rate-body"></tbody>
+          </table>
+        </div>
+        <p class="ideco-sim-result-note">どの行の数字も、実現するという意味ではありません。資産が尽きる時期は、運用成績で大きく変わります。</p>
+
+        <div class="fs-nisa">
+          <h2 id="wd-h-seq" style="margin:0 0 6px;font-size:1.1rem">実際の運用との違い(並び順のリスク)</h2>
+          <p>この計算は、毎年同じ率で増減する仮定です。実際の運用は、年ごとに上下します。取り崩しを始めた直後に資産が下がると、あとで回復しても、資産の減りが早くなることがあります。これを「並び順のリスク」と呼びます。同じ平均の年利でも、尽きる時期は変わりえます。</p>
+        </div>
+      </div>
+    </form>
+    </section>
+
+    <h2 id="fs-h-glossary">用語の意味</h2>
+    <details id="fs-glossary">
+      <summary>取り崩し・定額と定率・並び順のリスク・課税口座などの意味を見る</summary>
+      <dl class="fs-glossary">
+        <dt>取り崩し</dt><dd>持っている資産(投資信託など)を売って、生活費などに使うことです。このツールでは、毎月の月末に売ると考えます。</dd>
+        <dt>定額</dt><dd>毎月、同じ金額(売却額)を取り崩す方法です。物価の上昇に合わせて、毎年少しずつ増やす設定もできます。</dd>
+        <dt>定率</dt><dd>毎年の最初に「その時点の資産の◯%」を決め、12等分して毎月取り崩す方法です。残高が減ると取り崩し額も減るため、残高は0になりにくい一方、受け取れる額は年ごとに変わります。</dd>
+        <dt>並び順のリスク</dt><dd>同じ平均の運用成績でも、取り崩しを始めた直後に資産が下がると、あとで回復しても、資産の減りが早くなるという考え方です。一般的な説明で、このツールの計算(毎年同じ率で動く仮定)には入っていません。</dd>
+        <dt>仮の年利</dt><dd>1年あたりの増減率(年複利)を仮に置いた数字です。予想ではありません。マイナスも入れられます。</dd>
+        <dt>年間のコスト</dt><dd>投資信託の信託報酬など、毎年かかる費用の仮の数字です。年利から差し引きます。実際の費用は、各商品の目論見書で確かめてください。</dd>
+        <dt>非課税口座と課税口座</dt><dd>非課税口座は、NISAなどです。売って出た利益に、税金がかかりません。課税口座(特定口座・一般口座)は、売って出た利益に税金がかかります。</dd>
+        <dt>売却益にかかる税率</dt><dd>課税口座で株式や投資信託を売って出た利益には、税率20.315%がかかります(所得税15%・住民税5%に、所得税額の2.1%分の付加税を加えた率)。</dd>
+        <dt>利益にあたる割合</dt><dd>売却額のうち、買ったときの金額を超える分の割合です。買ったときの2倍に値上がりした資産を売るなら、売却額の半分(50%)が利益です。</dd>
+      </dl>
+    </details>
+
+    <h2 id="fs-h-table">早見表(資産2,000万円を毎月取り崩した場合の例)</h2>
+    <p>資産2,000万円、毎月の定額、仮の年利2%・3%・4%で、何年もつかを並べた表です。コスト0.2%、非課税口座、取り崩し額は増やさない前提で、上の計算と同じ式です。どの年利も予想ではなく、比べるための数字です。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="毎月の取り崩し額と年利ごとに資産がもつ年数">
+      <table>
+        <caption>資産2,000万円を毎月取り崩した場合に、資産が尽きるまでの期間(コスト0.2%)</caption>
+        <thead><tr><th scope="col">毎月の取り崩し</th><th scope="col">年利2%</th><th scope="col">年利3%</th><th scope="col">年利4%</th></tr></thead>
+        <tbody>
+<tr><th scope="row">月8万円</th><td>26年1か月後</td><td>31年1か月後</td><td>40年5か月後</td></tr>
+<tr><th scope="row">月10万円</th><td>19年10か月後</td><td>22年5か月後</td><td>26年2か月後</td></tr>
+<tr><th scope="row">月12万円</th><td>16年後</td><td>17年7か月後</td><td>19年8か月後</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">何年先まで見るかは60年として計算しています。上のツールの初期値(40年)で見ると、40年より長くもつ組み合わせは「尽きない」と出ます。毎年同じ率で動く仮定の数字で、実現を示すものではありません。</p>
+
+    <h2 id="fs-h-wrong">よくある勘違い</h2>
+    <p class="fs-q">「年利で出た利益の範囲で取り崩せば、元本は減らない」</p>
+    <p>毎年同じ率で増えるなら、そのとおりです。ただ、実際の運用は年ごとに上下し、利益が出ない年もあります。そうした年にも同じ額を取り崩すと、残高は減ります。</p>
+    <p class="fs-q">「この計算で何年もつなら、実際も同じ年数もつ」</p>
+    <p>このツールは、仮の年利が毎年続くという計算です。実際は、運用成績の並び方で、尽きる時期が前後します。</p>
+    <p class="fs-q">「定率で取り崩せば、資産は尽きないから安心」</p>
+    <p>残高に対する割合で取り崩すため、残高は0になりにくい計算です。ただし、残高が減ると取り崩し額も減り、必要な生活費に届かない年が出ることがあります。</p>
+    <p class="fs-q">「取り崩し額は手取りで入れればよい」</p>
+    <p>このツールは、売却額(税引前)で入れる設計です。課税口座では、売却額から税が引かれるため、手取りは少なくなります。手取りは結果欄に別に出します。</p>
+
+    <h2>計算の前提と、数字の読み方</h2>
+    <p>毎月、まず年利からコストを引いた率を1か月あたりの率に直し、月初の残高に乗じて運用します。そのあと月末に取り崩します。残高が売却額以下の月は、残高の全額を売って終了します。購入時の手数料、為替の影響、分配金の受け取り方は入れていません。</p>
+    <p>定額で物価の上昇率を入れた場合は、経過12か月ごとに、取り崩し額をその率だけ増やします。定率では、経過12か月ごとに、年初の残高に率をかけて12で割った額を月額に決め、その年の間は固定します。</p>
+    <p>取り崩し率の目安として、「4%ルール」という言葉を聞くことがあります。これは、1994年にウィリアム・ベンゲン氏が米国の専門誌に発表した、米国の株式と債券の過去データ(1926〜92年)の研究に由来するとされます。日本の状況や、これからの運用成績と同じとは限りません。このツールは、特定の取り崩し率を勧めません。</p>
+    <p>NISAで売って出た利益は非課税で、売った商品の簿価(買ったときの金額)の分は、翌年以降に非課税の枠が再び使えます。手続きは<a href="../nisa-uridashi-tetsuzuki/">NISAは、売った後にも手続きがある</a>にあります。制度は改正されることがあります。</p>
+    <p>このページの利用状況の計測(Google アナリティクス)では、「計算する」ボタンを押した回数だけを使い、金額・年数・利回りは含めません。ほかに、ページの閲覧状況は通常どおり計測されます(詳しくは<a href="../privacy/">プライバシーポリシー</a>)。</p>
+
+    <h2>関連記事</h2>
+    <p>積み上げる側の計算は、<a href="../tsumitate-fukuri-simulator/">積立シミュレーター</a>に書いています。</p>
+    <p>iDeCoなどとの組み合わせ方は、<a href="../ideco-dc-nisa-heiyou/">iDeCo・企業型DC・新NISA、会社員はどう組み合わせて考えるか</a>にあります。</p>
+    <p>取り崩しとは別に、手元に置く資金の考え方は、<a href="../seikatsu-bouei-shikin/">生活防衛資金、いくら・どこに置くか</a>にあります。</p>
+
+    <h2 id="fs-h-ref">参照元と確認日</h2>
+    <p>次の公的な資料などを、2026年11月24日に確認しました。</p>
+    <ul class="fs-refs">
+      <li>国税庁「No.1463 上場株式等の譲渡による所得の課税」(税率20%=所得税15%・住民税5%と、復興特別所得税の2.1%の記載。令和8年4月1日現在法令等): <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1463.htm</a></li>
+      <li>国税庁「防衛特別所得税及び復興特別所得税の源泉徴収のあらまし(令和9年1月以後の源泉徴収)」(防衛特別所得税1%と復興特別所得税1.1%で、合計2.1%の記載): <a href="https://www.nta.go.jp/publication/pamph/pdf/0026005-024_02.pdf" target="_blank" rel="noopener">https://www.nta.go.jp/publication/pamph/pdf/0026005-024_02.pdf</a></li>
+      <li>財務省「令和8年度税制改正の解説」の「防衛特別所得税の創設等」(令和9年分以後の所得税に、1%の防衛特別所得税と、1.1%の復興特別所得税が課税されるとの記載): <a href="https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0141-0209.pdf" target="_blank" rel="noopener">https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/explanation/PDF/p0141-0209.pdf</a></li>
+      <li>金融庁「NISA特設ウェブサイト」(NISA口座の利益は非課税。売却すると、翌年以降、簿価の分だけ非課税投資枠が復活し、再利用できる): <a href="https://www.fsa.go.jp/policy/nisa2/about/" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/about/</a></li>
+      <li>米国のFinancial Planning Association(FPA)「Revisiting William Bengen's 'SAFEMAX' Portfolio Withdrawal Rate」(1994年の研究の概要: 米国の株式・債券の1926〜92年のデータ、30年間): <a href="https://www.financialplanningassociation.org/learning/publications/journal/NOV23-revisiting-william-bengens-safemax-portfolio-withdrawal-rate-OPEN" target="_blank" rel="noopener">https://www.financialplanningassociation.org/learning/publications/journal/NOV23-revisiting-william-bengens-safemax-portfolio-withdrawal-rate-OPEN</a></li>
+    </ul>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本ツールは、取り崩しの計算を理解する目的の試算であり、個別の投資助言・税務相談ではなく、特定の金融商品・取り崩し方・制度の利用を推奨するものでもありません。計算結果は、入力した仮の数字にもとづく概算で、将来の運用成果や税額、資産が尽きる時期を保証しません。投資には元本割れのリスクがあります。税の計算は、売却額に、入力した利益にあたる割合と20.315%をかけるという単純な仮定で、税率は現行の税制にもとづく仮定です。個々の状況(他の所得との通算、繰越控除、配当、口座の種類、年度ごとの売却など)は考えていません。実際の運用は年ごとに上下し、取り崩しの開始直後に資産が下がると、資産の減りが早くなることがあります。NISAの制度や税制は改正されることがあり、この表示の更新が間に合わない場合があります。公的年金、iDeCoの受取、退職金、相続は扱いません。商品の選び方や取り崩し額は、ご自身で公式資料を確認し、必要に応じて専門家にご相談ください。最終的な判断は、ご自身の責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">この記事が参考になったら</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=%E8%B3%87%E7%94%A3%E3%81%AE%E5%8F%96%E3%82%8A%E5%B4%A9%E3%81%97%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC&url=https%3A//uuhai0625.github.io/invest-meisou-notes/torikuzushi-simulator/" target="_blank" rel="noopener">Xでシェア</a>
+    </div>
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="../profile/">運営者について</a> — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="../rss.xml">RSS</a> — <a href="../disclaimer/">免責事項・運営方針</a> — <a href="../privacy/">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+<script src="../header.js" defer></script>
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+<script src="../feedback.js?v=2" defer></script>
+<script src="calc.js?v=1" defer></script>
+</body>
+</html>

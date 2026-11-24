@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="max-image-preview:large">
+<title>NISAの残り枠と、売却後に戻る枠を計算する|今年あといくら買える?|資産形成の瞑想ノート</title>
+<meta name="description" content="新NISAの残り枠(今年あといくら買えるか)と、売却後に戻る枠(来年いくら使えるか)を、いまの簿価と今年の買付・売却額から計算する無料ツールです。2026年11月時点の制度にもとづく目安で、入力は端末内だけで計算します。">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NISAの残り枠と、売却後に戻る枠を計算する——今年あといくら買える?">
+<meta property="og:description" content="新NISAの残り枠(今年あといくら買えるか)と、売却後に戻る枠(来年いくら使えるか)を、いまの簿価と今年の買付・売却額から計算する無料ツールです。2026年11月時点の制度にもとづく目安で、入力は端末内だけで計算します。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://uuhai0625.github.io/invest-meisou-notes/nisa-waku-nokori/">
+<meta property="og:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/nisa-waku-nokori.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<link rel="canonical" href="https://uuhai0625.github.io/invest-meisou-notes/nisa-waku-nokori/">
+<link rel="alternate" type="application/rss+xml" title="資産形成の瞑想ノート" href="https://uuhai0625.github.io/invest-meisou-notes/rss.xml">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NISAの残り枠と、売却後に戻る枠を計算する">
+<meta name="twitter:description" content="新NISAの残り枠(今年あといくら買えるか)と、売却後に戻る枠(来年いくら使えるか)を、いまの簿価と今年の買付・売却額から計算する無料ツールです。2026年11月時点の制度にもとづく目安で、入力は端末内だけで計算します。">
+<meta name="twitter:image" content="https://uuhai0625.github.io/invest-meisou-notes/images/eyecatch/nisa-waku-nokori.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📓</text></svg>">
+<meta name="theme-color" content="#f4efe1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1c20" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=79">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "資産形成の瞑想ノート", "item": "https://uuhai0625.github.io/invest-meisou-notes/" },
+    { "@type": "ListItem", "position": 2, "name": "一般知識", "item": "https://uuhai0625.github.io/invest-meisou-notes/category/ippan/" },
+    { "@type": "ListItem", "position": 3, "name": "NISAの残り枠と、売却後に戻る枠を計算する", "item": "https://uuhai0625.github.io/invest-meisou-notes/nisa-waku-nokori/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NISAの残り枠と、売却後に戻る枠を計算する",
+  "url": "https://uuhai0625.github.io/invest-meisou-notes/nisa-waku-nokori/",
+  "description": "新NISAの残り枠(今年あといくら買えるか)と、売却後に戻る枠(来年いくら使えるか)を、いまの簿価と今年の買付・売却額から計算する無料ツールです。2026年11月時点の制度にもとづく目安で、入力は端末内だけで計算します。",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (Web browser)",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja",
+  "datePublished": "2026-11-24",
+  "dateModified": "2026-11-24",
+  "author": { "@type": "Person", "name": "うーはい", "url": "https://uuhai0625.github.io/invest-meisou-notes/profile/", "sameAs": ["https://x.com/uuhai0625"] }
+}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5128601654376423"
+     crossorigin="anonymous"></script>
+<style>
+.fs-page .fs-card h2 { margin-top: 36px; }
+.fs-page .fs-error { margin: 12px 0 0; padding: 10px 12px; border: 1px solid #b4472c; border-radius: 8px; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .ideco-sim-row { margin-bottom: 20px; }
+.fs-page .ideco-sim-row .ideco-sim-field { margin-bottom: 0; }
+.fs-page .ideco-sim-card > .ideco-sim-field:last-of-type { margin-bottom: 20px; }
+.fs-page details { margin: 16px 0 0; }
+.fs-page details summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-weight: 700; }
+.fs-page .fs-summary { margin: 0 0 14px; font-size: 1rem; font-weight: 700; line-height: 1.7; }
+.fs-page .fs-v-main { display: block; }
+.fs-page .fs-v-sub { display: block; font-size: 0.8rem; font-weight: 400; color: var(--ink-sub); }
+.fs-page .ideco-sim-result-note { font-size: 0.88rem; }
+.fs-page .fs-anchor { margin: 0 0 8px; font-size: 0.92rem; }
+.fs-page .nw-result-card .ideco-sim-result { margin-top: 0; padding-top: 0; border-top: 0; }
+.fs-page .nw-result-card h3 { margin: 22px 0 10px; font-size: 1rem; }
+.fs-page .nw-result-card .fs-summary + h3 { margin-top: 6px; }
+.fs-page .nw-notices { margin: 0 0 14px; padding: 12px 16px 12px 1.8em; border: 1px solid var(--line); border-radius: 8px; background: var(--bg-warm); font-size: 0.88rem; line-height: 1.8; }
+.fs-page .nw-notices[hidden] { display: none; }
+.fs-page table { min-width: 0; }
+.fs-page table td, .fs-page table th { font-size: 0.88rem; }
+.fs-page .fs-glossary dt { margin: 10px 0 0; font-weight: 700; font-size: 0.92rem; }
+.fs-page li a, .fs-page p a { overflow-wrap: anywhere; }
+.fs-page .fs-glossary dd { margin: 2px 0 0; font-size: 0.9rem; line-height: 1.7; }
+.fs-page .nw-example h3 { margin: 26px 0 8px; font-size: 1.02rem; }
+.fs-page .nw-man { display: block; min-height: 1.3em; margin-top: 4px; font-size: 0.82rem; color: var(--ink-sub); }
+.fs-page .data-table-wrap tbody th { white-space: normal; min-width: 6em; }
+.fs-page .data-table-wrap td { white-space: normal; }
+.fs-page .nw-result-card h2 { margin: 30px 0 10px; font-size: 1.15rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ</a>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-header-logo" href="../">資産形成の<span class="accent">瞑想ノート</span></a>
+    <nav class="site-header-nav" aria-label="カテゴリ">
+      <a href="../toushi-guide/">ガイド</a>
+      <a href="../category/ippan/">一般知識</a>
+      <a href="../category/fudousan/">不動産</a>
+      <a href="../category/nikki/">投資日記</a>
+      <a href="../category/kigyou/">企業分析</a>
+      <a href="../category/kasoutsuka/">暗号資産</a>
+    </nav>
+    <button class="site-header-search-toggle" type="button" aria-label="検索を開く" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+  <div class="site-header-search-panel" id="site-header-search-panel" hidden>
+    <form class="wrap" action="../" method="get">
+      <input type="search" name="q" placeholder="記事を検索(例: NISA、暗号資産、証券口座)" aria-label="記事を検索">
+    </form>
+  </div>
+</header>
+
+<main id="main" class="wrap article-page fs-page">
+  <nav class="breadcrumb" aria-label="パンくず"><a href="../">トップ</a><span aria-hidden="true">›</span><a href="../category/ippan/">一般知識</a><span aria-hidden="true">›</span><span aria-current="page">NISAの残り枠と、売却後に戻る枠の計算</span></nav>
+  <div class="article-header">
+    <div class="tags">
+      <span class="tag">一般知識</span>
+      <span class="tag">ツール</span>
+    </div>
+    <h1>NISAの残り枠と、売却後に戻る枠を計算する——今年あといくら買える?</h1>
+    <p class="meta">2026年11月24日</p>
+  </div>
+
+  <figure class="article-eyecatch">
+    <img src="../images/eyecatch/nisa-waku-nokori.jpg" alt="紺色の枠(箱)の中に、金色の塗りが下から積み上がり、上に空きが残っている抽象的なイメージ図(実際の枠の残りを示すものではありません)" width="1200" height="675" loading="eager">
+  </figure>
+
+  <div class="article-body">
+    <div class="disclaimer-box" style="margin-top:0;">
+      <strong>はじめにお断り</strong>: このツールは枠の計算の目安で、実際の枠は証券会社の画面や金融機関で確かめてください。入力は端末の中だけで計算し、送信も保存もしません。
+    </div>
+
+    <p>証券会社の画面で、今年の残り枠が見える方も多いと思います。このツールの特長は、売却したあとに枠が「いつ・いくら」戻るかと、来年に使える枠も計算できる点です。新NISA(<a href="../toushi-yougo-shu/">用語集</a>)を使っている18歳以上の方向けで、数字は2026年11月時点の制度です。</p>
+    <p class="fs-anchor"><a href="#nw-h-input">↓ 枠を計算する</a> / <a href="#nw-h-how">入力する数字の考え方</a> / <a href="#nw-h-example">数え方の具体例3つ</a> / <a href="#nw-h-wrong">よくある勘違い</a></p>
+
+    <details>
+      <summary>用語の意味(年間投資枠・非課税保有限度額・簿価など)</summary>
+      <dl class="fs-glossary">
+        <dt>年間投資枠</dt><dd>1年(1月1日〜12月31日)に新しく買える上限です。つみたて投資枠は120万円、成長投資枠は240万円で、併用できます。使い残しは翌年に繰り越せません。</dd>
+        <dt>非課税保有限度額</dt><dd>生涯、非課税のまま持てる上限で、1,800万円です。買ったときの金額(簿価)で数えます。</dd>
+        <dt>簿価</dt><dd>買ったときの金額(取得価額)です。値上がりや値下がりがあっても変わりません。購入手数料は含みません。</dd>
+        <dt>成長投資枠の1,200万円</dt><dd>1,800万円のうち、成長投資枠で持てるのは簿価1,200万円までです。1,800万円の内訳で、別の枠ではありません。</dd>
+        <dt>空き</dt><dd>上限から、いま使っている簿価を引いた残りです。</dd>
+      </dl>
+    </details>
+
+    <section class="fs-card" aria-labelledby="nw-h-input">
+    <h2 id="nw-h-input" style="margin-top:0">入力する(いまの簿価と、今年の買付・売却)</h2>
+    <p>金額はすべて円の整数です(600万円なら6000000)。ない場合は0です。最初に入っている数字は、下の例1と同じです。旧NISAの分は入れません。</p>
+    <form id="nw-form" class="ideco-sim-card" novalidate>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field"><label for="nw-bt">今年、つみたて投資枠で買った金額(円)</label><input type="number" id="nw-bt" min="0" step="10000" value="1000000" inputmode="numeric" aria-describedby="nw-bt-hint"><span class="nw-man" id="nw-bt-man"></span><span class="ideco-sim-hint" id="nw-bt-hint">今年のつみたて投資枠の買付代金の合計です。手数料は含みません。</span></div>
+        <div class="ideco-sim-field"><label for="nw-bg">今年、成長投資枠で買った金額(円)</label><input type="number" id="nw-bg" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="nw-bg-hint"><span class="nw-man" id="nw-bg-man"></span><span class="ideco-sim-hint" id="nw-bg-hint">今年の成長投資枠の買付代金の合計です。使っていなければ0です。</span></div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field"><label for="nw-c">いまの、非課税保有額の簿価の合計(円)</label><input type="number" id="nw-c" min="0" step="10000" value="7000000" inputmode="numeric" aria-describedby="nw-c-hint"><span class="nw-man" id="nw-c-man"></span><span class="ideco-sim-hint" id="nw-c-hint">いま持っている商品の、買ったときの金額の合計です(時価ではありません)。今年買った分は含み、売った分は含みません。</span></div>
+        <div class="ideco-sim-field"><label for="nw-cg">そのうち、成長投資枠の簿価(円)</label><input type="number" id="nw-cg" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="nw-cg-hint"><span class="nw-man" id="nw-cg-man"></span><span class="ideco-sim-hint" id="nw-cg-hint">上の合計のうち、成長投資枠で買った分です。成長投資枠を使っていなければ0です。</span></div>
+      </div>
+      <div class="ideco-sim-row">
+        <div class="ideco-sim-field"><label for="nw-s">今年、すでに売却した商品の簿価(円)</label><input type="number" id="nw-s" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="nw-s-hint"><span class="nw-man" id="nw-s-man"></span><span class="ideco-sim-hint" id="nw-s-hint">売った金額(受取額)ではなく、売った商品の取得価額(買ったときの金額)の合計です。売却額を入れると、戻る枠を多く見積もります。売っていなければ0です。</span></div>
+        <div class="ideco-sim-field"><label for="nw-sg">そのうち、成長投資枠の分の簿価(円)</label><input type="number" id="nw-sg" min="0" step="10000" value="0" inputmode="numeric" aria-describedby="nw-sg-hint"><span class="nw-man" id="nw-sg-man"></span><span class="ideco-sim-hint" id="nw-sg-hint">上の合計のうち、成長投資枠で買っていた分です。売っていなければ0です。</span></div>
+      </div>
+      <button class="ideco-sim-btn" type="submit">計算する</button>
+      <p class="fs-error" id="nw-error" role="alert" hidden></p>
+      <p class="sr-only" id="nw-sr" aria-live="polite"></p>
+    </form>
+    </section>
+
+    <section class="fs-card" aria-labelledby="nw-h-result">
+    <h2 id="nw-h-result" style="margin-top:0">計算結果(今年あと買える額)</h2>
+    <div class="ideco-sim-card nw-result-card">
+      <p class="ideco-sim-result-note" id="nw-stale" hidden>入力に誤りがあるため、結果は表示していません。上の入力欄のエラーを直すと、結果が表示されます。</p>
+      <div class="ideco-sim-result" id="nw-result">
+        <p class="fs-summary" id="nw-summary"></p>
+        <p class="ideco-sim-result-note" id="nw-reason"></p>
+        <ul class="nw-notices" id="nw-notices" hidden></ul>
+
+        <h3>今年、あと買える額の上限</h3>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">つみたて投資枠で、あと買える額</span><span class="value accent" id="nw-out-maxT">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">成長投資枠で、あと買える額</span><span class="value accent" id="nw-out-maxG">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">両方合わせて、あと買える額</span><span class="value accent" id="nw-out-maxBoth">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note">たとえば空きが100万円しかないと、つみたて・成長を合わせても100万円までです。</p>
+
+        <h3>今年の非課税保有額(簿価)</h3>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">今年の非課税保有額(いまの簿価+今年売った簿価)</span><span class="value" id="nw-out-hold">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">限度額の空き(一生で持てる1,800万円のうち、まだ使える額)</span><span class="value" id="nw-out-room">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">うち、成長投資枠の簿価</span><span class="value" id="nw-out-growth">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">成長投資枠の空き(成長で持てる1,200万円のうち、まだ使える額)</span><span class="value" id="nw-out-roomG">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note" id="nw-conv"></p>
+        <p class="ideco-sim-result-note">証券会社の画面の簿価残高は、売った分を引いた後の数字のことがあります。今年の非課税保有額は、今年売った分を引かないため、画面より大きく見えることがあります。</p>
+
+        <h2 id="nw-h-next">売却後、来年に戻る枠</h2>
+        <div class="ideco-sim-result-grid">
+          <div class="ideco-sim-result-item"><span class="label">今年売却した簿価(来年から再び使える額)</span><span class="value accent" id="nw-out-returned">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">来年の年初の非課税保有額の目安</span><span class="value" id="nw-out-holdNext">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">来年の年初の、限度額の空き</span><span class="value" id="nw-out-roomNext">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">来年、つみたて投資枠で買える上限</span><span class="value" id="nw-out-nextT">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">来年、成長投資枠で買える上限</span><span class="value" id="nw-out-nextG">—</span></div>
+          <div class="ideco-sim-result-item"><span class="label">来年、両方合わせて買える上限</span><span class="value accent" id="nw-out-nextBoth">—</span></div>
+        </div>
+        <p class="ideco-sim-result-note">売却の欄が0円のときは、今年売っていないので、戻る枠は0円です。来年の年間投資枠(つみたて120万円・成長240万円)は、今年の使い方に関係なく満額に戻ります。来年の数字は、今年これ以上買わず、これ以上売らない前提です。</p>
+      </div>
+    </div>
+    </section>
+
+    <h2 id="nw-h-rule">数え方の決まり(4つ)</h2>
+    <p>このツールの計算は、次の4つの決まりにもとづきます。いずれも、金融庁と日本証券業協会の資料に書かれている内容です。</p>
+    <ol>
+      <li>年間投資枠は暦年で数えます。売っても、その年の枠は増えません。使い残しも繰り越せません。</li>
+      <li>非課税保有限度額は、簿価で数えます。ある年の保有額は、前年末の簿価に、その年に買った金額を足した額です。</li>
+      <li>売却した簿価の分は、翌年以降に再び使えます。売った年の枠は戻りません。</li>
+      <li>つみたて投資枠と成長投資枠は併用できます。成長投資枠で持てるのは、簿価1,200万円までです。</li>
+    </ol>
+    <p>今年あと買える額は、年間投資枠の残りと、限度額の空きの小さいほうです。成長投資枠は、成長の簿価の空き(1,200万円まで)も見ます。</p>
+
+    <h2 id="nw-h-how">入力する数字の考え方</h2>
+    <p>このツールは、「いまの簿価」から、制度の数え方に合わせた年初の簿価を逆算します。年初の簿価は、いまの簿価の合計から、今年買った金額を引き、今年売った簿価を足した額です。</p>
+    <p>「いまの簿価の合計」は、いま持っている商品の取得価額(買ったときの金額)の合計で、時価の合計ではありません。今年買った分は含み、今年売った分は含みません。</p>
+    <p>「売却した簿価」は、売った商品の取得価額です。たとえば、100万円で買った商品を150万円で売った場合は、100万円を入れます。150万円を入れると、戻る枠を50万円多く見積もります。</p>
+    <p>証券会社の画面に、年間投資枠の残りが出る場合は、その数字も確かめてください。このツールは、売却後に枠が戻る時期と額、来年の枠を見るために使えます。</p>
+
+    <div class="nw-example">
+    <h2 id="nw-h-example">数え方の具体例3つ(このツールと同じ計算)</h2>
+    <p>金額はすべて簿価で、時価ではありません。</p>
+
+    <h3>例1: いまの簿価700万円で、今年つみたて投資枠に100万円入れた</h3>
+    <p>いまの簿価が700万円(すべてつみたて投資枠)で、今年つみたて投資枠で100万円買った場合です。年初の簿価に直すと600万円です。つみたて投資枠は年間120万円のうち100万円を使ったので、あと20万円です。成長投資枠は、年間240万円がそのまま残っています。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="例1の結果">
+      <table style="min-width:0">
+        <caption>例1の計算結果</caption>
+        <thead><tr><th scope="col">項目</th><th scope="col">金額</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">今年あと買える額(つみたて・成長・合計)</th><td>20万円・240万円・260万円</td></tr>
+          <tr><th scope="row">今年の非課税保有額と、限度額の空き</th><td>700万円・1,100万円</td></tr>
+          <tr><th scope="row">来年に戻る簿価</th><td>0円(今年売っていない)</td></tr>
+          <tr><th scope="row">来年の年初の空きと、来年の合計の上限</th><td>1,100万円・360万円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">合計260万円は、年間投資枠の残り(20万円と240万円)の合計で、空き1,100万円より小さいので、年間投資枠が上限です。</p>
+
+    <h3>例2: 限度額が埋まっていて、つみたて投資枠の分を売った</h3>
+    <p>いまの簿価が1,200万円(すべて成長投資枠)で、今年、つみたて投資枠の分(簿価600万円)をすべて売りました。年初の簿価に直すと1,800万円(うち成長投資枠1,200万円)で、限度額が埋まっていました。売った年は枠が戻らず、今年は新しく買えません。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="例2の結果">
+      <table style="min-width:0">
+        <caption>例2の計算結果</caption>
+        <thead><tr><th scope="col">項目</th><th scope="col">金額</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">今年あと買える額(つみたて・成長・合計)</th><td>0円・0円・0円</td></tr>
+          <tr><th scope="row">今年の非課税保有額と、限度額の空き</th><td>1,800万円・0円</td></tr>
+          <tr><th scope="row">来年に戻る簿価</th><td>600万円</td></tr>
+          <tr><th scope="row">来年の年初の保有額と、空き</th><td>1,200万円・600万円</td></tr>
+          <tr><th scope="row">来年に買える上限(つみたて・成長・合計)</th><td>120万円・0円・120万円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">来年は、600万円の空きができます。ただし、年間投資枠の範囲内(つみたて投資枠は120万円)でしか買えません。戻るのは、時価ではなく簿価の600万円です。</p>
+
+    <h3>例3: 成長投資枠の簿価が1,200万円に達している</h3>
+    <p>いまの簿価が1,550万円(うち成長投資枠1,200万円)で、今年つみたて投資枠で50万円買った場合です。年初の簿価に直すと1,500万円です。限度額の空きは250万円ありますが、成長投資枠は簿価の上限に達していて、新しく買えません。</p>
+    <div class="data-table-wrap" tabindex="0" role="region" aria-label="例3の結果">
+      <table style="min-width:0">
+        <caption>例3の計算結果</caption>
+        <thead><tr><th scope="col">項目</th><th scope="col">金額</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">今年あと買える額(つみたて・成長・合計)</th><td>70万円・0円・70万円</td></tr>
+          <tr><th scope="row">今年の非課税保有額と、限度額の空き</th><td>1,550万円・250万円</td></tr>
+          <tr><th scope="row">来年に戻る簿価</th><td>0円(今年売っていない)</td></tr>
+          <tr><th scope="row">来年に買える上限(つみたて・成長・合計)</th><td>120万円・0円・120万円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">つみたて投資枠は、年間120万円のうち50万円を使ったので、あと70万円です。成長投資枠の空きが増えるのは、成長投資枠の商品を売った翌年以降です。</p>
+    </div>
+
+    <h2 id="nw-h-wrong">よくある勘違い(4つ)</h2>
+    <dl class="fs-glossary">
+      <dt>「時価で数える」</dt>
+      <dd>簿価で数えます。100万円で買った商品が150万円になって売っても、戻る枠は100万円です。値上がり益の50万円は、枠に入りません。</dd>
+      <dt>「売った年にすぐ戻る」</dt>
+      <dd>戻るのは翌年以降です。売った年は、売却の分が新しい買付に使えません。ただし、年間投資枠と限度額の空きが残っていれば、その範囲で買えます。</dd>
+      <dt>「売れば、今年の年間投資枠も増える」</dt>
+      <dd>増えません。戻る枠が使えるのは、翌年以降の年間投資枠の範囲内です。年間投資枠そのものが増えるわけではありません。</dd>
+      <dt>「入力の前に、今年買った分・売った分を足し引きする」</dt>
+      <dd>不要です。いまの簿価の合計をそのまま入れてください。年初の簿価への換算は、ツールが行います。今年の買付と売却は、それぞれの欄に入れます。</dd>
+    </dl>
+
+    <h2 id="nw-h-scope">このツールで数えないもの</h2>
+    <ul>
+      <li>旧NISA(2023年までの一般NISA・つみたてNISA)の分は、別の枠で管理され、この計算に入りません。旧NISAの商品を売っても、新NISAの限度額は再利用できません(金融庁の資料)。</li>
+      <li>2027年1月から開設できるようになる18歳未満のNISA口座(つみたて投資枠のみ・年間投資枠60万円・非課税保有限度額600万円)は、この計算に入れません(2026年11月時点)。</li>
+      <li>年内に買った分が今年の枠に入るかは、受渡日で決まります。くわしくは<a href="../nisa-nenmatsu-kaitsuke/">NISAの年内の買付けは、いつまでなら間に合うか</a>に書きました。</li>
+      <li>分配金の再投資分は、年間投資枠に入る場合があります。購入手数料は、限度額の計算に入りません。</li>
+    </ul>
+
+    <h2 id="nw-h-note">制度の時点と、使い方の注意</h2>
+    <p>枠の金額(つみたて投資枠120万円・成長投資枠240万円・非課税保有限度額1,800万円・うち成長投資枠1,200万円)は、2026年11月時点の制度です。税制改正で変わることがあります。例年12月ごろに、翌年度の税制改正大綱がまとまります。最新の内容は、金融庁のNISA特設サイトで確認してください。</p>
+    <p>計算は枠の目安で、実際の枠は、証券会社の画面や金融機関で確かめてください。複数の金融機関のNISA口座を使ってきた場合、保有額は国税庁が合算して管理します。</p>
+    <p>関連する記事は、<a href="../nisa-tsumitate-gaku/">新NISAの積立額は、どう決めるか</a>、<a href="../nisa-uridashi-tetsuzuki/">NISAは、売った後にも手続きがある</a>、<a href="../kyu-nisa-2022-manryo/">旧NISAの2022年買付分の非課税期間終了</a>です。積み立てた後の増え方は、<a href="../tsumitate-fukuri-simulator/">積立シミュレーター</a>で試せます。</p>
+    <p>このページの利用状況の計測(Google アナリティクス)では、「計算する」ボタンを押した回数だけを使い、金額は含めません。ほかに、ページの閲覧状況は通常どおり計測されます(詳しくは<a href="../privacy/">プライバシーポリシー</a>)。</p>
+
+    <div class="source-list">
+      <h3>参照元(2026年11月24日確認)</h3>
+      <p>枠の金額、簿価での数え方、売却後の再利用の根拠は、次の公式ページです。表記は、各ページの制度の説明に合わせました。</p>
+      <ol>
+        <li>【金融庁】NISA特設ウェブサイト「新しいNISAの概要」(年間投資枠・非課税保有限度額・成長投資枠1,200万円・売却後の再利用): <a href="https://www.fsa.go.jp/policy/nisa2/about/" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/about/</a></li>
+        <li>【金融庁】NISA特設ウェブサイト「よくある質問」(簿価残高での管理): <a href="https://www.fsa.go.jp/policy/nisa2/qa/index.html" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/qa/index.html</a></li>
+        <li>【金融庁】「NISAを利用する皆さまへ」(旧NISAの残高は外枠、再利用分は年間投資枠に上乗せされない): <a href="https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf" target="_blank" rel="noopener">https://www.fsa.go.jp/policy/nisa2/about/nisa2024/slide_202406.pdf</a></li>
+        <li>【国税庁】タックスアンサーNo.1535「NISA制度」(枠の金額の確認用。令和8年4月1日現在法令等): <a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1535.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1535.htm</a></li>
+        <li>【日本証券業協会】「2024年以降のNISAに関するQ&amp;A」(2026年9月版。Q8・Q10・Q11・Q28・Q29): <a href="https://www.jsda.or.jp/shijyo/seido/tax/files/202609_nisa_qa.pdf" target="_blank" rel="noopener">https://www.jsda.or.jp/shijyo/seido/tax/files/202609_nisa_qa.pdf</a></li>
+      </ol>
+      <p>本ページは、上記の公表資料をもとに運営者が要約・計算したものです。各発行元が作成・監修したものではありません。具体例の数字は、運営者がこのツールの式で計算した例です。</p>
+    </div>
+
+    <div class="disclaimer-box">
+      <strong>免責事項</strong>: 本ツールは、NISAの枠の数え方を理解する目的の計算であり、個別の投資助言・税務相談ではなく、特定の金融商品・買い方・制度の利用を推奨するものでもありません。枠を使い切ることを勧めるものでもありません。計算結果は、入力した数字と、2026年11月時点の制度にもとづく目安で、実際の枠を保証しません。実際の枠は、証券会社の画面や金融機関への確認で確かめてください。年初の簿価や売却の簿価は、取引の記録で確かめた数字を入れてください。制度は改正されることがあり、この表示の更新が間に合わない場合があります。投資には元本割れのリスクがあります。最終的な判断は、ご自身の責任で行ってください。サイト全体の運営方針・免責事項は<a href="../disclaimer/">こちら</a>もあわせてご覧ください。
+    </div>
+
+    <div class="share-row">
+      <span class="share-label">この記事が参考になったら</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=NISA%E3%81%AE%E6%AE%8B%E3%82%8A%E6%9E%A0%E3%81%A8%E3%80%81%E5%A3%B2%E5%8D%B4%E5%BE%8C%E3%81%AB%E6%88%BB%E3%82%8B%E6%9E%A0%E3%82%92%E8%A8%88%E7%AE%97%E3%81%99%E3%82%8B&url=https%3A//uuhai0625.github.io/invest-meisou-notes/nisa-waku-nokori/" target="_blank" rel="noopener">Xでシェア</a>
+    </div>
+    <div class="related-articles" id="related-articles"></div>
+  </div>
+
+  <a class="back-link" href="../">一覧に戻る</a>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 uuhai0625 / 資産形成の瞑想ノート — <a href="../profile/">運営者について</a> — <a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X (@uuhai0625)</a> — <a href="../rss.xml">RSS</a> — <a href="../disclaimer/">免責事項・運営方針</a> — <a href="../privacy/">プライバシーポリシー</a></p>
+  </div>
+</footer>
+
+<script src="../header.js" defer></script>
+<script src="../ga.js"></script>
+<script src="../articles-data.js"></script>
+<script src="../related-articles.js" defer></script>
+<script src="../feedback.js?v=2" defer></script>
+<script src="calc.js?v=1" defer></script>
+</body>
+</html>
