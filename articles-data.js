@@ -80,4 +80,5 @@ const ARTICLES_DATA = [
   { slug: 'sns-toushi-sagi-check', title: 'SNSで勧められた投資話の確かめ方、相談先、被害回復の流れ', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'souba-hendou-kakunin'], tool: 'toushi-yougo-shu' },
   { slug: 'ideco-uketori-houhou', title: 'iDeCoの受け取り方——一時金・年金・併用の違いと、退職金との順序', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'ideco-dc-nisa-heiyou'], tool: 'ideco-setsuzei-simulator' },
   { slug: 'nisa-shoken-souzoku', title: '親のNISA・株・投資信託を相続したら——取得価額、売却時の税金、口座の手続き', tags: ['ippan'], related: ['kodomo-nisa-okane-ugoki', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
+  { slug: 'toushin-bunpaikin', title: '投資信託の分配金は何か——普通分配金と元本払戻金(特別分配金)、基準価額との関係、税金とNISAでの扱い', tags: ['ippan'], related: ['nisa-haito-uketori-houshiki', 'nisa-nenmatsu-kaitsuke'], tool: 'toushi-yougo-shu' },
 ];
