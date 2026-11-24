@@ -78,4 +78,6 @@ const ARTICLES_DATA = [
   { slug: 'nisa-waku-nokori', title: 'NISAの残り枠と、売却後に戻る枠を計算する——今年あといくら買える?', tags: ['ippan'], type: 'tool', related: ['nisa-uridashi-tetsuzuki', 'nisa-nenmatsu-kaitsuke'] },
   { slug: 'torikuzushi-simulator', title: '資産の取り崩しシミュレーター——毎月いくら取り崩すと、何年もつか', tags: ['ippan'], type: 'tool', related: ['nisa-uridashi-tetsuzuki', 'seikatsu-bouei-shikin'] },
   { slug: 'sns-toushi-sagi-check', title: 'SNSで勧められた投資話の確かめ方、相談先、被害回復の流れ', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'souba-hendou-kakunin'], tool: 'toushi-yougo-shu' },
+  { slug: 'ideco-uketori-houhou', title: 'iDeCoの受け取り方——一時金・年金・併用の違いと、退職金との順序', tags: ['ippan'], related: ['ideco-2026-12-kaisei', 'ideco-dc-nisa-heiyou'], tool: 'ideco-setsuzei-simulator' },
+  { slug: 'nisa-shoken-souzoku', title: '親のNISA・株・投資信託を相続したら——取得価額、売却時の税金、口座の手続き', tags: ['ippan'], related: ['kodomo-nisa-okane-ugoki', 'nisa-uridashi-tetsuzuki'], tool: 'toushi-yougo-shu' },
 ];
