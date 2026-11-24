@@ -77,4 +77,5 @@ const ARTICLES_DATA = [
   { slug: 'toushin-cost-keisan', title: '投資信託の信託報酬の差を計算する——0.1%と1%は、将来いくらの差になるか', tags: ['ippan'], type: 'tool', related: ['toushin-etf-hikaku', 'tsumitate-fukuri-simulator'] },
   { slug: 'nisa-waku-nokori', title: 'NISAの残り枠と、売却後に戻る枠を計算する——今年あといくら買える?', tags: ['ippan'], type: 'tool', related: ['nisa-uridashi-tetsuzuki', 'nisa-nenmatsu-kaitsuke'] },
   { slug: 'torikuzushi-simulator', title: '資産の取り崩しシミュレーター——毎月いくら取り崩すと、何年もつか', tags: ['ippan'], type: 'tool', related: ['nisa-uridashi-tetsuzuki', 'seikatsu-bouei-shikin'] },
+  { slug: 'sns-toushi-sagi-check', title: 'SNSで勧められた投資話の確かめ方、相談先、被害回復の流れ', tags: ['ippan'], related: ['toushi-hajimeru-junban', 'souba-hendou-kakunin'], tool: 'toushi-yougo-shu' },
 ];
